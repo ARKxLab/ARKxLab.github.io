@@ -107,7 +107,8 @@ h5, .h5 {
   font-size: 1.25rem; }
 
 h6, .h6 {
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: 300; }
 
 p {
   margin-top: 0;
@@ -9560,8 +9561,8 @@ a {
 
 .more {
   position: relative;
-  display: inline-block;
-  padding-bottom: 7px; }
+  display: inline-grid;
+  padding-bottom: 2px; }
   .more:before, .more:after {
     position: absolute;
     width: 100%;
