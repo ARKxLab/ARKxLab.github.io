@@ -492,8 +492,8 @@ progress {
 .container-xl,
 .container-xxl {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--bs-gutter-x, 4.75rem);
+  padding-left: var(--bs-gutter-x, 4.75rem);
   margin-right: auto;
   margin-left: auto; }
 
@@ -9135,8 +9135,8 @@ a {
 
 .btn {
   font-family: "Roboto", sans-serif;
-  border-radius: 0;
-  padding: 14px 30px; }
+  border-radius: 4px;
+  padding: 10px 12px; }
   .btn:hover, .btn:active, .btn:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -9159,6 +9159,8 @@ a {
       color: #000;
       border-color: #000;
       background-color: transparent; }
+
+
 
 .btn-bg-darker:after {
   background-color: #111 !important; }
@@ -9623,20 +9625,20 @@ a {
     color: #ff4c4c; }
 
 .testmonial {
-  background: #222;
+  background: #fff;
   padding: 30px;
   border-radius: 4px; }
   .testmonial .quote {
     font-size: 70px;
     position: relative;
     text-align: right;
-    color: #fff;
+    color: #000;
     font-family: 'Times New Roman'; }
   .testmonial blockquote {
     font-size: 20px;
     margin-bottom: 50px; }
     .testmonial blockquote p {
-      color: #fff; }
+      color: #000; }
   .testmonial .author > .pic {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 60px;
@@ -9646,7 +9648,7 @@ a {
       border-radius: 50%; }
   .testmonial .author > .author-name h2, .testmonial .author > .author-name .h2 {
     font-size: 16px;
-    color: #fff; }
+    color: #000; }
   .testmonial .author > .author-name span {
     color: rgba(255, 255, 255, 0.4); }
 
@@ -9728,9 +9730,8 @@ a {
       bottom: -10px;
       visibility: hidden;
       color: #999999;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: .2em; }
+      font-size: 16px;
+      letter-spacing: .1em; }
   .media-1:hover:after {
     opacity: 1;
     visibility: visible; }
