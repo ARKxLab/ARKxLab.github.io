@@ -1,17 +1,10 @@
-<!-- /*
-* Template Name: Medio
-* Template Author: Untree.co
-* Tempalte URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
+
 <!doctype html>
 <html lang="en">
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<meta name="author" content="Untree.co">
 	<link rel="shortcut icon" href="favicon.png">
 
 	<meta name="description" content="" />
@@ -75,30 +68,36 @@
 
 
 	<div class="hero   overlay">
-
 		<div class="container">
 			<div class="row section">
 				<div class="col-lg-6 col-xxl-10 mx-auto  ">
 					<h1 class="heading-2 text-white mb-3" data-aos="fade-up">Projects</h1>
-
 				</div>
-
 			</div>
 		</div>
-
 	</div>
 
 	<div class="section bg-light">
 		<div class="container">
-			<div class="row justify-content-center mb-5">
+			<div class="row  justify-content-center mb-5">
 				<div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
 					<h2 class="mb-4">Complete Projects</h2>
 				</div>
 			</div>
 
-			<div class="row ">
-				<div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
-					<div class="service grayscale">
+<div id="filterBtn" data-aos="fade-up" data-aos-delay="0">
+  <button class="filter-btn filter-active" onclick="filterSelection('all')"> Show all</button>
+  <button class="filter-btn" onclick="filterSelection('VR')"> VR/AR</button>
+  <button class="filter-btn" onclick="filterSelection('ASD')"> ASD</button>
+  <button class="filter-btn" onclick="filterSelection('Old')"> Old adults</button>
+  <button class="filter-btn" onclick="filterSelection('Health')"> Health/well-being</button>
+  <button class="filter-btn" onclick="filterSelection('Game')"> Game</button>
+  <button class="filter-btn" onclick="filterSelection('Wearables')"> Wearables</button>
+</div>
+
+			<div class=" filter-row">
+				<div class=" filter-column VR " data-aos="fade-up" data-aos-delay="0">
+					<div class="service grayscale filter-content">
 						<div class="service-img">
 							<a href="Tw.html"><img src="images/tw.jpg" alt="Image" class="img-fluid"></a>
 						</div>
@@ -113,8 +112,8 @@
 
 					</div>
 				</div>
-				<div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-					<div class="service grayscale">
+				<div class=" filter-column ASD"  data-aos="fade-up" data-aos-delay="0">
+					<div class="service grayscale filter-content">
 						<div class="service-img">
 							<a href="#"><img src="images/VHASD.jpg" alt="Image" class="img-fluid"></a>
 						</div>
@@ -128,8 +127,8 @@
 
 					</div>
 				</div>
-				<div class="col-lg-4 mb-5 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
-					<div class="service grayscale">
+				<div class=" filter-column ASD Game" data-aos="fade-up" data-aos-delay="0" >
+					<div class="service grayscale filter-content">
 						<div class="service-img">
 							<a href="#"><img src="images/star.jpg" alt="Image" class="img-fluid"></a>
 						</div>
@@ -144,11 +143,10 @@
 
 					</div>
 				</div>
-			</div>
 
-			<div class="row ">
-				<div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="0">
-					<div class="service grayscale">
+
+				<div class=" filter-column ASD Privacy"  data-aos="fade-up" data-aos-delay="0">
+					<div class="service grayscale filter-content">
 						<div class="service-img">
 							<a href="Privacy_for_Families_with_Autism.html"><img src="images/family.jpg" alt="Image" class="img-fluid"></a>
 						</div>
@@ -162,8 +160,8 @@
 
 					</div>
 				</div>
-				<div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="100">
-					<div class="service grayscale">
+				<div class="col-lg-4 mb-4 mb-lg-5 filter-column Health" data-aos="fade-up" data-aos-delay="0" >
+					<div class="service grayscale filter-content">
 						<div class="service-img">
 							<a href="Measuring_Anxiety.html"><img src="images/ma.jpg" alt="Image" class="img-fluid"></a>
 						</div>
@@ -181,8 +179,8 @@
 
 					</div>
 				</div>
-				<div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
-					<div class="service grayscale">
+				<div class="col-lg-4 mb-4 mb-lg-5 filter-column Wearables" data-aos="fade-up" data-aos-delay="0">
+					<div class="service grayscale filter-content">
 						<div class="service-img">
 							<a href="Entangled_Habitation.html"><img src="images/entan.jpg" alt="Image" class="img-fluid"></a>
 						</div>
@@ -196,11 +194,9 @@
 
 					</div>
 				</div>
-			</div>
 
-			<div class="row ">
-				<div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="0">
-					<div class="service grayscale">
+				<div class="col-lg-4 mb-4 mb-lg-5 filter-column Old"  data-aos="fade-up" data-aos-delay="0">
+					<div class="service grayscale filter-content">
 						<div class="service-img">
 							<a href="gran_tech.html"><img src="images/oldadult.jpg" alt="Image" class="img-fluid"></a>
 						</div>
@@ -215,42 +211,6 @@
 					</div>
 				</div>
 
-			<!--	<div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="100">
-					<div class="service grayscale">
-						<div class="service-img">
-							<a href="Measuring_Anxiety.html"><img src="images/ma.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Measuring Anxiety</h3>
-							<p> The goal of this study is to use machine learning algorithms to measure,
-								predict and design interventions for stress and anxiety.
-								While the ability to detect, access, and intervene with such disorders is
-								crucial for the well-being of the general population,
-								traditional self-assessments for mental health have certain limitations due to their subject nature.
-								 </p>
-							<p class="mb-0"><a href="Measuring_Anxiety.html" class="more">Learn more</a></p>
-						</div>
-
-					</div>
-				</div> -->
-				<!--
-				<div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
-					<div class="service grayscale">
-						<div class="service-img">
-							<a href="Entangled_Habitation.html"><img src="images/entan.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Entangled Habitation</h3>
-							<p>We explore the entangled habitation design concept to advocate a more-than-human perspective in human-nature interaction design. Following the entangled habitation design concept,
-								we implemented three plant-based wearables to reframe human interactions with plants.</p>
-							<p class="mb-0"><a href="Entangled_Habitation.html" class="more">Learn more</a></p>
-						</div>
-
-					</div>
-				</div>  -->
-			</div>
 
 		</div>
 	</div>
@@ -453,5 +413,6 @@
 	<script src="js/glightbox.min.js"></script>
 	<script src="js/rellax.min.js"></script>
 	<script src="js/custom.js"></script>
+  <script src="js/filter.js"></script>
 </body>
 </html>
