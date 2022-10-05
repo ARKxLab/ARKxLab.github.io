@@ -9849,13 +9849,13 @@ a {
 /* filter*/
 
 .filter-row {
-  margin: 8px -16px;
+  margin: 12px -16px;
 }
 
 /* Add padding BETWEEN each column (if you want) */
 .filter-row,
 .filter-row > .filter-column {
-  padding: 8px;
+  padding: 12px;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -9875,7 +9875,7 @@ a {
 /* Content */
 .filter-content {
   background-color: white;
-  padding: 10px;
+
 }
 
 /* The "show" class is added to the filtered elements */
@@ -9891,6 +9891,7 @@ a {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
+  border-color: #000;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -9900,7 +9901,7 @@ a {
   -ms-user-select: none;
   user-select: none;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 2px solid ;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
@@ -9915,6 +9916,7 @@ a {
 .filter-btn:hover {
   background-color: #000;
   color: #fff;
+    border-color: #000;
 }
 
 /* Add a dark background color to the active button */

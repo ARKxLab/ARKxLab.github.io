@@ -1,47 +1,48 @@
-
 <!doctype html>
 <html lang="en">
+
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="favicon.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.png">
 
-	<meta name="description" content="" />
-	<meta name="keywords" content="bootstrap, bootstrap5" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap5" />
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
 
-	<link rel="stylesheet" href="fonts/icomoon/style.css">
-	<link rel="stylesheet" href="fonts/feather/style.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/feather/style.css">
 
-	<link rel="stylesheet" href="css/tiny-slider.css">
-	<link rel="stylesheet" href="css/aos.css">
-	<link rel="stylesheet" href="css/glightbox.min.css">
-	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tiny-slider.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/glightbox.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-	<title>Projects - DKU HCI Lab</title>
+  <title>Projects - DKU HCI Lab</title>
 </head>
+
 <body>
 
-	<div class="site-mobile-menu site-navbar-target">
-		<div class="site-mobile-menu-header">
-			<div class="site-mobile-menu-close">
-				<span class="icofont-close js-menu-toggle"></span>
-			</div>
-		</div>
-		<div class="site-mobile-menu-body"></div>
-	</div>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
 
-	<nav class="site-nav">
-		<div class="container">
-			<div class="site-navigation">
-				<a href="index.html" class="logo m-0">DKU HCI Lab</a>
-				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
-					<li><a href="index.html">Home</a></li>
-	<!--
+  <nav class="site-nav">
+    <div class="container">
+      <div class="site-navigation">
+        <a href="index.html" class="logo m-0">DKU HCI Lab</a>
+        <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+          <li><a href="index.html">Home</a></li>
+          <!--
 					<li class="has-children">
 						<a href="#">People</a>
 						<ul class="dropdown">
@@ -52,261 +53,275 @@
 						</ul>
 					</li>
 				-->
-			 	  <li class="active" ><a href="projects.html">Projects</a></li>
-					<li><a href="publications.html">Publications</a></li>
-					<li><a href="people.html">People</a></li>
-					<li><a href="perspective_stu.html">Perspective Students</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
+          <li class="active"><a href="projects.html">Projects</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="perspective_stu.html">Perspective Students</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-				<a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
-					<span></span>
-				</a>
-			</div>
-		</div>
-	</nav>
-
-
-	<div class="hero   overlay">
-		<div class="container">
-			<div class="row section">
-				<div class="col-lg-6 col-xxl-10 mx-auto  ">
-					<h1 class="heading-2 text-white mb-3" data-aos="fade-up">Projects</h1>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="section bg-light">
-		<div class="container">
-			<div class="row  justify-content-center mb-5">
-				<div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
-					<h2 class="mb-4">Complete Projects</h2>
-				</div>
-			</div>
-
-<div id="filterBtn" data-aos="fade-up" data-aos-delay="0">
-  <button class="filter-btn filter-active" onclick="filterSelection('all')"> Show all</button>
-  <button class="filter-btn" onclick="filterSelection('VR')"> VR/AR</button>
-  <button class="filter-btn" onclick="filterSelection('ASD')"> ASD</button>
-  <button class="filter-btn" onclick="filterSelection('Old')"> Old adults</button>
-  <button class="filter-btn" onclick="filterSelection('Health')"> Health/well-being</button>
-  <button class="filter-btn" onclick="filterSelection('Game')"> Game</button>
-  <button class="filter-btn" onclick="filterSelection('Wearables')"> Wearables</button>
-</div>
-
-			<div class=" filter-row">
-				<div class=" filter-column VR " data-aos="fade-up" data-aos-delay="0">
-					<div class="service grayscale filter-content">
-						<div class="service-img">
-							<a href="Tw.html"><img src="images/tw.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Twilight Rohingya</h3>
-							<p>We designed a 360  VR videos-based system to
-								depict real-life scenarios from a refugee camp with active
-								and passive navigation.</p>
-							<p class="mb-0"><a href="#" class="more">Learn more</a></p>
-						</div>
-
-					</div>
-				</div>
-				<div class=" filter-column ASD"  data-aos="fade-up" data-aos-delay="0">
-					<div class="service grayscale filter-content">
-						<div class="service-img">
-							<a href="#"><img src="images/VHASD.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Virtual Human for ASD</h3>
-							<p> The study aims to use virtual humans to teach children with
-								autism to express themselves through a conversational manner.</p>
-							<p class="mb-0"><a href="#" class="more">Learn more</a></p>
-						</div>
-
-					</div>
-				</div>
-				<div class=" filter-column ASD Game" data-aos="fade-up" data-aos-delay="0" >
-					<div class="service grayscale filter-content">
-						<div class="service-img">
-							<a href="#"><img src="images/star.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>StarRescue</h3>
-							<p>StarRescue is a two-player collaborative tablet game that aims
-								to enhance autistic children’s social skills. It augments
-								children’s attention paying to others, perspective-taking, and negotiation by visualizing the turn-taking collaboration process.</p>
-							<p class="mb-0"><a href="#" class="more">Learn more</a></p>
-						</div>
-
-					</div>
-				</div>
+        <a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+          <span></span>
+        </a>
+      </div>
+    </div>
+  </nav>
 
 
-				<div class=" filter-column ASD Privacy"  data-aos="fade-up" data-aos-delay="0">
-					<div class="service grayscale filter-content">
-						<div class="service-img">
-							<a href="Privacy_for_Families_with_Autism.html"><img src="images/family.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Privacy for Families with Autism</h3>
-							<p>This study explores the privacy issues among families with autism by interviewing parents of children with autism.
-								It collects perceptions and concerns of families with autism in their daily lives and information exchange online, and the protection behaviors they have taken.</p>
-							<p class="mb-0"><a href="#" class="more">Learn more</a></p>
-						</div>
+  <div class="hero   overlay">
+    <div class="container">
+      <div class="row section">
+        <div class="col-lg-6 col-xxl-10 mx-auto  ">
+          <h1 class="heading-2 text-white mb-3" data-aos="fade-up">Projects</h1>
+        </div>
+      </div>
+    </div>
+  </div>
 
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4 mb-lg-5 filter-column Health" data-aos="fade-up" data-aos-delay="0" >
-					<div class="service grayscale filter-content">
-						<div class="service-img">
-							<a href="Measuring_Anxiety.html"><img src="images/ma.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Measuring Anxiety</h3>
-							<p> The goal of this study is to use machine learning algorithms to measure,
-								predict and design interventions for stress and anxiety.
-								While the ability to detect, access, and intervene with such disorders is
-								crucial for the well-being of the general population,
-								traditional self-assessments for mental health have certain limitations due to their subject nature.
-								 </p>
-							<p class="mb-0"><a href="Measuring_Anxiety.html" class="more">Learn more</a></p>
-						</div>
+  <div class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="0">
+          <h2 class="mb-4">Complete Projects</h2>
+        </div>
+      </div>
 
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4 mb-lg-5 filter-column Wearables" data-aos="fade-up" data-aos-delay="0">
-					<div class="service grayscale filter-content">
-						<div class="service-img">
-							<a href="Entangled_Habitation.html"><img src="images/entan.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Entangled Habitation</h3>
-							<p>We explore the entangled habitation design concept to advocate a more-than-human perspective in human-nature interaction design. Following the entangled habitation design concept,
-								we implemented three plant-based wearables to reframe human interactions with plants.</p>
-							<p class="mb-0"><a href="Entangled_Habitation.html" class="more">Learn more</a></p>
-						</div>
+      <div id="filterBtn" data-aos="fade-up" data-aos-delay="0">
+        <button class="filter-btn filter-active" onclick="filterSelection('all')"> Show all</button>
+        <button class="filter-btn" onclick="filterSelection('VR')"> VR/AR</button>
+        <button class="filter-btn" onclick="filterSelection('ASD')"> ASD</button>
+        <button class="filter-btn" onclick="filterSelection('Old')"> Old adults</button>
+        <button class="filter-btn" onclick="filterSelection('Health')"> Health/well-being</button>
+        <button class="filter-btn" onclick="filterSelection('Game')"> Game</button>
+        <button class="filter-btn" onclick="filterSelection('Wearables')"> Wearables</button>
+				  <button class="filter-btn" onclick="filterSelection('social')"> Social Movements</button>
+      </div>
 
-					</div>
-				</div>
+      <div class=" filter-row">
+        <div class=" filter-column VR " data-aos="fade-up" data-aos-delay="0">
+          <div class="service grayscale filter-content">
+            <div class="service-img">
+              <a href="Tw.html"><img src="images/tw.jpg" alt="Image" class="img-fluid"></a>
+            </div>
+            <div class="service-inner">
+              <span></span>
+              <h3>Twilight Rohingya</h3>
+              <p>We designed a 360  VR videos-based system to
+                depict real-life scenarios from a refugee camp with active
+                and passive navigation.</p>
+              <p class="mb-0"><a href="Tw.html" class="more">Learn more</a></p>
+            </div>
 
-				<div class="col-lg-4 mb-4 mb-lg-5 filter-column Old"  data-aos="fade-up" data-aos-delay="0">
-					<div class="service grayscale filter-content">
-						<div class="service-img">
-							<a href="gran_tech.html"><img src="images/oldadult.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>I Never Imagined Grandma Could Do So Well with Technology</h3>
-							<p> Drawing on a qualitative study based on semi-structured interviews with 20 older adults and 18 younger ones in China,
-								we unpack this long-term process, as well as the evolving roles of family members</p>
-							<p class="mb-0"><a href="gran_tech.html" class="more">Learn more</a></p>
-						</div>
+          </div>
+        </div>
+        <div class=" filter-column ASD" data-aos="fade-up" data-aos-delay="0">
+          <div class="service grayscale filter-content">
+            <div class="service-img">
+              <a href="virtual_human_for_ASD.html"><img src="images/VHASD.jpg" alt="Image" class="img-fluid"></a>
+            </div>
+            <div class="service-inner">
+              <span></span>
+              <h3>Virtual Human for ASD</h3>
+              <p> The study aims to use virtual humans to teach children with
+                autism to express themselves through a conversational manner.</p>
+              <p class="mb-0"><a href="virtual_human_for_ASD.html" class="more">Learn more</a></p>
+            </div>
 
-					</div>
-				</div>
+          </div>
+        </div>
+        <div class=" filter-column ASD Game" data-aos="fade-up" data-aos-delay="0">
+          <div class="service grayscale filter-content">
+            <div class="service-img">
+              <a href="starescue.html"><img src="images/star.jpg" alt="Image" class="img-fluid"></a>
+            </div>
+            <div class="service-inner">
+              <span></span>
+              <h3>StarRescue</h3>
+              <p>StarRescue is a two-player collaborative tablet game that aims
+                to enhance autistic children’s social skills. It augments
+                children’s attention paying to others, perspective-taking, and negotiation by visualizing the turn-taking collaboration process.</p>
+              <p class="mb-0"><a href="starescue.html" class="more">Learn more</a></p>
+            </div>
+
+          </div>
+        </div>
 
 
-		</div>
-	</div>
+        <div class=" filter-column ASD Privacy" data-aos="fade-up" data-aos-delay="0">
+          <div class="service grayscale filter-content">
+            <div class="service-img">
+              <a href="Privacy_for_Families_with_Autism.html"><img src="images/family.jpg" alt="Image" class="img-fluid"></a>
+            </div>
+            <div class="service-inner">
+              <span></span>
+              <h3>Privacy for Families with Autism</h3>
+              <p>This study explores the privacy issues among families with autism by interviewing parents of children with
+								autism.</p>
+              <p class="mb-0"><a href="Privacy_for_Families_with_Autism.html" class="more">Learn more</a></p>
+            </div>
 
-	<div class="section bg-light">
-		<div class="container">
-			<div class="row justify-content-center mb-5">
-				<div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
-					<h2 class="mb-4">Ongoing Projects</h2>
-				</div>
-			</div>
+          </div>
+        </div>
+        <div class=" filter-column Health" data-aos="fade-up" data-aos-delay="0">
+          <div class="service grayscale filter-content">
+            <div class="service-img">
+              <a href="Measuring_Anxiety.html"><img src="images/ma.jpg" alt="Image" class="img-fluid"></a>
+            </div>
+            <div class="service-inner">
+              <span></span>
+              <h3>Measuring Anxiety</h3>
+              <p> The goal of this study is to use machine learning algorithms to measure,
+                predict and design interventions for stress and anxiety.
 
-			<div class="row ">
-				<div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="0">
-					<div class="service grayscale">
-						<div class="service-img">
-							<a href="VP.html"><img src="images/vp_pro.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Virtual Pet</h3>
-							<p>This project aims to design and generate virtual pets (VPs) based on their personality
-								and appearance traits. To understand how VPs' appearance traits relate to their personality,
-							we followed design guidelines from the Five Factor Model (FFM).</p>
-							<p class="mb-0"><a href="#" class="more">Learn more</a></p>
-						</div>
+              </p>
+              <p class="mb-0"><a href="Measuring_Anxiety.html" class="more">Learn more</a></p>
+            </div>
 
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="100">
-					<div class="service grayscale">
-						<div class="service-img">
-							<a href="#"><img src="images/null_pro.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Virtual Diagnostic</h3>
-							<p>  To design more comprehensive and feasible strategies for assessing
-								fear of intimacy, we turned to a Virtual Reality (VR) paradigm using role-play scenarios to evaluate the
-								in-game behavior of subjects, including decision-making, distance-to-a-character, and biometric data. </p>
-							<p class="mb-0"><a href="#" class="more">Learn more</a></p>
-						</div>
+          </div>
+        </div>
+        <div class=" filter-column Wearables" data-aos="fade-up" data-aos-delay="0">
+          <div class="service grayscale filter-content">
+            <div class="service-img">
+              <a href="Entangled_Habitation.html"><img src="images/entan.jpg" alt="Image" class="img-fluid"></a>
+            </div>
+            <div class="service-inner">
+              <span></span>
+              <h3>Entangled Habitation</h3>
+              <p>We explore the entangled habitation design concept to advocate a more-than-human perspective in human-nature interaction design.
+              </p>
+              <p class="mb-0"><a href="Entangled_Habitation.html" class="more">Learn more</a></p>
+            </div>
 
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
-					<div class="service grayscale">
-						<div class="service-img">
-							<a href="#"><img src="images/null_pro.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>VTuber Project</h3>
-							<p>To uncover the nuances in the creator's perceptions towards the creation of VTuber's avatars
-								and to understand potential challenges in the creating process. we developed an	assisting tool/system for the creator community to improve their working experiences of designing VTuber's avatars.</p>
-							<p class="mb-0"><a href="#" class="more">Learn more</a></p>
-						</div>
+          </div>
+        </div>
 
-					</div>
-				</div>
-			</div>
+        <div class=" filter-column Old" data-aos="fade-up" data-aos-delay="0">
+          <div class="service grayscale filter-content">
+            <div class="service-img">
+              <a href="gran_tech.html"><img src="images/oldadult.jpg" alt="Image" class="img-fluid"></a>
+            </div>
+            <div class="service-inner">
+              <span></span>
+              <h3>I Never Imagined Grandma Could Do So Well with Technology</h3>
+              <p> Drawing on a qualitative study based on semi-structured interviews with 20 older adults and 18 younger ones in China,
+                we unpack this long-term process, as well as the evolving roles of family members.</p>
+              <p class="mb-0"><a href="gran_tech.html" class="more">Learn more</a></p>
+            </div>
 
-			<div class="row ">
-				<div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="0">
-					<div class="service grayscale">
-						<div class="service-img">
-							<a href="ARgeo.html"><img src="images/argeo.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>AR Geo-location at DKU</h3>
-							<p>AR Geo-location at DKU is a location-based augmented reality App designed for DKU Community.
-								Community members scan the buildings around DKU campus to check out relevant information or
-								build up social interactions with others through this online platform.</p>
-							<p class="mb-0"><a href="ARgeo.html" class="more">Learn more</a></p>
-						</div>
+          </div>
+        </div>
 
-					</div>
-				</div>
-				<div class="col-lg-4 mb-4 mb-lg-55" data-aos="fade-up" data-aos-delay="100">
-					<div class="service grayscale">
-						<div class="service-img">
-							<a href="jbs.html"><img src="images/jbs.jpg" alt="Image" class="img-fluid"></a>
-						</div>
-						<div class="service-inner">
-							<span></span>
-							<h3>Role-playing Murder Mystery</h3>
-							<p>This study aims to generate a unified definition of Jubensha,
-								as well as investigate its impact on social interactions and players’
-								 emotion through various mechanisms within Jubensha. </p>
-							<p class="mb-0"><a href="jbs.html" class="more">Learn more</a></p>
-						</div>
+        <div class=" filter-column social" data-aos="fade-up" data-aos-delay="0">
+          <div class="service grayscale filter-content">
+            <div class="service-img">
+              <a href="blm.html"><img src="images/blm.jpg" alt="Image" class="img-fluid"></a>
+            </div>
+            <div class="service-inner">
+              <span></span>
+              <h3>What are People Talking about in #BackLivesMatter and #StopAsianHate</h3>
+              <p> We implemented: (1) Latent Dirichlet Allocation model to understand the high-level top words and topics,
+                and (2) open-coding analysis to identify specific themes from the tweets.
+								</p>
+              <p class="mb-0"><a href="blm.html" class="more">Learn more</a></p>
+            </div>
 
-					</div>
-				</div>
-				<!--
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="0">
+            <h2 class="mb-4">Ongoing Projects</h2>
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="0">
+            <div class="service grayscale">
+              <div class="service-img">
+                <a href="VP.html"><img src="images/vp_pro.jpg" alt="Image" class="img-fluid"></a>
+              </div>
+              <div class="service-inner">
+                <span></span>
+                <h3>Virtual Pet</h3>
+                <p>This project aims to design and generate virtual pets (VPs) based on their personality
+                  and appearance traits. To understand how VPs' appearance traits relate to their personality,
+                  we followed design guidelines from the Five Factor Model (FFM).</p>
+                <p class="mb-0"><a href="#" class="more">Learn more</a></p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="0">
+            <div class="service grayscale">
+              <div class="service-img">
+                <a href="#"><img src="images/null_pro.jpg" alt="Image" class="img-fluid"></a>
+              </div>
+              <div class="service-inner">
+                <span></span>
+                <h3>Virtual Diagnostic</h3>
+                <p> To design more comprehensive and feasible strategies for assessing
+                  fear of intimacy, we turned to a Virtual Reality (VR) paradigm using role-play scenarios to evaluate the
+                  in-game behavior of subjects, including decision-making, distance-to-a-character, and biometric data. </p>
+                <p class="mb-0"><a href="#" class="more">Learn more</a></p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="0">
+            <div class="service grayscale">
+              <div class="service-img">
+                <a href="#"><img src="images/null_pro.jpg" alt="Image" class="img-fluid"></a>
+              </div>
+              <div class="service-inner">
+                <span></span>
+                <h3>VTuber Project</h3>
+                <p>To uncover the nuances in the creator's perceptions towards the creation of VTuber's avatars
+                  and to understand potential challenges in the creating process. we developed an assisting tool/system for the creator community to improve their working experiences of designing VTuber's avatars.</p>
+                <p class="mb-0"><a href="#" class="more">Learn more</a></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="0">
+            <div class="service grayscale">
+              <div class="service-img">
+                <a href="ARgeo.html"><img src="images/argeo.jpg" alt="Image" class="img-fluid"></a>
+              </div>
+              <div class="service-inner">
+                <span></span>
+                <h3>AR Geo-location at DKU</h3>
+                <p>AR Geo-location at DKU is a location-based augmented reality App designed for DKU Community.
+                  Community members scan the buildings around DKU campus to check out relevant information or
+                  build up social interactions with others through this online platform.</p>
+                <p class="mb-0"><a href="ARgeo.html" class="more">Learn more</a></p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-55" data-aos="fade-up" data-aos-delay="0">
+            <div class="service grayscale">
+              <div class="service-img">
+                <a href="jbs.html"><img src="images/jbs.jpg" alt="Image" class="img-fluid"></a>
+              </div>
+              <div class="service-inner">
+                <span></span>
+                <h3>Role-playing Murder Mystery</h3>
+                <p>This study aims to generate a unified definition of Jubensha,
+                  as well as investigate its impact on social interactions and players’
+                  emotion through various mechanisms within Jubensha. </p>
+                <p class="mb-0"><a href="jbs.html" class="more">Learn more</a></p>
+              </div>
+
+            </div>
+          </div>
+          <!--
 				<div class="col-lg-4 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
 					<div class="service grayscale">
 						<div class="service-img">
@@ -325,94 +340,97 @@
 					</div>
 				</div> -->
 
-			</div>
+        </div>
 
-		</div>
-	</div>
-
-
+      </div>
+    </div>
 
 
-	<div class="site-footer">
- 		<div class="container">
- 			<div class="row">
- 				<div class="col-lg-4">
- 					<div class="widget">
- 						<h3>Contact</h3>
- 						<address>No. 8 Duke Avenue, Kunshan, Jiangsu Province, China 215316</address>
- 						<ul class="list-unstyled links">
- 							<li><a href="tel://11234567890">(123)-456-7890</a></li>
- 							<li><a href="tel://11234567890">+1(123)-456-7890</a></li>
- 							<li><a href="mailto:info@mydomain.com">xin.tong@dukekunshan.edu.cn</a></li>
- 						</ul>
- 					</div> <!-- /.widget -->
- 				</div> <!-- /.col-lg-4 -->
- 				<div class="col-lg-4">
- 					<div class="widget">
- 						<h3>Sources</h3>
- 						<ul class="list-unstyled float-start links">
- 							<li><a href="#">About us</a></li>
- 							<li><a href="#">Projects</a></li>
- 							<li><a href="#">Publications</a></li>
- 							<li><a href="#">People</a></li>
- 						</ul>
- 						<ul class="list-unstyled float-start links">
- 							<li><a href="#">Perspective Students</a></li>
- 							<li><a href="#">Collabration</a></li>
- 							<li><a href="#">Careers</a></li>
- 							<li><a href="#">Blog</a></li>
-
- 						</ul>
- 					</div> <!-- /.widget -->
- 				</div> <!-- /.col-lg-4 -->
- 				<div class="col-lg-4">
- 					<div class="widget">
- 						<h3>Links</h3>
- 						<ul class="list-unstyled links">
- 							<li><a href="https://dukekunshan.edu.cn/">Duke Kunshan University</a></li>
- 							<li><a href="#">Contact us</a></li>
- 						</ul>
-
- 						<ul class="list-unstyled social">
- 							<li><a href="#"><span class="icon-instagram"></span></a></li>
- 							<li><a href="#"><span class="icon-twitter"></span></a></li>
- 							<li><a href="#"><span class="icon-facebook"></span></a></li>
- 							<li><a href="#"><span class="icon-linkedin"></span></a></li>
- 							<li><a href="#"><span class="icon-pinterest"></span></a></li>
- 							<li><a href="#"><span class="icon-dribbble"></span></a></li>
- 						</ul>
- 					</div> <!-- /.widget -->
- 				</div> <!-- /.col-lg-4 -->
- 			</div> <!-- /.row -->
-
- 			<div class="row mt-5">
- 				<div class="col-12 text-center">
- 					<p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
- 						<a href="#" target="_blank" rel="nofollow noopener">DKU HCI Lab</a> &bullet;
- 						<a href="#" target="_blank" rel="nofollow noopener">License</a>
- 					</p>
- 				</div>
- 			</div>
- 		</div> <!-- /.container -->
- 	</div> <!-- /.site-footer -->
 
 
-	<!-- Preloader -->
-	<div id="overlayer"></div>
-	<div class="loader">
-		<div class="spinner-border" role="status">
-			<span class="visually-hidden">Loading...</span>
-		</div>
-	</div>
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Contact</h3>
+              <address>No. 8 Duke Avenue, Kunshan, Jiangsu Province, China 215316</address>
+              <ul class="list-unstyled links">
+                <li><a href="tel://11234567890">(123)-456-7890</a></li>
+                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                <li><a href="mailto:info@mydomain.com">xin.tong@dukekunshan.edu.cn</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Sources</h3>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">People</a></li>
+              </ul>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">Perspective Students</a></li>
+                <li><a href="#">Collabration</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Links</h3>
+              <ul class="list-unstyled links">
+                <li><a href="https://dukekunshan.edu.cn/">Duke Kunshan University</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                <li><a href="#"><span class="icon-dribbble"></span></a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-4 -->
+        </div> <!-- /.row -->
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <p class="mb-0">Copyright &copy;<script>
+                document.write(new Date().getFullYear());
+              </script>. All Rights Reserved. &mdash;
+              <a href="#" target="_blank" rel="nofollow noopener">DKU HCI Lab</a> &bullet;
+              <a href="#" target="_blank" rel="nofollow noopener">License</a>
+            </p>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </div> <!-- /.site-footer -->
 
 
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/tiny-slider.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/navbar.js"></script>
-	<script src="js/glightbox.min.js"></script>
-	<script src="js/rellax.min.js"></script>
-	<script src="js/custom.js"></script>
-  <script src="js/filter.js"></script>
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/filter.js"></script>
 </body>
+
 </html>
