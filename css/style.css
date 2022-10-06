@@ -2078,6 +2078,7 @@ textarea.form-control-lg {
   display: inline-block;
   margin-right: 1rem; }
 
+
 .btn-check {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -8640,11 +8641,14 @@ textarea.form-control-lg {
   position: relative; }
 
 .logo {
-  font-size: 24px;
-  color: #fff;
-  font-weight: 700; }
-  .logo:hover {
-    color: #fff; }
+position: absolute;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: -0.015em;
+color: #fff; }
 
 .site-nav {
   position: absolute;
@@ -8854,7 +8858,8 @@ textarea.form-control-lg {
         .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a img {
           max-width: 70px; }
         .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a:hover {
-          text-decoration: none; }
+          text-decoration: none;
+         }
   .site-mobile-menu .site-mobile-menu-body {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -9845,6 +9850,13 @@ a {
       .site-footer .social li a:hover {
         background: #000;
         color: #fff; }
+
+.wechat-qr{
+  position: relative;
+  margin-top: 5px;
+  width: 80px;
+  height: 80px;
+}
 
 /* filter*/
 
