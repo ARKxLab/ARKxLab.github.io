@@ -9861,7 +9861,7 @@ a {
 /* filter*/
 
 .filter-row {
-  margin: 12px -16px;
+  margin: 12px -20px;
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -9874,6 +9874,7 @@ a {
 .filter-column {
   float: left;
   width: 33.33%;
+  height: auto;
   display: none; /* Hide columns by default */
 }
 
