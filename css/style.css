@@ -9548,7 +9548,8 @@ a {
     padding: 30px;
     background-color: #fff;
     z-index: 2;
-    position: relative; }
+    position: relative;
+    height:300px; }
   .service .service-img {
     background-color: #000;
     z-index: 1;
