@@ -9640,7 +9640,7 @@ a {
 
 .testmonial {
   background: #fff;
-  padding: 30px;
+  padding: 10px;
   border-radius: 4px; }
   .testmonial .quote {
     font-size: 70px;
@@ -9650,14 +9650,14 @@ a {
     font-family: 'Times New Roman'; }
   .testmonial blockquote {
     font-size: 20px;
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
     .testmonial blockquote p {
       color: #000; }
   .testmonial .author > .pic {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 60px;
     flex: 0 0 60px;
-    margin-right: 20px; }
+    margin-right: 10px; }
     .testmonial .author > .pic img {
       border-radius: 50%; }
   .testmonial .author > .author-name h2, .testmonial .author > .author-name .h2 {
