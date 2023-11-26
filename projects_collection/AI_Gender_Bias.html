@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="author" content="dku hci lab">
+	<link rel="shortcut icon" href="../favicon.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../fonts/icomoon/style.css">
+	<link rel="stylesheet" href="../fonts/feather/style.css">
+
+	<link rel="stylesheet" href="../css/tiny-slider.css">
+	<link rel="stylesheet" href="../css/aos.css">
+	<link rel="stylesheet" href="../css/glightbox.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<title>AI Gender Bias</title>
+</head>
+
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav">
+		<div class="container">
+			<div class="site-navigation">
+				<a href="../index.html" class="logo m-0"><img src="../images/logo1.png" >DKU HCI Lab</a>
+				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+					<li><a href="../index.html">Home</a></li>
+	<!--
+					<li class="has-children">
+						<a href="../#">People</a>
+						<ul class="dropdown">
+							<li><a href="../#">Current People</a></li>
+							<li class="has-children">
+								<a href="../#">Prospected People</a>
+							</li>
+						</ul>
+					</li>
+				-->
+					<li class="active" ><a href="../projects.html">Projects</a></li>
+					<li><a href="../publications.html">Publications</a></li>
+					<li><a href="../people.html">People</a></li>
+					<li><a href="../perspective_stu.html">Perspective Students</a></li>
+ 				</ul>
+
+				<a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="hero v-h-full overlay">
+		<div class="img-bg rellax">
+			<img src="../projects_collection/projects_img/pixel_map/Cover.png" alt="Image" class="img-fluid">
+		</div>
+		<div class="container">
+			<div class="row align-items-center v-h-full">
+
+				<div class="col-lg-7 col-xxl-10 mx-auto text-center">
+					<h1 class="heading-2 text-white mb-3" data-aos="fade-up">“I'm Not Confident in Debiasing AI Systems Since I Know Too Little”</h1>
+					<p data-aos="fade-up" data-aos-delay="200" class="text-white lead mb-4">
+						Teaching AI Creators About Gender Bias Through Hands-on Tutorials.
+                    </p>
+ 				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+ 					<h2 class="mb-4">Study Motivation</h2>
+					<p class="mb-5">
+						Gender bias broadly exists in AI tools for recruitment, recommendation, and many other scenarios 
+                        that people regularly encounter. As a result, procedural and substantive injustices frequently arise 
+                        against women. For example: women receive fewer job posting advertisements on social media; medical 
+                        AI is less effective for women; and so on.
+                    </p>
+                    <p>
+                        Gender bias in AI thus remains a pressing issue, and AI creators are the ones who are responsible 
+                        for building bias-free AI systems. Yet, AI creators often lack knowledge of preventive measures to 
+                        avoid bias in AI applications. Male AI creators, who account for a significant portion of this 
+                        workforce, have less awareness of gender bias than female creators. Equipping AI creators with 
+                        both awareness and knowledge of AI gender bias is timely and important. However, little research 
+                        has been devoted to understanding how and how well AI gender bias is taught in CS/AI courses. 
+                        To our knowledge, there is only one AI gender bias education tool devoted to teaching this topic 
+                        to children and youth, effectively raising their awareness of gender bias in AI. However, this tool 
+                        is not suitable for AI creators who need more technical knowledge such as debiasing techniques. The 
+                        best way to introduce the topic of AI gender bias to AI creators remains under-investigated.
+					</p>
+
+					
+ 				</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="row">
+                    <h2 class="mb-4">Design</h2>
+                        <div class="col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="200">
+                        <p class="mb-5"> To bridge the above mentioned research gap, we designed hands-on tutorials to 
+                            teach AI gender bias to AI creators and equip them with awareness and practical knowledge. 
+                            At the awareness level, we intended to help them better recognize gender bias in AI and 
+                            motivate them to solve this issue. At the knowledge level, we intended to convey technical 
+                            knowledge, e.g., how gender bias is introduced into AI (sources of gender bias) and how 
+                            gender bias can be mitigated from AI (debiasing techniques). To engage the learners, we 
+                            designed the tutorials in a hands-on manner and used real-world scenarios, i.e., AI-based 
+                            recruitment, which helps organizations effectively source and screen candidates, and AI-based 
+                            autocomplete, which search engines use to complete searches that users start to type, to 
+                            facilitate the learning activities. To make the education more meaningful for real-world AI 
+                            development, we embedded technical knowledge (e.g., debiasing techniques) and components 
+                            (e.g., code, dataset) into the tutorials.
+
+                        </p>
+                    </div>
+    
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="200">
+                        <img src="../projects_collection/projects_img/AI_gender_bias/design.png" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+	
+
+<div class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 pe-lg-5" data-aos="fade-up">
+		<h2 class="mb-4">Evaluation</h2>
+		<p>
+			<br>
+			<br>
+			Eighteen AI creators evaluated our tutorials, including four AI researchers who focused on the technical 
+            aspects of AI, four AI/HCI researchers who focused on the user/society aspects of AI, three AI developers, 
+            two AI product managers, and five students who had learned AI. 
+        </p>
+					</div>
+				<div class="col-lg-6" >
+				<img src="../projects_collection/projects_img/AI_gender_bias/evaluation.png" alt="Image" class="img-fluid">
+			</div>
+
+	</div>
+</div>
+</div>
+
+<div class="section bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="container-fluid">
+				<div class="row">
+				<h2 class="mb-4">Results</h2>
+					<div class="col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="200">
+					<p class="mb-5"> The results demonstrate that TAR creates an effective and enjoyable learning platform, 
+						promoting children's acquisition of multi-scale geographical knowledge and enhancing spatial 
+						cognitive development, all while encouraging social interaction and engagement.
+					</p>
+				</div>
+
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="200">
+					<img src="../projects_collection/projects_img/pixel_map/Picture5.png" alt="Image" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<div class="section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md-8 col-lg-6" data-aos="fade-up">
+ 					<h2>The Team</h2>
+				</div>
+			</div>
+			<div class="row" data-aos="fade-up"  data-aos-delay="100">
+
+				<div class=" col-lg-4">
+					<div class="testmonial">
+
+						<div class="d-flex author align-items-center">
+						<div class="pic">
+								<img src="../images/xin.jpg" alt="Image" class="img-fluid">
+							</div>
+							<div class="author-name">
+								<h2>Xin Tong</h2>
+								<p>Project director: Dr. Xin Tong (PI)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" col-lg-4">
+					<div class="testmonial">
+						<div class="d-flex author align-items-center">
+						<div class="pic">
+								<img src="../images/yuhang.jpg" alt="Image" class="img-fluid">
+							</div>
+							<div class="author-name">
+								<h2>Yuhang Zhao</h2>
+								<p>Project Supervisor (Co-PI)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" col-lg-4">
+					<div class="testmonial">
+						<div class="d-flex author align-items-center">
+						<div class="pic">
+								<img src="../images/yuling.jpg" alt="Image" class="img-fluid">
+							</div>
+							<div class="author-name">
+								<h2>Yuling Sun</h2>
+								<p>Project Supervisor (Co-PI)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+				<div class="row" data-aos="fade-up"  data-aos-delay="100">
+					<div class="  col-lg-4">
+						<div class="testmonial">
+
+							<div class="d-flex author align-items-center">
+							<div class="pic">
+									<img src="../images/liwen.jpg" alt="Image" class="img-fluid">
+								</div>
+								<div class="author-name">
+									<h2>Liwen He</h2>
+									<p>Research Assistant</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="   col-lg-4">
+						<div class="testmonial">
+
+							<div class="d-flex author align-items-center">
+						 	<div class="pic">
+									<img src="../images/null.jpg" alt="Image" class="img-fluid">
+								</div>
+								<div class="author-name">
+									<h2>Yizhen Wu									</h2>
+									<p>Research Assistant</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class=" col-lg-4">
+						<div class="testmonial">
+
+							<div class="d-flex author align-items-center">
+						 	<div class="pic">
+									<img src="../images/null.jpg" alt="Image" class="img-fluid">
+								</div>
+								<div class="author-name">
+									<h2>Yu Li</h2>
+									<p>Research Assistant</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class=" col-lg-4">
+						<div class="testmonial">
+
+							<div class="d-flex author align-items-center">
+							<div class="pic">
+									<img src="../images/null.jpg" alt="Image" class="img-fluid">
+								</div>
+								<div class="author-name">
+									<h2>Jing Pu</h2>
+									<p>Research Assistant</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				
+				<div class=" col-lg-4">
+					<div class="testmonial">
+
+						<div class="d-flex author align-items-center">
+						<div class="pic">
+								<img src="../images/jerry.jpg" alt="Image" class="img-fluid">
+							</div>
+							<div class="author-name">
+								<h2>Weicheng Zheng</h2>
+								<p>Research Assistant</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>Contact</h3>
+						<address>No. 8 Duke Avenue, Kunshan, Jiangsu Province, China 215316</address>
+						<ul class="list-unstyled links">
+							<li><a href="tel://051236657440">(+86) 0512 3665 7740</a></li>
+							<li><a href="mailto:hcilab@dukekunshan.edu.cn">hcilab@dukekunshan.edu.cn</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>Sources</h3>
+						<ul class="list-unstyled float-start links">
+							<li><a href="https://dukekunshan.edu.cn/">Duke Kunshan University</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="publications.html">Publications</a></li>
+
+
+						</ul>
+						<ul class="list-unstyled float-start links">
+							<li><a href="people.html">People</a></li>
+							<li><a href="perspective_stu.html">Perspective Students</a></li>
+								<li><a href="contact.html">Contact us</a></li>
+
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>Follow Us</h3>
+						<ul class="list-unstyled float-start links">
+								<li><a href="https://space.bilibili.com/479380804"><img src="../images/bilibili.jpeg" alt="Wechat QR codee" class="wechat-qr"> </li></a>
+						</ul>
+						<ul class="list-unstyled float-start links">
+								<li><img src="../images/Wechat.jpeg" alt="Wechat QR codee" class="wechat-qr"> </li>
+						</ul>
+
+			<!--	 	<ul class="list-unstyled social">
+							<li><a href="#"><span class="icon-youtube"></span></a></li>
+							<li><a href="https://space.bilibili.com/479380804"><span class="icon-twitter"></span></a></li>
+							<li><a href="#"><span class="icon-facebook"></span></a></li>
+							<li><a href="#"><span class="icon-linkedin"></span></a></li>
+							<li><a href="#"><span class="icon-pinterest"></span></a></li>
+							<li><a href="#"><span class="icon-dribbble"></span></a></li>
+						</ul> -->
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-4 -->
+			</div> <!-- /.row -->
+
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+						<a href="#" target="_blank" rel="nofollow noopener">DKU HCI Lab</a> &bullet;
+						<a href="#" target="_blank" rel="nofollow noopener">License</a>
+					</p>
+				</div>
+			</div>
+		</div> <!-- /.container -->
+	</div> <!-- /.site-footer -->
+
+
+	<!-- Preloader -->
+	<div id="overlayer"></div>
+	<div class="loader">
+		<div class="spinner-border" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+
+
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="../js/tiny-slider.js"></script>
+	<script src="../js/aos.js"></script>
+	<script src="../js/navbar.js"></script>
+	<script src="../js/glightbox.min.js"></script>
+	<script src="../js/rellax.min.js"></script>
+	<script src="../js/custom.js"></script>
+</body>
+</html>
