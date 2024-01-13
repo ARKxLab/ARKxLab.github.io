@@ -9111,6 +9111,19 @@ a {
     .heading-2 {
       font-size: 40px; } }
 
+.heading-21 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Playfair Display', serif; }
+  @media (max-width: 991.98px) {
+    .heading-21 {
+      font-size: 60px; } }
+  @media (max-width: 991.98px) {
+    .heading-21 {
+      font-size: 40px; } }
+<!-- Added to make some of the projects titles smaller Not an expert this may be wrong.--->
+
 .heading {
   font-size: 80px;
   line-height: 1;
