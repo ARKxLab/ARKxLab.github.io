@@ -9146,7 +9146,7 @@ a {
     }
 
     .hero2 .container {
-        display: none; /* 直接隐藏内部内容，比如 h1 */
+        display: block; /* 直接隐藏内部内容，比如 h1 */
     }
 
 .heading-2 {
