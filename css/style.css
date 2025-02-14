@@ -1,4 +1,4 @@
-/*
+﻿/*
 * Template Name: Medio
 * Template Author: Untree.co
 * Template License: https://creativecommons.org/licenses/by/3.0/
@@ -6326,9 +6326,15 @@ textarea.form-control-lg {
 
 .text-dark {
   color: #212529 !important; }
-
+.text-blue {
+    color: darkblue !important;
+}
 .text-white {
   color: #fff !important; }
+
+.text-black{
+    color: #000 !important;
+}
 
 .text-body {
   color: #212529 !important; }
@@ -9075,40 +9081,26 @@ a {
   a:hover {
     color: #000; }
 
-.hero, .bg-image {
-  background-color: #000;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden;
-  -o-object-fit: cover;
-  object-fit: cover; }
-  .hero img, .bg-image img {
-    position: absolute;
-    -webkit-transform: scale(1.3) translate(0%, -15%);
-    -ms-transform: scale(1.3) translate(0%, -15%);
-    transform: scale(1.3) translate(0%, -15%); }
-  .hero a, .bg-image a {
-    color: #fff; }
-  .hero.overlay, .bg-image.overlay {
-    position: relative; }
-    .hero.overlay:before, .bg-image.overlay:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-      background-color: rgba(0, 0, 0, 0.4); }
-    .hero.overlay > .container, .bg-image.overlay > .container {
-      position: relative;
-      z-index: 2; }
-  .hero svg, .bg-image svg {
-    position: absolute;
-    bottom: 0;
-    left: 0; }
+.hero {
+    background-color: #000; /* 纯黑背景 */
+    height: 60px; /* 调整为窄条 */
+    width: 100%; /* 占满宽度 */
+    position: relative;
+    overflow: hidden; /* 防止多余内容显示 */
+
+}
+
+    .hero img {
+        display: none; /* 移除 hero 里的背景图片 */
+    }
+
+    .hero.overlay:before {
+        display: none; /* 移除黑色半透明遮罩 */
+    }
+
+    .hero .container {
+        display: none; /* 直接隐藏内部内容，比如 h1 */
+    }
 
 .heading-2 {
   font-size: 90px;
@@ -9163,8 +9155,8 @@ a {
       padding-bottom: 2rem; } }
 
 .section {
-  padding-top: 7rem;
-  padding-bottom: 7rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .number {
   font-size: 70px;
@@ -9583,6 +9575,100 @@ a {
     transition: .3s all ease; }
   .service p {
     color: #52565e; }
+.service-wide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: .3s all ease;
+    position: relative;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%; /* 防止超出 */
+    height: 200px; /* 确保高度固定，形成长条 */
+}
+
+    .service-wide:hover {
+        box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+        top: -4px;
+    }
+
+    
+    .service-wide .service-img {
+        width: 25%;
+        height: 100%;
+        overflow: hidden;
+        position: relative; /* 使标签相对于图片定位 */
+    }
+
+        /* 创建标签样式 */
+        .service-wide .service-img .label {
+            position: absolute;
+            top: 10px; /* 距离顶部10px */
+            left: 10px; /* 距离左侧10px */
+            padding: 5px 10px;
+            background-color: rgba(0, 0, 0, 0.6); /* 半透明黑色背景 */
+            color: #fff; /* 白色文字 */
+            font-size: 14px; /* 文字大小 */
+            font-weight: bold; /* 加粗文字 */
+            border-radius: 5px; /* 圆角矩形 */
+            z-index: 10; /* 确保标签显示在图片之上 */
+        }
+
+        .service-wide .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 保持比例填充 */
+        }
+
+    /* 🎯 让 .service-inner 只占 40% */
+    .service-wide .service-inner {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .service-wide h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .service-wide p {
+        color: #52565e;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    /* 按钮容器样式 */
+    /* 按钮容器样式 */
+    .service-wide .service-inner .buttons {
+        display: flex;
+        gap: 10px; /* 设置按钮之间的间距 */
+        margin-top: 10px; /* 上方间距 */
+    }
+
+        /* 单个按钮的样式 */
+        .service-wide .service-inner .buttons .btn-tag {
+            padding: 5px 15px;
+            background-color: transparent; /* 背景透明 */
+            color: #000; /* 文字颜色为黑色 */
+            font-size: 12px; /* 文字大小 */
+            border: 1px solid rgba(0, 0, 0, 0.6); /* 黑色边框，稍微透明 */
+            border-radius: 5px; /* 圆角矩形 */
+            cursor: pointer; /* 鼠标指针样式 */
+            transition: all 0.3s ease; /* 动画效果 */
+        }
+
+            /* 鼠标悬停时按钮样式 */
+            .service-wide .service-inner .buttons .btn-tag:hover {
+                background-color: rgba(0, 0, 0, 0.1); /* 鼠标悬停时稍微变亮的透明背景 */
+                color: #000; /* 保持文字颜色 */
+                border-color: rgba(0, 0, 0, 0.8); /* 悬停时边框颜色加深 */
+            }
+
+
 
 .subheading {
   text-transform: uppercase;
@@ -9887,7 +9973,9 @@ a {
 /* filter*/
 
 .filter-row {
-  margin: 12px -20px;
+    margin: 12px -20px;
+    display: flex;
+    flex-wrap: wrap
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -9903,6 +9991,10 @@ a {
   height: auto;
   display: none; /* Hide columns by default */
 }
+    .filter-column.full-width {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 
 /* Clear floats after rows */
 .filter-row:after {
@@ -9963,4 +10055,91 @@ a {
   background-color: #000;
   color: white;
   border-color: #000;
+}
+
+.publication-container {
+    display: flex;
+    flex-direction: column; /* 确保内容垂直堆叠 */
+    align-items: center; /* 水平居中 */
+    padding: 70px 65px; /* 调整上下 padding 为 50px，左右 padding 为 200px */
+    max-width: 1300px; /* 限制最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+}
+
+/* 标题样式 */
+.publication-title {
+    font-size: 2.5rem; /* 调整字体大小 */
+    font-weight: 700; /* 加粗标题 */
+    color: #333; /* 标题颜色 */
+    margin-bottom: 20px; /* 下边距 */
+    line-height: 1.3; /* 调整行高 */
+    text-align: center; /* 水平居中文本 */
+    width: 100%; /* 确保元素占满整个可用宽度 */
+}
+
+
+/* 作者信息样式 */
+.publication-authors {
+    font-size: 1.2rem;
+    color: #555; /* 淡灰色 */
+    margin-bottom: 30px;
+    text-align: center; /* 中心对齐 */
+}
+
+    /* superscript 样式 */
+    .publication-authors sup {
+        font-size: 0.8rem;
+        vertical-align: super;
+    }
+
+/* 摘要样式 */
+.publication-abstract {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+/* 链接按钮样式 */
+.publication-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+    .publication-links a {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 12px 20px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #3498db; /* 按钮颜色 */
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s, transform 0.2s; /* 动画效果 */
+    }
+
+        /* 按钮悬停效果 */
+        .publication-links a:hover {
+            background-color: #2980b9; /* 悬停时背景色 */
+            transform: translateY(-3px); /* 向上偏移 */
+        }
+
+/* 响应式设计 */
+@media (max-width: 767.98px) {
+    .publication-title {
+        font-size: 2.5rem; /* 调整小屏幕下标题字体大小 */
+    }
+
+    .publication-authors {
+        font-size: 1rem; /* 调整小屏幕下作者字体大小 */
+    }
+
+    .publication-abstract {
+        font-size: 1rem; /* 调整摘要字体大小 */
+    }
+
+    .publication-links a {
+        font-size: 0.9rem; /* 调整链接按钮字体大小 */
+    }
 }
