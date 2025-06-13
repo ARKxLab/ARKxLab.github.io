@@ -89,75 +89,104 @@
 // 	window.siteMenuClone = siteMenuClone;
 
 // })()
+// (function () {
+//   'use strict';
+
+//   function siteMenuClone() {
+//     const jsCloneNavs = document.querySelectorAll('.js-clone-nav');
+//     const siteMobileMenuBody = document.querySelector('.site-mobile-menu-body');
+//     if (!siteMobileMenuBody || jsCloneNavs.length === 0) return;
+
+//     // Clear previous clones to avoid duplicates
+//     siteMobileMenuBody.innerHTML = '';
+
+//     // Clone navigation into mobile menu
+//     jsCloneNavs.forEach(nav => {
+//       const navCloned = nav.cloneNode(true);
+//       navCloned.className = 'site-nav-wrap'; // Better than setAttribute
+//       siteMobileMenuBody.appendChild(navCloned);
+//     });
+
+//     // Setup collapsible dropdowns
+//     setTimeout(() => {
+//       document.querySelectorAll('.site-mobile-menu .has-children').forEach((item, index) => {
+//         const link = item.querySelector('a');
+//         const dropdown = item.querySelector('.dropdown');
+
+//         if (!link || !dropdown) return;
+
+//         const toggleBtn = document.createElement('span');
+//         toggleBtn.className = 'arrow-collapse collapsed';
+//         toggleBtn.setAttribute('data-bs-toggle', 'collapse');
+//         toggleBtn.setAttribute('data-bs-target', `#collapseItem${index}`);
+
+//         item.insertBefore(toggleBtn, link);
+//         dropdown.className = 'collapse'; // overwrite existing class
+//         dropdown.id = `collapseItem${index}`;
+//       });
+//     }, 10); // fast enough after DOM is manipulated
+
+//     // Handle menu toggle
+//     const toggles = document.querySelectorAll('.js-menu-toggle');
+//     toggles.forEach(toggle => {
+//       toggle.addEventListener('click', e => {
+//         e.preventDefault();
+//         const isActive = document.body.classList.toggle('offcanvas-menu');
+//         toggle.classList.toggle('active', isActive);
+//       });
+//     });
+
+//     // Close menu when clicking outside
+//     document.addEventListener('click', e => {
+//       const menu = document.querySelector('.site-mobile-menu');
+//       const clickedInsideMenu = menu && menu.contains(e.target);
+//       const clickedToggle = Array.from(toggles).some(toggle => toggle.contains(e.target));
+
+//       if (!clickedInsideMenu && !clickedToggle) {
+//         document.body.classList.remove('offcanvas-menu');
+//         toggles.forEach(t => t.classList.remove('active'));
+//       }
+//     });
+//   }
+
+//   // Auto-run on DOM ready
+//   if (document.readyState !== 'loading') {
+//     siteMenuClone();
+//   } else {
+//     document.addEventListener('DOMContentLoaded', siteMenuClone);
+//   }
+
+//   // Expose to global scope
+//   window.siteMenuClone = siteMenuClone;
+// })();
+
+
 (function () {
   'use strict';
 
-  function siteMenuClone() {
-    const jsCloneNavs = document.querySelectorAll('.js-clone-nav');
-    const siteMobileMenuBody = document.querySelector('.site-mobile-menu-body');
-    if (!siteMobileMenuBody || jsCloneNavs.length === 0) return;
-
-    // Clear previous clones to avoid duplicates
-    siteMobileMenuBody.innerHTML = '';
-
-    // Clone navigation into mobile menu
-    jsCloneNavs.forEach(nav => {
-      const navCloned = nav.cloneNode(true);
-      navCloned.className = 'site-nav-wrap'; // Better than setAttribute
-      siteMobileMenuBody.appendChild(navCloned);
-    });
-
-    // Setup collapsible dropdowns
-    setTimeout(() => {
-      document.querySelectorAll('.site-mobile-menu .has-children').forEach((item, index) => {
-        const link = item.querySelector('a');
-        const dropdown = item.querySelector('.dropdown');
-
-        if (!link || !dropdown) return;
-
-        const toggleBtn = document.createElement('span');
-        toggleBtn.className = 'arrow-collapse collapsed';
-        toggleBtn.setAttribute('data-bs-toggle', 'collapse');
-        toggleBtn.setAttribute('data-bs-target', `#collapseItem${index}`);
-
-        item.insertBefore(toggleBtn, link);
-        dropdown.className = 'collapse'; // overwrite existing class
-        dropdown.id = `collapseItem${index}`;
-      });
-    }, 10); // fast enough after DOM is manipulated
-
-    // Handle menu toggle
-    const toggles = document.querySelectorAll('.js-menu-toggle');
-    toggles.forEach(toggle => {
+  function initMobileMenu() {
+    // Toggle menu on burger click
+    document.querySelectorAll('.js-menu-toggle').forEach(toggle => {
       toggle.addEventListener('click', e => {
         e.preventDefault();
-        const isActive = document.body.classList.toggle('offcanvas-menu');
-        toggle.classList.toggle('active', isActive);
+        document.body.classList.toggle('offcanvas-menu');
+        toggle.classList.toggle('active');
       });
     });
 
     // Close menu when clicking outside
     document.addEventListener('click', e => {
       const menu = document.querySelector('.site-mobile-menu');
-      const clickedInsideMenu = menu && menu.contains(e.target);
-      const clickedToggle = Array.from(toggles).some(toggle => toggle.contains(e.target));
+      const toggles = document.querySelectorAll('.js-menu-toggle');
+      const clickedInside = menu && menu.contains(e.target);
+      const clickedToggle = Array.from(toggles).some(t => t.contains(e.target));
 
-      if (!clickedInsideMenu && !clickedToggle) {
+      if (!clickedInside && !clickedToggle) {
         document.body.classList.remove('offcanvas-menu');
         toggles.forEach(t => t.classList.remove('active'));
       }
     });
   }
 
-  // Auto-run on DOM ready
-  if (document.readyState !== 'loading') {
-    siteMenuClone();
-  } else {
-    document.addEventListener('DOMContentLoaded', siteMenuClone);
-  }
-
-  // Expose to global scope
-  window.siteMenuClone = siteMenuClone;
+  document.addEventListener('DOMContentLoaded', initMobileMenu);
 })();
-
-
