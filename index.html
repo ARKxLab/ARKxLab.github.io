@@ -551,11 +551,16 @@
 			.then(res => res.text())
 			.then(html => {
 			document.getElementById('header-placeholder').innerHTML = html;
-			if (typeof siteMenuClone === 'function') {
+
+			// Ensure DOM is rendered before running clone logic
+			setTimeout(() => {
+				if (typeof siteMenuClone === 'function') {
 				siteMenuClone();
-			}
+				}
+			}, 50); // ✅ this short delay ensures new HTML is mounted
 			});
 		</script>
+
 
 
 </body>
