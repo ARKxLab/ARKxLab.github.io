@@ -547,19 +547,44 @@
 		<script src="js/rellax.min.js"></script>
 		<script src="js/custom.js"></script>
 		<script>
-		fetch('includes/header-dark.html')
+		fetch('includes/header-dark.html') // use './includes/' if needed
 			.then(res => res.text())
 			.then(html => {
-			document.getElementById('header-placeholder').innerHTML = html;
+			const tempDiv = document.createElement('div');
+			tempDiv.innerHTML = html;
 
-			// Ensure DOM is rendered before running clone logic
+			// ✅ Detect depth (e.g., /index.html → depth 0, /projects/abc.html → depth 1)
+			const depth = location.pathname.split('/').filter(p => p).length - 1;
+			const prefix = '../'.repeat(depth);
+
+			// ✅ Fix hrefs
+			tempDiv.querySelectorAll('[href]').forEach(el => {
+				const href = el.getAttribute('href');
+				if (href && !href.startsWith('http') && !href.startsWith('/') && !href.startsWith('#')) {
+				el.setAttribute('href', prefix + href);
+				}
+			});
+
+			// ✅ Fix srcs (for images, icons, etc.)
+			tempDiv.querySelectorAll('[src]').forEach(el => {
+				const src = el.getAttribute('src');
+				if (src && !src.startsWith('http') && !src.startsWith('/') && !src.startsWith('data:')) {
+				el.setAttribute('src', prefix + src);
+				}
+			});
+
+			// ✅ Inject modified header
+			document.getElementById('header-placeholder').innerHTML = tempDiv.innerHTML;
+
+			// ✅ Re-run menu logic after load
 			setTimeout(() => {
 				if (typeof siteMenuClone === 'function') {
 				siteMenuClone();
 				}
-			}, 50); // ✅ this short delay ensures new HTML is mounted
+			}, 50);
 			});
 		</script>
+
 
 
 
