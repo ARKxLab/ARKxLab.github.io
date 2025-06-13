@@ -549,8 +549,15 @@
 		<script>
 		fetch('includes/header-dark.html')
 			.then(res => res.text())
-			.then(text => document.getElementById('header-placeholder').innerHTML = text);
+			.then(text => {
+			document.getElementById('header-placeholder').innerHTML = text;
+
+			// 👇 These lines ensure your navbar JS re-applies to the newly inserted header
+			if (typeof siteMenuClone === 'function') siteMenuClone();
+			if (typeof siteMenuToggle === 'function') siteMenuToggle(); // example name
+			});
 </script>
+
 </body>
 
 </html>
