@@ -547,40 +547,17 @@
 		<script src="js/rellax.min.js"></script>
 		<script src="js/custom.js"></script>
 		<script>
-			fetch('includes/header-dark.html')
-				.then(res => res.text())
-				.then(html => {
-					const tempDiv = document.createElement('div');
-					tempDiv.innerHTML = html;
+		fetch('includes/header-dark.html')
+			.then(res => {
+				if (!res.ok) throw new Error('Failed to load header');
+				return res.text();
+			})
+			.then(html => {
+				document.getElementById('header-placeholder').innerHTML = html;
+				siteMenuClone();
+			})
+			.catch(err => console.error('Header load error:', err));
 
-					// Determine path depth to root (e.g., /index.html → 0, /projects/abc.html → 1)
-					const depth = location.pathname.split('/').filter(p => p).length - 1;
-					const prefix = '../'.repeat(depth);
-
-					// Prefix relative hrefs
-					tempDiv.querySelectorAll('[href]').forEach(el => {
-						const href = el.getAttribute('href');
-						if (href && !/^(?:[a-z]+:|#|\/)/i.test(href)) {
-							el.setAttribute('href', prefix + href);
-						}
-					});
-
-					// Prefix relative srcs
-					tempDiv.querySelectorAll('[src]').forEach(el => {
-						const src = el.getAttribute('src');
-						if (src && !/^(?:[a-z]+:|\/|data:)/i.test(src)) {
-							el.setAttribute('src', prefix + src);
-						}
-					});
-
-					// Inject modified HTML
-					document.getElementById('header-placeholder')?.replaceChildren(...tempDiv.childNodes);
-
-					// Call mobile menu logic after DOM insertion
-					if (typeof siteMenuClone === 'function') {
-						setTimeout(siteMenuClone, 10);
-					}
-				});
 		</script>
 
 </body>
