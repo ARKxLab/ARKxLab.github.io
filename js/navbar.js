@@ -85,6 +85,7 @@
 
 	}; 
 	siteMenuClone();
-
+	// 🔁 Make it globally accessible for dynamic header injection
+	window.siteMenuClone = siteMenuClone;
 
 })()
