@@ -547,42 +547,10 @@
 		<script src="js/rellax.min.js"></script>
 		<script src="js/custom.js"></script>
 		<script>
-		fetch('includes/header-dark.html')  // adjust the path if needed
+		fetch('includes/header-dark.html')
 			.then(res => res.text())
-			.then(html => {
-			const tempDiv = document.createElement('div');
-			tempDiv.innerHTML = html;
-
-			const depth = location.pathname.split('/').filter(p => p).length - 1;
-			const prefix = '../'.repeat(depth);
-
-			// Fix relative href/src
-			tempDiv.querySelectorAll('[href]').forEach(el => {
-				const href = el.getAttribute('href');
-				if (href && !href.startsWith('http') && !href.startsWith('/') && !href.startsWith('#')) {
-				el.setAttribute('href', prefix + href);
-				}
-			});
-			tempDiv.querySelectorAll('[src]').forEach(el => {
-				const src = el.getAttribute('src');
-				if (src && !src.startsWith('http') && !src.startsWith('/') && !src.startsWith('data:')) {
-				el.setAttribute('src', prefix + src);
-				}
-			});
-
-			document.getElementById('header-placeholder').innerHTML = tempDiv.innerHTML;
-
-			// Re-run mobile menu logic if defined
-			setTimeout(() => {
-				if (typeof siteMenuClone === 'function') siteMenuClone();
-			}, 50);
-			});
-		</script>
-
-
-
-
-
+			.then(text => document.getElementById('header-placeholder').innerHTML = text);
+</script>
 </body>
 
 </html>

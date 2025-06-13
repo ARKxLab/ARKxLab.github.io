@@ -145,14 +145,14 @@
       }
     });
   }
+  siteMenuClone();
+//   // Run it if DOM is ready
+//   if (document.readyState !== 'loading') {
+//     siteMenuClone();
+//   } else {
+//     document.addEventListener('DOMContentLoaded', siteMenuClone);
+//   }
 
-  // Run it if DOM is ready
-  if (document.readyState !== 'loading') {
-    siteMenuClone();
-  } else {
-    document.addEventListener('DOMContentLoaded', siteMenuClone);
-  }
-
-  // 👇 expose globally
-  window.siteMenuClone = siteMenuClone;
+//   // 👇 expose globally
+//   window.siteMenuClone = siteMenuClone;
 })();
