@@ -90,8 +90,73 @@
 
 // })()
 
-(function() {
-  'use strict';
+// (function() {
+//   'use strict';
+
+//   function siteMenuClone() {
+//     const jsCloneNavs = document.querySelectorAll('.js-clone-nav');
+//     const siteMobileMenuBody = document.querySelector('.site-mobile-menu-body');
+//     if (!siteMobileMenuBody || jsCloneNavs.length === 0) return;
+
+//     siteMobileMenuBody.innerHTML = '';
+//     jsCloneNavs.forEach(nav => {
+//       const navCloned = nav.cloneNode(true);
+//       navCloned.setAttribute('class', 'site-nav-wrap');
+//       siteMobileMenuBody.appendChild(navCloned);
+//     });
+
+//     // Dropdown toggles
+//     setTimeout(() => {
+//       document.querySelectorAll('.site-mobile-menu .has-children').forEach((hasChild, i) => {
+//         const refEl = hasChild.querySelector('a');
+//         const newElSpan = document.createElement('span');
+//         newElSpan.setAttribute('class', 'arrow-collapse collapsed');
+//         newElSpan.setAttribute('data-bs-toggle', 'collapse');
+//         newElSpan.setAttribute('data-bs-target', '#collapseItem' + i);
+
+//         hasChild.insertBefore(newElSpan, refEl);
+
+//         const dropdown = hasChild.querySelector('.dropdown');
+//         if (dropdown) {
+//           dropdown.setAttribute('class', 'collapse');
+//           dropdown.setAttribute('id', 'collapseItem' + i);
+//         }
+//       });
+//     }, 10); // 🔁 reduce to 10ms to avoid missing timing
+
+//     // Menu toggle
+//     const toggles = document.querySelectorAll('.js-menu-toggle');
+//     toggles.forEach(toggle => {
+//       toggle.addEventListener('click', e => {
+//         e.preventDefault();
+//         document.body.classList.toggle('offcanvas-menu');
+//         toggle.classList.toggle('active');
+//       });
+//     });
+
+//     // Close menu on outside click
+//     document.addEventListener('click', e => {
+//       const menu = document.querySelector('.site-mobile-menu');
+//       const isClickInside = menu && menu.contains(e.target);
+//       const isBurger = Array.from(toggles).some(t => t.contains(e.target));
+//       if (!isClickInside && !isBurger) {
+//         document.body.classList.remove('offcanvas-menu');
+//         toggles.forEach(t => t.classList.remove('active'));
+//       }
+//     });
+//   }
+// //   siteMenuClone();
+//   // Run it if DOM is ready
+//   if (document.readyState !== 'loading') {
+//     siteMenuClone();
+//   } else {
+//     document.addEventListener('DOMContentLoaded', siteMenuClone);
+//   }
+
+//   // 👇 expose globally
+//   window.siteMenuClone = siteMenuClone;
+// })();
+
 
   function siteMenuClone() {
     const jsCloneNavs = document.querySelectorAll('.js-clone-nav');
@@ -145,14 +210,13 @@
       }
     });
   }
-  siteMenuClone();
-//   // Run it if DOM is ready
-//   if (document.readyState !== 'loading') {
-//     siteMenuClone();
-//   } else {
-//     document.addEventListener('DOMContentLoaded', siteMenuClone);
-//   }
+//   siteMenuClone();
+  // Run it if DOM is ready
+  if (document.readyState !== 'loading') {
+    siteMenuClone();
+  } else {
+    document.addEventListener('DOMContentLoaded', siteMenuClone);
+  }
 
-//   // 👇 expose globally
-//   window.siteMenuClone = siteMenuClone;
-})();
+  // 👇 expose globally
+  window.siteMenuClone = siteMenuClone;

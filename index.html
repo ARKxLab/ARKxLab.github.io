@@ -549,8 +549,11 @@
 		<script>
 		fetch('includes/header-dark.html')
 			.then(res => res.text())
-			.then(text => document.getElementById('header-placeholder').innerHTML = text);
-</script>
+			.then(html => {
+			document.getElementById('header-placeholder').innerHTML = html;
+			siteMenuClone(); // ✅ Re-run this after injecting header HTML
+			});
+		</script>
 </body>
 
 </html>
