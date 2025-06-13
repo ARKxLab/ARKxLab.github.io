@@ -165,8 +165,11 @@
   'use strict';
 
   function initMobileMenu() {
-    // Toggle menu on burger click
-    document.querySelectorAll('.js-menu-toggle').forEach(toggle => {
+    const toggles = document.querySelectorAll('.js-menu-toggle');
+    const menu = document.querySelector('.site-mobile-menu');
+
+    // Toggle the menu
+    toggles.forEach(toggle => {
       toggle.addEventListener('click', e => {
         e.preventDefault();
         document.body.classList.toggle('offcanvas-menu');
@@ -176,11 +179,8 @@
 
     // Close menu when clicking outside
     document.addEventListener('click', e => {
-      const menu = document.querySelector('.site-mobile-menu');
-      const toggles = document.querySelectorAll('.js-menu-toggle');
       const clickedInside = menu && menu.contains(e.target);
       const clickedToggle = Array.from(toggles).some(t => t.contains(e.target));
-
       if (!clickedInside && !clickedToggle) {
         document.body.classList.remove('offcanvas-menu');
         toggles.forEach(t => t.classList.remove('active'));
