@@ -96,63 +96,58 @@
     const jsCloneNavs = document.querySelectorAll('.js-clone-nav');
     const siteMobileMenuBody = document.querySelector('.site-mobile-menu-body');
 
-    // Clear existing mobile nav items
-    siteMobileMenuBody.innerHTML = '';
+    if (!jsCloneNavs.length || !siteMobileMenuBody) return;
 
-    // Clone nav items
+    // Clear and clone
+    siteMobileMenuBody.innerHTML = '';
     jsCloneNavs.forEach(nav => {
-      const navCloned = nav.cloneNode(true);
-      navCloned.setAttribute('class', 'site-nav-wrap');
-      siteMobileMenuBody.appendChild(navCloned);
+      const cloned = nav.cloneNode(true);
+      cloned.setAttribute('class', 'site-nav-wrap');
+      siteMobileMenuBody.appendChild(cloned);
     });
 
-    // Setup collapsible dropdowns
+    // Set up collapsible dropdowns
     setTimeout(() => {
-      const hasChildrenItems = document.querySelectorAll('.site-mobile-menu .has-children');
+      const items = document.querySelectorAll('.site-mobile-menu .has-children');
       let counter = 0;
-
-      hasChildrenItems.forEach(item => {
+      items.forEach(item => {
         const link = item.querySelector('a');
         const dropdown = item.querySelector('.dropdown');
-
         if (!link || !dropdown) return;
 
-        const arrowCollapse = document.createElement('span');
-        arrowCollapse.className = 'arrow-collapse collapsed';
-        arrowCollapse.setAttribute('data-bs-toggle', 'collapse');
-        arrowCollapse.setAttribute('data-bs-target', `#collapseItem${counter}`);
+        const arrow = document.createElement('span');
+        arrow.className = 'arrow-collapse collapsed';
+        arrow.setAttribute('data-bs-toggle', 'collapse');
+        arrow.setAttribute('data-bs-target', `#collapseItem${counter}`);
+        item.insertBefore(arrow, link);
 
-        item.insertBefore(arrowCollapse, link);
         dropdown.classList.add('collapse');
         dropdown.setAttribute('id', `collapseItem${counter}`);
-
         counter++;
       });
     }, 10);
 
-    // Toggle menu
-    const menuToggles = document.querySelectorAll('.js-menu-toggle');
-    menuToggles.forEach(toggle => {
+    // Menu toggle
+    const toggles = document.querySelectorAll('.js-menu-toggle');
+    toggles.forEach(toggle => {
       toggle.addEventListener('click', e => {
         e.preventDefault();
-        const isOpen = document.body.classList.toggle('offcanvas-menu');
-        toggle.classList.toggle('active', isOpen);
+        document.body.classList.toggle('offcanvas-menu');
+        toggle.classList.toggle('active');
       });
     });
 
     // Click outside to close
     document.addEventListener('click', e => {
       const menu = document.querySelector('.site-mobile-menu');
-      const clickedInsideMenu = menu && menu.contains(e.target);
-      const clickedToggle = Array.from(menuToggles).some(t => t.contains(e.target));
-
-      if (!clickedInsideMenu && !clickedToggle) {
+      const inside = menu && menu.contains(e.target);
+      const toggleClicked = Array.from(toggles).some(t => t.contains(e.target));
+      if (!inside && !toggleClicked) {
         document.body.classList.remove('offcanvas-menu');
-        menuToggles.forEach(t => t.classList.remove('active'));
+        toggles.forEach(t => t.classList.remove('active'));
       }
     });
   };
 
   document.addEventListener('DOMContentLoaded', siteMenuClone);
-  window.siteMenuClone = siteMenuClone; // optional: expose globally
 })();
