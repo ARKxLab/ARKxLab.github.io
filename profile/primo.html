@@ -31,7 +31,7 @@
 
 <body>
 
-	<div class="site-mobile-menu site-navbar-target">
+	<!-- <div class="site-mobile-menu site-navbar-target">
 		<div class="site-mobile-menu-header">
 			<div class="site-mobile-menu-close">
 				<span class="icofont-close js-menu-toggle"></span>
@@ -57,7 +57,9 @@
 				</a>
 			</div>
 		</div>
-	</nav>
+	</nav> -->
+
+	<div id="header-placeholder"></div>
 
 	<div class="section bg-dark">
 		<div class="container">
@@ -209,5 +211,10 @@
 	<script src="../js/glightbox.min.js"></script>
 	<script src="../js/rellax.min.js"></script>
 	<script src="../js/custom.js"></script>
+	<script>
+  	fetch('../includes/header-default.html')
+    	.then(res => res.text())
+    	.then(text => document.getElementById('header-placeholder').innerHTML = text);
+	</script>
 </body>
 </html>

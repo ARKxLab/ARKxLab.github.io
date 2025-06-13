@@ -31,44 +31,7 @@
 
 <body>
 
-	<div class="site-mobile-menu site-navbar-target">
-		<div class="site-mobile-menu-header">
-			<div class="site-mobile-menu-close">
-				<span class="icofont-close js-menu-toggle"></span>
-			</div>
-		</div>
-		<div class="site-mobile-menu-body"></div>
-	</div>
-
-	<nav class="site-nav">
-		<div class="container">
-			<div class="site-navigation">
-				<a href="index.html" class="logo m-0">ARK Lab</a>
-				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="publications.html">Publications</a></li>
-					<li class="active"><a href="people.html">People</a></li>
-					<li><a href="perspective_stu.html">Perspective Students</a></li>
-
-				</ul>
-
-				<a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
-					<span></span>
-				</a>
-			</div>
-		</div>
-	</nav>
-
-
-	<div class="hero   overlay">
-		<div class="container">
-			<div class="row section">
-				<div class="col-lg-6 col-xxl-10 mx-auto  ">
-				</div>
-			</div>
-		</div>
-	</div>
+	<div id="header-placeholder"></div>
 
 
 	<div class="section  mb-5">
@@ -113,9 +76,9 @@
 					<a href="#">
 						<img src="images/Daniel.jpg" alt="Image" class="img-fluid mb-4">
 						<span class="subheading d-inline-block">PhD Student</span>
-						<h3 class="h5 mb-3">Xiangrong (Daniel) Zhu</h3>
+						<h3 class="h5 mb-3">Xiangrong “Daniel” Zhu</h3>
 						<p class="text-muted">
-							Xiangrong (Daniel) Zhu is a Data Science student
+							Xiangrong “Daniel” Zhu is a Data Science student
 							from the Class of 2024, interested in XR (AR/VR) technologies and natural
 							language manipulation. He is currently passionate about AI-generation design and VTubers
 						</p>
@@ -154,10 +117,10 @@
 
 
 				<div class="col-lg-3">
-					<a href="#">
+					<a href="profile/jingyang.html">
 						<img src="images/jingyang.png" alt="Image" class="img-fluid mb-4">
 						<span class="subheading d-inline-block">Research Assistant</span>
-						<h3 class="h5 mb-3">Jingyang (Elijah) Lin</h3>
+						<h3 class="h5 mb-3">Jingyang “Elijah” Lin</h3>
 						<p class="text-muted">
 							A computation and design student at DKU/Duke, Jingyang has research interests in accessibility, XR, and Privacy & Security (P&S).
 							He is passionate about exploring novel patterns in Human-Computer Interaction (HCI).
@@ -302,7 +265,7 @@
 				</div>
 
 				<div class="col-lg-3">
-					<a href="profile/#.html">
+					<a href="#">
 						<img src="images/yinghao.jpg" alt="Image" class="img-fluid mb-4">
 						<span class="subheading d-inline-block">Mphil Student</span>
 						<h3 class="h5 mb-3">Yinghao Gao</h3>
@@ -863,6 +826,11 @@
 	<script src="js/glightbox.min.js"></script>
 	<script src="js/rellax.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script>
+  	fetch('includes/header-dark.html')
+    	.then(res => res.text())
+    	.then(text => document.getElementById('header-placeholder').innerHTML = text);
+</script>
 </body>
 
 </html>
