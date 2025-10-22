@@ -27,31 +27,31 @@
  - Yinghao Gao — 链接: profile/yinghao.html
 
 ### DKU Collaborators
-- Prof.Yecheng (Kent) Cao, PhD — 链接: https://faculty.dukekunshan.edu.cn/faculty_profiles/cao-yecheng-kent/
+- Prof.Yecheng (Kent) Cao, PhD — 链接: https://scholars.duke.edu/person/kent.cao
 - Prof.Ming Li, PhD — 链接: https://scholars.duke.edu/person/MingLi
 - Prof.Luyao Zhang, Phd — 链接: https://scholars.duke.edu/person/luyao.zhang
 - Prof.Lijing Yan, PhD — 链接: https://scholars.duke.edu/person/lijing.yan
 - Prof.Chenkai Wu, PhD — 链接: https://scholars.duke.edu/person/Chenkai.Wu
 - Prof.Jung Eun Choi — 链接: https://scholars.duke.edu/person/Jung.Choi
 - Prof. Charles Chang, PhD — 链接: https://charleschang.me/
+- Prof.Fan Liang, PhD — 链接: https://fan-liang.com/
 
 ### External Collaborators
 - Prof.Kunlin Wei, PhD — 链接: https://www.psy.pku.edu.cn/english/people/faculty/professor/kunlinwei/index.htm
 - Prof.Can Liu, PhD — 链接: https://www.scm.cityu.edu.hk/people/liu-can
-- Prof.Min Fan, PhD — 链接: #（未设置）
+- Prof.Min Fan, PhD — 链接: http://www.min-fan.com/
 - Prof.Fateme Rajabiyazdi, PhD — 链接: https://carleton.ca/rajabiyazdi/
 - Prof.Mayra Donaji Barrera Machuca — 链接: https://www.dal.ca/faculty/computerscience/faculty-staff/Mayra-Barrera-Machuca.html
 - Prof.Ö. NILAY YALÇIN, PhD — 链接: https://www.sfu.ca/siat/people/research-faculty/o-nilay-yalcin.html
-- Prof.LAWRENCE KIM, PhD — 链接: https://www.sfu.ca/computing/people/faculty/lawrence-kim.html
-- Prof.RAY LC, PhD — 链接: #（未设置）
-- Prof.Zhicong Lu, PhD — 链接: #（未设置）
-- Prof.Xin Yi, PhD — 链接: #（未设置）
-- Prof.Yuhang Zhao, PhD — 链接: #（未设置）
-- Prof.Yuling Sun, PhD — 链接: #（未设置）
-- Prof.Kaixing Zhao, PhD — 链接: #（未设置）
-- Prof.Yaxing Yao, PhD — 链接: #（未设置）
-- Prof.Fan Liang, PhD — 链接: #（未设置）
-- Zhixuan (Kyrie) Zhou — 链接: #（未设置）
+- Prof.LAWRENCE KIM, PhD — 链接: https://www.sfu.ca/fas/computing/people/faculty/faculty-members/lawrence-kim.html
+- Prof.RAY LC, PhD — 链接: https://www.scm.cityu.edu.hk/people/ray-lc
+- Prof.Zhicong Lu, PhD — https://cec.gmu.edu/profiles/zlu6
+- Prof.Xin Yi, PhD — 链接: https://www.insc.tsinghua.edu.cn/inscen/info/1255/1114.htm
+- Prof.Yuhang Zhao, PhD — 链接: https://www.yuhangz.com/
+- Prof.Yuling Sun, PhD — 链接: https://www.yulingsun.net/
+- Prof.Kaixing Zhao, PhD — 链接: https://zhaokaixing.github.io/
+- Prof.Yaxing Yao, PhD — 链接: https://www.cs.jhu.edu/~yaxing/
+- Zhixuan (Kyrie) Zhou — 链接: https://kyriezz.com/
 
 ### Alumni
 - Yihe Wang — 链接: https://www.linkedin.com/in/wangyihe/
