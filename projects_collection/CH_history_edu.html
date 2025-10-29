@@ -40,6 +40,7 @@
 		<div class="site-mobile-menu-body"></div>
 	</div>
 
+
 	<nav class="site-nav">
 		<div class="container">
 			<div class="site-navigation">
@@ -74,7 +75,12 @@
 	<div class="hero2  overlay">
 		<div class="container">
 			<div class="row section">
-				<div class="col-lg-6 col-xxl-10 mx-auto  ">
+				<div class="col-lg-6 col-xxl-10 mx-auto">
+					<!-- 说明：英雄区块用于突出项目主题和一言概述 -->
+					<div class="text-center text-white" data-aos="fade-up" data-aos-delay="100">
+						<h1 class="display-5 fw-bold">Adaptive Pedagogical Agents for VR History Learning</h1>
+						<p class="lead mb-0">LLM-powered role and action switching in the Pavilion of Prince Teng</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -92,8 +98,206 @@
 			<h2 class="mb-4">Abstract</h2>
 			Multi-role pedagogical agents can create engaging and immersive learning experiences, helping learners better understand knowledge in history learning. However, existing pedagogical agents often struggle with multi-role interactions due to complex controls, limited feedback forms, and difficulty dynamically adapting to user inputs. In this study, we developed a VR prototype with LLM-powered adaptive role-switching and action-switching pedagogical agents to help users learn about the history of the Pavilion of Prince Teng. A 2 x 2 between-subjects study was conducted with 84 participants to assess how adaptive role-switching and action-switching affect participants’ learning outcomes and experiences. The results suggest that adaptive role-switching enhances participants’ perception of the pedagogical agent’s trustworthiness and expertise but may lead to inconsistent learning experiences. Adaptive action-switching increases participants’ perceived social presence, expertise, and humanness. The study did not uncover any effects of role-switching and action-switching on usability, learning motivation and cognitive load. Based on the findings, we proposed five design implications for incorporating adaptive role-switching and action-switching into future VR history education tools.
 		</div>
+		
 		<div class="publication-links">
 			<a href="https://dl.acm.org/doi/10.1145/3706598.3713109" class="btn btn-black btn-block">Publication</a>
+		</div>
+	</div>
+
+	<!-- 背景与挑战区块：阐述VR历史教学痛点 -->
+	<div class="section bg-light">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-7" data-aos="fade-up">
+					<h2 class="mb-4">Background and Challenges</h2>
+					<p class="mb-4">VR technology enables immersive, time-travel-like experiences that reconstruct historical scenes and make abstract knowledge tangible. Pedagogical agents (PAs) are central to this transformation, guiding learners through narratives, spatial exploration, and contextual storytelling. However, existing multi-role PAs often remain cumbersome to control, offer rigid feedback, and fail to adapt to individual learner needs. The rapid evolution of large language models (LLMs) opens new opportunities for designing PAs that can personalize instruction and respond dynamically to learner inputs.</p>
+					<ul class="list-unstyled mb-0">
+						<li class="mb-2"><strong>Operational complexity:</strong> Learners must manually switch roles or dialogue options, which disrupts flow.</li>
+						<li class="mb-2"><strong>Limited feedback forms:</strong> PAs rarely combine verbal, visual, and gestural cues to enrich explanations.</li>
+						<li class="mb-0"><strong>Lack of adaptivity:</strong> Static scripts cannot address diverse questions or prior knowledge levels.</li>
+					</ul>
+				</div>
+				<div class="col-lg-5 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
+					<figure class="project-figure text-center">
+						<img src="../projects_collection/projects_img/CH_history_edu/chi25-27-fig1.jpg" alt="System overview diagram showing voice input and adaptive modules" class="img-fluid rounded shadow-sm">
+						<figcaption class="figure-caption mt-3 text-muted">Figure 1. System overview illustrating how voice input drives the adaptive role-switching and action-switching modules.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 解决方案区块：介绍自适应VR原型的关键模块 -->
+	<div class="section">
+		<div class="container">
+			<div class="row align-items-start mb-5">
+				<div class="col-lg-6" data-aos="fade-up">
+					<h2 class="mb-4">Our Solution: An Adaptive VR Prototype</h2>
+					<p class="mb-4">We created a VR learning experience centered on the history of the Pavilion of Prince Teng. The prototype integrates LLM-driven reasoning with immersive storytelling so that learners receive personalized responses and contextual demonstrations. Two adaptive modules form the core of the system, enabling the PA to select the most appropriate role and action sequence based on each learner’s questions.</p>
+				</div>
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+					<figure class="project-figure text-center">
+						<img src="../projects_collection/projects_img/CH_history_edu/chi25-27-fig3.jpg" alt="Comparison of pedagogical agent conditions and role appearances" class="img-fluid rounded shadow-sm">
+						<figcaption class="figure-caption mt-3 text-muted">Figure 2. (a) Pedagogical agent across four experimental conditions. (b) Three adaptive roles and four action categories.</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row g-4">
+				<div class="col-lg-6" data-aos="fade-up">
+					<h3 class="h4 mb-3">Adaptive Role-Switching</h3>
+					<p class="mb-3">Triggered by learner prompts, the PA can automatically adopt the most suitable persona. Each role comes with distinct attire, vocal characteristics, and narrative tone to reinforce authenticity and credibility.</p>
+					<ul class="list-unstyled mb-3">
+						<li class="mb-2"><strong>Prince Teng:</strong> Provides architectural and historical insights into the pavilion’s construction and legacy.</li>
+						<li class="mb-2"><strong>Poet Wang Bo:</strong> Shares literary context, especially the famed preface and poetic symbolism.</li>
+						<li class="mb-0"><strong>Archaeological Expert:</strong> Offers contemporary interpretations, excavation findings, and preservation perspectives.</li>
+					</ul>
+					<p class="mb-0">Role transitions happen seamlessly, maintaining learner immersion while tailoring explanations to question intent.</p>
+				</div>
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+					<h3 class="h4 mb-3">Adaptive Action-Switching</h3>
+					<p class="mb-3">Beyond dialogue, the PA selects from 18 animated actions grouped into four categories. The LLM determines which gestures best complement the spoken response, making explanations more expressive and spatially grounded.</p>
+					<div class="table-responsive mb-4">
+						<table class="table table-bordered align-middle">
+							<thead class="table-light">
+								<tr>
+									<th scope="col">Action Category</th>
+									<th scope="col">Purpose</th>
+									<th scope="col">Representative Gestures</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Pointing</td>
+									<td>Guide attention to architectural details or spatial references.</td>
+									<td>Highlight inscriptions, trace roof curves, indicate river orientation.</td>
+								</tr>
+								<tr>
+									<td>Natural Expressive</td>
+									<td>Convey enthusiasm and empathy to sustain engagement.</td>
+									<td>Open-arm welcome, thoughtful nods, inviting hand waves.</td>
+								</tr>
+								<tr>
+									<td>Descriptive</td>
+									<td>Visualize processes or imagery embedded in narratives.</td>
+									<td>Mimic writing poetry, demonstrate calligraphy strokes, outline skyline silhouettes.</td>
+								</tr>
+								<tr>
+									<td>Character-Specific</td>
+									<td>Reinforce persona identity and historical authenticity.</td>
+									<td>Formal bow of a court official, scholarly contemplation, modern analytical gestures.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p class="mb-0">By aligning verbal explanations with context-aware gestures (see Figure 2(b) and Table 1), the PA deepens learner comprehension and social presence.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 研究设计区块：描述实验流程与任务 -->
+	<div class="section bg-light">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6" data-aos="fade-up">
+					<h2 class="mb-4">Study Design</h2>
+					<p class="mb-3">We employed a 2 × 2 between-subjects design that assigned 84 participants to four conditions: role-switching (R) versus no role-switching (N), and action-switching (A) versus no action-switching (N). This resulted in four groups:</p>
+					<ul class="list-unstyled mb-3">
+						<li class="mb-2"><strong>RA:</strong> Role-switching + Action-switching</li>
+						<li class="mb-2"><strong>RN:</strong> Role-switching + No action-switching</li>
+						<li class="mb-2"><strong>NA:</strong> No role-switching + Action-switching</li>
+						<li class="mb-0"><strong>NN:</strong> No role-switching + No action-switching</li>
+					</ul>
+					<p class="mb-0">Participants experienced the VR prototype (see Figure 4) and completed pre- and post-tests covering conceptual and factual knowledge, alongside questionnaires on social presence, trustworthiness, expertise, and humanness.</p>
+				</div>
+				<div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
+					<figure class="project-figure text-center">
+						<img src="../projects_collection/projects_img/CH_history_edu/chi25-27-fig4.jpg" alt="User study procedure flowchart from introduction to interviews" class="img-fluid rounded shadow-sm">
+						<figcaption class="figure-caption mt-3 text-muted">Figure 3. Study procedure: introduction, pre-test, VR experience, post-test, experience questionnaire, and interview.</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+					<figure class="project-figure text-center">
+						<img src="../projects_collection/projects_img/CH_history_edu/chi25-27-fig5.jpg" alt="VR user interface showing goals, agent, and interaction buttons" class="img-fluid rounded shadow-sm">
+						<figcaption class="figure-caption mt-3 text-muted">Figure 4. VR user interface with learning goals on the left, the pedagogical agent in the center, and interaction controls on the right.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 主要发现区块：量化结果与访谈洞察 -->
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12" data-aos="fade-up">
+					<h2 class="mb-4">Main Findings</h2>
+				</div>
+			</div>
+			<div class="row g-5">
+				<div class="col-lg-6" data-aos="fade-up">
+					<h3 class="h4 mb-3">Quantitative Results</h3>
+					<ul class="list-unstyled mb-0">
+						<li class="mb-3"><strong>Learning outcomes:</strong> Role-switching significantly boosted factual knowledge gains (Figure 5b).</li>
+						<li class="mb-3"><strong>Trustworthiness &amp; expertise:</strong> Role-switching enhanced perceived trustworthiness (Figure 7b) and expertise (Figure 8a).</li>
+						<li class="mb-0"><strong>Social presence &amp; humanness:</strong> Action-switching improved social presence (Figure 6b) and humanness (Figure 8b), reinforcing the value of expressive gestures.</li>
+					</ul>
+				</div>
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+					<h3 class="h4 mb-3">Qualitative Results</h3>
+					<p class="mb-3">Participants described adaptive role-switching as “novel” and “fun,” which reinforced their trust in the PA. As one learner noted, <em>“It’s more believable to hear Poet Wang Bo himself describe the background of his preface.”</em></p>
+					<p class="mb-3">However, frequent and abrupt role transitions could occasionally feel incoherent, highlighting the importance of pacing controls.</p>
+					<p class="mb-0">Across action types, pointing gestures were considered the most helpful for navigation, whereas descriptive actions (e.g., mimicking writing) were viewed as supplementary rather than essential.</p>
+				</div>
+			</div>
+			<div class="row g-4 mt-2">
+				<div class="col-md-6" data-aos="fade-up">
+					<figure class="project-figure text-center">
+						<img src="../projects_collection/projects_img/CH_history_edu/chi25-27-fig6.jpg" alt="Bar chart showing factual knowledge improvements by condition" class="img-fluid rounded shadow-sm">
+						<figcaption class="figure-caption mt-3 text-muted">Figure 5. Factual knowledge gains across experimental conditions.</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+					<figure class="project-figure text-center">
+						<img src="../projects_collection/projects_img/CH_history_edu/chi25-27-fig7.jpg" alt="Bar chart comparing social presence scores" class="img-fluid rounded shadow-sm">
+						<figcaption class="figure-caption mt-3 text-muted">Figure 6. Social presence outcomes emphasize the impact of action-switching.</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row g-4 mt-2">
+				<div class="col-md-6" data-aos="fade-up">
+					<figure class="project-figure text-center">
+						<img src="../projects_collection/projects_img/CH_history_edu/chi25-27-fig8.jpg" alt="Bar chart summarizing trustworthiness and expertise ratings" class="img-fluid rounded shadow-sm">
+						<figcaption class="figure-caption mt-3 text-muted">Figure 7. Trustworthiness and expertise ratings highlight the benefits of role-switching.</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+					<figure class="project-figure text-center">
+						<img src="../projects_collection/projects_img/CH_history_edu/chi25-27-fig5.jpg" alt="Composite chart illustrating humanness perceptions" class="img-fluid rounded shadow-sm">
+						<figcaption class="figure-caption mt-3 text-muted">Figure 8. Humanness perceptions improve when action-switching is enabled.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 设计启示区块：总结未来自适应教学代理设计建议 -->
+	<div class="section bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12" data-aos="fade-up">
+					<h2 class="mb-4">Design Implications</h2>
+					<ol class="mb-0 ps-3">
+						<li class="mb-2"><strong>Leverage social cues beyond actions.</strong> Incorporate facial expressions, gaze, and micro-gestures to deepen rapport.</li>
+						<li class="mb-2"><strong>Emphasize navigational actions.</strong> Prioritize precise pointing behaviors to help learners orient within expansive virtual scenes.</li>
+						<li class="mb-2"><strong>Optimize information delivery.</strong> Pair verbal explanations with visual aids—such as virtual artifacts or embedded media—to reduce reliance on descriptive gestures.</li>
+						<li class="mb-2"><strong>Utilize proactive PAs.</strong> Allow agents to proactively cue learners toward critical historical details, maintaining narrative coherence.</li>
+						<li class="mb-0"><strong>Promote multi-perspective understanding.</strong> Use role-switching strategically at key narrative moments so learners can appreciate events from diverse viewpoints.</li>
+					</ol>
+				</div>
+			</div>
 		</div>
 	</div>
 

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- 基础头部信息：继承站点通用设置，保持字体与布局一致 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="ARK Lab">
+    <link rel="shortcut icon" href="../../favicon.png">
+
+    <meta name="description" content="DuetUI human-agent co-generation project" />
+    <meta name="keywords" content="DuetUI, human-agent co-creation, bidirectional context loop" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../../fonts/feather/style.css">
+
+    <link rel="stylesheet" href="../../css/tiny-slider.css">
+    <link rel="stylesheet" href="../../css/aos.css">
+    <link rel="stylesheet" href="../../css/glightbox.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <title>DuetUI - Project</title>
+</head>
+
+<body>
+
+    <!-- 移动端菜单，为窄屏设备提供导航能力 -->
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <!-- 顶部导航栏：与主站同步，方便返回其他页面 -->
+    <nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="../../index.html" class="logo m-0"><img src="../../images/logo1.png" alt="ARK Lab Logo">ARK Lab</a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li class="active"><a href="../../projects.html">Projects</a></li>
+                    <li><a href="../../people.html">People</a></li>
+                    <li><a href="../../perspective_stu.html">Perspective Students</a></li>
+                </ul>
+
+                <a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 顶部留白：保持版式呼吸感 -->
+    <div class="hero2 overlay">
+        <div class="container">
+            <div class="row section">
+                <div class="col-lg-6 col-xxl-10 mx-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 项目信息：标题、作者、摘要与资源链接 -->
+    <div class="publication-container">
+        <h1 class="publication-title">DuetUI: A Bidirectional Context Loop for Human-Agent Co-Generation of Task-Oriented Interfaces</h1>
+        <div class="publication-authors">
+            Yuan Xu, Shaowen Xiang, Yizhi Song, Ruoting Sun, Xin Tong
+        </div>
+        <div class="publication-abstract">
+            <h2 class="mb-4">Abstract</h2>
+            <!-- 摘要：聚焦双向语境循环的核心贡献 -->
+            DuetUI introduces a bidirectional context loop where an AI agent scaffolds interfaces by decomposing user goals, while direct user manipulations continuously steer the agent’s next steps. Through formative studies and a 24-participant evaluation, the system delivers higher task efficiency and alignment compared to single-shot generation baselines.
+        </div>
+        <div class="publication-links">
+            <a href="https://arxiv.org/abs/2509.13444" class="btn btn-black btn-block">arXiv</a>
+            <a href="https://mawxuan.oss-cn-hangzhou.aliyuncs.com/Duet_UI_V1.mp4" class="btn btn-black btn-block">Demo Video</a>
+        </div>
+    </div>
+
+    <!-- 形象展示：占位图用于未来替换高保真视觉 -->
+    <div class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up">
+                    <!-- 本目录下的 Teaser.png 已上传，直接引用 -->
+                    <img src="Teaser.png" alt="DuetUI bidirectional context loop" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 研究亮点：总结系统特性与发现 -->
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto" data-aos="fade-up">
+                    <h2 class="mb-4">Key Contributions</h2>
+                    <ul class="mb-4">
+                        <li>Defines the human-agent co-generation paradigm grounded in a bidirectional context loop.</li>
+                        <li>Implements DuetUI, enabling agents to decompose tasks into editable scaffolds that welcome user overrides.</li>
+                        <li>Demonstrates significant gains in task efficiency and interface usability through a controlled user study.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 系统流程详述：分步骤解释交互机制 -->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto" data-aos="fade-up">
+                    <h2 class="mb-4">How the Bidirectional Loop Works</h2>
+                    <h4>1. Goal Decomposition</h4>
+                    <p class="mb-3">The agent interprets high-level intents and produces an interface scaffold with structured layout, task modules, and actionable suggestions.</p>
+                    <h4>2. Direct Manipulation Feedback</h4>
+                    <p class="mb-3">Users adjust components directly on the canvas. These manipulations provide implicit feedback that the agent converts into updated context.</p>
+                    <h4>3. Iterative Co-Generation</h4>
+                    <p class="mb-0">With refreshed context, the agent proposes refined UI states or complementary components, sustaining a fluid collaboration rhythm that respects user agency.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚：复用站点全局信息 -->
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Contact</h3>
+                        <address>No.1 Du Xue Rd, Nansha District, Guangzhou</address>
+                        <ul class="list-unstyled links">
+                            <li><a href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Sources</h3>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a></li>
+                            <li><a href="../../projects.html">Info Hub</a></li>
+                            <li><a href="https://cma.hkust-gz.edu.cn/">CMA Thrust</a></li>
+                        </ul>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="../../people.html">People</a></li>
+                            <li><a href="../../perspective_stu.html">Perspective Students</a></li>
+                            <li><a href="../../contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Follow Us</h3>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="https://space.bilibili.com/479380804"><img src="../../images/bilibili.jpeg" alt="Bilibili" class="wechat-qr"></a></li>
+                        </ul>
+                        <ul class="list-unstyled float-start links">
+                            <li><img src="../../images/Wechat.jpeg" alt="Wechat QR code" class="wechat-qr"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="mb-0">
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+                        <a href="#" target="_blank" rel="nofollow noopener">ARK Lab</a> &bullet;
+                        <a href="#" target="_blank" rel="nofollow noopener">License</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 站点脚本：提供动画与交互支持 -->
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/tiny-slider.js"></script>
+    <script src="../../js/aos.js"></script>
+    <script src="../../js/navbar.js"></script>
+    <script src="../../js/glightbox.min.js"></script>
+    <script src="../../js/rellax.min.js"></script>
+    <script src="../../js/custom.js"></script>
+
+</body>
+
+</html>
+

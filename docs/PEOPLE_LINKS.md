@@ -16,6 +16,8 @@
  - Jiaxin Wang — 链接: profile/jiaxin.html
  - Zhaowen Deng — 链接: profile/zhaowen.html
 - Yixuan Li — 链接: profile/yixuan.html
+- Jie Yu — 链接: profile/jieyu.html
+- Qiyuan Cheng — 链接: profile/qiyuan.html
 - Yuan Xu — 链接: profile/yuanxu.html
 - Haoxuan Wang — 链接: profile/haoxuan.html
 - Chenwan Zhong — 链接: profile/chenwan.html

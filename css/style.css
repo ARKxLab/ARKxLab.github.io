@@ -238,6 +238,39 @@ margin-left: auto;
 margin-right: auto;
 }
 
+/* 个人主页头像统一裁切比例 */
+.profile-avatar-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.profile-avatar-wrapper::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.profile-avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 人员卡片头像：统一为正方形并居中裁切，保持与个人主页一致的观感 */
+.people-card-img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 现代浏览器支持；老浏览器将回退到原始比例 */
+    object-fit: cover;   /* 居中裁切填充 */
+    display: block;
+}
+
 table {
   caption-side: bottom;
   border-collapse: collapse; }
