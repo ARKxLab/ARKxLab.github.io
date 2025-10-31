@@ -1,2 +1,6 @@
 projects_collection/videos/PixelMap_video.mp4
 .playwright-mcp/
+
+# macOS系统文件
+.DS_Store
+**/.DS_Store
