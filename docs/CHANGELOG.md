@@ -34,8 +34,9 @@
 - 规范：头像建议源图 ≥ 1000×1000，居中裁切；命名使用英文/拼音（示例：`luoshan.JPG`）。
 
 ### 项目内容（追加 2025-10-29）
-- 新增：`projects_collection/CH_history_edu.html` 补充 “Background and Challenges”“Our Solution”“Study Design”“Main Findings”“Design Implications” 内容段落，更新 LLM 自适应角色与动作模块描述。
+- 新增：`projects_collection/CH_history_edu.html` 补充 "Background and Challenges""Our Solution""Study Design""Main Findings""Design Implications" 内容段落，更新 LLM 自适应角色与动作模块描述。
 - 新增：引入 6 张项目示意/结果图（`chi25-27-fig1.jpg` ~ `chi25-27-fig8.jpg`）并完善图注说明，展示系统架构、实验条件与量化结果。
+- 调整：`projects.html` 隐藏 "HRI-Painting-Collaboration-Qualitative" 项目卡片（通过 HTML 注释），项目详情页与资源文件保留不变。
 
 ---
 
