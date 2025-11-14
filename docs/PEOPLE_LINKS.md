@@ -18,6 +18,9 @@
 - Yixuan Li — 链接: profile/yixuan.html
 - Jie Yu — 链接: profile/jieyu.html
 - Qiyuan Cheng — 链接: profile/qiyuan.html
+- Shan Luo — 链接: profile/shan.html
+- Yancheng Cao — 链接: profile/yancheng.html
+- Huanyi Wan — 链接: profile/huanyi.html
 - Yuan Xu — 链接: profile/yuanxu.html
 - Haoxuan Wang — 链接: profile/haoxuan.html
 - Chenwan Zhong — 链接: profile/chenwan.html
