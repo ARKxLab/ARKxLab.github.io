@@ -81,17 +81,25 @@
 
 
 	<div class="publication-container">
-		<h1 class="publication-title">"I'm Not Confident in Debiasing AI Systems Since I Know Too Little": Teaching AI Creators About Gender Bias Through Hands-on Tutorials</h1>
+		<h1 class="publication-title">"I'm Not Confident in Debiasing AI Systems Since I Know Too Little": Designing and Evaluating Hands-on Gender Bias Tutorials for AI Practitioners and Learners</h1>
 		<div class="publication-authors">
 			Kyrie Zhixuan Zhou, Jiaxun Cao, Xiaowen Yuan, Daniel E. Weissglass, Zachary Kilhoffer, Madelyn Rose Sanfilippo, Xin Tong
 		</div>
 		<div class="publication-abstract">
 			<h2 class="mb-4">Abstract</h2>
-			Gender bias is rampant in AI systems, causing bad user experience, injustices, and mental harm to women. School curricula fail to educate AI creators on this topic, leaving them unprepared to mitigate gender bias in AI. In this paper, we designed hands-on tutorials to raise AI creators' awareness of gender bias in AI and enhance their knowledge of sources of gender bias and debiasing techniques. The tutorials were evaluated with 18 AI creators, including AI researchers, AI industrial practitioners (i.e., developers and product managers), and students who had learned AI. Their improved awareness and knowledge demonstrated the effectiveness of our tutorials, which have the potential to complement the insufficient AI gender bias education in CS/AI courses. Based on the findings, we synthesize design implications and a rubric to guide future research, education, and design efforts.
+			<p>
+				Despite industrial initiatives and government regulations to ensure fairness in AI, gender bias remains a concerning issue,
+				causing bad user experience, injustices, and mental harm to women. Computing education has incorporated ethics discussions
+				to prepare students to design more ethical AI systems. However, based on interviews with 18 AI practitioners/learners, we reveal
+				that current gender bias education in computing curricula is often absent, sporadic, abstract, or overly technical. We design and
+				evaluate hands-on tutorials to raise AI practitioners/learners’ awareness and knowledge of gender bias, complementing the
+				insufficient AI gender bias education in CS/AI courses. Reflecting on lessons from the design and evaluation process, we synthesize
+				design implications and a rubric to guide future research, education, and design.
+			</p>
 		</div>
 		<div class="publication-links">
-			<a href="#" class="btn btn-black btn-block">PDF</a>
-			<a href="https://arxiv.org/abs/2309.08121" class="btn btn-black btn-block">Preprint</a>
+			<!-- 仅保留正式出版版本链接（ASIS&T / Wiley） -->
+			<a href="https://dl.acm.org/doi/10.1002/pra2.1301" class="btn btn-black btn-block">ACM DL</a>
 		</div>
 	</div>
 
@@ -155,10 +163,52 @@
 						</div>
 
 					</div>
-					<!--image-->
-					<div class="row mb-5">
-						<div class="col-md-11 col-lg-11" data-aos="fade-up" data-aos-delay="200">
-							<img src="../projects_collection/projects_img/AI_gender_bias/flowchart.png" alt="Image" class="img-fluid">
+
+					<!-- Table 1：在网页中直接绘制 Tutorial User Flow 表格，方便阅读与检索 -->
+					<div class="row mb-5" data-aos="fade-up" data-aos-delay="200">
+						<div class="col-md-12 col-lg-12">
+							<table class="table table-bordered text-center">
+								<thead>
+									<tr>
+										<th>Step</th>
+										<th>Recruitment Tutorial</th>
+										<th>Autocomplete Tutorial</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Tutorial Overview</td>
+										<td>Overview of following steps</td>
+										<td>Overview of following steps</td>
+									</tr>
+									<tr>
+										<td>Scenario Explanation</td>
+										<td>Gender bias in AI-based recruitment</td>
+										<td>Gender bias in autocomplete</td>
+									</tr>
+									<tr>
+										<td>Dataset Selection</td>
+										<td>Identifying gender bias in dataset</td>
+										<td>Identifying gender bias in dataset</td>
+									</tr>
+									<tr>
+										<td>Model Explanation</td>
+										<td>Random Forest</td>
+										<td>Markov Language Model</td>
+									</tr>
+									<tr>
+										<td>Debiasing Technique-1</td>
+										<td>Data modification</td>
+										<td>Data modification</td>
+									</tr>
+									<tr>
+										<td>Debiasing Technique-2</td>
+										<td>Neglecting gender feature</td>
+										<td>Gender swapping</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="text-muted text-center mt-2"><em>Table 1. Tutorial User Flow</em></p>
 						</div>
 					</div>
 
@@ -167,24 +217,11 @@
 							<a href="https://recruitment-lab.netlify.app">
 								<h4 class="mb-4">Tutorial Link</h4>
 								<p class="mb-5">
-									Click to Access AI Gender Bias Education Pragram.
+									Click to Access AI Gender Bias Education Program.
 								</p>
 							</a>
 						</div>
 					</div>
-
-					<!--				<div class="row">
-											<div class="col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="200">
-													<a href="https://recruitment-lab.netlify.app">
-														<h4 class="mb-4">Tutorial Link</h4>
-														<p class="mb-5">
-															Click to Access AI Gender Bias Education Pragram
-														</p>
-													</a>
-												</div>
-											</div>
-										</div>
-					-->
 
 
 
@@ -212,9 +249,6 @@
 					</p>
 
 				</div>
-				<!--<div class="col-lg-6" >
-						<img src="../projects_collection/projects_img/AI_gender_bias/evaluation.png" alt="Image" class="img-fluid">
-					</div>-->
 			</div>
 		</div>
 	</div>
@@ -249,10 +283,67 @@
 							</p>
 
 							<h4 class="mb-4">Usability of our tutorials</h4>
-							<p class="mb-5">
+							<p class="mb-4">
 								The participants expressed a generally good user experience of our tutorials and also
-								suggested areas for further improvement.
+								suggested areas for further improvement. Table 2 summarizes average usability scores (0–100,
+								converted from a 7-point Likert scale) for each tutorial.
 							</p>
+
+							<!-- Table 2：Usability 评价结果，直接使用 HTML 表格呈现 -->
+							<div class="table-responsive mb-5">
+								<table class="table table-bordered text-center">
+									<thead>
+										<tr>
+											<th>Item</th>
+											<th>Recruitment</th>
+											<th>Autocomplete</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>The tutorial was well organized and made good use of time</td>
+											<td>79</td>
+											<td>87</td>
+										</tr>
+										<tr>
+											<td>I learned about something technical</td>
+											<td>72</td>
+											<td>75</td>
+										</tr>
+										<tr>
+											<td>I learned about something important for society</td>
+											<td>86</td>
+											<td>81</td>
+										</tr>
+										<tr>
+											<td>I felt the tutorial was interesting</td>
+											<td>83</td>
+											<td>82</td>
+										</tr>
+										<tr>
+											<td>I felt the tutorial kept my attention</td>
+											<td>83</td>
+											<td>86</td>
+										</tr>
+										<tr>
+											<td>The sources of bias introduced were easy to understand</td>
+											<td>87</td>
+											<td>89</td>
+										</tr>
+										<tr>
+											<td>The debiasing methods introduced were easy to understand</td>
+											<td>89</td>
+											<td>88</td>
+										</tr>
+										<tr>
+											<td><strong>Overall score</strong></td>
+											<td><strong>83</strong></td>
+											<td><strong>84</strong></td>
+										</tr>
+									</tbody>
+								</table>
+								<p class="text-muted text-center mt-2"><em>Table 2. Usability Scores Summary (Converted From 7-point Likert Scale)</em></p>
+							</div>
 
 
 						</div>
@@ -282,6 +373,68 @@
 								3. Hands-on activities are highly effective in engaging learners.<br>
 								<br>
 							</p>
+
+							<!-- Table 3：Rubric 表格，展示教学目标、任务与评估方式 -->
+							<div class="table-responsive mb-5" data-aos="fade-up" data-aos-delay="250">
+								<table class="table table-bordered text-center align-middle">
+									<thead>
+										<tr>
+											<th>Category</th>
+											<th>Learning Objective</th>
+											<th>Tasks</th>
+											<th>Evaluation</th>
+											<th>Rating</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="3">Awareness</td>
+											<td>Understanding</td>
+											<td>Defining Bias</td>
+											<td>Tutorial</td>
+											<td>Yes/No</td>
+										</tr>
+										<tr>
+											<td>Identifying</td>
+											<td>Dataset Selection</td>
+											<td>Tutorial</td>
+											<td>Yes/No</td>
+										</tr>
+										<tr>
+											<td>Willingness to Address</td>
+											<td>Self-Reporting</td>
+											<td>Exit Interview</td>
+											<td>Yes/No</td>
+										</tr>
+										<tr>
+											<td rowspan="4">Knowledge</td>
+											<td>Sources of Bias</td>
+											<td>Social Bias</td>
+											<td>Exit Interview</td>
+											<td>(0–10)</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td>Technical Bias</td>
+											<td>Exit Interview</td>
+											<td>(0–10)</td>
+										</tr>
+										<tr>
+											<td>Debiasing Techniques</td>
+											<td>Dataset Modification</td>
+											<td>Tutorial, Exit Interview</td>
+											<td>(0–10)</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td>Model Modification</td>
+											<td>Tutorial, Exit Interview</td>
+											<td>(0–10)</td>
+										</tr>
+									</tbody>
+								</table>
+								<p class="text-muted text-center mt-2"><em>Table 3. A Rubric for Teaching AI Bias</em></p>
+							</div>
 
 							<!--                     <h4 class="mb-4">Education Implications</h4>
 													<div class="unit-4 d-flex">
