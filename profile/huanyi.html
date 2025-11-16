@@ -41,7 +41,11 @@
 					<div class="d-flex">
 						<div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
 							<div class="profile-avatar-wrapper rounded">
-								<img src="../images/huanyi.jpg" alt="Portrait of Huanyi Wan" class="profile-avatar">
+								<!-- 修复头像无法加载问题：
+								     原路径为 ../images/huanyi.jpg，但实际文件名是 Huanyi.jpg（首字母大写）。
+								     在 GitHub Pages 等 Linux 服务器上，文件名大小写敏感，会导致 404，从而显示为断图。
+								     因此这里将文件名修改为 Huanyi.jpg，与 images 目录下的实际文件名完全一致。 -->
+								<img src="../images/Huanyi.jpg" alt="Portrait of Huanyi Wan" class="profile-avatar">
 							</div>
 						</div>
 						<div class="col-8 col-lg-8 text-white">

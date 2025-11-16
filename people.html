@@ -226,10 +226,13 @@
 					</a>
 				</div>
 
-				<!-- 新增：Huanyi Wan，创建个人主页 profile/huanyi.html；头像文件命名为 images/huanyi.jpg。 -->
+				<!-- 新增：Huanyi Wan，创建个人主页 profile/huanyi.html；
+				     注意：GitHub Pages 服务器区分大小写，头像实际文件名为 images/Huanyi.jpg，
+				     因此此处路径中的文件名也必须写成 Huanyi.jpg 才能正常加载。 -->
 				<div class="col-lg-3">
 					<a href="profile/huanyi.html">
-						<img src="images/huanyi.jpg" alt="Portrait of Huanyi Wan" class="img-fluid mb-4 people-card-img">
+						<!-- 修复头像无法加载问题：将 huanyi.jpg 改为 Huanyi.jpg，与 images 目录下实际文件名保持一致 -->
+						<img src="images/Huanyi.jpg" alt="Portrait of Huanyi Wan" class="img-fluid mb-4 people-card-img">
 						<span class="subheading d-inline-block">Research Assistant</span>
 						<h3 class="h5 mb-3">Huanyi Wan</h3>
 						<p class="text-muted">
