@@ -219,83 +219,212 @@
         </div>
       </div>
 
-      <!-- 时间表采用两列卡片布局，便于浏览 -->
-      <div class="row">
+      <!--
+        时间表布局说明（时间轴版）：
+        - 使用全局的 .timeline 组件来展示单日日程，左侧是时间点，右侧是内容卡片。
+        - 每个 .timeline-item 代表一个时间段，内部包含 .timeline-time（时间）和 .timeline-content（内容）。
+        - timeline 的视觉样式在 ../css/style.css 中定义，可复用到其他 Event 页。
+      -->
+      <div class="timeline">
 
-        <!-- 上午：Registration + Talks & Panel -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up">
-          <div class="service grayscale h-100">
-            <div class="service-inner">
-              <span class="d-inline-block mb-2 text-primary">09:30 – 12:00</span>
-              <h3 class="h5 mb-3">Morning: Registration & Themed Talks</h3>
-              <ul class="mb-3">
-                <li><strong>09:30 – 10:00</strong>: Registration and Welcome Introduction</li>
-                <li><strong>10:00 – 12:00</strong>: Themed Talks and Panel Discussions</li>
-              </ul>
-              <p class="mb-2"><strong>Invited speakers include:</strong></p>
-              <ul class="mb-0">
-                <li>Prof. Yunguo Liu, Global Health Research Center, Duke Kunshan University and Duke University</li>
-                <li>Prof. Jihong Jeung, the Future Lab, Tsinghua University</li>
-                <li>Prof. Yuling Sun, Fudan University</li>
-                <li>Mr. Yong Ding, CEO of Izhaohu Inc.</li>
-                <li>Research scientists from Tencent Research</li>
-              </ul>
+        <!-- 时间段 1：Morning: Registration & Themed Talks（09:30 – 12:00） -->
+        <div class="timeline-item" data-aos="fade-up">
+          <!-- 左侧时间节点 -->
+          <div class="timeline-time">09:30 – 12:00</div>
+          <!-- 右侧内容卡片 -->
+          <div class="timeline-content">
+            <h3 class="h5 mb-2">Morning: Registration &amp; Themed Talks</h3>
+            <ul class="mb-3">
+              <li><strong>09:30 – 10:00</strong>: Registration and Welcome Introduction</li>
+              <li><strong>10:00 – 12:00</strong>: Themed Talks and Panel Discussions</li>
+            </ul>
+            <p class="mb-2"><strong>Invited speakers include:</strong></p>
+            <ul class="mb-0">
+              <li>Prof. Yunguo Liu, Global Health Research Center, Duke Kunshan University and Duke University</li>
+              <li>Prof. Jihong Jeung, the Future Lab, Tsinghua University</li>
+              <li>Prof. Yuling Sun, Fudan University</li>
+              <li>Mr. Yong Ding, CEO of Izhaohu Inc.</li>
+              <li>Research scientists from Tencent Research</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 时间段 2：Small-Group Discussions（13:30 – 15:00） -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+          <div class="timeline-time">13:30 – 15:00</div>
+          <div class="timeline-content">
+            <h3 class="h5 mb-2">Small-Group Discussions</h3>
+            <p class="mb-2">
+              Participants will break into mixed academic–industry groups to discuss key themes around
+              age-friendly intelligent agents:
+            </p>
+            <ul class="mb-0">
+              <li>Designing personalized GUI/VUI interactions</li>
+              <li>Accessibility, comfort, and safety considerations</li>
+              <li>Data, ethics, and deployment in real-world senior contexts</li>
+              <li>Generating insights, research questions, and high-level design principles</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 时间段 3：Small-Group Co-design Activities（15:00 – 16:00） -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-time">15:00 – 16:00</div>
+          <div class="timeline-content">
+            <h3 class="h5 mb-2">Small-Group Co-design Activities</h3>
+            <p class="mb-2">
+              Hands-on ideation activities focused on future age-friendly AI agent prototypes:
+            </p>
+            <ul class="mb-0">
+              <li>Sketching workflows, agent personas, and interaction flows</li>
+              <li>
+                Exploring LLM-powered features that support seniors’ travel planning, transit navigation,
+                healthcare, and daily support scenarios
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 时间段 4：Group Sharing & Next Steps（16:00 – 17:00） -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+          <div class="timeline-time">16:00 – 17:00</div>
+          <div class="timeline-content">
+            <h3 class="h5 mb-2">Group Sharing &amp; Next Steps</h3>
+            <p class="mb-2">
+              Each group presents their concepts, challenges identified, and proposed research directions.
+            </p>
+            <p class="mb-0">
+              Facilitators will synthesize emerging themes, highlight collaboration possibilities,
+              and outline next steps for joint HKUST–HKUST(GZ) and industry research efforts.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 核心内容区块 4：Speakers Bio -->
+  <div class="section">
+    <div class="container">
+
+      <!-- 标题区：Speakers Bio 说明 -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center" data-aos="fade-up">
+          <span class="subheading d-inline-block mb-2">Speakers</span>
+          <h2 class="mb-3">Invited Speakers</h2>
+          <p class="mb-0">
+            The workshop brings together leading scholars and industry experts working on aging, accessibility,
+            and human-centered intelligent systems. Below are short bios of the invited speakers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Speakers 卡片列表：2 列布局，在移动端自动折行为 1 列 -->
+      <div class="row g-4">
+
+        <!-- Speaker 1: Prof. Yunguo Liu -->
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="speaker-bio-card d-flex align-items-start h-100">
+            <!-- 左侧头像：图片已放在对应 events_collection 子文件夹中 -->
+            <div class="me-3 flex-shrink-0">
+              <img
+                src="Designing Age-Friendly Intelligent Agents for Senior People/yunguo-liu.jpg"
+                alt="Prof. Yunguo Liu"
+                class="speaker-bio-avatar">
+            </div>
+            <!-- 右侧文字信息：姓名、头衔与简介 -->
+            <div>
+              <h3 class="h5 mb-1">Prof. Yunguo Liu</h3>
+              <p class="text-muted small mb-2">
+                Global Health Research Center, Duke Kunshan University and Duke University
+              </p>
+              <p class="small mb-0">
+                Dr Liu is currently the Co-Director of the Global Health Program at Duke Kunshan University and
+                Professor of Global Health. He previously served as Director of the Division of Programme Management
+                at the WHO Regional Office for the Western Pacific, and as WHO Representative in Cambodia, the South
+                Pacific, and Lao PDR, leading efforts in health system strengthening, preparedness for health
+                emergencies, and achieving health-related MDG targets. Before joining WHO, he held senior positions
+                in China’s Ministry of Health and began his career as a “Barefoot Doctor” in rural China.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- 下午上半场：Small-Group Discussions -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="50">
-          <div class="service grayscale h-100">
-            <div class="service-inner">
-              <span class="d-inline-block mb-2 text-primary">13:30 – 15:00</span>
-              <h3 class="h5 mb-3">Small-Group Discussions</h3>
-              <p>
-                Participants will break into mixed academic–industry groups to discuss key themes around
-                age-friendly intelligent agents:
+        <!-- Speaker 2: Prof. Jihong Jeung -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
+          <div class="speaker-bio-card d-flex align-items-start h-100">
+            <div class="me-3 flex-shrink-0">
+              <img
+                src="Designing Age-Friendly Intelligent Agents for Senior People/Jihong Jeung.jpg"
+                alt="Prof. Jihong Jaung"
+                class="speaker-bio-avatar speaker-bio-avatar-top">
+            </div>
+            <div>
+              <h3 class="h5 mb-1">Prof. Jihong Jeung</h3>
+              <p class="text-muted small mb-2">
+                Director, Research Center for Aging User Experience and Service System,
+                The Future Laboratory, Tsinghua University
               </p>
-              <ul class="mb-0">
-                <li>Designing personalized GUI/VUI interactions</li>
-                <li>Accessibility, comfort, and safety considerations</li>
-                <li>Data, ethics, and deployment in real-world senior contexts</li>
-                <li>Generating insights, research questions, and high-level design principles</li>
-              </ul>
+              <p class="small mb-0">
+                Prof. Jeung has over 30 years of experience in human–computer interaction and digital media design.
+                He has served as President of the Korean HCI Society, Board Director of the Korean Social Science
+                Design Association, and held leadership roles in cultural technology development for the Korean
+                Ministry of Culture, Sports and Tourism and in the Wireless Business Division at Samsung Electronics.
+                He has also taught at the Samsung Institute of Art and Design and various universities in Korea and
+                China, focusing on interaction design and aging user experience.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- 下午中段：Co-design Activities -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up">
-          <div class="service grayscale h-100">
-            <div class="service-inner">
-              <span class="d-inline-block mb-2 text-primary">15:00 – 16:00</span>
-              <h3 class="h5 mb-3">Small-Group Co-design Activities</h3>
-              <p class="mb-2">
-                Hands-on ideation activities focused on future age-friendly AI agent prototypes:
+        <!-- Speaker 3: Prof. Yuling Sun -->
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="speaker-bio-card d-flex align-items-start h-100">
+            <div class="me-3 flex-shrink-0">
+              <img
+                src="Designing Age-Friendly Intelligent Agents for Senior People/Yuling Sun.png"
+                alt="Prof. Yuling Sun"
+                class="speaker-bio-avatar">
+            </div>
+            <div>
+              <h3 class="h5 mb-1">Prof. Yuling Sun</h3>
+              <p class="text-muted small mb-2">
+                Research Professor, Fudan University; Visiting Professor, University of Michigan
               </p>
-              <ul class="mb-0">
-                <li>Sketching workflows, agent personas, and interaction flows</li>
-                <li>
-                  Exploring LLM-powered features that support seniors’ travel planning, transit navigation,
-                  healthcare, and daily support scenarios
-                </li>
-              </ul>
+              <p class="small mb-0">
+                Prof. Sun’s research lies at the intersection of Human–Computer Interaction (HCI), Computer Supported
+                Cooperative Work (CSCW), and Social Computing. Her work focuses on technology- and AI-mediated aging,
+                healthcare, education, city governance, and rural revitalization, using socio-technical approaches to
+                design human-centered tools and systems that promote individual and societal health and well-being.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- 下午尾声：Group Sharing -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="50">
-          <div class="service grayscale h-100">
-            <div class="service-inner">
-              <span class="d-inline-block mb-2 text-primary">16:00 – 17:00</span>
-              <h3 class="h5 mb-3">Group Sharing & Next Steps</h3>
-              <p class="mb-2">
-                Each group presents their concepts, challenges identified, and proposed research directions.
+        <!-- Speaker 4: Mr. Yong Ding -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
+          <div class="speaker-bio-card d-flex align-items-start h-100">
+            <div class="me-3 flex-shrink-0">
+              <img
+                src="Designing Age-Friendly Intelligent Agents for Senior People/Yong Ding.jpg"
+                alt="Mr. Yong Ding"
+                class="speaker-bio-avatar speaker-bio-avatar-top">
+            </div>
+            <div>
+              <h3 class="h5 mb-1">Mr. Yong Ding</h3>
+              <p class="text-muted small mb-2">
+                CEO, Izhaohu Inc.
               </p>
-              <p class="mb-0">
-                Facilitators will synthesize emerging themes, highlight collaboration possibilities,
-                and outline next steps for joint HKUST–HKUST(GZ) and industry research efforts.
+              <p class="small mb-0">
+                Mr. Ding received his EMBA from China Europe International Business School (CEIBS) in 2001 and later
+                founded startups in Silicon Valley. In 2007, he returned to China and founded the “Izhaohu” brand,
+                serving as CEO and pioneering an Internet- and technology-enabled community care model that allows
+                older adults with disabilities or dementia to access professional services at lower cost and return to
+                family and community life with dignity. This model has been implemented across most districts in
+                Shanghai and expanded to many other cities in China. Mr. Ding also holds multiple public and
+                professional roles in the aging and care sector, including positions in municipal advisory bodies and
+                national gerontology and care associations.
               </p>
             </div>
           </div>
@@ -305,7 +434,7 @@
     </div>
   </div>
 
-  <!-- 核心内容区块 4：Logistics & Contact -->
+  <!-- 核心内容区块 5：Logistics & Contact -->
   <div class="section">
     <div class="container">
       <div class="row">

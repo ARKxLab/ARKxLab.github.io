@@ -217,77 +217,205 @@
         </div>
       </div>
 
-      <div class="row">
+      <!--
+        时间表布局说明（时间轴版）：
+        - 使用全局的 .timeline 组件来展示单日日程，左侧是时间点，右侧是内容卡片。
+        - 每个 .timeline-item 代表一个时间段，内部包含 .timeline-time（时间）和 .timeline-content（内容）。
+        - timeline 的视觉样式在 ../css/style.css 中定义，可复用到其他 Event 页。
+      -->
+      <div class="timeline">
 
-        <!-- 上午：Registration + Talks & Panel -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up">
-          <div class="service grayscale h-100">
-            <div class="service-inner">
-              <span class="d-inline-block mb-2 text-primary">09:30 – 12:00</span>
-              <h3 class="h5 mb-3">Registration, Welcome & Themed Talks</h3>
-              <ul class="mb-3">
-                <li><strong>09:30 – 10:00</strong>: Registration and Welcome Introduction</li>
-                <li><strong>10:00 – 12:00</strong>: Themed Talks and Panel Discussions</li>
-              </ul>
-              <p class="mb-2"><strong>Invited speakers include:</strong></p>
-              <ul class="mb-0">
-                <li>Prof. Yuntao Wang, Pervasive Human Computer Interaction Lab, Tsinghua University</li>
-                <li>Prof. Jean Woo, Henry G Leong Research Professor of Gerontology and Geriatrics,
-                  The CUHK Jockey Club Institute of Ageing</li>
-                <li>Prof. Bertram Shi, Chair Professor, Director of the Center for Aging Science, HKUST</li>
-                <li>Mr. Richard Leung, CEO of BNET-TECH</li>
-              </ul>
+        <!-- 时间段 1：Registration, Welcome & Themed Talks（09:30 – 12:00） -->
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-time">09:30 – 12:00</div>
+          <div class="timeline-content">
+            <h3 class="h5 mb-2">Registration, Welcome &amp; Themed Talks</h3>
+            <ul class="mb-3">
+              <li><strong>09:30 – 10:00</strong>: Registration and Welcome Introduction</li>
+              <li><strong>10:00 – 12:00</strong>: Themed Talks and Panel Discussions</li>
+            </ul>
+            <p class="mb-2"><strong>Invited speakers include:</strong></p>
+            <ul class="mb-0">
+              <li>Prof. Yuntao Wang, Pervasive Human Computer Interaction Lab, Tsinghua University</li>
+              <li>Prof. Jean Woo, Henry G Leong Research Professor of Gerontology and Geriatrics,
+                The CUHK Jockey Club Institute of Ageing</li>
+              <li>Prof. Bertram Shi, Chair Professor, Director of the Center for Aging Science, HKUST</li>
+              <li>Mr. Richard Leung, CEO of BNET-TECH</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 时间段 2：Working Group Discussion Session（14:00 – 15:30） -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+          <div class="timeline-time">14:00 – 15:30</div>
+          <div class="timeline-content">
+            <h3 class="h5 mb-2">Working Group Discussion Session</h3>
+            <p class="mb-2">
+              Participants will break into mixed academic–industry working groups to discuss key themes:
+            </p>
+            <ul class="mb-0">
+              <li>Foundational challenges and opportunities for the next generation gerontechnology</li>
+              <li>Research agenda for intelligence-augmented gerontechnology</li>
+              <li>Academia–industry action plans for accessible living</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 时间段 3：Coffee Break（15:30 – 16:00） -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-time">15:30 – 16:00</div>
+          <div class="timeline-content">
+            <h3 class="h5 mb-2">Coffee Break</h3>
+            <p class="mb-0">
+              Informal networking and follow-up discussions among participants, providing space to
+              deepen collaborations and share emerging ideas.
+            </p>
+          </div>
+        </div>
+
+        <!-- 时间段 4：Working Group Presentation Session（16:00 – 17:00） -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+          <div class="timeline-time">16:00 – 17:00</div>
+          <div class="timeline-content">
+            <h3 class="h5 mb-2">Working Group Presentation Session</h3>
+            <p class="mb-2">
+              Each group presents its vision of how to move beyond simple “design recommendations”
+              and define the fundamental research needed to develop and deploy intelligent technologies
+              for accessible living.
+            </p>
+            <p class="mb-0">
+              Facilitators will synthesize insights into future cross-campus initiatives and
+              academia–industry interfaces, aiming to create a dynamic, shared ecosystem for both
+              talent and technology in the field of aging and accessibility.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 核心内容区块 4：Speakers Bio -->
+  <div class="section">
+    <div class="container">
+
+      <!-- 标题区：Speakers Bio 说明 -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center" data-aos="fade-up">
+          <span class="subheading d-inline-block mb-2">Speakers</span>
+          <h2 class="mb-3">Invited Speakers</h2>
+          <p class="mb-0">
+            The workshop features invited speakers from leading universities and industry partners who work on
+            aging sciences, gerontechnology, and accessible living. Below are short bios of the invited speakers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Speakers 卡片列表：2 列布局，在移动端自动折行为 1 列 -->
+      <div class="row g-4">
+
+        <!-- Speaker 1: Prof. Yuntao Wang -->
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="speaker-bio-card d-flex align-items-start h-100">
+            <div class="me-3 flex-shrink-0">
+              <img
+                src="Intelligent Gerontechnology for Accessible Living/Yuntao Wang.jpg"
+                alt="Prof. Yuntao Wang"
+                class="speaker-bio-avatar">
+            </div>
+            <div>
+              <h3 class="h5 mb-1">Prof. Yuntao Wang</h3>
+              <p class="text-muted small mb-2">
+                Pervasive Human Computer Interaction Lab, Tsinghua University
+              </p>
+              <p class="small mb-0">
+                Prof. Wang’s research focuses on efficient sensing of behavioral and physiological data and the
+                design of intelligent interactive interfaces for mobile and wearable devices. His work covers
+                robust sensing techniques on commodity devices, extracting meaningful spatiotemporal patterns from
+                multimodal data, and designing novel interaction interfaces optimized for edge deployment. He has
+                published over 80 papers, holds dozens of invention patents, and has received multiple international
+                conference awards and youth talent honors in artificial intelligence and electronics.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- 下午：Working Group Discussion -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="50">
-          <div class="service grayscale h-100">
-            <div class="service-inner">
-              <span class="d-inline-block mb-2 text-primary">14:00 – 15:30</span>
-              <h3 class="h5 mb-3">Working Group Discussion Session</h3>
-              <p class="mb-2">
-                Participants will break into mixed academic–industry working groups to discuss key themes:
+        <!-- Speaker 2: Prof. Jean Woo -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
+          <div class="speaker-bio-card d-flex align-items-start h-100">
+            <div class="me-3 flex-shrink-0">
+              <img
+                src="Intelligent Gerontechnology for Accessible Living/Jean_Woo.webp"
+                alt="Prof. Jean Woo"
+                class="speaker-bio-avatar speaker-bio-avatar-top">
+            </div>
+            <div>
+              <h3 class="h5 mb-1">Prof. Jean Woo</h3>
+              <p class="text-muted small mb-2">
+                Henry G Leong Research Professor of Gerontology and Geriatrics,
+                The CUHK Jockey Club Institute of Ageing
               </p>
-              <ul class="mb-0">
-                <li>Foundational challenges and opportunities for the next generation gerontechnology</li>
-                <li>Research agenda for intelligence-augmented gerontechnology</li>
-                <li>Academia–industry action plans for accessible living</li>
-              </ul>
+              <p class="small mb-0">
+                Prof. Woo graduated from the University of Cambridge and has played a leading role in the
+                development of geriatric medicine, public health, and community and family medicine at the Chinese
+                University of Hong Kong. She has served as Head of the Department of Medicine, Head of the Department
+                of Community and Family Medicine, and Director of the School of Public Health, and has led geriatric
+                services at Shatin Hospital. Her research covers chronic diseases in older people, health services,
+                nutrition epidemiology, end-of-life quality of life, and health equity, with over 900 papers in
+                peer‑reviewed journals.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- Coffee Break -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up">
-          <div class="service grayscale h-100">
-            <div class="service-inner">
-              <span class="d-inline-block mb-2 text-primary">15:30 – 16:00</span>
-              <h3 class="h5 mb-3">Coffee Break</h3>
-              <p class="mb-0">
-                Informal networking and follow-up discussions among participants, providing space to
-                deepen collaborations and share emerging ideas.
+        <!-- Speaker 3: Prof. Bertram Shi -->
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="speaker-bio-card d-flex align-items-start h-100">
+            <div class="me-3 flex-shrink-0">
+              <img
+                src="Intelligent Gerontechnology for Accessible Living/Bertram.jpg"
+                alt="Prof. Bertram Shi"
+                class="speaker-bio-avatar speaker-bio-avatar-top">
+            </div>
+            <div>
+              <h3 class="h5 mb-1">Prof. Bertram Shi</h3>
+              <p class="text-muted small mb-2">
+                Chair Professor and Director of the Center for Aging Science, HKUST
+              </p>
+              <p class="small mb-0">
+                Prof. Shi is a Professor in the Department of Electronic and Computer Engineering at HKUST and
+                Director of the Center for Aging Science. He joined HKUST after completing his PhD at the University
+                of California, Berkeley, and has held a range of leadership roles including Acting Dean of Engineering,
+                Head of the ECE Department, and Founding Director of the MSc Program in Electronic Engineering. His
+                research spans neuromorphic engineering, computational neuroscience, and human–machine and human–robot
+                interfaces, with a focus on modeling and automated analysis of facial expressions and eye movements.
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Working Group Presentation -->
-        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="50">
-          <div class="service grayscale h-100">
-            <div class="service-inner">
-              <span class="d-inline-block mb-2 text-primary">16:00 – 17:00</span>
-              <h3 class="h5 mb-3">Working Group Presentation Session</h3>
-              <p class="mb-2">
-                Each group presents its vision of how to move beyond simple “design recommendations”
-                and define the fundamental research needed to develop and deploy intelligent technologies
-                for accessible living.
+        <!-- Speaker 4: Mr. Richard Leung -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
+          <div class="speaker-bio-card d-flex align-items-start h-100">
+            <div class="me-3 flex-shrink-0">
+              <img
+                src="Intelligent Gerontechnology for Accessible Living/Richard Leung.jfif"
+                alt="Mr. Richard Leung"
+                class="speaker-bio-avatar speaker-bio-avatar-top">
+            </div>
+            <div>
+              <h3 class="h5 mb-1">Mr. Richard Leung</h3>
+              <p class="text-muted small mb-2">
+                CEO &amp; Co‑founder, NET-TECH Company Limited (BNET-TECH)
               </p>
-              <p class="mb-0">
-                Facilitators will synthesize insights into future cross-campus initiatives and
-                academia–industry interfaces, aiming to create a dynamic, shared ecosystem for both
-                talent and technology in the field of aging and accessibility.
+              <p class="small mb-0">
+                Mr. Leung leads NET-TECH Company Limited (BNET-TECH), whose motto is “Technology That Has Your Back”
+                and whose work focuses on safety and fall-detection technologies for older adults and users of
+                accessible facilities. The company’s LiDAR-based system Fadelisy can detect a toilet user’s position
+                and posture, trigger alerts to property managers when anomalies occur, and provide non-invasive
+                insights into usage patterns without video surveillance. Through programmes such as “CCG Accel Powered
+                by HKSTP”, BNET-TECH collaborates closely with property developers and care providers to adapt and
+                refine its solutions for real-world environments ranging from day-care centres to shopping malls.
               </p>
             </div>
           </div>
@@ -297,7 +425,7 @@
     </div>
   </div>
 
-  <!-- 核心内容区块 4：Logistics & Contact -->
+  <!-- 核心内容区块 5：Logistics & Contact -->
   <div class="section">
     <div class="container">
       <div class="row">
@@ -321,17 +449,24 @@
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
           <span class="subheading d-inline-block mb-2">Contact</span>
           <h2 class="mb-3">Get in Touch</h2>
+          <!--
+            联系方式说明：
+            - 按你的要求，将联系人统一为香港校区的 Xiaojuan Ma 老师
+            - 邮箱更新为 mxj@ust.hk，方便参会者直接联系该 workshop 的主要组织者
+          -->
           <p class="mb-3">
-            For questions regarding the workshop, please reach out to ARK Lab at HKUST(GZ).
+            <!-- 这里使用香港科大官方地址，方便国际访问者理解具体校区位置 -->
+            For questions regarding the workshop, please contact Prof. Xiaojuan Ma at
+            the Hong Kong University of Science and Technology (HKUST).
           </p>
           <ul class="list-unstyled">
             <li class="mb-2">
               <span class="icon-mail me-2 text-primary"></span>
-              <a href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a>
+              <a href="mailto:mxj@ust.hk">mxj@ust.hk</a>
             </li>
             <li class="mb-2">
               <span class="icon-map-pin me-2 text-primary"></span>
-              No.1 Du Xue Rd, Nansha District, Guangzhou
+              Hong Kong University of Science and Technology (HKUST), Clear Water Bay, Hong Kong
             </li>
           </ul>
         </div>

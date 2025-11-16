@@ -238,6 +238,137 @@ margin-left: auto;
 margin-right: auto;
 }
 
+/* ========================================
+ * Workshop 时间轴（Program Rundown）组件
+ * ----------------------------------------
+ * 设计目标：
+ * - 在 Events 详情页中，用垂直时间轴展示一天的日程安排。
+ * - 左侧是时间节点，右侧是内容卡片，整体对齐主站配色与圆角风格。
+ * - 兼容移动端：在窄屏下时间与内容上下堆叠，保持可读性。
+ *
+ * 使用方式（HTML 结构示例）：
+ * <div class="timeline">
+ *   <div class="timeline-item">
+ *     <div class="timeline-time">09:30 – 10:00</div>
+ *     <div class="timeline-content">
+ *       ... 标题 / 描述 / 列表 ...
+ *     </div>
+ *   </div>
+ *   ...
+ * </div>
+ * ====================================== */
+
+.timeline {
+  position: relative;
+  padding-left: 2.5rem; /* 为左侧竖线和圆点预留空间 */
+  margin-top: 2rem;
+}
+
+/* 中央竖线：连接所有时间节点 */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.8rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.02));
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.75rem;
+  /* 已去除时间轴圆点，仅保留竖线与内容卡片，保证版面更简洁 */
+}
+
+/* 左侧时间文本 */
+.timeline-time {
+  font-weight: 600;
+  color: #111827;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+/* 右侧内容卡片：复用 service 卡片的视觉风格，但更轻量 */
+.timeline-content {
+  background: #ffffff;
+  border-radius: 0.85rem;
+  padding: 1.15rem 1.35rem;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.timeline-content h3,
+.timeline-content .h5 {
+  margin-bottom: 0.4rem;
+  font-size: 1.02rem;
+}
+
+.timeline-content p {
+  margin-bottom: 0.4rem;
+}
+
+.timeline-content ul {
+  margin-bottom: 0;
+}
+
+/* 最后一个节点与下面内容的距离略小一些 */
+.timeline-item:last-child {
+  margin-bottom: 0.5rem;
+}
+
+/* 窄屏适配：减小左侧空白，让时间与内容更紧凑 */
+@media (max-width: 767.98px) {
+  .timeline {
+    padding-left: 2rem;
+  }
+  .timeline::before {
+    left: 0.7rem;
+  }
+}
+
+/* ========================================
+ * Workshop Speakers Bio 组件
+ * ----------------------------------------
+ * 设计目标：
+ * - 在 Event 详情页中以卡片形式展示邀请嘉宾头像与简介。
+ * - 左侧为圆形头像，右侧为姓名、头衔与简介文本。
+ * - 视觉风格与 timeline-content 保持一致，整体轻量、现代。
+ *
+ * 使用方式（HTML 结构示例）：
+ * <div class="speaker-bio-card d-flex align-items-start">
+ *   <div class="me-3 flex-shrink-0">
+ *     <img class="speaker-bio-avatar" src="..." alt="Speaker name">
+ *   </div>
+ *   <div>
+ *     <h3 class="h5 mb-1">Speaker Name</h3>
+ *     <p class="text-muted small mb-2">Title & Affiliation</p>
+ *     <p class="small mb-0">Short bio text ...</p>
+ *   </div>
+ * </div>
+ * ====================================== */
+
+.speaker-bio-card {
+  background: #ffffff;
+  border-radius: 0.85rem;
+  padding: 1.15rem 1.35rem;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.speaker-bio-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 999px;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.18);
+}
+
+/* 若个别头像需要显示更靠上（避免头顶被裁切），可额外添加此类 */
+.speaker-bio-avatar-top {
+  object-position: top center;
+}
+
 /* 个人主页头像统一裁切比例 */
 .profile-avatar-wrapper {
     position: relative;
