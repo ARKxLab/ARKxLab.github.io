@@ -79,11 +79,22 @@
 
   <!--
     Hero 区：
-    - 使用 Temple Images 中的 bg01-1.png 作为背景图（与首页同一个系列，更统一）
+    - 背景图改为本 workshop 专用的 HKUST 俯瞰图
+    - 原路径：../images/bg01-1.png
+    - 新路径：Intelligent Gerontechnology for Accessible Living/1920px-hkust-campus-view-looking-from-above_orig.jpg
+      （相对路径相对于当前 html 文件，与下方 speakers 头像路径一致，便于统一管理）
   -->
-  <div class="hero v-h-full overlay">
+  <!--
+    hero-campus：为本页面单独增加的样式钩子
+    - 目的：只调整本 workshop 的 hero 背景图展示效果，不影响站点其它页面
+    - 具体样式定义见 ../css/style.css 中 .hero-campus 相关规则
+  -->
+  <div class="hero hero-campus v-h-full overlay">
     <div class="img-bg rellax">
-      <img src="../images/bg01-1.png" alt="Gerontechnology workshop background" class="img-fluid">
+      <!-- Hero 背景图：HKUST 校园俯瞰图 -->
+      <img src="Intelligent Gerontechnology for Accessible Living/1920px-hkust-campus-view-looking-from-above_orig.jpg"
+        alt="HKUST campus aerial view for Intelligent Gerontechnology workshop"
+        class="img-fluid">
     </div>
     <div class="container">
       <div class="row align-items-center v-h-full">
@@ -139,25 +150,46 @@
               <strong>Expected Participants:</strong> 50 people
             </li>
             <li class="mb-2">
-              <span class="icon-monitor me-2 text-primary"></span>
+              <!-- 线上参与方式：使用电视图标指代 Zoom / Tencent Meeting -->
+              <span class="icon-tv me-2 text-primary"></span>
               <strong>Online Access:</strong> Zoom / Tencent Meeting for public audience
+            </li>
+            <li class="mb-2">
+              <!-- Host 信息：标明本 workshop 的主持人 -->
+              <span class="icon-user me-2 text-primary"></span>
+              <strong>Host:</strong> Prof. Xiaojuan Ma
             </li>
           </ul>
         </div>
 
-        <!-- 右侧：配图拼版 -->
+        <!-- 右侧：配图拼版（使用你为 Age-Friendly Agents 收集的剩余插图，呼应 Gerontechnology 主题） -->
         <div class="col-lg-5" data-aos="fade-up" data-aos-delay="150">
-          <div class="row">
-            <!-- 上方两张：HKUST 校园图，呼应香港校区 -->
-            <div class="col-6 mb-3">
-              <img src="../images/hkust1.jpg" alt="HKUST campus view 1" class="img-fluid rounded">
+          <!--
+            设计思路：
+            - 延续 Age-Friendly Agents 页面右侧 3 图拼版的视觉结构，保持两个 workshop 之间的一致性
+            - 使用剩余的 3 张插图，强调“智能技术 + 老年生活场景”的主题，而不是单纯的校园图
+            - 所有图片都统一放在 events_collection/Designing Age-Friendly Intelligent Agents for Senior People 目录下，便于复用
+          -->
+          <div class="row g-3">
+            <div class="col-6">
+              <!-- 插图 1：多种辅助设备与智能系统，突出“辅助移动与无障碍设施” -->
+              <img
+                src="Designing Age-Friendly Intelligent Agents for Senior People/75c9b7f97dbfd086ba6a475ab777083b9fc01d44.jpg"
+                alt="Illustration of intelligent mobility and accessibility technologies for seniors"
+                class="img-fluid rounded">
             </div>
-            <div class="col-6 mb-3">
-              <img src="../images/hkust2.jpg" alt="HKUST campus view 2" class="img-fluid rounded">
+            <div class="col-6">
+              <!-- 插图 2：综合场景插画，补充整体 gerontechnology 生态 -->
+              <img
+                src="Designing Age-Friendly Intelligent Agents for Senior People/cef4a853261cbfd37a072afa87e381c6952d1d54.jpg"
+                alt="Illustration of intelligent gerontechnology ecosystem for accessible living"
+                class="img-fluid rounded">
             </div>
-            <!-- 下方：背景图增强科技感 -->
             <div class="col-12">
-              <img src="../images/bg04-2.png" alt="Technology and accessibility themed background"
+              <!-- 主图：你新提供的真实场景照片（老人与社交/陪伴场景），作为本区块视觉重点 -->
+              <img
+                src="Intelligent Gerontechnology for Accessible Living/dc62004557685a6308f8c7ead0650b13.jpg"
+                alt="Photo of senior interacting with intelligent companion robot in care setting"
                 class="img-fluid rounded">
             </div>
           </div>
@@ -234,7 +266,7 @@
               <li><strong>09:30 – 10:00</strong>: Registration and Welcome Introduction</li>
               <li><strong>10:00 – 12:00</strong>: Themed Talks and Panel Discussions</li>
             </ul>
-            <p class="mb-2"><strong>Invited speakers include:</strong></p>
+            <p class="mb-2"><strong>Invited speakers (tentative) include:</strong></p>
             <ul class="mb-0">
               <li>Prof. Yuntao Wang, Pervasive Human Computer Interaction Lab, Tsinghua University</li>
               <li>Prof. Jean Woo, Henry G Leong Research Professor of Gerontology and Geriatrics,
@@ -303,7 +335,7 @@
       <div class="row justify-content-center mb-4">
         <div class="col-lg-8 text-center" data-aos="fade-up">
           <span class="subheading d-inline-block mb-2">Speakers</span>
-          <h2 class="mb-3">Invited Speakers</h2>
+          <h2 class="mb-3">Invited Speakers (tentative)</h2>
           <p class="mb-0">
             The workshop features invited speakers from leading universities and industry partners who work on
             aging sciences, gerontechnology, and accessible living. Below are short bios of the invited speakers.
