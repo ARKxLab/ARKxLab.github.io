@@ -9645,7 +9645,13 @@ a {
     background-color: #fff;
     z-index: 2;
     position: relative;
-    height:300px; }
+    /* 
+      原来这里用固定高度 height: 300px;
+      会导致文本较多时内容被裁切或溢出。
+      改为 min-height，保证卡片有统一“起步高度”，
+      但在内容变多时仍然可以自适应增高。
+    */
+    min-height: 300px; }
   .service .service-img {
     background-color: #000;
     z-index: 1;
@@ -9669,7 +9675,11 @@ a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 100%; /* 防止超出 */
-    height: 200px; /* 确保高度固定，形成长条 */
+    /* 
+      原来固定 height: 200px 会在文案较长时产生溢出。
+      改为 min-height，让项目 / event 卡片在内容多时可以自由增高。
+    */
+    min-height: 200px;
 }
 
     .service-wide:hover {

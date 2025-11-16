@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="author" content="ARK Lab">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <!-- 更新meta描述为更专业的实验室活动页面描述 -->
+  <meta name="description" content="ARK Lab hosts cutting-edge workshops, seminars, and collaborative events focusing on human-computer interaction, aging technology, and intelligent systems. Explore our upcoming and past events." />
+  <meta name="keywords" content="ARK Lab, HKUST, Events, Workshops, Seminars, HCI, Aging Technology, Intelligent Systems, Research Events" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/feather/style.css">
+
+  <link rel="stylesheet" href="css/tiny-slider.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/glightbox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 页面标题：Events 页面 -->
+  <title>Events - ARK Lab</title>
+</head>
+
+<body>
+
+  <!--
+    说明：这里通过占位符 + fetch 方式引入公共深色导航（includes/header-dark.html）
+    这样可以复用与 projects / people 等页面相同的导航结构。
+  -->
+  <div id="header-placeholder"></div>
+
+  <!--
+    主内容区域：
+    - 整体布局和视觉风格参考 projects.html
+    - 后续你可以直接复制 projects.html 里的卡片结构，把“项目”替换为“事件”
+  -->
+  <div class="section bg-light mt-0">
+    <div class="container">
+
+      <!-- 顶部标题行：简单说明这是 Events 页面 -->
+      <div class="row mb-4">
+        <div class="col-lg-8" data-aos="fade-up">
+          <span class="subheading d-inline-block mb-2">Events</span>
+          <h2 class="mb-3">Lab Events & Activities</h2>
+          <p class="text-muted mb-0">
+            ARK Lab regularly organizes and hosts academic workshops, research seminars, and collaborative events 
+            that bring together leading researchers, industry partners, and students in the fields of 
+            human-computer interaction, aging technology, and intelligent systems. 
+            Discover our latest events and join us in advancing the frontiers of accessible and inclusive technology.
+          </p>
+        </div>
+      </div>
+
+      <!-- 筛选按钮区域：结构参考 projects.html，可按需修改分类 -->
+      <div class="row">
+        <div id="filterBtn" data-aos="fade-up" data-aos-delay="0">
+
+          <!--
+            说明：
+            - filterSelection('all') 会展示所有带有 filter-column 的卡片
+            - 其他按钮对应的字符串，会匹配到卡片上的 class，例如：class="filter-column seminar ..."
+            - 你可以根据实际需要修改/新增分类，例如 Seminar / Workshop / Exhibition 等
+          -->
+          <button class="filter-btn 3 filter-active" onclick="filterSelection('all')"> All Events</button>
+          <button class="filter-btn" onclick="filterSelection('seminar')"> Seminars</button>
+          <button class="filter-btn" onclick="filterSelection('workshop')"> Workshops</button>
+          <button class="filter-btn" onclick="filterSelection('exhibition')"> Exhibitions</button>
+          <button class="filter-btn" onclick="filterSelection('social')"> Social</button>
+
+        </div>
+      </div>
+
+      <!-- 事件卡片列表区域：核心布局完全参考 projects.html 的项目卡片 -->
+      <div class="filter-row mt-4">
+
+        <!--
+          事件卡片：Designing Age-Friendly Intelligent Agents for Senior People
+          - 这是正式对外展示的 event 卡片
+          - 链接到我们新建的详情页：events_collection/age-friendly-agents.html
+          - 关键 class:
+            * filter-column : 让 filter.js 可以控制显隐
+            * workshop      : 归入上方 “Workshops” 分类按钮
+            * full-width    : 采用和项目列表一致的宽度样式
+        -->
+        <div class="filter-column workshop full-width" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-wide">
+            <div class="service-img">
+              <div class="label">Workshop</div>
+              <!--
+                封面图片：
+                - 当前占位图使用 images/null_pro.jpg，你可以替换成 Temple Images 或其它更合适的海报图
+                - 推荐将最终选定的图片放到 images/ 目录统一管理，然后在这里更新 src
+              -->
+              <a href="events_collection/age-friendly-agents.html">
+                <img src="events_collection\Temple Images\hkust1.png" alt="Designing Age-Friendly Intelligent Agents for Senior People cover"
+                  class="img-fluid">
+              </a>
+            </div>
+            <div class="service-inner">
+              <span></span>
+              <h3>Workshop on Designing Age-Friendly Intelligent Agents for Senior People</h3>
+              <p class="text-blue">
+                Date: 2027.06.01 &nbsp; | &nbsp; Venue: HKUST(GZ), C2-102
+              </p>
+              <p class="text-dark">
+                A full-day workshop focusing on designing age-friendly intelligent agents for senior people,
+                bringing together researchers, students, and industry partners.
+              </p>
+              <div class="buttons">
+                <!--
+                  说明：
+                  - 这里通过 href 指向我们新建的正式活动详情页
+                  - 如果希望新标签打开可以加上 target="_blank"
+                -->
+                <a href="events_collection/age-friendly-agents.html" class="btn-tag">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          事件卡片：Intelligent Gerontechnology for Accessible Living
+          - 第二个 event，使用新建的详情页 intelligent-gerontechnology.html
+          - 同样归入 “Workshops” 分类
+        -->
+        <div class="filter-column workshop full-width" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-wide">
+            <div class="service-img">
+              <div class="label">Workshop</div>
+              <!--
+                封面图片：
+                - 这里使用 bg03-2.png 作为活动配图（科技 + 抽象背景）
+                - 你可以按需换成 Temple Images 中的任意图片，并同步调整 alt 文本
+              -->
+              <a href="events_collection/intelligent-gerontechnology.html">
+                <img src="images/bg04-2.png"
+                  alt="Workshop on Intelligent Gerontechnology for Accessible Living cover" class="img-fluid">
+              </a>
+            </div>
+            <div class="service-inner">
+              <span></span>
+              <h3>Workshop on Intelligent Gerontechnology for Accessible Living</h3>
+              <p class="text-blue">
+                Date: 2026.06.01 &nbsp; | &nbsp; Venue: HKUST, Hong Kong
+              </p>
+              <p class="text-dark">
+                A workshop focusing on intelligent gerontechnology and assisted mobility for accessible senior living,
+                connecting experts in aging sciences, technology, and industry.
+              </p>
+              <div class="buttons">
+                <a href="events_collection/intelligent-gerontechnology.html" class="btn-tag">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          TODO：在这里继续添加更多 Event 卡片
+          - 复制上面的 <div class="filter-column ..."> 块
+          - 修改 class 中的分类标签（seminar / workshop / exhibition / social）
+          - 更新封面图片、标题、日期地点、简介以及按钮链接
+          - 如需更多筛选维度，可以在按钮区新增按钮，并在卡片 class 中添加对应关键字
+        -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 页脚：复用与 projects.html 一致的 Footer 结构，并加入 Events 链接 -->
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Contact</h3>
+            <address>No.1 Du Xue Rd, Nansha District, Guangzhou</address>
+            <ul class="list-unstyled links">
+
+              <li><a href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a></li>
+            </ul>
+          </div> <!-- /.widget -->
+        </div> <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Sources</h3>
+            <ul class="list-unstyled float-start links">
+              <li><a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a></li>
+              <li><a href="projects.html">Info Hub</a></li>
+              <li><a href="https://cma.hkust-gz.edu.cn/">CMA Thrust</a></li>
+
+
+            </ul>
+            <ul class="list-unstyled float-start links">
+              <li><a href="people.html">People</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="perspective_stu.html">Perspective Students</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+
+            </ul>
+          </div> <!-- /.widget -->
+        </div> <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Follow Us</h3>
+            <ul class="list-unstyled float-start links">
+              <li><a href="https://space.bilibili.com/479380804"><img src="images/bilibili.jpeg" alt="Wechat QR codee"
+                    class="wechat-qr"> </li></a>
+            </ul>
+            <ul class="list-unstyled float-start links">
+              <li><img src="images/Wechat.jpeg" alt="Wechat QR codee" class="wechat-qr"> </li>
+            </ul>
+
+            <!--	 	<ul class="list-unstyled social">
+                                                <li><a href="#"><span class="icon-youtube"></span></a></li>
+                                                <li><a href="https://space.bilibili.com/479380804"><span class="icon-twitter"></span></a></li>
+                                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                                <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                                                <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                                            </ul> -->
+          </div> <!-- /.widget -->
+        </div> <!-- /.col-lg-4 -->
+      </div> <!-- /.row -->
+
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <p class="mb-0">
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+            <a href="#" target="_blank" rel="nofollow noopener">ARK Lab</a> &bullet;
+            <a href="#" target="_blank" rel="nofollow noopener">License</a>
+          </p>
+        </div>
+      </div>
+    </div> <!-- /.container -->
+  </div> <!-- /.site-footer -->
+
+  <!-- Preloader -->
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+
+  <!-- JS 脚本：与 projects.html 保持一致，确保动画、导航和筛选功能可用 -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/glightbox.min.js"></script>
+  <script src="js/rellax.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/filter.js"></script>
+  <script>
+    // 加载公共深色导航头（header-dark），与 projects / people 等页面保持一致
+    fetch('includes/header-dark.html')
+      .then(res => res.text())
+      .then(text => document.getElementById('header-placeholder').innerHTML = text);
+  </script>
+</body>
+
+</html>
+
+
