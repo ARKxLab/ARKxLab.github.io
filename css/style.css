@@ -9333,6 +9333,41 @@ a {
     -ms-transform: translate(-50%, -50%) scale(1.05);
     transform: translate(-50%, -50%) scale(1.05);
 }
+
+/* =========================================================
+ * hero-harmony：Harmony in Diversity 项目专用 hero 样式
+ * ---------------------------------------------------------
+ * 设计目的：
+ * - 让展览空间照片在 hero 区域中「铺满并居中裁切」
+ * - 确保图片完整覆盖 hero 区域，避免出现空白或变形
+ * 使用方式：
+ * - HTML 中给 hero 容器增加 class="hero hero-harmony v-h-full overlay"
+ * ======================================================= */
+.hero-harmony .img-bg {
+    /* 让背景容器覆盖整个 hero，可视为一层「背景画布」 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;              /* 覆盖通用 .img-bg 中的水平居中 margin */
+    overflow: hidden;       /* 裁掉超出 hero 的部分，避免出现滚动条 */
+}
+
+.hero-harmony .img-bg img {
+    /* 使用宽高 100% + cover，让图片在容器内完整铺满 */
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+
+    /* 居中对齐：以图片中心作为裁切基准，而不是左上角 */
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1.05);
+    -ms-transform: translate(-50%, -50%) scale(1.05);
+    transform: translate(-50%, -50%) scale(1.05);
+}
 .hero2 {
     background-color: #000; /* 纯黑背景 */
     height: 60px; /* 调整为窄条 */
