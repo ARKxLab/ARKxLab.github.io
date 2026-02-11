@@ -2,16 +2,18 @@
 <html lang="en">
 
 <head>
-    <!-- 基础头部信息：继承站点通用设置，保持字体与布局一致 -->
+    <!-- 基础元信息：保持与站点其他项目页面一致，确保字体与响应式表现 -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="author" content="ARK Lab">
     <link rel="shortcut icon" href="../../favicon.png">
 
-    <meta name="description" content="DuetUI human-agent co-generation project" />
-    <meta name="keywords" content="DuetUI, human-agent co-creation, bidirectional context loop" />
+    <meta name="description"
+        content="How Do We Research Human-Robot Interaction in the Age of Large Language Models Project Overview" />
+    <meta name="keywords" content="LLM, HRI, human-robot interaction, systematic review" />
 
+    <!-- 字体与全局样式表：沿用主站资源，保持视觉一致性 -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
@@ -28,12 +30,12 @@
     <link rel="stylesheet" href="../../css/glightbox.min.css">
     <link rel="stylesheet" href="../../css/style.css">
 
-    <title>DuetUI - Project</title>
+    <title>LLM-Driven HRI Research - Project</title>
 </head>
 
 <body>
 
-    <!-- 移动端菜单，为窄屏设备提供导航能力 -->
+    <!-- 移动端侧边菜单：与主站保持同步，便于导航 -->
     <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
             <div class="site-mobile-menu-close">
@@ -43,7 +45,7 @@
         <div class="site-mobile-menu-body"></div>
     </div>
 
-    <!-- 顶部导航栏：与主站同步，方便返回其他页面 -->
+    <!-- 主导航栏：指向站点主要页面，Projects 标签高亮 -->
     <nav class="site-nav">
         <div class="container">
             <div class="site-navigation">
@@ -65,104 +67,127 @@
         </div>
     </nav>
 
-    <!-- 顶部留白：保持版式呼吸感 -->
-    <div class="hero v-h-full overlay" style="background-image: url('Teaser.png');">
+    <!-- 顶部横幅：保留空白以维持现有项目页视觉节奏 -->
+    <div class="hero v-h-full overlay" style="background-image: url('image.png');">
         <div class="container">
             <div class="row align-items-center v-h-full">
                 <div class="col-lg-7 col-xxl-10 mx-auto text-center">
                     <h3 class="heading-2 text-white mb-3" data-aos="fade-up">
-                        DuetUI: A Bidirectional Context Loop for Human-Agent Co-Generation of Task-Oriented Interfaces
+                        How Do We Research Human-Robot Interaction in the Age of Large Language Models? A Systematic
+                        Review
                     </h3>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 项目信息：标题、作者、摘要与资源链接 -->
+    <!-- 项目基本信息块：标题、作者、关键链接 -->
     <div class="publication-container">
-        <h1 class="publication-title">DuetUI: A Bidirectional Context Loop for Human-Agent Co-Generation of
-            Task-Oriented Interfaces</h1>
+        <h1 class="publication-title">How Do We Research Human-Robot Interaction in the Age of Large Language Models? A
+            Systematic Review</h1>
         <div class="publication-authors">
-            Yuan Xu, Shaowen Xiang, Yizhi Song, Ruoting Sun, Xin Tong
+            Yufeng Wang, Yuan Xu, Anastasia Nikolova, Yuxuan Wang, Jianyu Wang, Chongyang Wang, Xin Tong
         </div>
-        <div class="publication-venue text-muted">
-            CHI '26: Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems
-        </div>
-        <div class="publication-abstract">
-            <h2 class="mb-4">Abstract</h2>
-            <!-- 摘要：聚焦双向语境循环的核心贡献 -->
-            Large Language Models are reshaping task automation, yet remain limited in complex, multi-step real-world
-            tasks that require aligning with vague user intent and enabling dynamic user override. From a formative
-            study with 12 participants, we found that end-users actively seek to shape task-oriented interfaces rather
-            than relying on one-shot outputs. To address this, we introduce the human-agent co-generation paradigm,
-            materialized in DuetUI. This LLM-empowered system unfolds alongside task progress through a bidirectional
-            context loop—the agent scaffolds the interface by decomposing the task, while the user's direct
-            manipulations implicitly steer the agent's next generation step. In a technical ablation study and a user
-            study with 24 participants, DuetUI improved task efficiency and interface usability, supporting more
-            seamless human-agent collaboration. Our contributions include the proposal of this novel paradigm, the
-            design of a proof-of-concept DuetUI prototype embodying it, and empirical and technical insights from an
-            initial evaluation of how this bidirectional loop may help align agents with human intent and inform future
-            development.
-        </div>
-        <div class="publication-links">
-            <a href="https://arxiv.org/abs/2509.13444" class="btn btn-black btn-block">arXiv</a>
-            <a href="https://mawxuan.oss-cn-hangzhou.aliyuncs.com/Duet_UI_V1.mp4" class="btn btn-black btn-block">Demo
-                Video</a>
+        <div class="publication-links mt-4">
+            <a href="#" class="btn btn-black btn-block disabled" aria-disabled="true">PDF (Coming Soon)</a>
         </div>
     </div>
 
-    <!-- 形象展示：占位图用于未来替换高保真视觉 -->
-    <div class="section">
+    <!-- 重点可视化区：展示论文中的系统性综述图表（位于摘要上方） -->
+    <div class="section pb-0">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10" data-aos="fade-up">
-                    <!-- 本目录下的 Teaser.png 已上传，直接引用 -->
-                    <img src="Teaser.png" alt="DuetUI bidirectional context loop" class="img-fluid rounded shadow">
+                    <img src="image.png" alt="Systematic Review Overview of LLM-driven HRI Research"
+                        class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 研究亮点：总结系统特性与发现 -->
-    <div class="section bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto" data-aos="fade-up">
-                    <h2 class="mb-4">Key Contributions</h2>
-                    <ul class="mb-4">
-                        <li>Defines the human-agent co-generation paradigm grounded in a bidirectional context loop.
-                        </li>
-                        <li>Implements DuetUI, enabling agents to decompose tasks into editable scaffolds that welcome
-                            user overrides.</li>
-                        <li>Demonstrates significant gains in task efficiency and interface usability through a
-                            controlled user study.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 系统流程详述：分步骤解释交互机制 -->
+    <!-- 摘要部分 -->
     <div class="section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto" data-aos="fade-up">
-                    <h2 class="mb-4">How the Bidirectional Loop Works</h2>
-                    <h4>1. Goal Decomposition</h4>
-                    <p class="mb-3">The agent interprets high-level intents and produces an interface scaffold with
-                        structured layout, task modules, and actionable suggestions.</p>
-                    <h4>2. Direct Manipulation Feedback</h4>
-                    <p class="mb-3">Users adjust components directly on the canvas. These manipulations provide implicit
-                        feedback that the agent converts into updated context.</p>
-                    <h4>3. Iterative Co-Generation</h4>
-                    <p class="mb-0">With refreshed context, the agent proposes refined UI states or complementary
-                        components, sustaining a fluid collaboration rhythm that respects user agency.</p>
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="mb-4">Abstract</h2>
+                    <p>
+                        Advances in large language models (LLMs) are profoundly reshaping the field of human–robot
+                        interaction (HRI). While prior work has highlighted the technical potential of LLMs, few studies
+                        have systematically examined their human-centered impact (e.g., human-oriented understanding,
+                        user modeling, and levels of autonomy), making it difficult to consolidate emerging challenges
+                        in LLM-driven HRI systems. Therefore, we conducted a systematic literature search following the
+                        PRISMA guideline, identifying 86 articles that met our inclusion criteria. Our findings reveal
+                        that: (1) LLMs are transforming the fundamentals of HRI by reshaping how robots sense context,
+                        generate socially grounded interactions, and maintain continuous alignment with human needs in
+                        embodied settings; and (2) current research is largely exploratory, with different studies
+                        focusing on different facets of LLM-driven HRI, resulting in wide-ranging choices of
+                        experimental setups, study methods, and evaluation metrics. Finally, we identify key design
+                        considerations and challenges, offering a coherent overview and guidelines for future research
+                        at the intersection of LLMs and HRI.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 页脚：复用站点全局信息 -->
+    <!-- Team Section: 展示参与此项目的实验室成员 -->
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-lg-6" data-aos="fade-up">
+                    <h2>The Team</h2>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="col-lg-4">
+                    <div class="testmonial">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img src="../../images/xin.jpg" alt="Xin Tong" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Dr. Xin Tong</h2>
+                                <p>Principal Investigator (PI)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img src="../../images/xuyuan.jpg" alt="Yuan Xu" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Yuan Xu</h2>
+                                <p>Ph.D. Student</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img src="../../images/default_boy.jpg" alt="Yufeng Wang" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Yufeng Wang</h2>
+                                <p>Research Intern</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚复用：引入站点统一信息块 -->
     <div class="site-footer">
         <div class="container">
             <div class="row">
@@ -217,7 +242,7 @@
         </div>
     </div>
 
-    <!-- 站点脚本：提供动画与交互支持 -->
+    <!-- 脚本依赖：复用全站交互效果 -->
     <script src="../../js/bootstrap.bundle.min.js"></script>
     <script src="../../js/tiny-slider.js"></script>
     <script src="../../js/aos.js"></script>
