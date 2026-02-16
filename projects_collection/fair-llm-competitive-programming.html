@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="ARK lab">
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <meta name="description" content="FAIR: Framing AI's Role in Programming Competitions - Understanding How LLMs Are Changing the Game in Competitive Programming" />
+    <meta name="keywords" content="FAIR, competitive programming, LLMs, fairness, governance, AI" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../fonts/feather/style.css">
+    <link rel="stylesheet" href="../css/tiny-slider.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/glightbox.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>FAIR - ARK Lab</title>
+</head>
+
+<body>
+
+<div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+            <span class="icofont-close js-menu-toggle"></span>
+        </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+</div>
+
+<nav class="site-nav">
+    <div class="container">
+        <div class="site-navigation">
+            <a href="../index.html" class="logo m-0"><img src="../images/logo1.png">ARK Lab</a>
+            <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                <li><a href="../index.html">Home</a></li>
+                <li class="active"><a href="../projects.html">Projects</a></li>
+                <li><a href="../events.html">Events</a></li>
+                <li><a href="../publications.html">Publications</a></li>
+                <li><a href="../people.html">People</a></li>
+                <li><a href="../perspective_stu.html">Perspective Students</a></li>
+            </ul>
+
+            <a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+                <span></span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="hero v-h-full overlay">
+    <div class="img-bg rellax">
+        <img src="../images/FAIR-Cover.png" alt="FAIR Project Cover" class="img-fluid">
+    </div>
+    <div class="container">
+        <div class="row align-items-center v-h-full">
+            <div class="col-lg-10 col-xxl-10 mx-auto text-center">
+                <h3 class="heading-2 text-white mb-3" data-aos="fade-up">
+                    FAIR: Framing AI's Role in Programming Competitions
+                </h3>
+                <p data-aos="fade-up" data-aos-delay="200" class="text-white lead mb-4">
+                    Understanding How LLMs Are Changing the Game in Competitive Programming
+                </p>
+                <p data-aos="fade-up" data-aos-delay="300" class="mb-0">
+                    <a href="https://arxiv.org/abs/2509.15867" class="btn btn-outline-light me-2">Paper</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                <h2 class="mb-4">Abstract</h2>
+                <p class="mb-4">
+                    FAIR studies how LLMs are changing competitive programming as a sociotechnical system rather than only as a benchmark leaderboard. The paper combines 37 cross-role interviews, a global survey of 207 contestants, and large-scale contest-log analysis to answer three linked questions: workflow change, fairness boundaries, and governance adaptation.
+                </p>
+                <p class="mb-0">
+                    The central argument is that the key challenge is no longer whether AI is used, but where communities draw enforceable boundaries between legitimate assistance and misconduct, and how platforms can preserve credibility under imperfect detection.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                <h2 class="mb-4">Research Questions and Contributions</h2>
+                <p class="mb-3">
+                    FAIR is organized around three RQs:
+                </p>
+                <p class="mb-2"><strong>RQ1 (Workflow):</strong> How LLMs reshape workflows of contestants, problem setters, coaches, and platform stewards.</p>
+                <p class="mb-2"><strong>RQ2 (Fairness):</strong> How stakeholders negotiate acceptable assistance vs. cheating.</p>
+                <p class="mb-4"><strong>RQ3 (Governance):</strong> How platforms and communities co-evolve rules, detection, and accountability.</p>
+                <p class="mb-0">
+                    Main contributions: (1) cross-role empirical evidence of workflow transition, (2) gray-zone mapping of fairness conflicts, and (3) a chess-inspired layered governance approach for AI-era contests.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                <h2 class="mb-4">Methodology</h2>
+                <p class="mb-3">
+                    The study uses qualitative-first triangulation with quantitative support:
+                </p>
+                <p class="mb-2"><strong>Interviews:</strong> 37 unique stakeholders (21 contestants, 7 setters, 7 coaches, 8 stewards), spanning novices to ICPC/IOI world champions.</p>
+                <p class="mb-2"><strong>Survey:</strong> 207 valid global responses; reliability checks report Cronbach's alpha = 0.76, KMO = 0.80, Bartlett chi-square = 1788.27 (p &lt; .001).</p>
+                <p class="mb-2"><strong>Platform logs:</strong> 336 rated Codeforces contests (2022-2025), 4,844,702 participation instances, and 64,277,033 submissions.</p>
+                <p class="mb-0">
+                    This mixed design is important because self-reports reveal norms and reasoning, while platform traces reveal behavior shifts that sanctions alone may miss.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-12 col-lg-12">
+                <img src="../projects_collection/projects_img/fair/newplot_3.png" alt="Global survey coverage map" class="img-fluid">
+                <p class="text-muted text-center mt-3">
+                    <em>Global survey coverage for 207 respondents across major competitive programming regions.</em>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                <h2 class="mb-4">RQ1: Workflow Transformation</h2>
+                <p class="mb-3">
+                    FAIR shows role-dependent adoption instead of a single “AI takeover” pattern.
+                </p>
+                <p class="mb-2"><strong>Contestants:</strong> pre-contest and in-contest use remains low (regular-use mean = 2.31/5; preparation change mean = 2.32/5), while post-contest and training use is clearly higher (daily-use mean = 2.48/5).</p>
+                <p class="mb-2"><strong>Skill gradient:</strong> novices report larger efficiency/performance gains than Masters+, and usage is negatively correlated with rating (rho = -0.227, p = .001).</p>
+                <p class="mb-2"><strong>Problem setters:</strong> LLMs are accepted in low-creativity steps (translation, boilerplate, stress-testing, solver checks), but ideation remains human-controlled.</p>
+                <p class="mb-2"><strong>Coaches:</strong> teaching core changes little, but selection/integrity screening becomes stricter.</p>
+                <p class="mb-0"><strong>Stewards:</strong> work shifts toward monitoring and triaging AI-related reports, increasing moderation burden.</p>
+            </div>
+        </div>
+
+        <div class="row mt-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-12 col-lg-12 mb-5">
+                <img src="../projects_collection/projects_img/fair/fair001.png" alt="LLM perceptions by rating group" class="img-fluid">
+                <p class="text-muted text-center mt-3">
+                    <em>Novices perceive stronger efficiency/performance benefit; concern about over-reliance remains high across all groups.</em>
+                </p>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <img src="../projects_collection/projects_img/fair/WorkFlowChange.png" alt="Problem setter workflow under LLMs" class="img-fluid">
+                <p class="text-muted text-center mt-3">
+                    <em>Setter pipeline shows selective integration: LLM assistance in repetitive phases, human judgment in originality-critical phases.</em>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                <h2 class="mb-4">RQ2: Fairness Boundaries and Gray Zones</h2>
+                <p class="mb-3">
+                    The paper finds strong normative consensus at the extremes, and sharp disagreement in the middle.
+                </p>
+                <p class="mb-2"><strong>Consensus:</strong> using AI during official contests is widely seen as cheating (mean = 4.56/5; 89% agree/strongly agree), and as conferring unfair advantage (mean = 4.45/5; 86%).</p>
+                <p class="mb-2"><strong>Gray zones:</strong> translation and light autocomplete are often tolerated; pre-submission AI checking and conceptual hint outsourcing are broadly condemned.</p>
+                <p class="mb-2"><strong>Policy tension:</strong> ban-all and disclosure receive high support, but “minor help” and tiered allowance are polarized.</p>
+                <p class="mb-0">
+                    Interview evidence further reveals hidden misuse workflows (batch prompting, laundering, off-platform distribution), explaining why policy text and on-the-ground reality diverge.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-12 col-lg-12">
+                <img src="../projects_collection/projects_img/fair/Gray.png" alt="Gray-zone policy opinions" class="img-fluid">
+                <p class="text-muted text-center mt-3">
+                    <em>Fairness attitudes: strong anti-cheating baseline plus persistent disagreement on bounded assistance scenarios.</em>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                <h2 class="mb-4">RQ3: Governance, Compliance-Trust Gap, and Detection Limits</h2>
+                <p class="mb-3">
+                    FAIR identifies a governance paradox: high willingness to comply, but lower confidence in enforcement.
+                </p>
+                <p class="mb-2"><strong>Compliance:</strong> mean = 4.55/5 (87.9% willing to follow rules).</p>
+                <p class="mb-2"><strong>Disclosure support:</strong> mean = 4.23/5 (76.3%).</p>
+                <p class="mb-2"><strong>Trust:</strong> only about 61% trust fair enforcement (mean = 3.71), and about 51% are satisfied with current handling (mean = 3.44).</p>
+                <p class="mb-2"><strong>Platform evidence:</strong> severe sanctions stay low (about 2-3% in Div3/4, 1.8% in Div2, 0.18% in Div1), with no post-policy spike after September 14, 2024.</p>
+                <p class="mb-0">
+                    Meanwhile, behavioral proxies (Python share and extremely regular solve-interval CV patterns) increase after policy rollout, suggesting broader tool-mediated behavior than formal sanctions capture.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-6 col-lg-6 mb-4 mb-md-0">
+                <img src="../projects_collection/projects_img/fair/radar.png" alt="Governance radar chart" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <img src="../projects_collection/projects_img/fair/govv.png" alt="Governance dimensions" class="img-fluid">
+            </div>
+            <div class="col-md-12 mt-3">
+                <p class="text-muted text-center">
+                    <em>Governance dimensions expose the compliance-trust gap: rule acceptance is stronger than confidence in enforceability and quality of handling.</em>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                <h2 class="mb-4">Discussion: Why FAIR Matters Beyond This One Contest Community</h2>
+                <p class="mb-3">
+                    FAIR positions competitive programming at the intersection of three governance logics: education (learning integrity), competition (ranking legitimacy), and creative production (authorship/disclosure norms). This hybrid identity explains why one-dimensional policy imports fail.
+                </p>
+                <p class="mb-3">
+                    The paper therefore proposes a chess-inspired layered approach: rating-linked anomaly detection, expert review for borderline cases, structured community reporting, and proportional sanctions with process transparency.
+                </p>
+                <p class="mb-0">
+                    The broader implication is practical: when perfect prevention is impossible, legitimacy depends on explainable procedures, low false-positive risk, and credible appeal paths.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                <h2 class="mb-4">Limitations and Future Work</h2>
+                <p class="mb-3">
+                    FAIR explicitly notes sample imbalance (gender/region), absence of direct interviews with Codeforces stewards, social-desirability bias in self-reporting, and imperfect proxy validity in large-scale behavioral indicators.
+                </p>
+                <p class="mb-0">
+                    Future work should expand underrepresented populations, combine ethnographic and social-media evidence, and build longitudinal instrumentation to separate general ecosystem drift from AI-specific effects.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-8 col-lg-6" data-aos="fade-up">
+                <h2>The Team</h2>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6 mb-4">
+                <div class="testmonial">
+                    <div class="d-flex author align-items-center">
+                        <div class="pic">
+                            <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=435">
+                                <img src="../images/xin.jpg" alt="Xin Tong" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="author-name">
+                            <h2>Xin Tong</h2>
+                            <p>Principal Investigator (PI)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <div class="testmonial">
+                    <div class="d-flex author align-items-center">
+                        <div class="pic">
+                            <a href="../profile/primo.html">
+                                <img src="../images/primo.jpg" alt="Dongyijie Primo Pan" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="author-name">
+                            <h2>Dongyijie Primo Pan</h2>
+                            <p>Researcher</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="widget">
+                    <h3>Contact</h3>
+                    <address>No.1 Du Xue Rd, Nansha District, Guangzhou</address>
+                    <ul class="list-unstyled links">
+                        <li><a href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="widget">
+                    <h3>Sources</h3>
+                    <ul class="list-unstyled float-start links">
+                        <li><a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a></li>
+                        <li><a href="../projects.html">Info Hub</a></li>
+                        <li><a href="https://cma.hkust-gz.edu.cn/">CMA Thrust</a></li>
+                    </ul>
+                    <ul class="list-unstyled float-start links">
+                        <li><a href="../people.html">People</a></li>
+                        <li><a href="../perspective_stu.html">Perspective Students</a></li>
+                        <li><a href="../contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="widget">
+                    <h3>Follow Us</h3>
+                    <ul class="list-unstyled float-start links">
+                        <li><a href="https://space.bilibili.com/479380804"><img src="../images/bilibili.jpeg" alt="Bilibili QR code" class="wechat-qr"></a></li>
+                    </ul>
+                    <ul class="list-unstyled float-start links">
+                        <li><img src="../images/Wechat.jpeg" alt="Wechat QR code" class="wechat-qr"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <p class="mb-0">
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+                    <a href="#" target="_blank" rel="nofollow noopener">ARK Lab</a> &bullet;
+                    <a href="#" target="_blank" rel="nofollow noopener">License</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="overlayer"></div>
+<div class="loader">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/tiny-slider.js"></script>
+<script src="../js/aos.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/glightbox.min.js"></script>
+<script src="../js/rellax.min.js"></script>
+<script src="../js/custom.js"></script>
+</body>
+</html>

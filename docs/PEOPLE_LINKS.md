@@ -26,7 +26,7 @@
 - Chenwan Zhong — 链接: profile/chenwan.html
 - Ruyi Li — 链接: profile/Ruyi.html
 - Tianjian Liu — 链接: profile/tianjian.html
-- Dongyijie PAN — 链接: profile/primo.html
+- Dongyijie Primo Pan — 链接: profile/primo.html
 - Chunwei Yang — 链接: profile/chunwei.html
 - Yizhi Song — 链接: profile/yizhi.html
  - Yinghao Gao — 链接: profile/yinghao.html
@@ -76,5 +76,4 @@
 - 在 `people.html` 中为对应卡片将 `href="#"` 替换为 `profile/xxx.html`
 - 外部合作者/校友若使用站外链接，建议填写个人主页或学术主页的 HTTPS URL
 - 若需要批量校验，后续可加入 Playwright 测试：扫描 `people.html` 内所有 `<a>` 卡片链接，校验是否为 `#`、是否 200 可达，并生成报告
-
 
