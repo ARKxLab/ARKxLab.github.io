@@ -73,6 +73,43 @@
 			content: "🏆";
 			font-size: 0.92rem;
 		}
+
+		.profile-hero {
+			display: flex;
+			align-items: flex-start;
+			gap: 28px;
+		}
+
+		.profile-hero-media {
+			flex: 0 0 260px;
+			max-width: 260px;
+		}
+
+		.profile-hero-image {
+			display: block;
+			width: 100%;
+			height: auto;
+			border-radius: 12px;
+			object-fit: cover;
+		}
+
+		.profile-hero-content {
+			flex: 1 1 auto;
+			min-width: 0;
+		}
+
+		@media (max-width: 991.98px) {
+			.profile-hero {
+				flex-direction: column;
+				gap: 18px;
+			}
+
+			.profile-hero-media {
+				flex: 0 0 auto;
+				width: min(260px, 100%);
+				max-width: 100%;
+			}
+		}
 	</style>
 
 	<title>Dongyijie Primo Pan - People</title>
@@ -114,11 +151,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-lg-12 mb-4 mb-lg-5 mt-5" data-aos="fade-up">
-					<div class="d-flex">
-						<div class="col-4 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
-							<img src="../images/primo.jpg" alt="Image" class="img-fluid rounded">
+					<div class="profile-hero">
+						<div class="profile-hero-media" data-aos="fade-up" data-aos-delay="100">
+							<img src="../images/primo.jpg" alt="Image" class="profile-hero-image">
 						</div>
-						<div class="col-8 col-lg-8 text-white">
+						<div class="profile-hero-content text-white">
 							<h1 class="text-white"> Dongyijie Primo Pan</h1>
 							<p>
 								Primo is an MPhil student at HKUST(GZ), under the supervision of <a
