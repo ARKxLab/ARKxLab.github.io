@@ -29,6 +29,7 @@
 - `images/`：站点静态资源（背景、项目封面、人员头像、二维码等）
 - `fonts/`：Icomoon 与 Feather 字体与样式
 - `favicon.png`：站点 Favicon
+- `docs/`：项目相关文档
 
 ### 本地预览与开发
 本项目为纯静态站点，无需 Node/后端环境。

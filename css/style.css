@@ -9368,6 +9368,49 @@ a {
     -ms-transform: translate(-50%, -50%) scale(1.05);
     transform: translate(-50%, -50%) scale(1.05);
 }
+
+/* =========================================================
+ * hero-genrole：GenRole 项目专用 hero 样式
+ * ---------------------------------------------------------
+ * 设计目的：
+ * - 让 GenRole 的长标题在不同屏幕下都能完整显示且不遮挡过多画面
+ * - 确保背景图居中铺满，修复顶部被裁切和底部空白问题
+ * ======================================================= */
+.hero-genrole .img-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero-genrole .img-bg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.heading-genrole {
+    font-size: 55px; /* 减小字号以适应长标题 */
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+}
+
+@media (max-width: 991.98px) {
+    .heading-genrole {
+        font-size: 35px;
+    }
+}
+
 .hero2 {
     background-color: #000; /* 纯黑背景 */
     height: 60px; /* 调整为窄条 */
