@@ -23,25 +23,6 @@
     <link rel="stylesheet" href="../css/glightbox.min.css">
     <link rel="stylesheet" href="../css/style.css">
 
-    <style>
-        .fair-team .author > .pic {
-            flex: 0 0 60px;
-            width: 60px;
-            height: 60px;
-            margin-right: 10px;
-            overflow: hidden;
-            border-radius: 50%;
-        }
-
-        .fair-team .author > .pic img {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 50%;
-            display: block;
-        }
-    </style>
-
     <title>FAIR - ARK Lab</title>
 </head>
 
@@ -103,10 +84,10 @@
             <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
                 <h2 class="mb-4">Abstract</h2>
                 <p class="mb-4">
-                    FAIR studies competitive programming as a sociotechnical ecosystem under LLM disruption, rather than only as a model benchmark problem. The paper integrates 37 cross-role interviews, a global survey of 207 contestants, and large-scale Codeforces trace analysis to examine three coupled questions: workflow transformation, fairness boundaries, and governance adaptation.
+                    FAIR studies how LLMs are changing competitive programming as a sociotechnical system rather than only as a benchmark leaderboard. The paper combines 37 cross-role interviews, a global survey of 207 contestants, and large-scale contest-log analysis to answer three linked questions: workflow change, fairness boundaries, and governance adaptation.
                 </p>
                 <p class="mb-0">
-                    The core finding is a persistent gap between policy acceptance and enforcement confidence: communities largely agree on anti-cheating norms, but remain uncertain about enforceable boundaries and reliable detection in real-world contest settings.
+                    The central argument is that the key challenge is no longer whether AI is used, but where communities draw enforceable boundaries between legitimate assistance and misconduct, and how platforms can preserve credibility under imperfect detection.
                 </p>
             </div>
         </div>
@@ -118,11 +99,14 @@
         <div class="row">
             <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
                 <h2 class="mb-4">Research Questions and Contributions</h2>
-                <p class="mb-2"><strong>RQ1 (Workflow):</strong> How LLMs reshape the practices of contestants, problem setters, coaches, and platform stewards.</p>
-                <p class="mb-2"><strong>RQ2 (Fairness):</strong> How communities draw boundaries between acceptable assistance and misconduct.</p>
-                <p class="mb-4"><strong>RQ3 (Governance):</strong> How rules, detection, and accountability mechanisms co-evolve under AI pressure.</p>
+                <p class="mb-3">
+                    FAIR is organized around three RQs:
+                </p>
+                <p class="mb-2"><strong>RQ1 (Workflow):</strong> How LLMs reshape workflows of contestants, problem setters, coaches, and platform stewards.</p>
+                <p class="mb-2"><strong>RQ2 (Fairness):</strong> How stakeholders negotiate acceptable assistance vs. cheating.</p>
+                <p class="mb-4"><strong>RQ3 (Governance):</strong> How platforms and communities co-evolve rules, detection, and accountability.</p>
                 <p class="mb-0">
-                    FAIR contributes: (1) cross-role empirical evidence of workflow restructuring, (2) a gray-zone map of contested fairness norms, and (3) a layered, chess-inspired governance agenda for AI-era contests.
+                    Main contributions: (1) cross-role empirical evidence of workflow transition, (2) gray-zone mapping of fairness conflicts, and (3) a chess-inspired layered governance approach for AI-era contests.
                 </p>
             </div>
         </div>
@@ -134,20 +118,23 @@
         <div class="row">
             <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
                 <h2 class="mb-4">Methodology</h2>
-                <p class="mb-2"><strong>Interviews:</strong> 37 participants across four roles (contestants, setters, coaches, stewards), from novices to ICPC/IOI-level experts.</p>
-                <p class="mb-2"><strong>Survey:</strong> 207 valid global responses, with reliability checks (Cronbach's alpha = 0.76, KMO = 0.80, Bartlett p &lt; .001).</p>
-                <p class="mb-2"><strong>Platform traces:</strong> 336 rated Codeforces contests (2022-2025), 4,844,702 participations, and 64,277,033 submissions.</p>
+                <p class="mb-3">
+                    The study uses qualitative-first triangulation with quantitative support:
+                </p>
+                <p class="mb-2"><strong>Interviews:</strong> 37 unique stakeholders (21 contestants, 7 setters, 7 coaches, 8 stewards), spanning novices to ICPC/IOI world champions.</p>
+                <p class="mb-2"><strong>Survey:</strong> 207 valid global responses; reliability checks report Cronbach's alpha = 0.76, KMO = 0.80, Bartlett chi-square = 1788.27 (p &lt; .001).</p>
+                <p class="mb-2"><strong>Platform logs:</strong> 336 rated Codeforces contests (2022-2025), 4,844,702 participation instances, and 64,277,033 submissions.</p>
                 <p class="mb-0">
-                    This triangulation links perception-level evidence (interviews/survey) with behavior-level evidence (platform logs), enabling stronger conclusions than single-source analyses.
+                    This mixed design is important because self-reports reveal norms and reasoning, while platform traces reveal behavior shifts that sanctions alone may miss.
                 </p>
             </div>
         </div>
 
         <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
             <div class="col-md-12 col-lg-12">
-                <img src="projects_img/Fair/newplot_3.png" alt="Global survey coverage map" class="img-fluid">
+                <img src="../projects_collection/projects_img/fair/newplot_3.png" alt="Global survey coverage map" class="img-fluid">
                 <p class="text-muted text-center mt-3">
-                    <em>Global survey coverage of 207 respondents across major competitive programming regions.</em>
+                    <em>Global survey coverage for 207 respondents across major competitive programming regions.</em>
                 </p>
             </div>
         </div>
@@ -159,24 +146,28 @@
         <div class="row">
             <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
                 <h2 class="mb-4">RQ1: Workflow Transformation</h2>
-                <p class="mb-2"><strong>Contestants:</strong> LLM use is concentrated in training and post-contest review rather than live competition (regular/in-contest usage remains low).</p>
-                <p class="mb-2"><strong>Skill gradient:</strong> Novices report larger efficiency and performance gains than top-rated users; usage frequency decreases with rating.</p>
-                <p class="mb-2"><strong>Setters and coaches:</strong> LLMs are adopted for repetitive support tasks (translation, boilerplate, testing), while originality-critical phases remain human-led.</p>
-                <p class="mb-0"><strong>Stewards:</strong> moderation workload shifts toward AI-related triage, reporting, and investigation.</p>
+                <p class="mb-3">
+                    FAIR shows role-dependent adoption instead of a single “AI takeover” pattern.
+                </p>
+                <p class="mb-2"><strong>Contestants:</strong> pre-contest and in-contest use remains low (regular-use mean = 2.31/5; preparation change mean = 2.32/5), while post-contest and training use is clearly higher (daily-use mean = 2.48/5).</p>
+                <p class="mb-2"><strong>Skill gradient:</strong> novices report larger efficiency/performance gains than Masters+, and usage is negatively correlated with rating (rho = -0.227, p = .001).</p>
+                <p class="mb-2"><strong>Problem setters:</strong> LLMs are accepted in low-creativity steps (translation, boilerplate, stress-testing, solver checks), but ideation remains human-controlled.</p>
+                <p class="mb-2"><strong>Coaches:</strong> teaching core changes little, but selection/integrity screening becomes stricter.</p>
+                <p class="mb-0"><strong>Stewards:</strong> work shifts toward monitoring and triaging AI-related reports, increasing moderation burden.</p>
             </div>
         </div>
 
         <div class="row mt-5" data-aos="fade-up" data-aos-delay="200">
             <div class="col-md-12 col-lg-12 mb-5">
-                <img src="projects_img/Fair/fair001.png" alt="LLM perceptions by rating group" class="img-fluid">
+                <img src="../projects_collection/projects_img/fair/fair001.png" alt="LLM perceptions by rating group" class="img-fluid">
                 <p class="text-muted text-center mt-3">
-                    <em>Novices perceive stronger efficiency/performance improvement, while over-reliance concern remains high across rating groups.</em>
+                    <em>Novices perceive stronger efficiency/performance benefit; concern about over-reliance remains high across all groups.</em>
                 </p>
             </div>
             <div class="col-md-12 col-lg-12">
-                <img src="projects_img/Fair/WorkFlowChange.png" alt="Problem setter workflow under LLMs" class="img-fluid">
+                <img src="../projects_collection/projects_img/fair/WorkFlowChange.png" alt="Problem setter workflow under LLMs" class="img-fluid">
                 <p class="text-muted text-center mt-3">
-                    <em>Workflow restructuring in problem setting: selective LLM integration in low-creativity stages, human control in core design stages.</em>
+                    <em>Setter pipeline shows selective integration: LLM assistance in repetitive phases, human judgment in originality-critical phases.</em>
                 </p>
             </div>
         </div>
@@ -188,20 +179,23 @@
         <div class="row">
             <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
                 <h2 class="mb-4">RQ2: Fairness Boundaries and Gray Zones</h2>
-                <p class="mb-2"><strong>Strong consensus:</strong> AI use during official contests is broadly judged as cheating and unfair advantage.</p>
-                <p class="mb-2"><strong>Disputed middle zone:</strong> bounded assistance (e.g., translation or light autocompletion) remains contested.</p>
-                <p class="mb-2"><strong>Policy polarization:</strong> participants support strict enforcement and disclosure, but disagree on “minor help” and tiered allowances.</p>
+                <p class="mb-3">
+                    The paper finds strong normative consensus at the extremes, and sharp disagreement in the middle.
+                </p>
+                <p class="mb-2"><strong>Consensus:</strong> using AI during official contests is widely seen as cheating (mean = 4.56/5; 89% agree/strongly agree), and as conferring unfair advantage (mean = 4.45/5; 86%).</p>
+                <p class="mb-2"><strong>Gray zones:</strong> translation and light autocomplete are often tolerated; pre-submission AI checking and conceptual hint outsourcing are broadly condemned.</p>
+                <p class="mb-2"><strong>Policy tension:</strong> ban-all and disclosure receive high support, but “minor help” and tiered allowance are polarized.</p>
                 <p class="mb-0">
-                    Interviews surface hidden practices (prompt laundering, off-platform delegation), explaining why written policies and perceived field reality diverge.
+                    Interview evidence further reveals hidden misuse workflows (batch prompting, laundering, off-platform distribution), explaining why policy text and on-the-ground reality diverge.
                 </p>
             </div>
         </div>
 
         <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
             <div class="col-md-12 col-lg-12">
-                <img src="projects_img/Fair/Gray.png" alt="Gray-zone policy opinions" class="img-fluid">
+                <img src="../projects_collection/projects_img/fair/Gray.png" alt="Gray-zone policy opinions" class="img-fluid">
                 <p class="text-muted text-center mt-3">
-                    <em>Policy attitudes show a clear anti-cheating baseline with persistent disagreement in bounded-assistance scenarios.</em>
+                    <em>Fairness attitudes: strong anti-cheating baseline plus persistent disagreement on bounded assistance scenarios.</em>
                 </p>
             </div>
         </div>
@@ -213,25 +207,29 @@
         <div class="row">
             <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
                 <h2 class="mb-4">RQ3: Governance, Compliance-Trust Gap, and Detection Limits</h2>
-                <p class="mb-2"><strong>High compliance willingness:</strong> most participants support platform AI rules and disclosure requirements.</p>
-                <p class="mb-2"><strong>Lower trust in enforcement:</strong> confidence in detection accuracy and case handling is substantially weaker than rule acceptance.</p>
-                <p class="mb-2"><strong>Platform mismatch:</strong> formal sanction rates remain low and stable, while proxy indicators suggest wider tool-mediated behavior shifts.</p>
+                <p class="mb-3">
+                    FAIR identifies a governance paradox: high willingness to comply, but lower confidence in enforcement.
+                </p>
+                <p class="mb-2"><strong>Compliance:</strong> mean = 4.55/5 (87.9% willing to follow rules).</p>
+                <p class="mb-2"><strong>Disclosure support:</strong> mean = 4.23/5 (76.3%).</p>
+                <p class="mb-2"><strong>Trust:</strong> only about 61% trust fair enforcement (mean = 3.71), and about 51% are satisfied with current handling (mean = 3.44).</p>
+                <p class="mb-2"><strong>Platform evidence:</strong> severe sanctions stay low (about 2-3% in Div3/4, 1.8% in Div2, 0.18% in Div1), with no post-policy spike after September 14, 2024.</p>
                 <p class="mb-0">
-                    FAIR highlights a governance paradox: legitimacy in AI-era contests depends less on perfect detection and more on transparent procedures, explainable judgments, and credible appeals.
+                    Meanwhile, behavioral proxies (Python share and extremely regular solve-interval CV patterns) increase after policy rollout, suggesting broader tool-mediated behavior than formal sanctions capture.
                 </p>
             </div>
         </div>
 
         <div class="row mt-5" data-aos="fade-up" data-aos-delay="200">
             <div class="col-md-6 col-lg-6 mb-4 mb-md-0">
-                <img src="projects_img/Fair/radar.png" alt="Governance radar chart" class="img-fluid">
+                <img src="../projects_collection/projects_img/fair/radar.png" alt="Governance radar chart" class="img-fluid">
             </div>
             <div class="col-md-6 col-lg-6">
-                <img src="projects_img/Fair/govv.png" alt="Governance dimensions" class="img-fluid">
+                <img src="../projects_collection/projects_img/fair/govv.png" alt="Governance dimensions" class="img-fluid">
             </div>
             <div class="col-md-12 mt-3">
                 <p class="text-muted text-center">
-                    <em>Governance dimensions reveal the compliance-trust gap: support for rules is stronger than trust in enforceability.</em>
+                    <em>Governance dimensions expose the compliance-trust gap: rule acceptance is stronger than confidence in enforceability and quality of handling.</em>
                 </p>
             </div>
         </div>
@@ -242,12 +240,15 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
-                <h2 class="mb-4">Discussion and Implications</h2>
+                <h2 class="mb-4">Discussion: Why FAIR Matters Beyond This One Contest Community</h2>
                 <p class="mb-3">
-                    FAIR frames competitive programming as a hybrid institution of education, competition, and creative production. This explains why one-dimensional policy imports are fragile under LLM disruption.
+                    FAIR positions competitive programming at the intersection of three governance logics: education (learning integrity), competition (ranking legitimacy), and creative production (authorship/disclosure norms). This hybrid identity explains why one-dimensional policy imports fail.
+                </p>
+                <p class="mb-3">
+                    The paper therefore proposes a chess-inspired layered approach: rating-linked anomaly detection, expert review for borderline cases, structured community reporting, and proportional sanctions with process transparency.
                 </p>
                 <p class="mb-0">
-                    The paper proposes layered governance with detection signals, expert adjudication, community reporting, and proportional sanctions. Beyond contests, the findings inform HCI research on fairness, transparency, and accountability in high-stakes human-AI ecosystems.
+                    The broader implication is practical: when perfect prevention is impossible, legitimacy depends on explainable procedures, low false-positive risk, and credible appeal paths.
                 </p>
             </div>
         </div>
@@ -259,8 +260,12 @@
         <div class="row">
             <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
                 <h2 class="mb-4">Limitations and Future Work</h2>
-                <p class="mb-2">The paper notes sample imbalance, role-coverage constraints, social-desirability bias in self-report data, and imperfect proxy validity in platform-level indicators.</p>
-                <p class="mb-0">Future work should extend underrepresented populations, add longitudinal and ethnographic evidence, and improve detection-evaluation pipelines that separate ecosystem drift from AI-specific effects.</p>
+                <p class="mb-3">
+                    FAIR explicitly notes sample imbalance (gender/region), absence of direct interviews with Codeforces stewards, social-desirability bias in self-reporting, and imperfect proxy validity in large-scale behavioral indicators.
+                </p>
+                <p class="mb-0">
+                    Future work should expand underrepresented populations, combine ethnographic and social-media evidence, and build longitudinal instrumentation to separate general ecosystem drift from AI-specific effects.
+                </p>
             </div>
         </div>
     </div>
@@ -273,96 +278,38 @@
                 <h2>The Team</h2>
             </div>
         </div>
-        <div class="row fair-team" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="col-lg-4">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6 mb-4">
                 <div class="testmonial">
                     <div class="d-flex author align-items-center">
                         <div class="pic">
-                            <img src="../images/xin.jpg" alt="Xin Tong" class="img-fluid">
-                        </div>
-                        <div class="author-name">
                             <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=435">
-                                <h2>Xin Tong</h2>
-                                <p>Principal Investigator (PI)</p>
+                                <img src="../images/xin.jpg" alt="Xin Tong" class="img-fluid">
                             </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="testmonial">
-                    <div class="d-flex author align-items-center">
-                        <div class="pic">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQVpungJM8vsRyuFwJHRnQ-3RDFqRrQVk3B41ZuDy_CtXxv0kqyWLxtQ3OK-l-LhWsU0xeMF9lUwuafy4fmcUA2-5v28C-bBkDI8-TjQ&amp;s=10" alt="Pan Hui" class="img-fluid">
-                        </div>
                         <div class="author-name">
-                            <h2>Pan Hui</h2>
-                            <p>Collaborator</p>
+                            <h2>Xin Tong</h2>
+                            <p>Principal Investigator (PI)</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-6 mb-4">
                 <div class="testmonial">
                     <div class="d-flex author align-items-center">
                         <div class="pic">
-                            <img src="../images/primo.jpg" alt="Dongyijie Primo Pan" class="img-fluid">
-                        </div>
-                        <div class="author-name">
                             <a href="../profile/primo.html">
-                                <h2>Dongyijie Primo Pan</h2>
-                                <p>Researcher</p>
+                                <img src="../images/primo.jpg" alt="Dongyijie Primo Pan" class="img-fluid">
                             </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="testmonial">
-                    <div class="d-flex author align-items-center">
-                        <div class="pic">
-                            <img src="https://lingolift-1335262060.cos.ap-guangzhou.myqcloud.com/images/Luolan.jpg" alt="Lan Luo" class="img-fluid">
-                        </div>
                         <div class="author-name">
-                            <h2>Lan Luo</h2>
+                            <h2>Dongyijie Primo Pan</h2>
                             <p>Researcher</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4">
-                <div class="testmonial">
-                    <div class="d-flex author align-items-center">
-                        <div class="pic">
-                            <img src="https://lingolift-1335262060.cos.ap-guangzhou.myqcloud.com/images/JiZhu.jpg" alt="Ji Zhu" class="img-fluid">
-                        </div>
-                        <div class="author-name">
-                            <h2>Ji Zhu</h2>
-                            <p>Researcher</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="testmonial">
-                    <div class="d-flex author align-items-center">
-                        <div class="pic">
-                            <img src="https://lingolift-1335262060.cos.ap-guangzhou.myqcloud.com/images/zhiqigao.jpeg" alt="Zhiqi Gao" class="img-fluid">
-                        </div>
-                        <div class="author-name">
-                            <h2>Zhiqi Gao</h2>
-                            <p>Researcher</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </div>
