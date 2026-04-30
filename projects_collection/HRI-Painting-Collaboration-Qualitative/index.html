@@ -86,6 +86,20 @@
         <div class="publication-authors">
             Jie Yu, Xinyi Zhang, Yaqiong Luo, RAY LC, Kaishun Wu, Xin Tong
         </div>
+        <div class="publication-links mb-4">
+            <!-- 预留按钮：后续可替换为真实链接 -->
+            <a href="#" class="btn btn-black btn-block disabled" aria-disabled="true">PDF (Coming Soon)</a>
+        </div>
+
+        <!-- Demo Video: 直接嵌入网页播放 -->
+        <div class="publication-video mb-5" data-aos="fade-up">
+            <video controls class="w-100 rounded shadow" style="max-width: 100%;">
+                <source src="https://arkxlab-video-tmp.oss-cn-guangzhou.aliyuncs.com/FromToolToParterner.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
         <div class="publication-abstract">
             <h2 class="mb-4">Abstract</h2>
             <!-- 摘要：概述机器人表达行为如何影响创意协作体验 -->
@@ -101,10 +115,6 @@
             empirical evidence of partnership transformation and design insights for facilitating human-robot creative
             collaboration.
         </div>
-        <div class="publication-links">
-            <!-- 预留按钮：后续可替换为真实链接 -->
-            <a href="#" class="btn btn-black btn-block disabled" aria-disabled="true">PDF (Coming Soon)</a>
-        </div>
     </div>
 
     <!-- 重点可视化区：展示占位图，待上传真实图像后替换 -->
@@ -116,6 +126,91 @@
                     <img src="teaser.jpg"
                         alt="Transformation from Functional to Expressive Human-Robot Creative Collaboration. The contrast illustrates how expressive robot behaviors (waving, inviting gestures) transform user experience from isolated parallel work ('Just drawing separately...kind of boring') to engaged collaborative partnership ('We’re drawing together!'). The expressive condition demonstrates contextually appropriate behaviors including acknowledgment gestures and spatial coordination that facilitate genuine creative partnership formation."
                         class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detail Sections -->
+    <div class="section">
+        <div class="container">
+            <!-- Introduction Section -->
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up">
+                    <h2 class="mb-4">Introduction</h2>
+                    <p>Human-robot creative collaboration is typically limited by a command-response paradigm where
+                        robots act as sophisticated tools rather than genuine partners. While current systems can
+                        produce impressive artistic results, they lack the intuitive, adaptive communication—such as
+                        subtle gestural cues and responsive rhythms—that characterizes human creative partnerships. This
+                        research investigates whether expressive robot behaviors (e.g., social signaling and movement
+                        quality) can bridge this gap and foster a deeper sense of partnership.</p>
+                    <p>The authors propose that physical robotic collaboration offers unique opportunities for shared
+                        workspace negotiation and real-time coordination that screen-based systems cannot match. By
+                        comparing purely functional interactions with socially expressive ones, the study aims to
+                        determine how movement-based expression transforms a user's perception of a robot from a mere
+                        tool into a creative collaborator.</p>
+                </div>
+            </div>
+
+            <!-- Motivation Section -->
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="mb-4">Motivation</h2>
+                    <p>The primary motivation stems from the need for intercorporeal communication in creative work—an
+                        embodied dialogue where collaborators navigate ambiguity and enter "flow states" together.
+                        Current robots often master the <em>what</em> of co-creation (the output) but overlook the
+                        <em>how</em> (the collaborative process), preventing the formation of relationships built on
+                        mutual inspiration and emotional support.</p>
+                    <p>Expressive behaviors serve as a critical mechanism to communicate intent, emotional states, and
+                        collaborative readiness. The research is driven by the hypothesis that movement-based expression
+                        can establish creative rhythm, provide emotional encouragement during uncertain phases, and
+                        signal appreciation, thereby fundamentally altering the human perception of the robotic system.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Robot Implementation Section -->
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="mb-4">Robot Implementation</h2>
+                    <p>The system utilizes a Dobot CR5 6-DOF robotic arm equipped with custom brush end-effectors. For
+                        the creative output, the authors developed a hybrid generative pipeline using Latent Diffusion
+                        Models (Stable Diffusion 1.5 and SDXL) via ComfyUI, which translates semantic or visual inputs
+                        into executable robotic trajectories. This allows the robot to act as a creative agent by
+                        applying artistic textures or generating semantically complementary objects to the human's work.
+                    </p>
+                    <p>The robot's "personality" is realized through six expressive behaviors (Hello, Invite, Waiting,
+                        Inquiry, Wave, Bye) categorized by task phases. These movements were designed using Laban
+                        Movement Analysis (LMA) principles, parameterizing dimensions like "Effort" and "Shape" to
+                        ensure they convey specific social meanings—such as using arc-like movements to signal
+                        uncertainty (Inquiry) or rhythmic side-to-side nods to show appreciation (Wave).</p>
+                    <div class="mt-4 text-center">
+                        <img src="Implementation.png" alt="Robot Implementation Pipeline and Expressive Behaviors"
+                            class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Study Section -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="300">
+                    <h2 class="mb-4">User Study</h2>
+                    <p>The researchers conducted two studies: a formative study with 5 participants to establish design
+                        requirements and a main within-subjects study with 18 participants. The main study compared a
+                        functional condition (pure task execution) against an expressive condition (social gestures and
+                        adaptive responses) using a Wizard-of-Oz (WoZ) protocol to trigger behaviors based on
+                        participant cues.</p>
+                    <p>Results showed that expressive behaviors significantly enhanced the collaborative experience,
+                        with a large effect size (r=0.847) in shifting perception from "tool" to "partner". Participants
+                        reported higher creative motivation, stronger emotional connection, and better rhythm
+                        synchronization in the expressive condition. Furthermore, visual analysis of the resulting
+                        artworks revealed that the expressive condition led to more integrated and intertwined
+                        compositions, whereas functional interactions resulted in more compartmentalized, isolated
+                        drawings.</p>
+                    <div class="mt-4 text-center">
+                        <img src="UserStudy.png" alt="User Study Details and Results Visualization"
+                            class="img-fluid rounded shadow">
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,21 +229,23 @@
             <div class="row" data-aos="fade-up" data-aos-delay="100">
 
                 <div class="col-lg-4">
-                    <div class="testmonial">
+                    <div class="testmonial mb-4">
                         <div class="d-flex author align-items-center">
                             <div class="pic">
                                 <img src="../../images/xin.jpg" alt="Xin Tong" class="img-fluid">
                             </div>
                             <div class="author-name">
-                                <h2>Dr. Xin Tong</h2>
-                                <p>Principal Investigator (PI)</p>
+                                <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=435">
+                                    <h2>Dr. Xin Tong</h2>
+                                    <p>Principal Investigator (PI)</p>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="testmonial">
+                    <div class="testmonial mb-4">
                         <div class="d-flex author align-items-center">
                             <div class="pic">
                                 <img src="../../images/ray.jpg" alt="RAY LC" class="img-fluid">
@@ -162,13 +259,55 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="testmonial">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img src="../../images/default_boy.jpg" alt="Kaishun Wu" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Kaishun Wu</h2>
+                                <p>Collaborator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
                         <div class="d-flex author align-items-center">
                             <div class="pic">
                                 <img src="../../images/yujie.JPG" alt="Jie Yu" class="img-fluid">
                             </div>
                             <div class="author-name">
                                 <h2>Jie Yu</h2>
+                                <p>Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img src="../../images/default_girl.jpg" alt="Xinyi Zhang" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Xinyi Zhang</h2>
+                                <p>Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img src="../../images/default_girl.jpg" alt="Yaqiong Luo" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Yaqiong Luo</h2>
                                 <p>Researcher</p>
                             </div>
                         </div>

@@ -1,194 +1,581 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<meta name="author" content="ARK Lab">
 	<link rel="shortcut icon" href="favicon.png">
-
-	<meta name="description" content="" />
-	<meta name="keywords" content="bootstrap, bootstrap5" />
+	<meta name="description" content="Join ARK Lab — Prospective Ph.D., MPhil, and Visiting Students" />
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
+		rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="fonts/icomoon/style.css">
 	<link rel="stylesheet" href="fonts/feather/style.css">
-
 	<link rel="stylesheet" href="css/tiny-slider.css">
 	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/glightbox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Perspective Students - ARK Lab</title>
+	<title>Prospective Students — ARK Lab</title>
+
+	<style>
+		/* ── Page-scoped styles: monochrome palette ── */
+
+		.section-label {
+			display: inline-block;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 0.78rem;
+			font-weight: 600;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			color: #999;
+			margin-bottom: 0.5rem;
+		}
+
+		.content-text {
+			font-size: 1rem;
+			line-height: 1.85;
+			color: #555;
+		}
+
+		.content-text strong {
+			color: #1a1a2e;
+		}
+
+		/* Notice banner — subtle gray, no strong color */
+		.notice-banner {
+			background: #f5f5f5;
+			border-left: 3px solid #bbb;
+			border-radius: 0 6px 6px 0;
+			padding: 1rem 1.25rem;
+			margin-bottom: 2rem;
+		}
+
+		.notice-banner p {
+			margin-bottom: 0;
+			font-size: 0.92rem;
+			color: #555;
+		}
+
+		/* Highlight block — light gray accent */
+		.highlight-block {
+			background: #f8f8f8;
+			border-left: 3px solid #ccc;
+			border-radius: 0 6px 6px 0;
+			padding: 1.15rem 1.35rem;
+			margin-top: 1.5rem;
+		}
+
+		.highlight-block p {
+			margin-bottom: 0;
+			color: #444;
+			font-size: 0.95rem;
+		}
+
+		/* Research area cards — monochrome */
+		.research-card {
+			background: #fff;
+			border-radius: 0.75rem;
+			padding: 1.6rem;
+			box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+			border: 1px solid #eee;
+			height: 100%;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.research-card:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 14px 40px rgba(0, 0, 0, 0.09);
+		}
+
+		.research-card .card-icon {
+			width: 44px;
+			height: 44px;
+			border-radius: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.2rem;
+			margin-bottom: 1.1rem;
+			background: #222;
+			color: #fff;
+		}
+
+		.research-card h4 {
+			font-size: 1.1rem;
+			font-weight: 600;
+			margin-bottom: 0.6rem;
+			color: #1a1a2e;
+		}
+
+		.research-card p {
+			font-size: 0.9rem;
+			color: #666;
+			margin-bottom: 0;
+			line-height: 1.7;
+		}
+
+		/* Advisor card */
+		.advisor-card {
+			display: flex;
+			align-items: flex-start;
+			gap: 2rem;
+		}
+
+		.advisor-card img {
+			width: 160px;
+			height: 160px;
+			border-radius: 12px;
+			object-fit: cover;
+			flex-shrink: 0;
+		}
+
+		@media (max-width: 767.98px) {
+			.advisor-card {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+
+			.advisor-card img {
+				width: 140px;
+				height: 140px;
+			}
+		}
+
+		/* Checklist items */
+		.checklist-item {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 1rem;
+		}
+
+		.checklist-item .check-icon {
+			color: #888;
+			font-size: 0.95rem;
+			margin-right: 0.75rem;
+			margin-top: 0.2rem;
+			flex-shrink: 0;
+		}
+
+		.checklist-item p {
+			margin-bottom: 0;
+		}
+
+		/* Benefit items */
+		.benefit-item {
+			background: #fff;
+			border-radius: 0.75rem;
+			padding: 1.4rem;
+			box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+			border: 1px solid #eee;
+			height: 100%;
+		}
+
+		.benefit-item h5 {
+			font-size: 1rem;
+			font-weight: 600;
+			color: #1a1a2e;
+			margin-bottom: 0.5rem;
+		}
+
+		.benefit-item p {
+			font-size: 0.88rem;
+			color: #666;
+			margin-bottom: 0;
+			line-height: 1.7;
+		}
+
+		/* Apply section tabs */
+		.apply-category {
+			border-bottom: 1px solid #eee;
+			padding-bottom: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		.apply-category:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+
+		.apply-category h4 {
+			font-size: 1.15rem;
+			font-weight: 600;
+			color: #1a1a2e;
+			margin-bottom: 0.75rem;
+		}
+	</style>
 </head>
+
 <body>
-
-	<!-- <div class="site-mobile-menu site-navbar-target">
-		<div class="site-mobile-menu-header">
-			<div class="site-mobile-menu-close">
-				<span class="icofont-close js-menu-toggle"></span>
-			</div>
-		</div>
-		<div class="site-mobile-menu-body"></div>
-	</div>
-
-	<nav class="site-nav">
- 		<div class="container">
- 			<div class="site-navigation">
- 					<a href="index.html" class="logo m-0">ARK Lab</a>
- 				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
- 					<li ><a href="index.html">Home</a></li>
- 			 	  <li><a href="projects.html">Projects</a></li>
- 					<li><a href="publications.html">Publications</a></li>
- 					<li><a href="people.html">People</a></li>
-					<li  class="active"><a href="perspective_stu.html">Perspective Students</a></li>
-
- 				</ul>
-
- 				<a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
- 					<span></span>
- 				</a>
- 			</div>
- 		</div>
- 	</nav> -->
 
 	<div id="header-placeholder"></div>
 
+	<!-- ═══ Hero ═══ -->
 	<div class="hero v-h-full overlay">
- 		<div class="img-bg rellax">
- 			<img src="images/hkust2.png" alt="Image" class="img-fluid">
- 		</div>
- 		<div class="container">
- 			<div class="row align-items-center v-h-full">
-
- 				<div class="col-lg-7 col-xxl-10 mx-auto text-center">
- 					<h1 class="heading-2 text-white mb-2" data-aos="fade-up">Join Us!</h1>
- 					<p data-aos="fade-up" data-aos-delay="200" class="text-white lead mb-4">
- 						Professor Dr. Xin Tong is looking for research assistants to join us.
-						  </p>
-  				</div>
- 			</div>
- 		</div>
-
- 	</div>
-
-		<div class="section ">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-10 pe-lg-5" data-aos="fade-up">
-	 					<h2 class="mb-4">Skills Needed</h2>
-						<h6 class="mb-5"> We are looking for programmers, designers / UX researchers, 3D animators, and videographers. In order to be considered you must have:</h6>
-						<ul>
-							<li>A Bachelor or Master’s degree in Computer Science, HCI, interaction design (or related design fields) or health research with a GPA that meets DKU’s admission requirements.</li>
-							<li>At least one of the following: strong programming proficiencies [Unity(C#), UnReal(C++) or web and mobile phone development preferred], strong 3D animation, interaction design, video skills, design/usability research skills, strong health research skills.</li>
-							<li>Good written and oral communication skills.</li>
-							<li>A demonstration of strong interest in one of the lab’s projects.</li>
-							<li>A sense of humor.</li>
-						</ul>
-
-					</div>
-
+		<div class="img-bg rellax">
+			<img src="images/hkust2.png" alt="Image" class="img-fluid">
+		</div>
+		<div class="container">
+			<div class="row align-items-center v-h-full">
+				<div class="col-lg-7 col-xxl-10 mx-auto text-center">
+					<h1 class="heading-2 text-white mb-2" data-aos="fade-up">Join Us!</h1>
+					<p data-aos="fade-up" data-aos-delay="200" class="text-white lead mb-4">
+						We are looking for passionate students to tackle real-world human-centered challenges.
+					</p>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="section bg-light">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-10 pe-lg-5" data-aos="fade-up">
-						<h2 class="mb-4">Interested Applicants</h2>
-						<h6 class="mb-5">Interested applicants should
-							emailad <a class="mark" href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a>
-							to discuss their application before applying to ARK Lab. Emails need to be titled PROSPECTIVE Research Assistants and must include the following 4 items:</h6>
-
-						<ul>
-							<li><strong>A description of your research interests</strong>: as they relate to the lab’s existing research; you need to show clear evidence that you have actually looked at the types of research we conduct; the best place to do this is to look at this website’s PUBLICATIONS page.</li>
-							<li><strong>A curriculum vitae (CV)</strong> </li>
-							<li><strong>A copy of your unofficial transcript</strong> </li>
-							<li><strong>An image showcasing your potential contributions to the lab</strong>: this can range from a photo of your design, media, computational or clinical work to a short video. We are NOT looking for a portfolio per se — a link to that can be included later, in your formal application. We are looking at this primarily to gain a sense of your creativity, personality and/or “get it done” initiative. </li>
-
-						</ul>
-						<p class="fst-italic">If you don’t include one or more,  your email probably won’t get a reply.</p>
-
+	<!-- ═══ Section 1: Advisor Information ═══ -->
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 mx-auto" data-aos="fade-up">
+					<span class="section-label">Lab Director</span>
+					<h2 class="mb-4">Prof. Xin Tong</h2>
+					<div class="advisor-card">
+						<img src="images/xin.jpg" alt="Prof. Xin Tong">
+						<div>
+							<p class="content-text">
+								Xin's research contributes to the larger understanding of how people with physical and
+								psychological disabilities experience and interact with technology.
+								Her work largely centers on understanding, designing, developing, and evaluating
+								interactive systems, such as games and VR environments.
+							</p>
+							<p class="content-text mb-0">
+								She leads the <strong>AI &amp; Art for Knowledge &amp; Creativity (ARK) Lab</strong> at
+								<a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a>, Computational Media and Arts
+								Thrust.
+								<a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=435">View full
+									profile →</a>
+							</p>
+						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
+	</div>
 
+	<!-- ═══ Section 2: Research Topics ═══ -->
+	<div class="section bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 mx-auto" data-aos="fade-up">
+					<span class="section-label">What We Work On</span>
+					<h2 class="mb-3">Research Topics</h2>
+					<p class="content-text mb-5">Our lab sits at the intersection of human-computer interaction,
+						artificial intelligence, and creative media. Below are our key research themes:</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="0">
+					<div class="research-card">
+						<div class="card-icon"><span class="feather-heart"></span></div>
+						<h4>AI for Accessibility &amp; Health</h4>
+						<p>Designing interactive systems for people with autism, dementia, and other special needs —
+							including serious games, tangible interfaces, and AI-powered educational tools (e.g.,
+							LingoLift, ATTENPlay, StarRescue).</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+					<div class="research-card">
+						<div class="card-icon"><span class="feather-globe"></span></div>
+						<h4>VR/AR &amp; Digital Cultural Heritage</h4>
+						<p>Building immersive experiences for education, empathy, and cultural preservation — such as
+							VR-based history learning, AI-generated mural restoration, and embodied heritage
+							interactions.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+					<div class="research-card">
+						<div class="card-icon"><span class="feather-cpu"></span></div>
+						<h4>Human-AI Collaborative Creativity</h4>
+						<p>Exploring how humans and AI co-create — from robot-assisted painting collaboration, to
+							task-oriented interface co-generation (DuetUI), to generative AI in avatar design and
+							competitive programming.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<!-- ═══ Section 3: Prospective Ph.D. & MPhil ═══ -->
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 mx-auto" data-aos="fade-up">
+					<span class="section-label">For Prospective Students</span>
+					<h2 class="mb-4">Prospective Ph.D. and MPhil Applicants</h2>
 
+					<div class="notice-banner" data-aos="fade-up" data-aos-delay="100">
+						<p><strong>Please read this message carefully before you send any inquiry email to me.</strong>
+						</p>
+					</div>
 
-		<div class="site-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="widget">
-							<h3>Contact</h3>
-							<address>No.1 Du Xue Rd, Nansha District, Guangzhou</address>
-							<ul class="list-unstyled links">
-			
-								<li><a href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a></li>
-							</ul>
-						</div> <!-- /.widget -->
-					</div> <!-- /.col-lg-4 -->
-					<div class="col-lg-4">
-						<div class="widget">
-							<h3>Sources</h3>
-							<ul class="list-unstyled float-start links">
-								<li><a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a></li>
-								<li><a href="projects.html">Info Hub</a></li>
-								<li><a href="https://cma.hkust-gz.edu.cn/">CMA Thrust</a></li>
+					<p class="content-text">
+						MPhil+PhD offer many advantages over direct PhD. Our <strong>Red Bird MPhil program</strong>
+						trains interdisciplinary research and teamwork abilities that are essential for addressing
+						complex multi-disciplinary challenges humans are facing in today's world.
+					</p>
+					<p class="content-text">
+						With two years of MPhil training, you will gain a much clearer vision of whether and how you
+						want to pursue a PhD. Consequently, you will be much better prepared to get your PhD done in as
+						short as two years (though shorter does not necessarily mean better — many Chinese students are
+						too obsessed with completing degrees faster).
+					</p>
+					<p class="content-text">
+						MPhil+PhD provides you with sufficient time to think through how you may turn your innovative
+						MPhil/PhD research into real-world impactful prototypes. Thus, whether you want to pursue a PhD
+						or not, <strong>I strongly encourage you to apply to get into our Red Bird MPhil program
+							first.</strong>
+					</p>
 
+					<div class="highlight-block" data-aos="fade-up" data-aos-delay="200">
+						<p>Many of my MPhil students continue to do PhD with me or in other top-tier places. A few of my
+							MPhil graduates even started their own startups. Follow the instructions via <a
+								href="https://cft.hkust-gz.edu.cn/department/red-bird-mphil/" target="_blank">this
+								link</a> to apply for MPhil.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-							</ul>
-							<ul class="list-unstyled float-start links">
-								<li><a href="people.html">People</a></li>
-									<li><a href="events.html">Events</a></li>
-								<li><a href="perspective_stu.html">Perspective Students</a></li>
-									<li><a href="contact.html">Contact us</a></li>
+	<!-- ═══ Section 4: What You Will Get ═══ -->
+	<div class="section bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 mx-auto" data-aos="fade-up">
+					<span class="section-label">Why Join Us</span>
+					<h2 class="mb-5">What You Will Get</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="0">
+					<div class="benefit-item">
+						<h5>Top-Venue Publications</h5>
+						<p>Opportunity to publish at CHI, ASSETS, CHIPLAY, CSCW, and other premier ACM venues as a first
+							author. Our lab has received a Best Paper Award at CHI 2024.</p>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+					<div class="benefit-item">
+						<h5>Systematic Research Training</h5>
+						<p>Regular one-on-one meetings, structured mentorship, and a collaborative, respectful research
+							environment. Senior students gain freedom to explore independent research.</p>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+					<div class="benefit-item">
+						<h5>Interdisciplinary Collaboration</h5>
+						<p>Work alongside researchers from computer science, design, health, and the arts. Collaborate
+							with external partners at top-tier universities worldwide.</p>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+					<div class="benefit-item">
+						<h5>World-Class Facilities</h5>
+						<p>The CMA lab spans 2,000 m² with GPU servers, VR/AR headsets, eye trackers, robotic arms, 3D
+							printers, motion capture systems, and a modern campus environment.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-							</ul>
-						</div> <!-- /.widget -->
-					</div> <!-- /.col-lg-4 -->
-					<div class="col-lg-4">
-						<div class="widget">
-							<h3>Follow Us</h3>
-							<ul class="list-unstyled float-start links">
-	 								<li><a href="https://space.bilibili.com/479380804"><img src="images/bilibili.jpeg" alt="Wechat QR codee" class="wechat-qr"> </li></a>
-							</ul>
-							<ul class="list-unstyled float-start links">
-	 								<li><img src="images/Wechat.jpeg" alt="Wechat QR codee" class="wechat-qr"> </li>
-							</ul>
+	<!-- ═══ Section 5: How to Apply ═══ -->
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 mx-auto" data-aos="fade-up">
+					<span class="section-label">Application Guide</span>
+					<h2 class="mb-5">How to Apply</h2>
 
-				<!--	 	<ul class="list-unstyled social">
-								<li><a href="#"><span class="icon-youtube"></span></a></li>
-								<li><a href="https://space.bilibili.com/479380804"><span class="icon-twitter"></span></a></li>
-								<li><a href="#"><span class="icon-facebook"></span></a></li>
-								<li><a href="#"><span class="icon-linkedin"></span></a></li>
-								<li><a href="#"><span class="icon-pinterest"></span></a></li>
-								<li><a href="#"><span class="icon-dribbble"></span></a></li>
-							</ul> -->
-						</div> <!-- /.widget -->
-					</div> <!-- /.col-lg-4 -->
-				</div> <!-- /.row -->
+					<!-- MPhil -->
+					<div class="apply-category">
+						<h4>MPhil Applicants</h4>
+						<p class="content-text">
+							Since the Red Bird Master's Program does not distinguish between majors when applying,
+							applicants do not need to contact the advisor in advance. Please submit your application
+							through the <a href="https://cft.hkust-gz.edu.cn/department/red-bird-mphil/"
+								target="_blank">university's official website</a> as early as possible.
+						</p>
+						<p class="content-text">
+							If you have been admitted and are interested in joining ARK Lab, please send your resume and
+							research statement to <a href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a>. The
+							email subject should be: <strong>PROSPECTIVE MPhil Student</strong>.
+						</p>
+					</div>
 
-				<div class="row mt-5">
-					<div class="col-12 text-center">
-						<p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
-							<a href="#" target="_blank" rel="nofollow noopener">ARK Lab</a> &bullet;
-							<a href="#" target="_blank" rel="nofollow noopener">License</a>
+					<!-- PhD -->
+					<div class="apply-category">
+						<h4>PhD Applicants</h4>
+						<p class="content-text mb-3">
+							Please email <a href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a> with the subject
+							line <strong>PROSPECTIVE PhD Student</strong>. Your email must
+							include the following:
+						</p>
+						<div class="checklist-item"><span class="check-icon">—</span>
+							<p><strong>A description of your research interests</strong> as they relate to the lab's
+								existing research. Show evidence that you have looked at our <a
+									href="projects.html">Projects</a>.</p>
+						</div>
+						<div class="checklist-item"><span class="check-icon">—</span>
+							<p><strong>A curriculum vitae (CV)</strong></p>
+						</div>
+						<div class="checklist-item"><span class="check-icon">—</span>
+							<p><strong>A copy of your unofficial transcript</strong></p>
+						</div>
+						<div class="checklist-item"><span class="check-icon">—</span>
+							<p><strong>An image or short video showcasing your potential contributions</strong> — not a
+								full portfolio, but something that shows your creativity, personality, and initiative.
+							</p>
+						</div>
+						<p class="content-text fst-italic mt-3">If you don't include one or more of these, your email
+							may not receive a reply.</p>
+					</div>
+
+					<!-- Research Assistants -->
+					<div class="apply-category">
+						<h4>Research Assistants</h4>
+						<p class="content-text mb-3">
+							Interested applicants should email <a
+								href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a> to discuss their application
+							before applying. The email subject should be <strong>PROSPECTIVE Research
+								Assistants</strong> and must include the following 4 items:
+						</p>
+						<div class="checklist-item"><span class="check-icon">—</span>
+							<p><strong>A description of your research interests</strong> as they relate to the lab's
+								existing research. Show clear evidence that you have looked at the types of research we
+								conduct — the best place to start is our <a href="projects.html">Projects</a> page.</p>
+						</div>
+						<div class="checklist-item"><span class="check-icon">—</span>
+							<p><strong>A curriculum vitae (CV)</strong></p>
+						</div>
+						<div class="checklist-item"><span class="check-icon">—</span>
+							<p><strong>A copy of your unofficial transcript</strong></p>
+						</div>
+						<div class="checklist-item"><span class="check-icon">—</span>
+							<p><strong>An image or short video showcasing your potential contributions</strong> — this
+								can range from a photo of your design, media, computational or clinical work to a short
+								video. We are NOT looking for a portfolio per se — a link to that can be included later.
+								We are looking primarily to gain a sense of your creativity, personality and/or "get it
+								done" initiative.</p>
+						</div>
+						<p class="content-text fst-italic mt-3">If you don't include one or more of these, your email
+							may not receive a reply.</p>
+					</div>
+
+					<!-- Visiting -->
+					<div class="apply-category">
+						<h4>Visiting Research Students</h4>
+						<p class="content-text">
+							If you are a registered graduate or senior year undergraduate student in another university
+							and would like to study for a short period (e.g., 3 months) with our group, you are welcome
+							to apply to our visiting student program: <a
+								href="https://fytgs.hkust-gz.edu.cn/admissions/short-term" target="_blank">link</a>. You
+							may also send an email
+							with your CV and transcripts to <a
+								href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a>.
+						</p>
+						<p class="content-text">
+							Make sure your home university and/or your academic supervisor allows you to visit for the
+							period you apply for.
 						</p>
 					</div>
 				</div>
-			</div> <!-- /.container -->
-		</div> <!-- /.site-footer -->
+			</div>
+		</div>
+	</div>
+
+	<!-- ═══ Section 6: Skills Needed ═══ -->
+	<div class="section bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 mx-auto" data-aos="fade-up">
+					<span class="section-label">Qualifications</span>
+					<h2 class="mb-4">Skills We Look For</h2>
+					<p class="content-text mb-4">We are looking for programmers, designers, UX researchers, 3D
+						animators, and videographers. Ideal candidates will have:</p>
+					<ul class="content-text">
+						<li class="mb-2">A Bachelor's or Master's degree in Computer Science, HCI, interaction design
+							(or related design fields), or health research.</li>
+						<li class="mb-2">At least one of the following: strong programming proficiency (Unity/C#,
+							Unreal/C++, Python/PyTorch, or web/mobile development), 3D animation, interaction design,
+							video production, or UX research skills.</li>
+						<li class="mb-2">Good written and oral communication skills in English.</li>
+						<li class="mb-2">Demonstrated interest in one or more of the lab's research areas.</li>
+						<li class="mb-2">Interdisciplinary background is a plus — including art, design, health, or
+							engineering.</li>
+						<li class="mb-2">A sense of humor.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ═══ Footer ═══ -->
+	<div class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>Contact</h3>
+						<address>No.1 Du Xue Rd, Nansha District, Guangzhou</address>
+						<ul class="list-unstyled links">
+							<li><a href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>Sources</h3>
+						<ul class="list-unstyled float-start links">
+							<li><a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a></li>
+							<li><a href="projects.html">Info Hub</a></li>
+							<li><a href="https://cma.hkust-gz.edu.cn/">CMA Thrust</a></li>
+						</ul>
+						<ul class="list-unstyled float-start links">
+							<li><a href="people.html">People</a></li>
+							<li><a href="perspective_stu.html">Perspective Students</a></li>
+							<li><a href="contact.html">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>Follow Us</h3>
+						<ul class="list-unstyled float-start links">
+							<li><a href="https://space.bilibili.com/479380804"><img src="images/bilibili.jpeg"
+										alt="Bilibili" class="wechat-qr"></a></li>
+						</ul>
+						<ul class="list-unstyled float-start links">
+							<li><img src="images/wechat-new.jpg" alt="Wechat QR code" class="wechat-qr"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<p class="mb-0">Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+						<a href="#" target="_blank" rel="nofollow noopener">ARK Lab</a> &bullet;
+						<a href="#" target="_blank" rel="nofollow noopener">License</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Preloader -->
 	<div id="overlayer"></div>
@@ -198,7 +585,6 @@
 		</div>
 	</div>
 
-
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/tiny-slider.js"></script>
 	<script src="js/aos.js"></script>
@@ -207,9 +593,10 @@
 	<script src="js/rellax.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script>
-	fetch('includes/header-dark.html')
-		.then(res => res.text())
-		.then(text => document.getElementById('header-placeholder').innerHTML = text);
+		fetch('includes/header-dark.html')
+			.then(res => res.text())
+			.then(text => document.getElementById('header-placeholder').innerHTML = text);
 	</script>
 </body>
+
 </html>
