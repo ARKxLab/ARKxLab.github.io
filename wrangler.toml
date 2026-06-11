@@ -1,0 +1,8 @@
+name = "arklab"
+compatibility_date = "2026-06-11"
+
+[assets]
+directory = "."
+
+[observability]
+enabled = true
