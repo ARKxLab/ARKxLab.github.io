@@ -3,6 +3,7 @@ compatibility_date = "2026-06-11"
 
 [assets]
 directory = "."
+exclude = [".git/**", "node_modules/**", "*.toml", "*.config", "scss/**", "prepros-6.config"]
 
 [observability]
 enabled = true
