@@ -1,0 +1,6 @@
+.git
+node_modules
+scss
+wrangler.toml
+prepros-6.config
+settings.local.json
