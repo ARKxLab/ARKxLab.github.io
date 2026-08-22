@@ -6,30 +6,52 @@
 - **栏目**: 对应页面上的分组（Members、DKU Collaborators、External Collaborators、Alumni）
 - **链接**: 站内链接为相对路径（如 `profile/xxx.html`），站外链接为完整 URL；`#` 表示未设置
 
-### Members
-- Prof. Xin Tong — 链接: https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=435
-- Hongni Ye — 链接: profile/hongni.html
- - Xiangrong “Daniel” Zhu — 链接: profile/daniel.html
-- Jiawen Zhang — 链接: profile/jiawen.html
-- Keyi Zeng — 链接: profile/keyi.html
-- Jingyang “Elijah” Lin — 链接: profile/jingyang.html
- - Jiaxin Wang — 链接: profile/jiaxin.html
- - Zhaowen Deng — 链接: profile/zhaowen.html
-- Yixuan Li — 链接: profile/yixuan.html
-- Jie Yu — 链接: profile/jieyu.html
-- Qiyuan Cheng — 链接: profile/qiyuan.html
-- Shan Luo — 链接: profile/shan.html
-- Yancheng Cao — 链接: profile/yancheng.html
-- Huanyi Wan — 链接: profile/huanyi.html
-- Yuan Xu — 链接: profile/yuanxu.html
-- Haoxuan Wang — 链接: profile/haoxuan.html
-- Chenwan Zhong — 链接: profile/chenwan.html
-- Ruyi Li — 链接: profile/Ruyi.html
+### Members（2026-08-22 重排，按 cohort 分组）
+
+**Lab Director**
+- Prof. Xin Tong — 链接: profile/xintong.html（2026-08-22 新建站内主页；页内另链 HKUST(GZ) faculty page、Google Scholar、ORCID）
+
+**PhD Students · 2025 Spring Cohort**
+- Xiangrong “Daniel” Zhu — 链接: profile/daniel.html
+- Jiawen Zhang（co-mentored with Prof. Kang Zhang） — 链接: profile/jiawen.html
+- Hongni Ye（co-mentored with Prof. Mirjana Prpa） — 链接: profile/hongni.html
+- Junrong “Vicki” Song（co-supervised） — 链接: profile/junrong.html（占位页，待补资料与头像）
+- Yuying Wan（co-supervised） — 链接: profile/yuying.html（占位页）
+
+**PhD Students · 2025 Fall Cohort**
 - Tianjian Liu — 链接: profile/tianjian.html
-- Dongyijie Primo Pan — 链接: profile/primo.html
-- Chunwei Yang — 链接: profile/chunwei.html
-- Yizhi Song — 链接: profile/yizhi.html
- - Yinghao Gao — 链接: profile/yinghao.html
+
+**PhD Students · 2026 Spring Cohort**
+- Yuan Xu — 链接: profile/yuanxu.html
+- Jie Yu — 链接: profile/jieyu.html
+
+**PhD Students · 2026 Fall Cohort**
+- Liyi Xie（co-mentored with Prof. Kang Zhang） — 链接: profile/liyi.html（占位页）
+- Qiuju Chen（co-supervised） — 链接: profile/qiuju.html（占位页）
+- Bingqian Wang — 链接: profile/bingqian.html（CV: https://chbaalthough.github.io/cv/）
+- Jiansheng Li（co-mentored with Prof. Qiang Nie） — 链接: profile/jiansheng.html（占位页）
+
+**MPhil Students · 2025 Fall Cohort**
+- Hongni Chen — 链接: profile/hongnichen.html
+- Junhong Huang — 链接: profile/junhong.html
+- Yongdan Zeng — 链接: profile/yongdan.html
+- Mengqi "Maggy" Wu — 链接: profile/mengqi.html
+- Jiayi Huang — 链接: profile/jiayi.html
+- Nusratilla Abdullaev — 链接: profile/nusratilla.html
+- Anastasia Nikolova — 链接: profile/anastasia.html（占位页）
+- Yi Hu — 链接: profile/yihu.html（占位页）
+- Yiying Pan — 链接: profile/yiying.html（占位页）
+
+**MPhil Students · 2026 Fall Cohort**
+- Huanyi Wan — 链接: profile/huanyi.html
+
+**Research Assistants**
+- Zhaowen Deng — 链接: profile/zhaowen.html
+- Fangze Qiu — 链接: profile/fangze.html（占位页）
+- Xin Tan — 链接: profile/xintan.html（占位页）
+- Xinyuan Lan — 链接: profile/xinyuan.html（简介已补充，头像待替换）
+- Haijia Li — 链接: profile/haijia.html
+- Jiale Liu — 链接: profile/jiale.html
 
 ### DKU Collaborators
 - Prof.Yecheng (Kent) Cao, PhD — 链接: https://scholars.duke.edu/person/kent.cao
@@ -68,6 +90,19 @@
 - Yutong (Tony) Ren — 链接: #（未设置）
 - Xuening Peng — 链接: #（未设置）
 - Ruiqi Richard Chen — 链接: https://ruiqichen338.github.io/
+- Keyi Zeng — 链接: profile/keyi.html
+- Jiaxin Wang — 链接: profile/jiaxin.html
+- Chenwan Zhong — 链接: profile/chenwan.html
+- Qiyuan Cheng — 链接: profile/qiyuan.html
+- Yancheng Cao — 链接: profile/yancheng.html
+- Dongyijie Primo Pan（MPhil, 2024 Fall Cohort） — 链接: profile/primo.html
+- Haoxuan Wang（MPhil, 2024 Fall Cohort） — 链接: profile/haoxuan.html
+- Yizhi Song（MPhil, 2024 Fall Cohort） — 链接: profile/yizhi.html
+- Yinghao Gao（MPhil, 2024 Fall Cohort） — 链接: profile/yinghao.html
+- Yixuan Li（RA, 2024–2025） — 链接: profile/yixuan.html
+- Jingyang “Elijah” Lin（RA, 2024–2025） — 链接: profile/jingyang.html
+- Shan Luo（RA, 2025） — 链接: profile/shan.html
+- Liwen He（Visiting Student） — 链接: #（未设置）
 
 ---
 

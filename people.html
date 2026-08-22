@@ -36,6 +36,9 @@
 	<div id="header-placeholder"></div>
 
 
+		<!-- 2026-08-22 重排：Members 区按 Lab Director / PhD（按 cohort）/ MPhil（按 cohort）/ Research Assistants 分组。
+	     缺少资料的成员使用占位个人页（profile/*.html）与占位头像（images/null.jpg），待补充。
+	     历史上隐藏的 Ruyi Li、Chunwei Yang 卡片已从本文件移除，可在 git 历史中找回。 -->
 	<div class="section  mb-5">
 		<div class="container">
 			<div class="row">
@@ -46,92 +49,95 @@
 			</div>
 
 			<div class="row">
+				<div class="col-12">
+					<h3 class="h4 mt-4 mb-3 people-group-title">Lab Director</h3>
+				</div>
 				<div class="col-lg-3">
-					<a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=435">
-						<img src="images/xin.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Lab director</span>
+					<!-- 2026-08-22：Lab Director 卡片改为站内个人主页 profile/xintong.html（含完整简介、论文奖项、招生说明等）；头像 images/xin.jpg 已替换为新证件照。 -->
+					<a href="profile/xintong.html">
+						<img src="images/xin.jpg" alt="Portrait of Prof. Xin Tong" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">Lab Director</span>
 						<h3 class="h5 mb-3">Prof. Xin Tong</h3>
 						<p class="text-muted">
-							Xin’s research contributes to the larger understanding
-							of how people with physical and psychological disabilities experience and interact with
-							technology.
-							Her work largely centers on understanding, designing, developing,
-							and evaluating interactive systems, such as games and VR environments.
+							Xin’s research contributes to the larger understanding of how people with physical and psychological disabilities experience and interact with technology. Her work largely centers on understanding, designing, developing, and evaluating interactive systems, such as games and VR environments.
 						</p>
 					</a>
 				</div>
-
-				<div class="col-lg-3">
-					<a href="profile/hongni.html">
-						<img src="images/hy.png" alt="Image" class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">PhD Student</span>
-						<h3 class="h5 mb-3">Hongni Ye</h3>
-						<p class="text-muted">
-							Her research focuses on designing tangible user interfaces and interactions to support
-							special education for autisic children.
-						</p>
-					</a>
+				<div class="col-12">
+					<h3 class="h4 mt-4 mb-3 people-group-title">PhD Students</h3>
 				</div>
-
+				<div class="col-12">
+					<h4 class="h6 text-uppercase text-muted mb-3 people-cohort-title">2025 Spring Cohort</h4>
+				</div>
 				<div class="col-lg-3">
 					<a href="profile/daniel.html">
-						<img src="images/Daniel.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/Daniel.jpg" alt="Portrait of Xiangrong Daniel Zhu" class="img-fluid mb-4 people-card-img">
 						<span class="subheading d-inline-block">PhD Student</span>
 						<h3 class="h5 mb-3">Xiangrong “Daniel” Zhu</h3>
 						<p class="text-muted">
-							Xiangrong “Daniel” Zhu is a Data Science student
-							from the Class of 2024, interested in XR (AR/VR) technologies and natural
-							language manipulation. He is currently passionate about AI-generation design and VTubers
+							Xiangrong “Daniel” Zhu is a Data Science student from the Class of 2024, interested in XR (AR/VR) technologies and natural language manipulation. He is currently passionate about AI-generation design and VTubers
 						</p>
 					</a>
 				</div>
-
 				<div class="col-lg-3">
 					<a href="profile/jiawen.html">
-						<img src="images/jiawen.jpg" alt="Portrait of Jiawen Zhang"
-							class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">PhD Student</span>
+						<img loading="lazy" decoding="async" src="images/jiawen.webp" alt="Portrait of Jiawen Zhang" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">PhD Student · Co-mentored with Prof. Kang Zhang</span>
 						<h3 class="h5 mb-3">Jiawen Zhang</h3>
 						<p class="text-muted">
-							Jiawen has applied generative AI to autism education in her prior research, and her work has
-							been featured in digital media art exhibitions. Her current work focuses on using digital
-							technologies to preserve, inherit, and innovatively disseminate intangible cultural
-							heritage.
+							Jiawen has applied generative AI to autism education in her prior research, and her work has been featured in digital media art exhibitions. Her current work focuses on using digital technologies to preserve, inherit, and innovatively disseminate intangible cultural heritage.
 						</p>
 					</a>
 				</div>
-
-				<!-- 2025-10-29：更新 Tianjian Liu 头衔与简介，反映最新博士生身份与研究方向。 -->
+				<div class="col-lg-3">
+					<a href="profile/hongni.html">
+						<img loading="lazy" decoding="async" src="images/hy.webp" alt="Portrait of Hongni Ye" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">PhD Student · Co-mentored with Prof. Mirjana Prpa</span>
+						<h3 class="h5 mb-3">Hongni Ye</h3>
+						<p class="text-muted">
+							Her research focuses on designing tangible user interfaces and interactions to support special education for autisic children.
+						</p>
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<a href="profile/junrong.html">
+						<img loading="lazy" decoding="async" src="images/null.jpg" alt="Portrait of Junrong Vicki Song" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">PhD Student · Co-supervised</span>
+						<h3 class="h5 mb-3">Junrong “Vicki” Song</h3>
+						<p class="text-muted">
+							Profile coming soon.
+						</p>
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<a href="profile/yuying.html">
+						<img loading="lazy" decoding="async" src="images/null.jpg" alt="Portrait of Yuying Wan" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">PhD Student · Co-supervised</span>
+						<h3 class="h5 mb-3">Yuying Wan</h3>
+						<p class="text-muted">
+							Profile coming soon.
+						</p>
+					</a>
+				</div>
+				<div class="col-12">
+					<h4 class="h6 text-uppercase text-muted mb-3 people-cohort-title">2025 Fall Cohort</h4>
+				</div>
 				<div class="col-lg-3">
 					<a href="profile/tianjian.html">
-						<img src="images/tianjian.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/tianjian.jpg" alt="Portrait of Tianjian Liu" class="img-fluid mb-4 people-card-img">
 						<span class="subheading d-inline-block">PhD Student</span>
 						<h3 class="h5 mb-3">Tianjian Liu</h3>
 						<p class="text-muted">
-							Tianjian Liu is a first-year PhD student at HKUST (Guangzhou) supervised by Prof. Xin Tong,
-							focusing on Human-AI Interaction and Natural Language Processing. He designs proactive,
-							personalized agents for long-term interactions that offer context-aware support for users'
-							mental health and productivity.
+							Tianjian Liu is a first-year PhD student at HKUST (Guangzhou) supervised by Prof. Xin Tong, focusing on Human-AI Interaction and Natural Language Processing. He designs proactive, personalized agents for long-term interactions that offer context-aware support for users' mental health and productivity.
 						</p>
 					</a>
 				</div>
-
-				<div class="col-lg-3">
-					<a href="profile/jieyu.html">
-						<img src="images/yujie.JPG" alt="Portrait of Jie Yu" class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">PhD Student</span>
-						<h3 class="h5 mb-3">Jie Yu</h3>
-						<p class="text-muted">
-							Jie has a background in robotics and mechanical design, focusing on social robots and
-							embodied AI. His research looks at human-robot collaboration to enable more natural and
-							supportive interactions in everyday life.
-						</p>
-					</a>
+				<div class="col-12">
+					<h4 class="h6 text-uppercase text-muted mb-3 people-cohort-title">2026 Spring Cohort</h4>
 				</div>
-
 				<div class="col-lg-3">
 					<a href="profile/yuanxu.html">
-						<img src="images/xuyuan.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/xuyuan.webp" alt="Portrait of Yuan Xu" class="img-fluid mb-4 people-card-img">
 						<span class="subheading d-inline-block">PhD Student</span>
 						<h3 class="h5 mb-3">Yuan Xu</h3>
 						<p class="text-muted">
@@ -139,302 +145,237 @@
 						</p>
 					</a>
 				</div>
-
-				<!-- Visiting Students (Added below PhDs) -->
 				<div class="col-lg-3">
-					<a href="profile/yixuan.html">
-						<img src="images/yixuan.jpg" alt="Portrait of Yixuan Li" class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Visiting Student</span>
-						<h3 class="h5 mb-3">Yixuan Li</h3>
+					<a href="profile/jieyu.html">
+						<img loading="lazy" decoding="async" src="images/yujie.JPG" alt="Portrait of Jie Yu" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">PhD Student</span>
+						<h3 class="h5 mb-3">Jie Yu</h3>
 						<p class="text-muted">
-							M.Eng. student at Tsinghua University.
+							Jie has a background in robotics and mechanical design, focusing on social robots and embodied AI. His research looks at human-robot collaboration to enable more natural and supportive interactions in everyday life.
 						</p>
 					</a>
 				</div>
-
+				<div class="col-12">
+					<h4 class="h6 text-uppercase text-muted mb-3 people-cohort-title">2026 Fall Cohort</h4>
+				</div>
 				<div class="col-lg-3">
-					<a href="#">
-						<img src="images/liwen.jpg" alt="Portrait of Liwen He" class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Visiting Student</span>
-						<h3 class="h5 mb-3">Liwen He</h3>
+					<a href="profile/liyi.html">
+						<img loading="lazy" decoding="async" src="images/null.jpg" alt="Portrait of Liyi Xie" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">PhD Student · Co-mentored with Prof. Kang Zhang</span>
+						<h3 class="h5 mb-3">Liyi Xie</h3>
 						<p class="text-muted">
-							Industrial Design student from Beihang University focusing on haptic UX and multi-modal
-							interaction design in HCI.
+							Profile coming soon.
 						</p>
 					</a>
 				</div>
-
-				<!-- MPhil Students -->
 				<div class="col-lg-3">
-					<a href="profile/haoxuan.html">
-						<img src="images/haoxuan.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Mphil student</span>
-						<h3 class="h5 mb-3">Haoxuan Wang</h3>
+					<a href="profile/qiuju.html">
+						<img loading="lazy" decoding="async" src="images/null.jpg" alt="Portrait of Qiuju Chen" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">PhD Student · Co-supervised</span>
+						<h3 class="h5 mb-3">Qiuju Chen</h3>
 						<p class="text-muted">
-							Haoxuan Wang is an MPhil student at HKUST(GZ). He received his Bachelor of Arts degree from
-							Beijing Institute of Fashion Technology. Prior to joining HKUST(GZ), he previously interned
-							at the Chinese Academy of Lifestyle Design and MIIT-CIET. His research interests include
-							human-computer interaction, art education, and cultural heritage-based digital media art.
+							Profile coming soon.
 						</p>
 					</a>
 				</div>
-
 				<div class="col-lg-3">
-					<a href="profile/primo.html">
-						<img src="images/primo.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block"> Mphil Student</span>
-						<h3 class="h5 mb-3">Dongyijie Primo Pan</h3>
+					<a href="profile/bingqian.html">
+						<img loading="lazy" decoding="async" src="images/bingqian.webp" alt="Portrait of Bingqian Wang" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">PhD Student</span>
+						<h3 class="h5 mb-3">Bingqian Wang</h3>
 						<p class="text-muted">
-							Dongyijie Primo Pan's research interests primarily focus on mixed reality and human-computer
-							interaction applications in healthcare.
-							He has a strong interest in using MR to assist in psychological therapy and daily health
-							management.
-							Additionally, he is passionate about exploring music creation in the AI era.
+							Her research focuses on empowering K–12 education through digital technologies. She is particularly interested in making emerging technologies accessible across classrooms and homes, enabling children, teachers, and parents to explore more personalized and effective pathways for learning, teaching, and growth. Ultimately, she hopes to ensure that every child can benefit from advances in digital technology and enjoy more equitable educational opportunities.
 						</p>
 					</a>
 				</div>
-
 				<div class="col-lg-3">
-					<a href="profile/yizhi.html">
-						<img src="images/yizhi.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Mphil student</span>
-						<h3 class="h5 mb-3">Yizhi Song</h3>
+					<a href="profile/jiansheng.html">
+						<img loading="lazy" decoding="async" src="images/null.jpg" alt="Portrait of Jiansheng Li" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">PhD Student · Co-mentored with Prof. Qiang Nie</span>
+						<h3 class="h5 mb-3">Jiansheng Li</h3>
 						<p class="text-muted">
-							Yizhi Song is an MPhil student at HKUST (GZ) . Her research interests include XR, UX, and
-							digital heritage.
+							Profile coming soon.
 						</p>
 					</a>
 				</div>
-
-				<div class="col-lg-3">
-					<a href="profile/yinghao.html">
-						<img src="images/yinghao.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Mphil Student</span>
-						<h3 class="h5 mb-3">Yinghao Gao</h3>
-						<p class="text-muted">
-							Yinghao Gao holds his bachelor's degree in Electronic & Information Engineering and is
-							pursuing MPhil degree at HKUST(GZ). His research interests focus on swarm intelligence and
-							its applications in human interaction.
-						</p>
-					</a>
+				<div class="col-12">
+					<h3 class="h4 mt-4 mb-3 people-group-title">MPhil Students</h3>
 				</div>
-
-				<!-- 2026-01-09 新增：Hongni Chen，MPhil Student -->
+				<div class="col-12">
+					<h4 class="h6 text-uppercase text-muted mb-3 people-cohort-title">2025 Fall Cohort</h4>
+				</div>
 				<div class="col-lg-3">
 					<a href="profile/hongnichen.html">
-						<img src="images/hongni_chen.jpg" alt="Portrait of Hongni Chen"
-							class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Mphil Student</span>
+						<img loading="lazy" decoding="async" src="images/hongni_chen.jpg" alt="Portrait of Hongni Chen" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">MPhil Student</span>
 						<h3 class="h5 mb-3">Hongni Chen</h3>
 						<p class="text-muted">
-							Hongni is an MPhil student at HKUST (GZ), holding a Bachelor of Design from Sichuan
-							University. Her research focus on the application of service design within the health
-							sector and interaction design for facial paralysis rehabilitation.
+							Hongni is an MPhil student at HKUST (GZ), holding a Bachelor of Design from Sichuan University. Her research focus on the application of service design within the health sector and interaction design for facial paralysis rehabilitation.
 						</p>
 					</a>
 				</div>
-
-				<!-- 2026-01-09 新增：Yongdan Zeng，MPhil Student -->
-				<div class="col-lg-3">
-					<a href="profile/yongdan.html">
-						<img src="images/yongdan.jpg" alt="Portrait of Yongdan Zeng"
-							class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Mphil Student</span>
-						<h3 class="h5 mb-3">Yongdan Zeng</h3>
-						<p class="text-muted">
-							Yongdan Zeng is pursuing her MPhil at HKUST(GZ). Her research interests include
-							Human-Computer Interaction, intelligent agents, and Theory of Mind.
-						</p>
-					</a>
-				</div>
-
-				<!-- 2026-01-09 新增：Nusratilla Abdullaev，MPhil Student -->
-				<div class="col-lg-3">
-					<a href="profile/nusratilla.html">
-						<img src="images/nusratilla.jpg" alt="Portrait of Nusratilla Abdullaev"
-							class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Mphil Student</span>
-						<h3 class="h5 mb-3">Nusratilla Abdullaev</h3>
-						<p class="text-muted">
-							Nusratilla is an MPhil student focusing on intelligent systems, HCI, and embodied AI.
-							His research emphasizes developing human-centered technologies.
-						</p>
-					</a>
-				</div>
-
-				<!-- 2026-01-09 新增：Junhong Huang，MPhil Student -->
 				<div class="col-lg-3">
 					<a href="profile/junhong.html">
-						<img src="images/junhong.jpg" alt="Portrait of Junhong Huang"
-							class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Mphil Student</span>
+						<img loading="lazy" decoding="async" src="images/junhong.webp" alt="Portrait of Junhong Huang" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">MPhil Student</span>
 						<h3 class="h5 mb-3">Junhong Huang</h3>
 						<p class="text-muted">
-							Junhong is a first-year MPhil student focusing on accessibility-oriented HCI,
-							Human–AI interaction, and AI agents for assistive systems.
+							Junhong is a first-year MPhil student focusing on accessibility-oriented HCI, Human–AI interaction, and AI agents for assistive systems.
 						</p>
 					</a>
 				</div>
-
-				<!-- 2026-02-27 新增：Mengqi Wu (Maggy)，MPhil Student -->
+				<div class="col-lg-3">
+					<a href="profile/yongdan.html">
+						<img loading="lazy" decoding="async" src="images/yongdan.webp" alt="Portrait of Yongdan Zeng" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">MPhil Student</span>
+						<h3 class="h5 mb-3">Yongdan Zeng</h3>
+						<p class="text-muted">
+							Yongdan Zeng is pursuing her MPhil at HKUST(GZ). Her research interests include Human-Computer Interaction, intelligent agents, and Theory of Mind.
+						</p>
+					</a>
+				</div>
 				<div class="col-lg-3">
 					<a href="profile/mengqi.html">
-						<img src="images/Mengqi.jpg" alt="Portrait of Mengqi Wu" class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Mphil Student</span>
+						<img loading="lazy" decoding="async" src="images/Mengqi.jpg" alt="Portrait of Mengqi Maggy Wu" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">MPhil Student</span>
 						<h3 class="h5 mb-3">Mengqi "Maggy" Wu</h3>
 						<p class="text-muted">
-							Mengqi is an MPhil student at HKUST (GZ). Her research focus mainly lies in designing task
-							priority ranking systems that are conducive to user experience.
+							Mengqi is an MPhil student at HKUST (GZ). Her research focus mainly lies in designing task priority ranking systems that are conducive to user experience.
 						</p>
 					</a>
 				</div>
-
-				<!-- 2026-02-27 新增：Jiayi Huang，MPhil Student -->
 				<div class="col-lg-3">
 					<a href="profile/jiayi.html">
-						<img src="images/Jiayi.jpg" alt="Portrait of Jiayi Huang"
-							class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Mphil Student</span>
+						<img loading="lazy" decoding="async" src="images/Jiayi.jpg" alt="Portrait of Jiayi Huang" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">MPhil Student</span>
 						<h3 class="h5 mb-3">Jiayi Huang</h3>
 						<p class="text-muted">
-							Jiayi Huang's current research focuses on pedagogy- and psychology-based interactive toys
-							for STEM education in the AI era. She welcomes collaboration to define the next generation
-							of smart toys.
+							Jiayi Huang's current research focuses on pedagogy- and psychology-based interactive toys for STEM education in the AI era. She welcomes collaboration to define the next generation of smart toys.
 						</p>
 					</a>
 				</div>
-
-				<!-- Research Assistants -->
 				<div class="col-lg-3">
-					<a href="profile/jingyang.html">
-						<img src="images/jingyang.png" alt="Image" class="img-fluid mb-4 people-card-img">
-						<span class="subheading d-inline-block">Research Assistant</span>
-						<h3 class="h5 mb-3">Jingyang "Elijah" Lin</h3>
+					<a href="profile/nusratilla.html">
+						<img loading="lazy" decoding="async" src="images/nusratilla.jpg" alt="Portrait of Nusratilla Abdullaev" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">MPhil Student</span>
+						<h3 class="h5 mb-3">Nusratilla Abdullaev</h3>
 						<p class="text-muted">
-							A computation and design student at DKU/Duke, Jingyang has research interests in
-							accessibility, XR, and Privacy & Security (P&S).
-							He is passionate about exploring novel patterns in Human-Computer Interaction (HCI).
+							Nusratilla is an MPhil student focusing on intelligent systems, HCI, and embodied AI. His research emphasizes developing human-centered technologies.
 						</p>
 					</a>
 				</div>
-
+				<div class="col-lg-3">
+					<a href="profile/anastasia.html">
+						<img loading="lazy" decoding="async" src="images/null.jpg" alt="Portrait of Anastasia Nikolova" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">MPhil Student</span>
+						<h3 class="h5 mb-3">Anastasia Nikolova</h3>
+						<p class="text-muted">
+							Profile coming soon.
+						</p>
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<a href="profile/yihu.html">
+						<img loading="lazy" decoding="async" src="images/null.jpg" alt="Portrait of Yi Hu" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">MPhil Student</span>
+						<h3 class="h5 mb-3">Yi Hu</h3>
+						<p class="text-muted">
+							Profile coming soon.
+						</p>
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<a href="profile/yiying.html">
+						<img loading="lazy" decoding="async" src="images/null.jpg" alt="Portrait of Yiying Pan" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">MPhil Student</span>
+						<h3 class="h5 mb-3">Yiying Pan</h3>
+						<p class="text-muted">
+							Profile coming soon.
+						</p>
+					</a>
+				</div>
+				<div class="col-12">
+					<h4 class="h6 text-uppercase text-muted mb-3 people-cohort-title">2026 Fall Cohort</h4>
+				</div>
+				<div class="col-lg-3">
+					<a href="profile/huanyi.html">
+						<img loading="lazy" decoding="async" src="images/Huanyi.webp" alt="Portrait of Huanyi Wan" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">MPhil Student</span>
+						<h3 class="h5 mb-3">Huanyi Wan</h3>
+						<p class="text-muted">
+							Huanyi Wan holds a Bachelor of Arts degree in Art and Technology from Communication University of China. His research focuses on human-AI collaboration, AR/VR systems, and assistive technologies for health and wellbeing.
+						</p>
+					</a>
+				</div>
+				<div class="col-12">
+					<h3 class="h4 mt-4 mb-3 people-group-title">Research Assistants</h3>
+				</div>
 				<div class="col-lg-3">
 					<a href="profile/zhaowen.html">
-						<img src="images/zhaowen.JPG" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/zhaowen.webp" alt="Portrait of Zhaowen Deng" class="img-fluid mb-4 people-card-img">
 						<span class="subheading d-inline-block">Research Assistant</span>
 						<h3 class="h5 mb-3">Zhaowen Deng</h3>
 						<p class="text-muted">
-							A Computation & Design student with interests in the forefront of HCI and AI,
-							striving to push boundaries and create innovative solutions with programming, data analysis,
-							and design principles.
+							A Computation & Design student with interests in the forefront of HCI and AI, striving to push boundaries and create innovative solutions with programming, data analysis, and design principles.
 						</p>
 					</a>
 				</div>
-
-
-
-				<!-- 2026-02-27 调整：Qiyuan Cheng 卡片已迁移至 Alumni 区域。 -->
-
-				<!-- 新增 2025-10-29：Shan Luo，创建个人主页 profile/shan.html；头像文件命名为 images/luoshan.JPG。 -->
 				<div class="col-lg-3">
-					<a href="profile/shan.html">
-						<img src="images/luoshan.JPG" alt="Portrait of Shan Luo" class="img-fluid mb-4 people-card-img">
+					<a href="profile/fangze.html">
+						<img loading="lazy" decoding="async" src="images/null.jpg" alt="Portrait of Fangze Qiu" class="img-fluid mb-4 people-card-img">
 						<span class="subheading d-inline-block">Research Assistant</span>
-						<h3 class="h5 mb-3">Shan Luo</h3>
+						<h3 class="h5 mb-3">Fangze Qiu</h3>
 						<p class="text-muted">
-							Shan Luo is a Research Assistant at ARK Lab. Her past research and publications have
-							primarily focused on designing playful interactions and games to bridge the gap between the
-							blind and the sighted.
-							She is now exploring how play can help build connections and better communication between
-							humans and non-humans in nature.
+							Profile coming soon.
 						</p>
 					</a>
 				</div>
-
-				<!-- 2026-02-27 调整：Yancheng Cao 卡片已迁移至 Alumni 区域。 -->
-
-				<!-- 新增：Huanyi Wan，创建个人主页 profile/huanyi.html；
-				     注意：GitHub Pages 服务器区分大小写，头像实际文件名为 images/Huanyi.jpg，
-				     因此此处路径中的文件名也必须写成 Huanyi.jpg 才能正常加载。 -->
 				<div class="col-lg-3">
-					<a href="profile/huanyi.html">
-						<!-- 修复头像无法加载问题：将 huanyi.jpg 改为 Huanyi.jpg，与 images 目录下实际文件名保持一致 -->
-						<img src="images/Huanyi.jpg" alt="Portrait of Huanyi Wan"
-							class="img-fluid mb-4 people-card-img">
+					<a href="profile/xintan.html">
+						<img loading="lazy" decoding="async" src="images/null.jpg" alt="Portrait of Xin Tan" class="img-fluid mb-4 people-card-img">
 						<span class="subheading d-inline-block">Research Assistant</span>
-						<h3 class="h5 mb-3">Huanyi Wan</h3>
+						<h3 class="h5 mb-3">Xin Tan</h3>
 						<p class="text-muted">
-							Huanyi Wan holds a Bachelor of Arts degree in Art and Technology from Communication
-							University of China. His research focuses on human-AI collaboration, AR/VR systems, and
-							assistive technologies for health and wellbeing.
+							Profile coming soon.
 						</p>
 					</a>
 				</div>
-
-
-
-				<!-- 2025-10-29 调整：Keyi Zeng 卡片已迁移至 Alumni 区域，保留注释便于追踪成员状态变更。 -->
-
-
-
-
-
-
-
-
-
-				<!-- 2025-10-29 调整：Chenwan Zhong 卡片已迁移至 Alumni 区域，保留此注释说明成员状态更新。 -->
-
-				<!-- 隐藏 2025-10-29：根据主页更新需求暂时移除 Ruyi Li 的展示卡片（保留结构方便日后恢复） -->
-				<!--
-			<div class="col-lg-3">
-				<a href="profile/Ruyi.html">
-					<img src="images/ruyi.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
-					<span class="subheading d-inline-block">Research Assistant</span>
-					<h3 class="h5 mb-3">Ruyi Li</h3>
-					<p class="text-muted">
-						Ruyi's research primarily focuses on collaboration, embodied interaction, and generative AI,
-						aiming to explore how these technologies can enhance user experience.
-					</p>
-				</a>
-			</div>
-			-->
-
-
-
-				<!-- 隐藏 2025-10-29：根据主页更新需求暂时移除 Chunwei Yang 的展示卡片 -->
-				<!--
-			<div class="col-lg-3">
-				<a href="profile/chunwei.html">
-					<img src="images/chunwei.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
-					<span class="subheading d-inline-block">Mphil Student</span>
-					<h3 class="h5 mb-3"> Chunwei Yang</h3>
-					<p class="text-muted">
-						Chunwei Yang holds a bachelor's degree in Software Engineering from Sichuan University and is currently pursuing her MPhil in Human-Computer Interaction at HKUST (GZ). Her research interests center on the intersection of technology and well-being, particularly using long-term interaction data and behavior analysis to support cognitive and emotional well-being.
-					</p>
-				</a>
-			</div>
-			-->
-				<!-- 2025-10-29 调整：Ruiqi (Richard) Chen 卡片已迁移至 Alumni 区域。 -->
-
-				<!-- 2025-10-29 调整：Yiping Tian 卡片已迁移至 Alumni 区域。 -->
-
-				<!-- 2025-10-29 调整：Jiaxun (Jessie) Cao 卡片已迁移至 Alumni 区域。 -->
-
-				<!-- 2025-10-29 调整：Qingyang He 卡片已迁移至 Alumni 区域。 -->
-
-				<!-- 2025-10-29 调整：Liwen He 卡片已迁移至 Alumni 区域。 -->
-
-				<!-- 2025-10-29 调整：Hanxi Bao 卡片已迁移至 Alumni 区域。 -->
-
-				<!-- 2025-10-29 调整：Weicheng “Jerry” Zheng 卡片已迁移至 Alumni 区域。 -->
-
-
+				<div class="col-lg-3">
+					<a href="profile/xinyuan.html">
+						<img loading="lazy" decoding="async" src="images/null.jpg" alt="Portrait of Xinyuan Lan" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">Research Assistant</span>
+						<h3 class="h5 mb-3">Xinyuan Lan</h3>
+						<p class="text-muted">
+							Xinyuan Lan is an undergraduate student in Computation and Design at DKU/Duke. She explores immersive, accessible, and human-centered technologies for education, culture, emotional well-being, and meaningful everyday interaction through interdisciplinary research.
+						</p>
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<a href="profile/haijia.html">
+						<img loading="lazy" decoding="async" src="images/haijia.webp" alt="Portrait of Haijia Li" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">Research Assistant</span>
+						<h3 class="h5 mb-3">Haijia Li</h3>
+						<p class="text-muted">
+							Her research interests lie at the intersection of Human-Computer Interaction (HCI) and Human-AI Interaction (HAI), with a particular focus on human-AI interaction in educational contexts. She is interested in designing and exploring AI- and robot-mediated interactive systems that support learning, reflection, and social interaction.
+						</p>
+					</a>
+				</div>
+				<!-- 2026-08-22 新增：Jiale Liu，Research Assistant -->
+				<div class="col-lg-3">
+					<a href="profile/jiale.html">
+						<img loading="lazy" decoding="async" src="images/jiale.webp" alt="Portrait of Jiale Liu" class="img-fluid mb-4 people-card-img">
+						<span class="subheading d-inline-block">Research Assistant</span>
+						<h3 class="h5 mb-3">Jiale Liu</h3>
+						<p class="text-muted">
+							Jiale Liu is a master’s student in Design at Harbin Institute of Technology. His research interests and practice primarily focus on AI-assisted creation, human–AI collaborative design, creativity support, and socio-emotional experiences. He explores how generative artificial intelligence influences creative processes, cognition, and emotional communication, while seeking to connect design research with real-world social issues.
+						</p>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="section  mb-5">
+<div class="section  mb-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7">
@@ -446,7 +387,7 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<a href="https://scholars.duke.edu/person/kent.cao">
-						<img src="images/yucheng.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/yucheng.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Yecheng (Kent) Cao, PhD</h3>
 						<p class="text-muted">
 							Dr. Cao is a specialist in the art and archaeology of early China with a broad interest in
@@ -461,7 +402,7 @@
 
 				<div class="col-lg-3">
 					<a href="https://scholars.duke.edu/person/MingLi">
-						<img src="images/liming.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/liming.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Ming Li, PhD</h3>
 						<p class="text-muted">
 							Dr. Ming Li received his Ph.D. in Electrical Engineering
@@ -476,7 +417,7 @@
 
 				<div class="col-lg-3">
 					<a href="https://scholars.duke.edu/person/luyao.zhang">
-						<img src="images/luyao.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/luyao.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Luyao Zhang, Phd</h3>
 						<p class="text-muted">
 							Dr. Luyao (Sunshine) Zhang is Assistant Professor of Economics and Senior
@@ -489,7 +430,7 @@
 				</div>
 				<div class="col-lg-3">
 					<a href="https://scholars.duke.edu/person/lijing.yan">
-						<img src="images/lijing.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/lijing.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Lijing Yan, PhD</h3>
 						<p class="text-muted">
 							Dr. Lijing L. Yan, PhD, MPH, is currently an associate research professor at the Duke Global
@@ -502,7 +443,7 @@
 				</div>
 				<div class="col-lg-3">
 					<a href="https://scholars.duke.edu/person/Chenkai.Wu">
-						<img src="images/chen.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/chen.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Chenkai Wu, PhD</h3>
 						<p class="text-muted">
 							Dr. Chenkai Wu is an Assistant Professor of Global Health at Duke Kunshan University (DKU).
@@ -517,7 +458,7 @@
 				</div>
 				<div class="col-lg-3">
 					<a href="https://scholars.duke.edu/person/Jung.Choi">
-						<img src="images/jung.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/jung.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof. Jung Eun Choi</h3>
 						<p class="text-muted">
 							Dr. Choi's research focuses on interactions between art and technology,
@@ -531,7 +472,7 @@
 				</div>
 				<div class="col-lg-3">
 					<a href="https://charleschang.me/">
-						<img src="images/char.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/char.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof. Charles Chang, PhD</h3>
 						<p class="text-muted">
 							Dr. Chang's research interest hinges on the intersections between computation and design.
@@ -546,7 +487,7 @@
 				</div>
 				<div class="col-lg-3">
 					<a href="https://fan-liang.com/">
-						<img src="images/fanL.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/fanL.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Fan Liang, PhD</h3>
 						<p class="text-muted">
 							Dr.Liang's research interests lie at the intersection of digital media, political
@@ -575,7 +516,7 @@
 
 				<div class="col-lg-3">
 					<a href="https://www.psy.pku.edu.cn/english/people/faculty/professor/kunlinwei/index.htm">
-						<img src="images/kunlinwei.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/kunlinwei.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Kunlin Wei, PhD</h3>
 						<p class="text-muted">
 							Dr. Wei's major research area is sensorimotor control and his interests include motor
@@ -587,7 +528,7 @@
 
 				<div class="col-lg-3">
 					<a href="https://www.scm.cityu.edu.hk/people/liu-can">
-						<img src="images/canliu.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/canliu.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Can Liu, PhD</h3>
 						<p class="text-muted">
 							Dr. Liu's research is about designing future interfaces of ubiquitous technologies based on
@@ -600,7 +541,7 @@
 
 				<div class="col-lg-3">
 					<a href="http://www.min-fan.com/">
-						<img src="images/minfan.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/minfan.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Min Fan, PhD</h3>
 						<p class="text-muted">
 							Dr. Fan's research focuses on the design and evaluation of educational interactive systems
@@ -614,7 +555,7 @@
 
 				<div class="col-lg-3">
 					<a href="https://carleton.ca/rajabiyazdi/">
-						<img src="images/rajabiyazdi.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/rajabiyazdi.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Fateme Rajabiyazdi, PhD</h3>
 						<p class="text-muted"> Dr.Rajabiyazdi is an Assistant Professor at Carleton University within
 							the Department of Systems and Computer Engineering. Dr.Rajabiyazdi graduated with a Ph.D. in
@@ -625,7 +566,7 @@
 
 				<div class="col-lg-3">
 					<a href="https://www.dal.ca/faculty/computerscience/faculty-staff/Mayra-Barrera-Machuca.html">
-						<img src="images/Machuca.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/Machuca.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Mayra Donaji Barrera Machuca</h3>
 						<p class="text-muted"> Dr. Mayra Donaji Barrera Machuca focuses on gaining a better
 							understanding of how people think when working inside a 3D virtual environment. Her current
@@ -637,7 +578,7 @@
 
 				<div class="col-lg-3">
 					<a href="https://www.sfu.ca/siat/people/research-faculty/o-nilay-yalcin.html">
-						<img src="images/NILAY.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/NILAY.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Ö. NILAY YALÇIN, PhD</h3>
 						<p class="text-muted"> Dr.Ö. NILAY YALÇIN's research focuses on modeling socio-emotional
 							behaviors in computational systems in order to develop interactive systems that can
@@ -648,7 +589,7 @@
 
 				<div class="col-lg-3">
 					<a href="https://www.sfu.ca/fas/computing/people/faculty/faculty-members/lawrence-kim.html">
-						<img src="images/KIM.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/KIM.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.LAWRENCE KIM, PhD</h3>
 						<p class="text-muted"> Dr.Kim's research lies at the intersection of human-computer interaction,
 							robotics, and haptics. Specifically, he designs and builds affective tangible interfaces to
@@ -661,7 +602,7 @@
 
 				<div class="col-lg-3">
 					<a href="https://www.scm.cityu.edu.hk/people/ray-lc">
-						<img src="images/ray.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/ray.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.RAY LC, PhD</h3>
 						<p class="text-muted">
 							Dr. RAY LC, PhD UCLA, MFA Parsons School of Design, Assistant Professor of Creative Media @
@@ -674,7 +615,7 @@
 
 				<div class="col-lg-3">
 					<a href="https://cec.gmu.edu/profiles/zlu6">
-						<img src="images/lu.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/lu.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Zhicong Lu, PhD</h3>
 						<p class="text-muted">
 							Dr. Zhicong Lu is an assistant professor at the Department of Computer Science, City
@@ -688,7 +629,7 @@
 				</div>
 				<div class="col-lg-3">
 					<a href="https://www.insc.tsinghua.edu.cn/inscen/info/1255/1114.htm">
-						<img src="images/yi.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/yi.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Xin Yi, PhD</h3>
 						<p class="text-muted">
 							He has been engaged in the research of applied security intelligent Internet of Things and
@@ -701,7 +642,7 @@
 				</div>
 				<div class="col-lg-3">
 					<a href="https://www.yuhangz.com/">
-						<img src="images/yuhang.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/yuhang.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Yuhang Zhao, PhD</h3>
 						<p class="text-muted">
 							Dr. Yuhang Zhao is an assistant professor in the department of Computer Sciences at the
@@ -713,7 +654,7 @@
 				</div>
 				<div class="col-lg-3">
 					<a href="https://www.yulingsun.net/">
-						<img src="images/yuling.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/yuling.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Yuling Sun, PhD</h3>
 						<p class="text-muted">
 							Dr.Sun's research lies at the interaction of Health Informatics, Human-computer Interaction
@@ -725,7 +666,7 @@
 				</div>
 				<div class="col-lg-3">
 					<a href="https://zhaokaixing.github.io/">
-						<img src="images/kaixing.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/kaixing.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Kaixing Zhao, PhD</h3>
 						<p class="text-muted">
 							Dr. Kaixing Zhao now is Assistant Professor at School of Software, Northwestern
@@ -740,7 +681,7 @@
 				</div>
 				<div class="col-lg-3">
 					<a href="https://www.cs.jhu.edu/~yaxing/">
-						<img src="images/yaxing.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/yaxing.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Prof.Yaxing Yao, PhD</h3>
 						<p class="text-muted">
 							Dr. Yaxing Yao is an Assistant Professor in the Department of Information Systems at the
@@ -756,7 +697,7 @@
 
 				<div class="col-lg-3">
 					<a href="https://kyriezz.com/">
-						<img src="images/zhixuanzhou.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/zhixuanzhou.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Zhixuan (Kyrie) Zhou</h3>
 						<p class="text-muted">
 							Dr. Zhou's research interests are in human-computer interaction and usable security. I
@@ -783,7 +724,7 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<a href="https://www.linkedin.com/in/wangyihe/">
-						<img src="images/yihe.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/yihe.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Yihe Wang</h3>
 						<p class="text-muted">PhD student at University of California Santa Cruz</p>
 					</a>
@@ -791,7 +732,7 @@
 				<!-- 2025-10-29 更新：Haitong Lin 现为 Cornell Tech 博士生，更新头衔以保持校友信息准确。 -->
 				<div class="col-lg-3">
 					<a href="https://www.linkedin.com/in/haitonglin/">
-						<img src="images/haitong.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/haitong.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Haitong Lin</h3>
 						<p class="text-muted">PhD Student at Cornell Tech</p>
 					</a>
@@ -799,14 +740,14 @@
 				<!-- 2025-10-29 更新：Rongqi Bei 现在密歇根大学攻读博士，调整学术身份描述。 -->
 				<div class="col-lg-3">
 					<a href="https://www.linkedin.com/in/rongqi-bei/">
-						<img src="images/rox.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/rox.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Rongqi Bei</h3>
 						<p class="text-muted">PhD Student at University of Michigan</p>
 					</a>
 				</div>
 				<div class="col-lg-3">
 					<a href="#">
-						<img src="images/null.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/null.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Wei Yi</h3>
 						<p class="text-muted">
 							Yi's a data science student, mainly focusing on
@@ -818,7 +759,7 @@
 
 				<div class="col-lg-3">
 					<a href="#">
-						<img src="images/tongwu.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/tongwu.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Tong (Bill) Wu</h3>
 						<p class="text-muted">
 							I am a Media Art student graduated from Duke Kunshan University.
@@ -833,7 +774,7 @@
 
 				<div class="col-lg-3">
 					<a href="#">
-						<img src="images/ruoxin.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/ruoxin.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Ruoxin You</h3>
 						<p class="text-muted">Master student at University College London </p>
 					</a>
@@ -842,7 +783,7 @@
 				<!-- 2025-10-29 更新：Yutong (Tony) Ren 赴 Virginia Tech 攻读博士，强调其 AR/VR 研究方向。 -->
 				<div class="col-lg-3">
 					<a href="#">
-						<img src="images/tony.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/tony.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Yutong (Tony) Ren</h3>
 						<p class="text-muted">
 							PhD student at Virginia Tech focusing on AR/VR for social interaction and collaboration,
@@ -855,7 +796,7 @@
 				<!-- 2025-10-29 更新：Xuening Peng 现为佛罗里达大学博士生，突出其沉浸式交互研究。 -->
 				<div class="col-lg-3">
 					<a href="#">
-						<img src="images/xuening.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/xuening.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Xuening Peng</h3>
 						<p class="text-muted">
 							PhD student at the University of Florida researching human-computer interaction, affective
@@ -868,7 +809,7 @@
 
 				<div class="col-lg-3">
 					<a href="https://ruiqichen338.github.io/">
-						<img src="images/richard1.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/richard1.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Ruiqi Richard Chen</h3>
 						<p class="text-muted">Master Student at University of Washington, focus on Human-Centered AI
 							research</p>
@@ -878,7 +819,7 @@
 				<!-- 2025-10-29 调整：Keyi Zeng 由在职成员转入 Alumni 区域，保留原头像与简介以记录研究方向。 -->
 				<div class="col-lg-3">
 					<a href="profile/keyi.html">
-						<img src="images/keyi.png" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/keyi.webp" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Keyi Zeng</h3>
 						<p class="text-muted">A Digital media student, She recently interested in cultural heritage,
 							game, and accessibility research.</p>
@@ -888,7 +829,7 @@
 				<!-- 2025-10-29 调整：Jiaxin Wang 转入 Alumni 区域，强调跨学科背景与继续合作的可能。 -->
 				<div class="col-lg-3">
 					<a href="profile/jiaxin.html">
-						<img src="images/jiaxin.png" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/jiaxin.webp" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Jiaxin Wang</h3>
 						<p class="text-muted">
 							Jiaxin is an undergraduate student pursuing a dual degree at Duke Kunshan University and
@@ -904,7 +845,7 @@
 				<!-- 2025-10-29 调整：Chenwan Zhong 转入 Alumni 区域，突出机器人与 HCI 交叉研究。 -->
 				<div class="col-lg-3">
 					<a href="profile/chenwan.html">
-						<img src="images/chenwan.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/chenwan.jpg" alt="Image" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Chenwan Zhong</h3>
 						<p class="text-muted">
 							Chenwan Zhong is pursuing her Master of Science degree in Robotics at Northwestern
@@ -918,7 +859,7 @@
 				<!-- 2025-10-29 调整：Ruiqi (Richard) Chen 转入 Alumni 区域，保留其在可访问性研究方面的贡献。 -->
 				<div class="col-lg-3">
 					<a href="#">
-						<img src="images/Richard.jpg" alt="Portrait of Ruiqi (Richard) Chen"
+						<img loading="lazy" decoding="async" src="images/Richard.jpg" alt="Portrait of Ruiqi (Richard) Chen"
 							class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Ruiqi (Richard) Chen</h3>
 						<p class="text-muted">
@@ -931,7 +872,7 @@
 				<!-- 2025-10-29 调整：Yiping Tian 转入 Alumni 区域，突出其 HCI 与游戏设计兴趣。 -->
 				<div class="col-lg-3">
 					<a href="#">
-						<img src="images/yiping.jpg" alt="Portrait of Yiping Tian"
+						<img loading="lazy" decoding="async" src="images/yiping.jpg" alt="Portrait of Yiping Tian"
 							class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Yiping Tian</h3>
 						<p class="text-muted">
@@ -943,7 +884,7 @@
 				<!-- 2025-10-29 更新：Jiaxun (Jessie) Cao 在 Duke University 攻读博士学位。 -->
 				<div class="col-lg-3">
 					<a href="#">
-						<img src="images/jiaxun.jpg" alt="Portrait of Jiaxun (Jessie) Cao"
+						<img loading="lazy" decoding="async" src="images/jiaxun.jpg" alt="Portrait of Jiaxun (Jessie) Cao"
 							class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Jiaxun (Jessie) Cao</h3>
 						<p class="text-muted">
@@ -955,7 +896,7 @@
 				<!-- 2025-10-29 调整：Qingyang He 转入 Alumni 区域，保留其在视听交互方向的专长。 -->
 				<div class="col-lg-3">
 					<a href="#">
-						<img src="images/qingyang.jpg" alt="Portrait of Qingyang He"
+						<img loading="lazy" decoding="async" src="images/qingyang.jpg" alt="Portrait of Qingyang He"
 							class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Qingyang He</h3>
 						<p class="text-muted">
@@ -970,7 +911,7 @@
 				<!-- 2025-10-29 调整：Hanxi Bao 转入 Alumni 区域，保留其 AR/VR 与人机交互的创意实践。 -->
 				<div class="col-lg-3">
 					<a href="#">
-						<img src="images/hanxi.PNG" alt="Portrait of Hanxi Bao" class="img-fluid mb-4 people-card-img">
+						<img loading="lazy" decoding="async" src="images/hanxi.webp" alt="Portrait of Hanxi Bao" class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Hanxi Bao</h3>
 						<p class="text-muted">
 							Media and Art student from Duke Kunshan University exploring AR/VR and human-AI interaction
@@ -982,7 +923,7 @@
 				<!-- 2025-10-29 更新：Weicheng “Jerry” Zheng 在 Carnegie Mellon University 攻读硕士学位。 -->
 				<div class="col-lg-3">
 					<a href="#">
-						<img src="images/jerry.jpg" alt="Portrait of Weicheng \" Jerry\" Zheng"
+						<img loading="lazy" decoding="async" src="images/jerry.jpg" alt="Portrait of Weicheng \" Jerry\" Zheng"
 							class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Weicheng “Jerry” Zheng</h3>
 						<p class="text-muted">
@@ -994,7 +935,7 @@
 				<!-- 2026-02-27 新增：Qiyuan Cheng，从当前成员区迁至 Alumni。 -->
 				<div class="col-lg-3">
 					<a href="profile/qiyuan.html">
-						<img src="images/qiyuan.jpg" alt="Portrait of Qiyuan Cheng"
+						<img loading="lazy" decoding="async" src="images/qiyuan.webp" alt="Portrait of Qiyuan Cheng"
 							class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Qiyuan Cheng</h3>
 						<p class="text-muted">
@@ -1007,7 +948,7 @@
 				<!-- 2026-02-27 新增：Yancheng Cao，从当前成员区迁至 Alumni。 -->
 				<div class="col-lg-3">
 					<a href="profile/yancheng.html">
-						<img src="images/yancheng.png" alt="Portrait of Yancheng Cao"
+						<img loading="lazy" decoding="async" src="images/yancheng.webp" alt="Portrait of Yancheng Cao"
 							class="img-fluid mb-4 people-card-img">
 						<h3 class="h5 mb-3">Yancheng Cao</h3>
 						<p class="text-muted">
@@ -1016,6 +957,78 @@
 							support and design-thinking-based HCI interface design. His work has been published at
 							top-tier HCI conferences including IUI and IMWUT.
 						</p>
+					</a>
+				</div>
+
+				<!-- 2026-08-22 新增：Dongyijie Primo Pan，由当前成员区迁入 Alumni。 -->
+				<div class="col-lg-3">
+					<a href="profile/primo.html">
+						<img loading="lazy" decoding="async" src="images/primo.jpg" alt="Portrait of Dongyijie Primo Pan" class="img-fluid mb-4 people-card-img">
+						<h3 class="h5 mb-3">Dongyijie Primo Pan</h3>
+						<p class="text-muted">MPhil Student, 2024 Fall Cohort</p>
+					</a>
+				</div>
+
+				<!-- 2026-08-22 新增：Haoxuan Wang，由当前成员区迁入 Alumni。 -->
+				<div class="col-lg-3">
+					<a href="profile/haoxuan.html">
+						<img loading="lazy" decoding="async" src="images/haoxuan.jpg" alt="Portrait of Haoxuan Wang" class="img-fluid mb-4 people-card-img">
+						<h3 class="h5 mb-3">Haoxuan Wang</h3>
+						<p class="text-muted">MPhil Student, 2024 Fall Cohort</p>
+					</a>
+				</div>
+
+				<!-- 2026-08-22 新增：Yizhi Song，由当前成员区迁入 Alumni。 -->
+				<div class="col-lg-3">
+					<a href="profile/yizhi.html">
+						<img loading="lazy" decoding="async" src="images/yizhi.jpg" alt="Portrait of Yizhi Song" class="img-fluid mb-4 people-card-img">
+						<h3 class="h5 mb-3">Yizhi Song</h3>
+						<p class="text-muted">MPhil Student, 2024 Fall Cohort</p>
+					</a>
+				</div>
+
+				<!-- 2026-08-22 新增：Yinghao Gao，由当前成员区迁入 Alumni。 -->
+				<div class="col-lg-3">
+					<a href="profile/yinghao.html">
+						<img loading="lazy" decoding="async" src="images/yinghao.jpg" alt="Portrait of Yinghao Gao" class="img-fluid mb-4 people-card-img">
+						<h3 class="h5 mb-3">Yinghao Gao</h3>
+						<p class="text-muted">MPhil Student, 2024 Fall Cohort</p>
+					</a>
+				</div>
+
+				<!-- 2026-08-22 新增：Yixuan Li，由当前成员区迁入 Alumni。 -->
+				<div class="col-lg-3">
+					<a href="profile/yixuan.html">
+						<img loading="lazy" decoding="async" src="images/yixuan.webp" alt="Portrait of Yixuan Li" class="img-fluid mb-4 people-card-img">
+						<h3 class="h5 mb-3">Yixuan Li</h3>
+						<p class="text-muted">Research Assistant, 2024–2025</p>
+					</a>
+				</div>
+
+				<!-- 2026-08-22 新增：Jingyang "Elijah" Lin，由当前成员区迁入 Alumni。 -->
+				<div class="col-lg-3">
+					<a href="profile/jingyang.html">
+						<img loading="lazy" decoding="async" src="images/jingyang.webp" alt="Portrait of Jingyang Elijah Lin" class="img-fluid mb-4 people-card-img">
+						<h3 class="h5 mb-3">Jingyang "Elijah" Lin</h3>
+						<p class="text-muted">Research Assistant, 2024–2025</p>
+					</a>
+				</div>
+
+				<!-- 2026-08-22 新增：Shan Luo，由当前成员区迁入 Alumni。 -->
+				<div class="col-lg-3">
+					<a href="profile/shan.html">
+						<img loading="lazy" decoding="async" src="images/luoshan.webp" alt="Portrait of Shan Luo" class="img-fluid mb-4 people-card-img">
+						<h3 class="h5 mb-3">Shan Luo</h3>
+						<p class="text-muted">Research Assistant, 2025</p>
+					</a>
+				</div>
+
+				<!-- 2026-08-22 新增：Liwen He，由当前成员区迁入 Alumni。 -->
+				<div class="col-lg-3">
+					<a href="#">
+						<img loading="lazy" decoding="async" src="images/liwen.jpg" alt="Portrait of Liwen He" class="img-fluid mb-4 people-card-img">
+						<h3 class="h5 mb-3">Liwen He</h3>
+						<p class="text-muted">Visiting Student, Industrial Design, Beihang University</p>
 					</a>
 				</div>
 
@@ -1062,11 +1075,11 @@
 					<div class="widget">
 						<h3>Follow Us</h3>
 						<ul class="list-unstyled float-start links">
-							<li><a href="https://space.bilibili.com/479380804"><img src="images/bilibili.jpeg"
+							<li><a href="https://space.bilibili.com/479380804"><img loading="lazy" decoding="async" src="images/bilibili.jpeg"
 										alt="Wechat QR codee" class="wechat-qr"> </li></a>
 						</ul>
 						<ul class="list-unstyled float-start links">
-							<li><img src="images/Wechat.jpeg" alt="Wechat QR codee" class="wechat-qr"> </li>
+							<li><img loading="lazy" decoding="async" src="images/Wechat.jpeg" alt="Wechat QR codee" class="wechat-qr"> </li>
 						</ul>
 
 						<!--	 	<ul class="list-unstyled social">
