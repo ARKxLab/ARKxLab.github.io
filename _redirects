@@ -1,0 +1,3 @@
+# Cloudflare Workers static-assets redirects (ignored by GitHub Pages, which falls back to index.html's meta refresh).
+# Site root lands on the Projects page; the lab introduction is served at /homepage.
+/ /projects 302

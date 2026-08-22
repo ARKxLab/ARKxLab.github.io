@@ -14,8 +14,9 @@
 - **样式编译**: 使用 Prepros（配置文件 `prepros-6.config`）对 `scss/` 源码进行编译，输出到 `css/style.css`
 
 ### 目录结构（关键项）
-- `index.html`：首页与导航示例，包含 Hero、精选项目等区块
-- `projects.html`：项目汇总页
+- `index.html`：站点根路径的跳转桩，自动跳到 `projects.html`（站点入口即项目页；Cloudflare 侧另由根目录 `_redirects` 做服务端 302）
+- `homepage.html`：实验室介绍页（导航中的 "About"），包含 Hero、精选项目等区块，线上地址 `/homepage`
+- `projects.html`：项目汇总页（站点落地页）
 - `people.html`：成员/团队页
 - `publications.html`：论文/出版物页（如需要再完善）
 - `perspective_stu.html`：招新/申请说明页
@@ -35,7 +36,7 @@
 本项目为纯静态站点，无需 Node/后端环境。
 
 1) 预览方式（任选其一）
-- 直接用浏览器打开 `index.html`（注意相对路径下的跨页导航是否受浏览器安全策略影响）
+- 直接用浏览器打开 `projects.html` 或 `homepage.html`（注意相对路径下的跨页导航是否受浏览器安全策略影响）
 - 使用 VS Code 的 Live Server 插件或任意本地 HTTP 服务器，指向仓库根目录
 
 2) 修改样式（SCSS 编译）
@@ -54,15 +55,15 @@
 
 ### 复用片段（Header/Footer）
 - 片段位于 `includes/`：`header-default.html`、`header-dark.html`、`footer.html`
-- 在某些页面（例如 `index.html`）预留了通过 `fetch` 注入 Header 的脚本：
+- 在某些页面（例如 `homepage.html`）预留了通过 `fetch` 注入 Header 的脚本：
   - 如需启用，请在页面中放开 `<!-- <div id="header-placeholder"></div> -->` 的注释，并确保脚本中 `document.getElementById('header-placeholder')` 能找到对应元素
-  - 当前 `index.html` 已内联导航条，`fetch` 注入可二选一，避免重复导航
+  - 当前 `homepage.html` 已内联导航条，`fetch` 注入可二选一，避免重复导航
 
 ### 新增/更新内容的建议流程
 - 新增项目：
   1. 在 `projects_collection/` 下复制一份现有项目 HTML 并改名
   2. 替换项目配图到 `images/` 或 `images/project_bg/`
-  3. 在 `projects.html`（或首页精选区块 `index.html`）添加入口卡片与链接
+  3. 在 `projects.html`（或 About 页精选区块 `homepage.html`）添加入口卡片与链接
 - 新增成员：
   1. 在 `profile/` 下新增个人页面（可参考现有模版文件）
   2. 在 `people.html` 添加头像、姓名、职位、链接等信息
