@@ -10,6 +10,7 @@
 ---
 
 ## 2026-08-22
+- 修复：首页 hero 背景图在宽屏（>~2200px）/高视口下右侧与下方露出黑边——通用 `.hero img` 只按原图尺寸（1920px）绝对定位再 `scale(1.3)`，未锚定 hero 盒子；`index.html` hero 容器新增 `hero-home` 类，`css/style.css` 追加 `.hero-home .img-bg`/`img` 规则（绝对定位占满 + `object-fit: cover` + 1.1 倍余量，与 `hero-campus`/`hero-harmony` 同一套做法）。已在 2560×1300、1920×1080、375×812 下验证四边均覆盖、无横向滚动。
 - 新增：Lab Director 个人主页 `profile/xintong.html`（结构参考 mingmingfan.com / cislab 成员页：About（中英文简介）→ Paper Awards → Research → Prospective Students → Services → Teaching，视觉沿用站内 `section` / `unit-4` / `profile-avatar-wrapper` 样式，未改 SCSS）；`people.html` Lab Director 卡片由外部 faculty page 改为链接该页。
 - 资源：`images/xin.jpg` 替换为新证件照（居中裁成 900×900 JPEG，约 117 KB，原图 260×260）；该文件名被 48 处引用，覆盖同名即全站生效。
 - 文档：`docs/PEOPLE_LINKS.md` 同步 Lab Director 链接。
