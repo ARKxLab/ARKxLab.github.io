@@ -14,6 +14,7 @@
 - 新增：Lab Director 个人主页 `profile/xintong.html`（结构参考 mingmingfan.com / cislab 成员页：About（中英文简介）→ Paper Awards → Research → Prospective Students → Services → Teaching，视觉沿用站内 `section` / `unit-4` / `profile-avatar-wrapper` 样式，未改 SCSS）；`people.html` Lab Director 卡片由外部 faculty page 改为链接该页。
 - 新增：`profile/xintong.html` Research 区块加入 CV（2026-07）中 [C17]–[C67] 共 51 篇论文列表，按年份倒序、可按年份筛选（页内小段 JS），32 篇链接到站内项目页；缩略图 45 张统一转 WebP（≤ 640 px 宽）存入 `images/pubs/Cxx.webp`（37 张来自 PI 提供的配图，8 张复用项目页 teaser），C25/C33/C34/C36/C39/C40 暂用「会议名 + 年份」占位块，待补图。随后去掉了列表中的 `[Cxx]` 编号并改为 "Selected Publications"；三个研究方向的描述改为逐字照录 PI 原文。
 - 新增：上述 51 篇论文全部补上 DOI 链接（Crossref 检索 + `doi.org` 逐个验证可解析；C25 采用 CSCW 正式版 `10.1145/3637305` 而非 OSF 预印本），无站内项目页的 19 篇标题直接链到 DOI。
+- 修改：论文标题以 Crossref 登记的正式发表标题为准（`title` + `subtitle` 合并），修正 CV 中与正式版不一致的 10 篇（C56、C53、C43、C39、C31、C30、C29、C28、C26、C17），Paper Awards 区块同步；站内 21 个项目页所引用的 DOI 与本列表逐一吻合。
 - 资源：`images/xin.jpg` 替换为新证件照（居中裁成 900×900 JPEG，约 117 KB，原图 260×260）；该文件名被 48 处引用，覆盖同名即全站生效。
 - 文档：`docs/PEOPLE_LINKS.md` 同步 Lab Director 链接。
 - 重构：`people.html` Members 区按 Lab Director / PhD Students（2025 Spring、2025 Fall、2026 Spring、2026 Fall cohort）/ MPhil Students（2025 Fall、2026 Fall cohort）/ Research Assistants 分组重排（各组内按入学时间先后排列），PhD 卡片标注 co-mentor / co-supervised 信息；新增 `people-group-title`、`people-cohort-title` 分组标题（仅用 Bootstrap 工具类，未改 SCSS）。
