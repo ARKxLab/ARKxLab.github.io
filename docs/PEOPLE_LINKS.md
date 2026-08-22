@@ -49,7 +49,7 @@
 - Zhaowen Deng — 链接: profile/zhaowen.html
 - Fangze Qiu — 链接: profile/fangze.html（占位页）
 - Xin Tan — 链接: profile/xintan.html（占位页）
-- Xinyuan Lan — 链接: profile/xinyuan.html（头像为临时低清图，待换高清）
+- Xinyuan Lan — 链接: profile/xinyuan.html
 - Haijia Li — 链接: profile/haijia.html
 - Jiale Liu — 链接: profile/jiale.html
 
@@ -102,7 +102,7 @@
 - Yixuan Li（RA, 2024–2025） — 链接: profile/yixuan.html
 - Jingyang “Elijah” Lin（RA, 2024–2025） — 链接: profile/jingyang.html
 - Shan Luo（RA, 2025） — 链接: profile/shan.html
-- Liwen He（Visiting Student） — 链接: #（未设置）
+- Liwen He（Visiting PhD Student；清华大学未来实验室设计学博士生） — 链接: https://thfl.tsinghua.edu.cn/en/yjdw/Alumni1/Central_Organization1/Research_Center_for_Aging_User_Experience_and_Ser1/liwenhe.htm
 
 ---
 
