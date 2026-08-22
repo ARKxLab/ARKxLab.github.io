@@ -11,12 +11,14 @@
 **Lab Director**
 - Prof. Xin Tong — 链接: profile/xintong.html（2026-08-22 新建站内主页；页内另链 HKUST(GZ) faculty page、Google Scholar、ORCID）
 
+**PhD Students · 2024 Fall Cohort**
+- Junrong “Vicki” Song（co-supervised） — 链接: profile/junrong.html（占位页，待补资料与头像）
+- Yuying Wan（co-supervised） — 链接: profile/yuying.html（占位页）
+
 **PhD Students · 2025 Spring Cohort**
 - Xiangrong “Daniel” Zhu — 链接: profile/daniel.html
 - Jiawen Zhang（co-mentored with Prof. Kang Zhang） — 链接: profile/jiawen.html
 - Hongni Ye（co-mentored with Prof. Mirjana Prpa） — 链接: profile/hongni.html
-- Junrong “Vicki” Song（co-supervised） — 链接: profile/junrong.html（占位页，待补资料与头像）
-- Yuying Wan（co-supervised） — 链接: profile/yuying.html（占位页）
 
 **PhD Students · 2025 Fall Cohort**
 - Tianjian Liu — 链接: profile/tianjian.html
