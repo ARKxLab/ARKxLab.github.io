@@ -25,6 +25,7 @@
 - 文档：`docs/PEOPLE_LINKS.md` 按新分组重写 Members 列表并补全 Alumni 链接。
 - 修正：Qiuju Chen 调整为 PhD 2025 Fall cohort，Liyi Xie 调整为 PhD 2026 Spring cohort（`people.html`、`docs/PEOPLE_LINKS.md`）。
 - 修正：Junrong “Vicki” Song、Yuying Wan 调整为 PhD 2024 Fall cohort（新增该 cohort 分组）。
+- 调整：Liwen He 从 Alumni 移回 Members 的 Research Assistants 组，身份为 Visiting PhD Student（清华大学未来实验室）。
 - 文档：新增 `docs/RELEASE_PROCESS.md`，梳理实际托管拓扑（GitHub Pages + Cloudflare Workers 均由 `gh-pages` 分支自动部署；视频在腾讯云 COS）与标准发布流程、自检清单、回滚与故障排查。
 - 文档：新增根目录 `CLAUDE.md`，为 AI Agent 提供仓库操作规范（不主动 push、先验证外链、SCSS 需同步编译产物、文件大小/大小写约束等）。
 - 文档：新增 `docs/ASSETS.md`，规定图片/视频/大文件分别存放在仓库还是腾讯云 COS、各自的规格、命名与公开边界；`CLAUDE.md`、`README.md`、`docs/RELEASE_PROCESS.md` 均已交叉引用。
