@@ -9,6 +9,13 @@
 
 ---
 
+## 2026-08-22
+- 文档：新增 `docs/RELEASE_PROCESS.md`，梳理实际托管拓扑（GitHub Pages + Cloudflare Workers 均由 `gh-pages` 分支自动部署；视频在腾讯云 COS）与标准发布流程、自检清单、回滚与故障排查。
+- 文档：新增根目录 `CLAUDE.md`，为 AI Agent 提供仓库操作规范（不主动 push、先验证外链、SCSS 需同步编译产物、文件大小/大小写约束等）。
+- 文档：修正 `README.md` 部署章节（原文写的是推送到 `master`/`main`，实际默认分支为 `gh-pages`；补充 Cloudflare 与 COS 说明）。
+
+---
+
 ## 2025-10-29
 ###人员与样式
 - 新增：`people.html` 新增 Research Assistant Jie Yu、Qiyuan Cheng 卡片并替换主页头像。

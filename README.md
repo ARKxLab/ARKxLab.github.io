@@ -69,15 +69,15 @@
 - 修改导航/底部：
   - 推荐在 `includes/` 中统一维护，所有页面引用相同片段，降低维护成本
 
-### 部署（GitHub Pages）
-- 仓库名为 `ARKxLab.github.io`，可直接使用用户/组织主页方式部署
-- 步骤：
-  1. 将更新推送至 `master`/`main`（以仓库默认分支为准）
-  2. 在 GitHub 仓库的 Settings → Pages 中，选择部署分支为默认分支，目录为根目录 `/`
-  3. 等待 GitHub Pages 构建完成，即可通过 `https://<org-or-user>.github.io/` 访问
-- 如需自定义域名：
-  - 在仓库根目录添加 `CNAME` 文件（内容为自定义域名）
-  - 在域名 DNS 处配置 A/ALIAS 或 CNAME 指向 GitHub Pages
+### 部署（GitHub Pages + Cloudflare，自动）
+详细流程见 [`docs/RELEASE_PROCESS.md`](docs/RELEASE_PROCESS.md)。要点：
+- **唯一发布源是 `gh-pages` 分支**（仓库默认分支；`main` 已废弃，不要使用）。
+- 推送到 `gh-pages` 后会**自动**部署到两个线上环境，无需手动操作服务器：
+  - GitHub Pages：`https://arkxlab.github.io/`（Settings → Pages，源为 `gh-pages` / 根目录）
+  - Cloudflare Workers：`https://arklab-hkustgz.com/`（Workers Builds 绑定本仓库，配置见 `wrangler.toml`，排除列表见 `.assetsignore`）
+- 视频等大文件托管在腾讯云 COS（`download.arklab-hkustgz.com`），不在本仓库内，需单独上传后再在页面中引用。
+- 步骤：本地修改 → 本地 HTTP 服务器预览 → 确认外链可访问 → `git push origin gh-pages` → 1~2 分钟后验证两个地址 → 追加 `docs/CHANGELOG.md`。
+- 禁止向 `gh-pages` 强推（`--force`）；回滚请用 `git revert`。
 
 ### 常见问题（FAQ）
 - 本地直接打开 HTML 跨页时资源加载异常？
