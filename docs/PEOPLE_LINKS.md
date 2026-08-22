@@ -20,14 +20,14 @@
 
 **PhD Students · 2025 Fall Cohort**
 - Tianjian Liu — 链接: profile/tianjian.html
+- Qiuju Chen（co-supervised） — 链接: profile/qiuju.html（占位页）
 
 **PhD Students · 2026 Spring Cohort**
 - Yuan Xu — 链接: profile/yuanxu.html
 - Jie Yu — 链接: profile/jieyu.html
+- Liyi Xie（co-mentored with Prof. Kang Zhang） — 链接: profile/liyi.html（占位页）
 
 **PhD Students · 2026 Fall Cohort**
-- Liyi Xie（co-mentored with Prof. Kang Zhang） — 链接: profile/liyi.html（占位页）
-- Qiuju Chen（co-supervised） — 链接: profile/qiuju.html（占位页）
 - Bingqian Wang — 链接: profile/bingqian.html（CV: https://chbaalthough.github.io/cv/）
 - Jiansheng Li（co-mentored with Prof. Qiang Nie） — 链接: profile/jiansheng.html（占位页）
 

@@ -23,6 +23,7 @@
 - 新增：13 个占位个人页 `profile/{junrong,yuying,liyi,qiuju,bingqian,jiansheng,anastasia,yihu,yiying,fangze,xintan,xinyuan,haijia}.html`，头像统一用 `images/null.jpg`，待补资料后替换；Haijia Li、Bingqian Wang 的简介与头像（`images/haijia.webp`、`images/bingqian.webp`）已补充，Bingqian Wang 个人页附 CV 链接；Xinyuan Lan 的简介与头像（`images/xinyuan.webp`）已补充；新增 Research Assistant Jiale Liu（`profile/jiale.html`、`images/jiale.webp`）。
 - 调整：Primo Pan、Haoxuan Wang、Yizhi Song、Yinghao Gao（2024 Fall MPhil）、Yixuan Li、Jingyang Lin（RA 2024–2025）、Shan Luo（RA 2025）、Liwen He（Visiting PhD Student）迁入 Alumni，身份更正为清华大学未来实验室设计学博士生（原写北航工业设计），并链接其实验室主页；Huanyi Wan 由 RA 改为 2026 Fall MPhil（同步 `profile/huanyi.html`）。
 - 文档：`docs/PEOPLE_LINKS.md` 按新分组重写 Members 列表并补全 Alumni 链接。
+- 修正：Qiuju Chen 调整为 PhD 2025 Fall cohort，Liyi Xie 调整为 PhD 2026 Spring cohort（`people.html`、`docs/PEOPLE_LINKS.md`）。
 - 文档：新增 `docs/RELEASE_PROCESS.md`，梳理实际托管拓扑（GitHub Pages + Cloudflare Workers 均由 `gh-pages` 分支自动部署；视频在腾讯云 COS）与标准发布流程、自检清单、回滚与故障排查。
 - 文档：新增根目录 `CLAUDE.md`，为 AI Agent 提供仓库操作规范（不主动 push、先验证外链、SCSS 需同步编译产物、文件大小/大小写约束等）。
 - 文档：新增 `docs/ASSETS.md`，规定图片/视频/大文件分别存放在仓库还是腾讯云 COS、各自的规格、命名与公开边界；`CLAUDE.md`、`README.md`、`docs/RELEASE_PROCESS.md` 均已交叉引用。
