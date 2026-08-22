@@ -49,7 +49,7 @@
 - Zhaowen Deng — 链接: profile/zhaowen.html
 - Fangze Qiu — 链接: profile/fangze.html（占位页）
 - Xin Tan — 链接: profile/xintan.html（占位页）
-- Xinyuan Lan — 链接: profile/xinyuan.html（简介已补充，头像待替换）
+- Xinyuan Lan — 链接: profile/xinyuan.html（头像为临时低清图，待换高清）
 - Haijia Li — 链接: profile/haijia.html
 - Jiale Liu — 链接: profile/jiale.html
 

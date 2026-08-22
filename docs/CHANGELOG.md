@@ -14,7 +14,7 @@
 - 资源：`images/xin.jpg` 替换为新证件照（居中裁成 900×900 JPEG，约 117 KB，原图 260×260）；该文件名被 48 处引用，覆盖同名即全站生效。
 - 文档：`docs/PEOPLE_LINKS.md` 同步 Lab Director 链接。
 - 重构：`people.html` Members 区按 Lab Director / PhD Students（2025 Spring、2025 Fall、2026 Spring、2026 Fall cohort）/ MPhil Students（2025 Fall、2026 Fall cohort）/ Research Assistants 分组重排（各组内按入学时间先后排列），PhD 卡片标注 co-mentor / co-supervised 信息；新增 `people-group-title`、`people-cohort-title` 分组标题（仅用 Bootstrap 工具类，未改 SCSS）。
-- 新增：13 个占位个人页 `profile/{junrong,yuying,liyi,qiuju,bingqian,jiansheng,anastasia,yihu,yiying,fangze,xintan,xinyuan,haijia}.html`，头像统一用 `images/null.jpg`，待补资料后替换；Haijia Li、Bingqian Wang 的简介与头像（`images/haijia.webp`、`images/bingqian.webp`）已补充，Bingqian Wang 个人页附 CV 链接；Xinyuan Lan 的简介已补充（头像待替换）；新增 Research Assistant Jiale Liu（`profile/jiale.html`、`images/jiale.webp`）。
+- 新增：13 个占位个人页 `profile/{junrong,yuying,liyi,qiuju,bingqian,jiansheng,anastasia,yihu,yiying,fangze,xintan,xinyuan,haijia}.html`，头像统一用 `images/null.jpg`，待补资料后替换；Haijia Li、Bingqian Wang 的简介与头像（`images/haijia.webp`、`images/bingqian.webp`）已补充，Bingqian Wang 个人页附 CV 链接；Xinyuan Lan 的简介与临时头像（`images/xinyuan.webp`，204×357 低清，待换高清）已补充；新增 Research Assistant Jiale Liu（`profile/jiale.html`、`images/jiale.webp`）。
 - 调整：Primo Pan、Haoxuan Wang、Yizhi Song、Yinghao Gao（2024 Fall MPhil）、Yixuan Li、Jingyang Lin（RA 2024–2025）、Shan Luo（RA 2025）、Liwen He（Visiting Student）迁入 Alumni；Huanyi Wan 由 RA 改为 2026 Fall MPhil（同步 `profile/huanyi.html`）。
 - 文档：`docs/PEOPLE_LINKS.md` 按新分组重写 Members 列表并补全 Alumni 链接。
 - 文档：新增 `docs/RELEASE_PROCESS.md`，梳理实际托管拓扑（GitHub Pages + Cloudflare Workers 均由 `gh-pages` 分支自动部署；视频在腾讯云 COS）与标准发布流程、自检清单、回滚与故障排查。
