@@ -25,7 +25,7 @@
 ## 2. 标准发布流程
 
 ```
-本地修改 → 本地预览验证 → 自检清单 → commit → push origin gh-pages
+本地修改 → 本地预览验证 → 自检清单 → 本地 commit → 【人工复核 + 人工批准】→ push origin gh-pages
         → GitHub Pages 自动部署 ┐
         → Cloudflare 自动构建    ┘→ 线上验证两个地址 → 追加 CHANGELOG
 ```
@@ -54,9 +54,17 @@ python -m http.server 8000
 - [ ] 如果改了 SCSS，`css/style.css` 已重新编译并一起提交。
 - [ ] `git diff --stat` 只包含预期文件。
 
-### 2.4 提交与推送
+### 2.4 提交、人工复核与推送
+**硬规则：所有上线都必须经开发者人工批准。** push 到 `gh-pages` 就是上线，因此 push 只能由开发者本人执行（或在当次对话中明确授权 Agent 执行一次）。
+
+AI Agent 的交付边界：
+1. 本地 `git commit`（只 add 本任务涉及的文件，不要 `git add -A`）。
+2. 起本地服务器 `python -m http.server 8000` 并确认可访问。
+3. 在回复里列出需要复核的页面 URL（`http://localhost:8000/<页面>`）、变更摘要与 commit 号，提醒开发者人工复核。
+4. 停下来等待；由开发者复核后自行推送。
+
 - 提交信息沿用仓库现有风格：`feat(people): ...` / `fix(projects): ...` / `docs: ...` / `chore: ...`，中英文皆可。
-- 直接推送：
+- 开发者复核通过后推送：
 
 ```bash
 git push origin gh-pages

@@ -9,7 +9,12 @@
 - 视频/大文件在腾讯云 COS（`download.arklab-hkustgz.com`），不在仓库里，Agent 无法上传；只能引用已存在的 URL。
 
 ## Agent 行为规则
-1. **不要主动 commit / push。** 只有用户明确要求时才提交；push 需要用户逐次确认，因为 push 即上线。绝不 `push --force`、绝不 `reset --hard` 远端。
+1. **所有上线必须人工批准；Agent 不执行 push。** push 到 `gh-pages` 即上线，这一步由开发者本人完成。Agent 的交付终点固定为四步：
+   ① 本地 `git commit`，只 `git add <本任务涉及的具体路径>`（不要 `git add -A`，工作区里可能有他人/其他会话的未完成改动）；
+   ② 起本地服务器（`python -m http.server 8000`，仓库内 `.claude/launch.json` 提供同样的 `static-site` 预览配置）并确认 `http://localhost:8000/` 可访问；
+   ③ 在回复末尾列出**需要人工复核的页面 URL**（`http://localhost:8000/<页面>`）、变更摘要和 commit 号，明确请开发者复核；
+   ④ 等开发者自己执行 `git push origin gh-pages`。只有开发者在当次对话中明确说"推送"时 Agent 才可代为 push，且仅限那一次，不延续到后续改动。
+   绝不 `push --force`、绝不 `reset --hard` 远端、绝不向 `main` 提交。
 2. **改链接前先验证链接可用。** 任何新增/修改的外部 URL（论文、视频、个人主页、COS 资源）先用 `curl -sI` 确认返回 200/206/301，404 的链接不要写进页面；若用户提供的 URL 还不可用，明确告知并暂缓提交。
 3. **改 SCSS 必须同时产出 `css/style.css`。** 仓库提交的是编译产物；Agent 环境里通常没有 Prepros，如果只能改 SCSS 而无法编译，要明确告诉用户需要本地用 Prepros 编译后再提交。
 4. **文件名大小写严格一致。** 线上是 Linux，本地是 Windows；引用路径必须与真实文件名大小写完全一致。
@@ -18,7 +23,7 @@
 7. **不要修改 `wrangler.toml` 的 `name`**，不要删除 `.assetsignore` 中的条目。新增不应公开的源文件目录时，在 `.assetsignore` 中追加。
 8. **仓库内容全部公开**（GitHub Pages 会原样暴露所有文件）。不要写入任何密钥、内部联系方式以外的隐私信息。
 9. **完成一次内容改动后，在 `docs/CHANGELOG.md` 追加条目**（日期 + 动词开头的要点）；人员链接变更同步 `docs/PEOPLE_LINKS.md`。
-10. 本地预览用 `python -m http.server 8000`，不要用 `file://`。验证页面时关注 console 报错与图片 404。
+10. 本地预览用 `python -m http.server 8000`，不要用 `file://`。验证页面时关注 console 报错与图片 404。Agent 自己先在本地预览里看过改动页面，再请开发者复核。
 
 ## 常用位置
 - 页面：根目录 `*.html`；项目详情 `projects_collection/`；人员 `profile/`；公共片段 `includes/`
