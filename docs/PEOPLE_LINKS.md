@@ -48,13 +48,13 @@
 - Huanyi Wan — 链接: profile/huanyi.html
 
 **Research Assistants**
+- Liwen He（Visiting PhD Student，清华大学未来实验室） — 链接: https://thfl.tsinghua.edu.cn/en/yjdw/Alumni1/Central_Organization1/Research_Center_for_Aging_User_Experience_and_Ser1/liwenhe.htm
 - Zhaowen Deng — 链接: profile/zhaowen.html
 - Fangze Qiu — 链接: profile/fangze.html（占位页）
 - Xin Tan — 链接: profile/xintan.html（占位页）
 - Xinyuan Lan — 链接: profile/xinyuan.html
 - Haijia Li — 链接: profile/haijia.html
 - Jiale Liu — 链接: profile/jiale.html
-- Liwen He（Visiting PhD Student，清华大学未来实验室） — 链接: https://thfl.tsinghua.edu.cn/en/yjdw/Alumni1/Central_Organization1/Research_Center_for_Aging_User_Experience_and_Ser1/liwenhe.htm
 
 ### DKU Collaborators
 - Prof.Yecheng (Kent) Cao, PhD — 链接: https://scholars.duke.edu/person/kent.cao
