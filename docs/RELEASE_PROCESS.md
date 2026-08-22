@@ -116,6 +116,8 @@ git push origin gh-pages
 
 ## 5. 相关配置文件
 
+- `docs/ASSETS.md`：**资源存放规范**——图片/视频/大文件分别该放仓库还是 COS、各自的规格与命名要求。新增素材前先看这份。
+
 - `wrangler.toml`：Cloudflare Worker 配置（`name = "arklab"`，`[assets] directory = "."`）。不要改 `name`，否则 Workers Builds 会对应不上现有 Worker。
 - `.assetsignore`：Cloudflare 上传静态资源时的排除列表（类似 `.gitignore`）。新增不应公开的源文件目录时在这里追加。
 - `.gitignore`：本地忽略列表。

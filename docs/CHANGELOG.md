@@ -10,8 +10,21 @@
 ---
 
 ## 2026-08-22
+- 新增：Lab Director 个人主页 `profile/xintong.html`（结构参考 mingmingfan.com / cislab 成员页：About（中英文简介）→ Paper Awards → Research → Prospective Students → Services → Teaching，视觉沿用站内 `section` / `unit-4` / `profile-avatar-wrapper` 样式，未改 SCSS）；`people.html` Lab Director 卡片由外部 faculty page 改为链接该页。
+- 资源：`images/xin.jpg` 替换为新证件照（居中裁成 900×900 JPEG，约 117 KB，原图 260×260）；该文件名被 48 处引用，覆盖同名即全站生效。
+- 文档：`docs/PEOPLE_LINKS.md` 同步 Lab Director 链接。
+- 重构：`people.html` Members 区按 Lab Director / PhD Students（2025 Spring、2025 Fall、2026 Spring、2026 Fall cohort）/ MPhil Students（2025 Fall、2026 Fall cohort）/ Research Assistants 分组重排（各组内按入学时间先后排列），PhD 卡片标注 co-mentor / co-supervised 信息；新增 `people-group-title`、`people-cohort-title` 分组标题（仅用 Bootstrap 工具类，未改 SCSS）。
+- 新增：13 个占位个人页 `profile/{junrong,yuying,liyi,qiuju,bingqian,jiansheng,anastasia,yihu,yiying,fangze,xintan,xinyuan,haijia}.html`，头像统一用 `images/null.jpg`，待补资料后替换；Haijia Li、Bingqian Wang 的简介与头像（`images/haijia.webp`、`images/bingqian.webp`）已补充，Bingqian Wang 个人页附 CV 链接；Xinyuan Lan 的简介已补充（头像待替换）；新增 Research Assistant Jiale Liu（`profile/jiale.html`、`images/jiale.webp`）。
+- 调整：Primo Pan、Haoxuan Wang、Yizhi Song、Yinghao Gao（2024 Fall MPhil）、Yixuan Li、Jingyang Lin（RA 2024–2025）、Shan Luo（RA 2025）、Liwen He（Visiting Student）迁入 Alumni；Huanyi Wan 由 RA 改为 2026 Fall MPhil（同步 `profile/huanyi.html`）。
+- 文档：`docs/PEOPLE_LINKS.md` 按新分组重写 Members 列表并补全 Alumni 链接。
 - 文档：新增 `docs/RELEASE_PROCESS.md`，梳理实际托管拓扑（GitHub Pages + Cloudflare Workers 均由 `gh-pages` 分支自动部署；视频在腾讯云 COS）与标准发布流程、自检清单、回滚与故障排查。
 - 文档：新增根目录 `CLAUDE.md`，为 AI Agent 提供仓库操作规范（不主动 push、先验证外链、SCSS 需同步编译产物、文件大小/大小写约束等）。
+- 文档：新增 `docs/ASSETS.md`，规定图片/视频/大文件分别存放在仓库还是腾讯云 COS、各自的规格、命名与公开边界；`CLAUDE.md`、`README.md`、`docs/RELEASE_PROCESS.md` 均已交叉引用。
+- 构建/部署：新增 `tools/migrate-videos-to-cos.sh`，把 5 个项目演示视频从阿里云临时桶/个人账号桶迁移到 COS `public/website/video/` 前缀，含下载、上传与大小校验。
+- 修改：5 个项目页的 `<video>` 引用改指向 `download.arklab-hkustgz.com/public/website/video/`；统一加 `preload="none"` 与 `poster` 封面，移除 MojiKit（243 MB）与 LINGOLIFT（64 MB）两处的 `autoplay`。
+- 重构：被引用的 173 张图片统一按长边 1920 px 重采样并转 WebP，同步重写 264 处引用；被引用图片总量 195 MB → 26 MB（工作区 344 MB → 174 MB）。
+- 修复：修正 70 处相对路径错误的图片引用（缺少 `../`，导致约 40 个项目页的微信/B站图标不显示），以及 `starescue.html` 中 6 处被误加 `../` 前缀的绝对 URL。
+- 修改：为 89 个页面的 929 个非首屏 `<img>` 添加 `loading="lazy" decoding="async"`。
 - 文档：修正 `README.md` 部署章节（原文写的是推送到 `master`/`main`，实际默认分支为 `gh-pages`；补充 Cloudflare 与 COS 说明）。
 - 规范：明确"所有上线必须人工批准"——Agent 只做本地 commit、起本地服务器并提醒开发者复核，push 由开发者执行（`CLAUDE.md` 规则 1、`docs/RELEASE_PROCESS.md` §2.4）。
 

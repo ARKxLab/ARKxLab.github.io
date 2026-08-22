@@ -75,7 +75,7 @@
 - 推送到 `gh-pages` 后会**自动**部署到两个线上环境，无需手动操作服务器：
   - GitHub Pages：`https://arkxlab.github.io/`（Settings → Pages，源为 `gh-pages` / 根目录）
   - Cloudflare Workers：`https://arklab-hkustgz.com/`（Workers Builds 绑定本仓库，配置见 `wrangler.toml`，排除列表见 `.assetsignore`）
-- 视频等大文件托管在腾讯云 COS（`download.arklab-hkustgz.com`），不在本仓库内，需单独上传后再在页面中引用。
+- 视频等大文件托管在腾讯云 COS（`download.arklab-hkustgz.com`），不在本仓库内，需单独上传后再在页面中引用。详细的资源存放规范见 [`docs/ASSETS.md`](docs/ASSETS.md)。
 - 步骤：本地修改 → 本地 HTTP 服务器预览 → 确认外链可访问 → `git push origin gh-pages` → 1~2 分钟后验证两个地址 → 追加 `docs/CHANGELOG.md`。
 - 禁止向 `gh-pages` 强推（`--force`）；回滚请用 `git revert`。
 

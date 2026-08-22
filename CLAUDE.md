@@ -1,12 +1,14 @@
 # CLAUDE.md — ARK Lab 官网仓库 Agent 规范
 
 ## 项目是什么
-纯静态站点（原生 HTML/CSS/JS + Bootstrap 5），无构建步骤、无 Node 依赖、无后端。详见 `README.md`；发布流程与托管拓扑详见 `docs/RELEASE_PROCESS.md`（**动手前先读**）。
+纯静态站点（原生 HTML/CSS/JS + Bootstrap 5），无构建步骤、无 Node 依赖、无后端。详见 `README.md`；发布流程与托管拓扑详见 `docs/RELEASE_PROCESS.md`（**动手前先读**）；
+新增图片/视频/大文件前，先读 `docs/ASSETS.md`（**资源该放哪里、做成什么规格**）。
 
 ## 托管与发布（必须知道的事实）
 - 唯一发布源：`origin/gh-pages`。**`gh-pages` 是默认分支，`main` 已废弃，不要碰。**
 - push 到 `gh-pages` = 同时发布到两个线上环境：GitHub Pages（https://arkxlab.github.io/）和 Cloudflare Workers（https://arklab-hkustgz.com/，由 Workers Builds 自动构建）。没有单独"推到服务器"的步骤。
 - 视频/大文件在腾讯云 COS（`download.arklab-hkustgz.com`），不在仓库里，Agent 无法上传；只能引用已存在的 URL。
+  官网视频的统一前缀是 `public/website/video/`；上传脚本 `tools/migrate-videos-to-cos.sh` 需要在 ResearchBuddy 生产服务器上由人执行（密钥只在那里）。**先上传验证 200，再改页面引用。**
 
 ## Agent 行为规则
 1. **所有上线必须人工批准；Agent 不执行 push。** push 到 `gh-pages` 即上线，这一步由开发者本人完成。Agent 的交付终点固定为四步：
