@@ -12,7 +12,8 @@
 ## 2026-08-22
 - 修复：首页 hero 背景图在宽屏（>~2200px）/高视口下右侧与下方露出黑边——通用 `.hero img` 只按原图尺寸（1920px）绝对定位再 `scale(1.3)`，未锚定 hero 盒子；`index.html` hero 容器新增 `hero-home` 类，`css/style.css` 追加 `.hero-home .img-bg`/`img` 规则（绝对定位占满 + `object-fit: cover` + 1.1 倍余量，与 `hero-campus`/`hero-harmony` 同一套做法）。已在 2560×1300、1920×1080、375×812 下验证四边均覆盖、无横向滚动。
 - 新增：Lab Director 个人主页 `profile/xintong.html`（结构参考 mingmingfan.com / cislab 成员页：About（中英文简介）→ Paper Awards → Research → Prospective Students → Services → Teaching，视觉沿用站内 `section` / `unit-4` / `profile-avatar-wrapper` 样式，未改 SCSS）；`people.html` Lab Director 卡片由外部 faculty page 改为链接该页。
-- 新增：`profile/xintong.html` Research 区块加入 CV（2026-07）中 [C17]–[C67] 共 51 篇论文列表，按年份倒序、可按年份筛选（页内小段 JS），32 篇链接到站内项目页；缩略图 45 张统一转 WebP（≤ 640 px 宽）存入 `images/pubs/Cxx.webp`（37 张来自 PI 提供的配图，8 张复用项目页 teaser），C25/C33/C34/C36/C39/C40 暂用「会议名 + 年份」占位块，待补图。
+- 新增：`profile/xintong.html` Research 区块加入 CV（2026-07）中 [C17]–[C67] 共 51 篇论文列表，按年份倒序、可按年份筛选（页内小段 JS），32 篇链接到站内项目页；缩略图 45 张统一转 WebP（≤ 640 px 宽）存入 `images/pubs/Cxx.webp`（37 张来自 PI 提供的配图，8 张复用项目页 teaser），C25/C33/C34/C36/C39/C40 暂用「会议名 + 年份」占位块，待补图。随后去掉了列表中的 `[Cxx]` 编号并改为 "Selected Publications"；三个研究方向的描述改为逐字照录 PI 原文。
+- 新增：上述 51 篇论文全部补上 DOI 链接（Crossref 检索 + `doi.org` 逐个验证可解析；C25 采用 CSCW 正式版 `10.1145/3637305` 而非 OSF 预印本），无站内项目页的 19 篇标题直接链到 DOI。
 - 资源：`images/xin.jpg` 替换为新证件照（居中裁成 900×900 JPEG，约 117 KB，原图 260×260）；该文件名被 48 处引用，覆盖同名即全站生效。
 - 文档：`docs/PEOPLE_LINKS.md` 同步 Lab Director 链接。
 - 重构：`people.html` Members 区按 Lab Director / PhD Students（2025 Spring、2025 Fall、2026 Spring、2026 Fall cohort）/ MPhil Students（2025 Fall、2026 Fall cohort）/ Research Assistants 分组重排（各组内按入学时间先后排列），PhD 卡片标注 co-mentor / co-supervised 信息；新增 `people-group-title`、`people-cohort-title` 分组标题（仅用 Bootstrap 工具类，未改 SCSS）。
