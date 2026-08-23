@@ -9,6 +9,9 @@
 
 ---
 
+## 2026-08-23
+- 修改：暂时隐藏 PI 三个招生研究方向的正文。`profile/xintong.html` Prospective Students 区块中的 "Below are three areas in which I look for MPhil+PhD students:" 及其三条列表、`perspective_stu.html` 的 "Research Topics" 整节（同一批研究方向的卡片版）均以 HTML 注释保留源码、不再渲染，待更新后恢复。此前 2026-08-22 已隐藏 `profile/xintong.html` Research 区块顶部的同源卡片，本次为剩余两处。`perspective_stu.html` 隐藏后 Lab Director 与 For Prospective Students 两节均为白底相邻，未调整 `bg-light` 交替（恢复该节时无需回退额外改动）。
+
 ## 2026-08-22
 - 修改：站点根路径改为直达项目页。原 `index.html`（实验室介绍首页）改名为 `homepage.html`，线上地址 `/homepage`；新建极小的 `index.html` 跳转桩（`<meta refresh>` + JS 跳到 `projects.html`，供 GitHub Pages 使用），并新增根目录 `_redirects`（Cloudflare Workers 静态资源在服务端把 `/` 302 到 `/projects`，无闪烁）。
 - 修改：全站导航中的 "Home" 统一改为 "About"，指向 `homepage.html`；Logo 链接改为直接指向 `projects.html`（避免经根路径二次跳转）；页脚 "ARK Lab" 署名链接指向 `homepage.html`。涉及 79 个 HTML 文件（含 `includes/header-*.html`），共 160 处链接。
