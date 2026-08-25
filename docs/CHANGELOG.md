@@ -9,6 +9,9 @@
 
 ---
 
+## 2026-08-25
+- 修改：补齐 PhD 学生 Yuying Wan 的资料。新增头像 `images/Yuying.webp`（原 HEIC 转 WebP，1280×1280，约 216 KB）；`people.html` 卡片与 `profile/yuying.html` 个人页替换占位图并补上研究方向简介（ubiquitous computing 与 accessibility 的交叉方向）。
+
 ## 2026-08-23
 - 修改：`profile/xintong.html` Teaching 区块按 PI 提供的最新授课信息重写。原本是 5 条不分学期、无课程代码的课程名列表，现改为按学期倒序分组（Fall 2026 / Spring 2026 / Fall 2025 / Spring 2025，共 11 门次），每条列出「课程代码 + 课程全名 + (UG/PG)」，分组标题沿用页内论文列表同款 `people-cohort-title` 样式；区块导语同步补上 introductory computer science。课程代码统一写成无空格形式（`CMAA5037`、`UFUG1601`），学期统一写成「季节 + 年份」。全站仅此一处有 Teaching 内容（已 grep 所有 HTML 与 `docs/*.md` 确认）。
 - 修改：暂时隐藏 PI 三个招生研究方向的正文。`profile/xintong.html` Prospective Students 区块中的 "Below are three areas in which I look for MPhil+PhD students:" 及其三条列表、`perspective_stu.html` 的 "Research Topics" 整节（同一批研究方向的卡片版）均以 HTML 注释保留源码、不再渲染，待更新后恢复。此前 2026-08-22 已隐藏 `profile/xintong.html` Research 区块顶部的同源卡片，本次为剩余两处。`perspective_stu.html` 隐藏后 Lab Director 与 For Prospective Students 两节均为白底相邻，未调整 `bg-light` 交替（恢复该节时无需回退额外改动）。
