@@ -9,6 +9,12 @@
 
 ---
 
+## 2026-09-04
+- 新增：项目页 `projects_collection/MurALive.html`（MurALive: Transforming Dunhuang Murals into Interactive Narratives through AI Analysis and Multi-Agent Generation，ACM DIS '26），含 Abstract、Design Process、Desk Research、Formative Study、Grounding 流程与模型表现、Multi-Agent 框架、交互界面、Evaluation 与 Results、The Team 各区块，论文链接 `https://doi.org/10.1145/3800645.3813099`。
+- 新增：`projects.html` 补上对应项目卡片（标签 DIS，筛选类 `comp CH AI`），置于列表最前（DIS '26 为最新发表）。
+- 修改：MurALive 页 hero 不用常规的 `cover` 背景裁切——论文 Fig.1 比例约 4.6:1，`cover` 会放大到全屏导致糊图，改为 hero 高度随内容收紧、Fig.1 按原比例在流内整幅展示，标题排在图下方（内联样式覆盖全站 `.hero img` 的 absolute + scale(1.3)），长标题改用已有的 `heading-21`。
+- 资源：新增 `projects_collection/projects_img/MurALive/` 共 8 张配图（论文原图，长边压到 1920、转 WebP，单张 45–125 KB）：teaser、design-process、four-murals、static-prototype、grounding-pipeline、interface-nine-colored-deer、interface-king-shibi、experience-ratings。
+
 ## 2026-08-25
 - 修改：补齐 PhD 学生 Yuying Wan 的资料。新增头像 `images/Yuying.webp`（原 HEIC 转 WebP，1280×1280，约 216 KB）；`people.html` 卡片与 `profile/yuying.html` 个人页替换占位图并补上研究方向简介（ubiquitous computing 与 accessibility 的交叉方向）。
 

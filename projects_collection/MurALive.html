@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="ARK lab">
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <meta name="description"
+        content="MurALive: Transforming Dunhuang Murals into Interactive Narratives through AI Analysis and Multi-Agent Generation" />
+    <meta name="keywords"
+        content="Digital Cultural Heritage, Dunhuang Murals, Interactive Narrative, Vision-Language Models, Large Language Models, Multi-Agent Systems" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../fonts/feather/style.css">
+
+    <link rel="stylesheet" href="../css/tiny-slider.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/glightbox.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>MurALive - ARK Lab</title>
+</head>
+
+<body>
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="../projects.html" class="logo m-0"><img src="../images/logo1.png">ARK Lab</a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                    <li><a href="../homepage.html">About</a></li>
+                    <li class="active"><a href="../projects.html">Projects</a></li>
+                    <li><a href="../publications.html">Publications</a></li>
+                    <li><a href="../people.html">People</a></li>
+                    <li><a href="../perspective_stu.html">Perspective Students</a></li>
+                </ul>
+
+                <a href="#"
+                    class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light"
+                    data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Fig.1 比例超宽（约 4.6:1）：不做 cover 裁切（会放大糊掉），改为在流内按原比例整幅展示，
+         hero 高度随内容收紧，标题排在图下方，避免大片空黑 -->
+    <div class="hero" style="height: auto; min-height: 0;">
+        <div class="container" style="padding-top: 8rem; padding-bottom: 3.5rem;">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <!-- 覆盖全站 .hero img 的 absolute + scale(1.3) 规则，让 teaser 正常按流布局 -->
+                    <img src="../projects_collection/projects_img/MurALive/teaser.webp"
+                        alt="MurALive turns Dunhuang murals and their contextual documentation into interactive narratives: representation, knowledge Q&amp;A, and reflection"
+                        class="img-fluid mb-4" style="position: static; transform: none;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-xxl-9 mx-auto text-center">
+                    <h3 class="heading-21 text-white mb-3" data-aos="fade-up">
+                        MurALive: Transforming Dunhuang Murals into Interactive Narratives through AI Analysis and
+                        Multi-Agent Generation
+                    </h3>
+                    <p data-aos="fade-up" data-aos-delay="200" class="text-white lead mb-0">
+                        Jiawen Zhang, Keyi Zeng, Yuan Xu, Liyi Xie, Jingyang Lin, Ke Zhao, Yingjie Ma, Xiaoguang Wang,
+                        Xin Tong*
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Abstract</h2>
+                    <p class="mb-4">
+                        Dunhuang murals, a significant world cultural heritage, present substantial comprehension
+                        barriers for general audiences due to their intricate compositions and culturally distant
+                        narratives. Existing digital systems limit users' ability to establish coherent cognitive
+                        connections between original visual compositions and narrative progression, while reliance on
+                        manual content curation restricts both scalability and generalizability. We present MurALive, an
+                        AI-powered system that automatically analyzes Dunhuang murals and generates interactive
+                        narratives. MurALive integrates vision-language models (VLMs) and large language models (LLMs)
+                        to establish visual-textual correspondences, and employs a multi-agent framework (Storytelling,
+                        Knowledge, and Reflective agents) to generate interactive narratives. This design addresses key
+                        barriers identified through our formative study (N=12): visual-textual correspondence
+                        challenges, narrative structure comprehension difficulties, and cultural knowledge gaps. A user
+                        study (N=17) demonstrated the system's effectiveness in helping users comprehend complex
+                        compositions and storylines, resulting in clear and immersive viewing experiences. This research
+                        contributes an automated, generalizable approach and practical design insights for interactive
+                        narrative systems in digital cultural heritage.
+                    </p>
+                    <p class="mb-5">
+                        <a href="https://doi.org/10.1145/3800645.3813099" class="btn-tag">Publication (ACM DIS '26)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Design Process</h2>
+                    <p class="mb-5">
+                        The project follows a Human-Centred Design methodology across five stages, where the empirical
+                        findings of each stage directly inform the next. We began with desk research on Dunhuang mural
+                        narrative structures and selected four representative murals as design cases. Using these cases,
+                        we built a static narrative prototype and ran a formative study (N=12) to surface comprehension
+                        barriers. These findings shaped a multi-agent framework, which we then applied to implement
+                        MurALive and evaluated in a user study (N=17).
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-12">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MurALive/design-process.webp"
+                        alt="Five-stage design research process: desk research, formative study, multi-agent framework design, system design and implementation, and user study evaluation"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Desk Research</h2>
+                    <p class="mb-5">
+                        We compiled a database from authoritative sources, including the Digital Dunhuang Mural Thematic
+                        Website, the Dunhuang Encyclopedia Database, the International Dunhuang Programme, and scholarly
+                        monographs. Following the Dunhuang Academy's classification system, we focused on narrative
+                        murals and classified them into four narrative structures based on spatial organization:
+                        monolithic focus, anachronic singular, linear sequential panels, and non-linear sequential
+                        panels. Four representative murals exemplifying these structures were selected and validated by
+                        two experts from the Dunhuang Academy: (A) King Virudhaka J&#257;taka (Cave 275), (B) King Shibi
+                        J&#257;taka (Cave 254), (C) Nine-Colored Deer J&#257;taka (Cave 257), and (D) Visualization of
+                        the Contemplation Sutra&mdash;Prince Aj&#257;ta&#347;atru (Cave 171).
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-12">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MurALive/four-murals.webp"
+                        alt="Four representative Dunhuang murals with diverse compositional structures"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Formative Study</h2>
+                    <p class="mb-4">
+                        Twelve participants explored the four murals through a static narrative prototype built in
+                        Unity, which presented only mural images, character labels, and textual story descriptions.
+                        Screen recordings and semi-structured interviews were analyzed through open coding, revealing
+                        three primary comprehension barriers:
+                    </p>
+                    <ul class="mb-5">
+                        <li class="mb-3"><strong>Visual-textual correspondence challenges:</strong> participants could
+                            not reliably match textual story descriptions to the visual regions that depict them, and
+                            found constant cross-referencing exhausting and disruptive to immersion.</li>
+                        <li class="mb-3"><strong>Narrative structure comprehension difficulties:</strong> non-linear
+                            compositions&mdash;multiple time-spaces within one frame, or reading paths running from both
+                            ends toward the center&mdash;left participants disoriented.</li>
+                        <li class="mb-3"><strong>Cultural knowledge gaps:</strong> unfamiliar Buddhist iconography and
+                            culturally distant values made it hard to interpret what the murals depict and why it
+                            mattered.</li>
+                    </ul>
+                    <p class="mb-5">
+                        These barriers were translated into six design insights across two layers&mdash;content
+                        generation (progressive narrative revelation, contextualized knowledge support, cultural value
+                        bridging) and the interaction interface (explicit visual-textual linking, guided visual
+                        navigation, spatial overview and orientation).
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-12">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MurALive/static-prototype.webp"
+                        alt="Static narrative prototype used in the formative study" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Automatic Character Recognition and Grounding</h2>
+                    <p class="mb-4">
+                        A two-stage pipeline associates visual elements with textual descriptions. In the
+                        <strong>segment stage</strong>, we collected 370 mural images with text descriptions spanning
+                        Early (pre-Sui), Late (post-Sui), and restored murals, annotated 1,757 bounding box instances
+                        with dynasty, element, and posture labels, and fine-tuned Grounding DINO within MMDetection to
+                        localize figures, while GPT-4o parses unstructured documentation into structured text. In the
+                        <strong>integration stage</strong>, an agent synthesizes detections and text into grounded
+                        attributes organized in three levels: object attributes (detections, coordinates, physical
+                        actions), spatial attributes (relative positions and relationships), and semantic attributes
+                        (narrative roles, names, plot-driven behaviors).
+                    </p>
+                    <p class="mb-5">
+                        Fine-tuning produced consistent gains over the baseline across the evaluation set: mAP rose from
+                        0.420 to 0.554, AP50 from 0.695 to 0.903, and AR from 0.671 to 0.712. AP50 improved from 0.688
+                        to 0.899 on Early murals, from 0.714 to 0.934 on Late murals, and from 0.689 to 0.873 on
+                        restored murals, indicating that domain adaptation transfers across stylistic and conservation
+                        differences.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-12">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MurALive/grounding-pipeline.webp"
+                        alt="Grounding pipeline with segment stage and integration stage" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Multi-Agent Narrative Generation</h2>
+                    <p class="mb-4">
+                        Five specialized agents generate the interactive narrative content:
+                    </p>
+                    <ul class="mb-5">
+                        <li class="mb-3"><strong>Storytelling Agents:</strong> an Extracting Agent organizes raw mural
+                            documentation into a structural storyline, distinguishing the <em>story plot</em> (the
+                            complete narrative arc) from the <em>visual plot</em> (the scenes actually depicted); a
+                            Scripter Agent then writes third-person narration and first-person character dialogues for
+                            each plot; a Review Agent validates structural correspondence and content fidelity,
+                            returning failed scripts for revision.</li>
+                        <li class="mb-3"><strong>Knowledge Agent:</strong> answers user questions in real time by
+                            combining mural documentation, the current narrative context, and broader cultural knowledge
+                            through a dedicated retrieval mechanism grounded in an authoritative Dunhuang corpus, with
+                            explicit acknowledgement of uncertain answers.</li>
+                        <li class="mb-3"><strong>Reflective Agent:</strong> after a narrative concludes, synthesizes the
+                            story arc, surfaces the underlying Buddhist principles, and connects culturally distant
+                            practices to contemporary life to support personal meaning-making.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Interactive Narrative Interface</h2>
+                    <p class="mb-4">
+                        The system is a standalone Unity application. Character dialogues appear in speech bubbles next
+                        to the figures who speak them, while narration appears at the bottom of the screen. Users move
+                        through the story with previous and next scene controls, examine details through drag-to-pan and
+                        pinch-to-zoom, open a Q&amp;A dialogue with the Knowledge Agent at any time, and meet the
+                        Reflective Agent once the story concludes.
+                    </p>
+                    <ul class="mb-5">
+                        <li class="mb-3"><strong>Element Tags:</strong> automatically highlight the mural elements
+                            corresponding to the current narrative content, linking text to image.</li>
+                        <li class="mb-3"><strong>Intelligent Camera:</strong> adjusts the viewport to follow narrative
+                            progression, smoothly panning and zooming between relevant mural regions.</li>
+                        <li class="mb-3"><strong>Navigation Map:</strong> shows the current viewport within the complete
+                            mural, providing spatial orientation in complex multi-panel compositions.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-12 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MurALive/interface-nine-colored-deer.webp"
+                        alt="Interface of the Nine-Colored Deer story (Cave 257): narrator and character dialogue, scene switching, pan and zoom, and Q&amp;A"
+                        class="img-fluid">
+                </div>
+                <div class="col-md-12 col-lg-12 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MurALive/interface-king-shibi.webp"
+                        alt="Interface of the King Shibi Jataka (Cave 254): element tags, intelligent camera, and navigation map"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Evaluation</h2>
+                    <p class="mb-5">
+                        Seventeen participants (12 non-experts and 5 cultural heritage professionals) each spent about
+                        an hour with the system: a pre-test of mural knowledge, roughly 25 minutes exploring all four
+                        murals with think-aloud commentary, then a post-test, a 16-item online exhibition experience
+                        questionnaire, the System Usability Scale, and a semi-structured interview.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Results</h2>
+                    <p class="mb-4">
+                        <strong>Learning gains:</strong> paired t-tests showed significant improvements on both
+                        dimensions (all p &lt; 0.001). Story Content scores rose from M = 3.71 (SD = 2.87) to M = 8.71
+                        (SD = 1.21), and Visual Structure scores from M = 2.94 (SD = 1.60) to M = 7.53 (SD = 1.55), both
+                        with large effect sizes (Cohen's d = 1.53 and 2.10).
+                    </p>
+                    <p class="mb-4">
+                        <strong>Exhibition experience:</strong> ratings were consistently positive across the four
+                        dimensions&mdash;Enjoyment (M = 4.26, SD = 0.58), Inspiration (M = 4.08, SD = 0.55),
+                        Understanding (M = 4.08, SD = 0.39), and Engagement (M = 4.01, SD = 0.72). The mean SUS score
+                        was 69.56 (SD = 11.90), indicating good usability.
+                    </p>
+                    <p class="mb-5">
+                        <strong>Qualitative findings:</strong> participants reported that progressive storytelling and
+                        spatial guidance made otherwise opaque compositions legible, and several developed transferable
+                        knowledge about compositional structures&mdash;recognizing, for example, that murals can be read
+                        from both ends toward the center or along an S-shaped path, and applying that to unfamiliar
+                        murals. Preferences for narrative linearity nevertheless diverged, pointing to a design tension
+                        between guided narration and free exploration.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-8 col-lg-7 mx-auto">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MurALive/experience-ratings.webp"
+                        alt="Kernel density plots of exhibition experience scores across engagement, enjoyment, inspiration, and understanding (N = 17)"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-lg-6" data-aos="fade-up">
+                    <h2>The Team</h2>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class=" col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/xin.jpg" alt="Image"
+                                    class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Dr. Xin Tong</h2>
+                                <p>Principal Investigator (PI)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/jiawen.webp" alt="Image"
+                                    class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Jiawen Zhang</h2>
+                                <p>Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/keyi.webp" alt="Image"
+                                    class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Keyi Zeng</h2>
+                                <p>Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/xuyuan.webp" alt="Image"
+                                    class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Yuan Xu</h2>
+                                <p>Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/null.jpg" alt="Image"
+                                    class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Liyi Xie</h2>
+                                <p>Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/jingyang.webp" alt="Image"
+                                    class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Jingyang Lin</h2>
+                                <p>Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/null.jpg" alt="Image"
+                                    class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Ke Zhao</h2>
+                                <p>Collaborator, Wuhan University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/null.jpg" alt="Image"
+                                    class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Yingjie Ma</h2>
+                                <p>Collaborator, Dunhuang Academy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/null.jpg" alt="Image"
+                                    class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Xiaoguang Wang</h2>
+                                <p>Collaborator, Wuhan University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Contact</h3>
+                        <address>No.1 Du Xue Rd, Nansha District, Guangzhou</address>
+                        <ul class="list-unstyled links">
+                            <li><a href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a></li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                </div> <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Sources</h3>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a></li>
+                            <li><a href="../projects.html">Info Hub</a></li>
+                            <li><a href="https://cma.hkust-gz.edu.cn/">CMA Thrust</a></li>
+                        </ul>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="../people.html">People</a></li>
+                            <li><a href="../perspective_stu.html">Perspective Students</a></li>
+                            <li><a href="../contact.html">Contact us</a></li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                </div> <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Follow Us</h3>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="https://space.bilibili.com/479380804"><img loading="lazy" decoding="async"
+                                        src="../images/bilibili.jpeg" alt="Bilibili QR code" class="wechat-qr"> </li></a>
+                        </ul>
+                        <ul class="list-unstyled float-start links">
+                            <li><img loading="lazy" decoding="async" src="../images/Wechat.jpeg" alt="Wechat QR code"
+                                    class="wechat-qr"> </li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                </div> <!-- /.col-lg-4 -->
+            </div> <!-- /.row -->
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="mb-0">
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+                        <a href="#" target="_blank" rel="nofollow noopener">ARK Lab</a> &bullet;
+                        <a href="#" target="_blank" rel="nofollow noopener">License</a>
+                    </p>
+                </div>
+            </div>
+        </div> <!-- /.container -->
+    </div> <!-- /.site-footer -->
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tiny-slider.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+    <script src="../js/rellax.min.js"></script>
+    <script src="../js/custom.js"></script>
+</body>
+
+</html>
