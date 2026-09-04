@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../favicon.png">
 
     <meta name="description"
-        content="MurALive: Transforming Dunhuang Murals into Interactive Narratives through AI Analysis and Multi-Agent Generation" />
+        content="Luminara: Transforming Dunhuang Murals into Interactive Narratives through AI Analysis and Multi-Agent Generation" />
     <meta name="keywords"
         content="Digital Cultural Heritage, Dunhuang Murals, Interactive Narrative, Vision-Language Models, Large Language Models, Multi-Agent Systems" />
 
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="../css/glightbox.min.css">
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>MurALive - ARK Lab</title>
+    <title>Luminara - ARK Lab</title>
 </head>
 
 <body>
@@ -73,15 +73,15 @@
             <div class="row">
                 <div class="col-12" data-aos="fade-up">
                     <!-- 覆盖全站 .hero img 的 absolute + scale(1.3) 规则，让 teaser 正常按流布局 -->
-                    <img src="../projects_collection/projects_img/MurALive/teaser.webp"
-                        alt="MurALive turns Dunhuang murals and their contextual documentation into interactive narratives: representation, knowledge Q&amp;A, and reflection"
+                    <img src="../projects_collection/projects_img/Luminara/teaser.webp"
+                        alt="Luminara turns Dunhuang murals and their contextual documentation into interactive narratives: representation, knowledge Q&amp;A, and reflection"
                         class="img-fluid mb-4" style="position: static; transform: none;">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-10 col-xxl-9 mx-auto text-center">
                     <h3 class="heading-21 text-white mb-3" data-aos="fade-up">
-                        MurALive: Transforming Dunhuang Murals into Interactive Narratives through AI Analysis and
+                        Luminara: Transforming Dunhuang Murals into Interactive Narratives through AI Analysis and
                         Multi-Agent Generation
                     </h3>
                     <p data-aos="fade-up" data-aos-delay="200" class="text-white lead mb-0">
@@ -104,9 +104,9 @@
                         barriers for general audiences due to their intricate compositions and culturally distant
                         narratives. Existing digital systems limit users' ability to establish coherent cognitive
                         connections between original visual compositions and narrative progression, while reliance on
-                        manual content curation restricts both scalability and generalizability. We present MurALive, an
+                        manual content curation restricts both scalability and generalizability. We present Luminara, an
                         AI-powered system that automatically analyzes Dunhuang murals and generates interactive
-                        narratives. MurALive integrates vision-language models (VLMs) and large language models (LLMs)
+                        narratives. Luminara integrates vision-language models (VLMs) and large language models (LLMs)
                         to establish visual-textual correspondences, and employs a multi-agent framework (Storytelling,
                         Knowledge, and Reflective agents) to generate interactive narratives. This design addresses key
                         barriers identified through our formative study (N=12): visual-textual correspondence
@@ -116,9 +116,9 @@
                         contributes an automated, generalizable approach and practical design insights for interactive
                         narrative systems in digital cultural heritage.
                     </p>
-                    <p class="mb-5">
-                        <a href="https://doi.org/10.1145/3800645.3813099" class="btn-tag">Publication (ACM DIS '26)</a>
-                    </p>
+                    <div class="publication-links mb-5">
+                        <a href="https://doi.org/10.1145/3800645.3813099" class="btn btn-black btn-block">Publication</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,14 +135,14 @@
                         narrative structures and selected four representative murals as design cases. Using these cases,
                         we built a static narrative prototype and ran a formative study (N=12) to surface comprehension
                         barriers. These findings shaped a multi-agent framework, which we then applied to implement
-                        MurALive and evaluated in a user study (N=17).
+                        Luminara and evaluated in a user study (N=17).
                     </p>
                 </div>
             </div>
             <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="col-md-12 col-lg-12">
                     <img loading="lazy" decoding="async"
-                        src="../projects_collection/projects_img/MurALive/design-process.webp"
+                        src="../projects_collection/projects_img/Luminara/design-process.webp"
                         alt="Five-stage design research process: desk research, formative study, multi-agent framework design, system design and implementation, and user study evaluation"
                         class="img-fluid">
                 </div>
@@ -171,7 +171,7 @@
             <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="col-md-12 col-lg-12">
                     <img loading="lazy" decoding="async"
-                        src="../projects_collection/projects_img/MurALive/four-murals.webp"
+                        src="../projects_collection/projects_img/Luminara/four-murals.webp"
                         alt="Four representative Dunhuang murals with diverse compositional structures"
                         class="img-fluid">
                 </div>
@@ -212,7 +212,7 @@
             <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="col-md-12 col-lg-12">
                     <img loading="lazy" decoding="async"
-                        src="../projects_collection/projects_img/MurALive/static-prototype.webp"
+                        src="../projects_collection/projects_img/Luminara/static-prototype.webp"
                         alt="Static narrative prototype used in the formative study" class="img-fluid">
                 </div>
             </div>
@@ -220,6 +220,33 @@
     </div>
 
     <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">System Architecture</h2>
+                    <p class="mb-5">
+                        Luminara is built in three layers. The <strong>Grounded Mural Analysis</strong> layer processes
+                        the mural image and its story context with a fine-tuned detector and vision-language and large
+                        language models, producing character tags, positions, and descriptions anchored in authoritative
+                        Dunhuang data. The <strong>Multi-Agent Generation</strong> layer turns that grounded data into
+                        narrative content through Storytelling, Knowledge, and Reflective agents. The
+                        <strong>Interactive Narrative</strong> layer, a Unity application, presents the result through
+                        presentation, dialogue, and visual guidance modules.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-12">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/Luminara/system-architecture.webp"
+                        alt="System architecture: grounded mural analysis layer, multi-agent generation layer, and interactive narrative layer"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
@@ -247,14 +274,14 @@
             <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="col-md-12 col-lg-12">
                     <img loading="lazy" decoding="async"
-                        src="../projects_collection/projects_img/MurALive/grounding-pipeline.webp"
+                        src="../projects_collection/projects_img/Luminara/grounding-pipeline.webp"
                         alt="Grounding pipeline with segment stage and integration stage" class="img-fluid">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="section">
+    <div class="section bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
@@ -282,7 +309,7 @@
         </div>
     </div>
 
-    <div class="section bg-light">
+    <div class="section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
@@ -307,13 +334,13 @@
             <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="col-md-12 col-lg-12 mb-4">
                     <img loading="lazy" decoding="async"
-                        src="../projects_collection/projects_img/MurALive/interface-nine-colored-deer.webp"
+                        src="../projects_collection/projects_img/Luminara/interface-nine-colored-deer.webp"
                         alt="Interface of the Nine-Colored Deer story (Cave 257): narrator and character dialogue, scene switching, pan and zoom, and Q&amp;A"
                         class="img-fluid">
                 </div>
                 <div class="col-md-12 col-lg-12 mb-4">
                     <img loading="lazy" decoding="async"
-                        src="../projects_collection/projects_img/MurALive/interface-king-shibi.webp"
+                        src="../projects_collection/projects_img/Luminara/interface-king-shibi.webp"
                         alt="Interface of the King Shibi Jataka (Cave 254): element tags, intelligent camera, and navigation map"
                         class="img-fluid">
                 </div>
@@ -321,7 +348,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
@@ -337,7 +364,7 @@
         </div>
     </div>
 
-    <div class="section bg-light">
+    <div class="section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
@@ -365,9 +392,15 @@
                 </div>
             </div>
             <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-10 col-lg-9 mx-auto mb-5">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/Luminara/learning-gains.webp"
+                        alt="Pre-test and post-test knowledge assessment scores for story content and visual structure (N = 17)"
+                        class="img-fluid">
+                </div>
                 <div class="col-md-8 col-lg-7 mx-auto">
                     <img loading="lazy" decoding="async"
-                        src="../projects_collection/projects_img/MurALive/experience-ratings.webp"
+                        src="../projects_collection/projects_img/Luminara/experience-ratings.webp"
                         alt="Kernel density plots of exhibition experience scores across engagement, enjoyment, inspiration, and understanding (N = 17)"
                         class="img-fluid">
                 </div>
