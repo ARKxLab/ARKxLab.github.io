@@ -12,7 +12,7 @@
 - Prof. Xin Tong — 链接: profile/xintong.html（2026-08-22 新建站内主页；页内另链 HKUST(GZ) faculty page、Google Scholar、ORCID）
 
 **PhD Students · 2024 Fall Cohort**
-- Junrong “Vicki” Song（co-supervised） — 链接: profile/junrong.html（占位页，待补资料与头像）
+- Junrong “Vicki” Song（co-supervised） — 链接: profile/junrong.html
 - Yuying Wan（co-supervised） — 链接: profile/yuying.html（占位页）
 
 **PhD Students · 2025 Spring Cohort**
@@ -22,7 +22,7 @@
 
 **PhD Students · 2025 Fall Cohort**
 - Tianjian Liu — 链接: profile/tianjian.html
-- Qiuju Chen（co-supervised） — 链接: profile/qiuju.html（占位页）
+- Qiuju Chen（co-supervised） — 链接: profile/qiuju.html
 
 **PhD Students · 2026 Spring Cohort**
 - Yuan Xu — 链接: profile/yuanxu.html
