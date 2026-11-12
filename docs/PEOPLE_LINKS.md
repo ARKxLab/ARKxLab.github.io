@@ -27,11 +27,11 @@
 **PhD Students · 2026 Spring Cohort**
 - Yuan Xu — 链接: profile/yuanxu.html
 - Jie Yu — 链接: profile/jieyu.html
-- Liyi Xie（co-mentored with Prof. Kang Zhang） — 链接: profile/liyi.html（占位页）
+- Liyi Xie（co-mentored with Prof. Kang Zhang） — 链接: profile/liyi.html
 
 **PhD Students · 2026 Fall Cohort**
 - Bingqian Wang — 链接: profile/bingqian.html（CV: https://chbaalthough.github.io/cv/）
-- Jiansheng Li（co-mentored with Prof. Qiang Nie） — 链接: profile/jiansheng.html（占位页）
+- Jiansheng Li（co-mentored with Prof. Qiang Nie） — 链接: profile/jiansheng.html
 
 **MPhil Students · 2025 Fall Cohort**
 - Hongni Chen — 链接: profile/hongnichen.html
@@ -46,15 +46,13 @@
 
 **MPhil Students · 2026 Fall Cohort**
 - Huanyi Wan — 链接: profile/huanyi.html
+- Xiaoyan Hu — 链接: profile/xiaoyan.html
 
 **Research Assistants**
 - Liwen He（Visiting PhD Student，清华大学未来实验室） — 链接: https://thfl.tsinghua.edu.cn/en/yjdw/Alumni1/Central_Organization1/Research_Center_for_Aging_User_Experience_and_Ser1/liwenhe.htm
 - Zhaowen Deng — 链接: profile/zhaowen.html
-- Fangze Qiu — 链接: profile/fangze.html（占位页）
-- Xin Tan — 链接: profile/xintan.html（占位页）
-- Xinyuan Lan — 链接: profile/xinyuan.html
-- Haijia Li — 链接: profile/haijia.html
-- Jiale Liu — 链接: profile/jiale.html
+- Fangze "Inno" Qiu — 链接: profile/fangze.html
+- Yulin Chen — 链接: profile/yulin.html
 
 ### DKU Collaborators
 - Prof.Yecheng (Kent) Cao, PhD — 链接: https://scholars.duke.edu/person/kent.cao
@@ -105,6 +103,10 @@
 - Yixuan Li（RA, 2024–2025） — 链接: profile/yixuan.html
 - Jingyang “Elijah” Lin（RA, 2024–2025） — 链接: profile/jingyang.html
 - Shan Luo（RA, 2025） — 链接: profile/shan.html
+- Xin Tan（RA） — 链接: profile/xintan.html
+- Xinyuan Lan（RA） — 链接: profile/xinyuan.html
+- Haijia Li（RA） — 链接: profile/haijia.html
+- Jiale Liu（RA） — 链接: profile/jiale.html
 
 ---
 

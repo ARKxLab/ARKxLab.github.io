@@ -9,6 +9,12 @@
 
 ---
 
+## 2026-11-12
+- 修改：补齐 PhD 学生 Liyi Xie（2026 Spring Cohort）与 Jiansheng Li（2026 Fall Cohort）、Research Assistant Fangze "Inno" Qiu 的个人资料与头像（`images/liyi.webp`、`images/jiansheng.webp`、`images/fangze.webp`），同步更新 `people.html` 卡片、`profile/{liyi,jiansheng,fangze}.html` 个人页与 `docs/PEOPLE_LINKS.md`。
+- 新增：MPhil 学生 Xiaoyan Hu（2026 Fall Cohort，`profile/xiaoyan.html`、`images/xiaoyan.webp`）与 Research Assistant Yulin Chen（`profile/yulin.html`、`images/yulin.webp`），并加入 `people.html` 对应分组及 `docs/PEOPLE_LINKS.md`。
+- 调整：将原 Research Assistants 成员 Xin Tan、Xinyuan Lan、Haijia Li、Jiale Liu 移入 `people.html` 的 Alumni 区域，移除 `profile/xintan.html` 的在职占位提示，同步更新 `docs/PEOPLE_LINKS.md`。
+- 修复：修正 `profile/{fangze,xintan,xinyuan,haijia,jiale}.html` 页脚 Contact us 相对路径（补齐 `../`）并清理多余的 `</div>` 闭合标签。
+
 ## 2026-09-04
 - 新增：项目页 `projects_collection/Luminara.html`（Luminara: Transforming Dunhuang Murals into Interactive Narratives through AI Analysis and Multi-Agent Generation，ACM DIS '26，`https://doi.org/10.1145/3800645.3813099`），含 Abstract、Design Process、Desk Research、Formative Study、System Architecture、Grounding 流程与检测指标、Multi-Agent 框架、交互界面、Evaluation、Results、The Team。
 - 新增：`projects.html` 补上对应项目卡片（标签 DIS，筛选类 `comp CH AI`），置于列表最前（DIS '26 为最新发表）。
