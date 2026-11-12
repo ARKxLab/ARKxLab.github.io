@@ -10,6 +10,7 @@
 ---
 
 ## 2026-11-12
+- 新增：MPhil 学生 Kaixuan Lin（2026 Fall Cohort，`profile/kaixuan.html`、`images/kaixuan.webp`），并加入 `people.html` 对应分组及 `docs/PEOPLE_LINKS.md`。
 - 修改：补齐 PhD 学生 Junrong “Vicki” Song（2024 Fall Cohort，`images/junrong.webp`、`profile/junrong.html`）与 Qiuju Chen（2025 Fall Cohort，`images/qiuju.webp`、`profile/qiuju.html`，含联系邮箱 `qchen289@connect.hkust-gz.edu.cn`）的个人资料与头像，同步更新 `people.html` 卡片、`docs/PEOPLE_LINKS.md` 并修复旧占位页模板页脚相对路径与多余 `</div>` 闭合标签。
 - 修改：补齐 PhD 学生 Liyi Xie（2026 Spring Cohort）与 Jiansheng Li（2026 Fall Cohort）、Research Assistant Fangze "Inno" Qiu 的个人资料与头像（`images/liyi.webp`、`images/jiansheng.webp`、`images/fangze.webp`），同步更新 `people.html` 卡片、`profile/{liyi,jiansheng,fangze}.html` 个人页与 `docs/PEOPLE_LINKS.md`。
 - 新增：MPhil 学生 Xiaoyan Hu（2026 Fall Cohort，`profile/xiaoyan.html`、`images/xiaoyan.webp`）与 Research Assistant Yulin Chen（`profile/yulin.html`、`images/yulin.webp`），并加入 `people.html` 对应分组及 `docs/PEOPLE_LINKS.md`。

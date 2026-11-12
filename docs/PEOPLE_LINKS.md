@@ -47,6 +47,7 @@
 **MPhil Students · 2026 Fall Cohort**
 - Huanyi Wan — 链接: profile/huanyi.html
 - Xiaoyan Hu — 链接: profile/xiaoyan.html
+- Kaixuan Lin — 链接: profile/kaixuan.html
 
 **Research Assistants**
 - Liwen He（Visiting PhD Student，清华大学未来实验室） — 链接: https://thfl.tsinghua.edu.cn/en/yjdw/Alumni1/Central_Organization1/Research_Center_for_Aging_User_Experience_and_Ser1/liwenhe.htm
