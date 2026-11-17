@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="ARK Lab">
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <meta name="description"
+        content="PSeeds: A Configurable Object-Centered Sensing Toolkit with Inspectable Routine Hypotheses — Understanding Everyday Routines Through Objects." />
+    <meta name="keywords"
+        content="PSeeds, Object-Centered Sensing, Reconfigurable Sensing, Everyday Routines, Semantic Understanding, UIST" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../fonts/feather/style.css">
+
+    <link rel="stylesheet" href="../css/tiny-slider.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/glightbox.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .pseeds-card {
+            background: #ffffff;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 10px;
+            padding: 1.75rem;
+            height: 100%;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+        }
+
+        .pseeds-step-num {
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #ffffff;
+            background: #1e293b;
+            padding: 0.3rem 0.7rem;
+            border-radius: 999px;
+            margin-bottom: 0.9rem;
+        }
+
+        .pseeds-metric-card {
+            background: #ffffff;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-left: 4px solid #1e293b;
+            border-radius: 10px;
+            padding: 1.75rem 2rem;
+            height: 100%;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+        }
+
+        .pseeds-metric-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.75rem;
+            font-weight: 700;
+            line-height: 1.1;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+
+        .pseeds-routine-card {
+            background: #f8f9fa;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 10px;
+            padding: 1.35rem 1.5rem;
+            height: 100%;
+        }
+
+        .pseeds-quote {
+            border-left: 4px solid #1e293b;
+            padding-left: 1.25rem;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #1e293b;
+        }
+
+        .pseeds-team .author > .pic {
+            flex: 0 0 60px;
+            width: 60px;
+            height: 60px;
+            margin-right: 12px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        .pseeds-team .author > .pic img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+        }
+    </style>
+
+    <title>PSeeds - ARK Lab</title>
+</head>
+
+<body>
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="../projects.html" class="logo m-0"><img src="../images/logo1.png" alt="ARK Lab Logo">ARK Lab</a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                    <li><a href="../homepage.html">About</a></li>
+                    <li class="active"><a href="../projects.html">Projects</a></li>
+                    <li><a href="../publications.html">Publications</a></li>
+                    <li><a href="../people.html">People</a></li>
+                    <li><a href="../perspective_stu.html">Perspective Students</a></li>
+                </ul>
+
+                <a href="#"
+                    class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light"
+                    data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero：宽幅三联总览图采用自然流展示，避免高比裁切 -->
+    <div class="hero" style="height: auto; min-height: 0;">
+        <div class="container" style="padding-top: 6.25rem; padding-bottom: 2.75rem;">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="bg-white p-2 p-md-3 rounded shadow mb-4">
+                        <img src="../projects_collection/projects_img/PSeeds/teaser.webp"
+                            alt="PSeeds overview: (a) stackable sensor hardware, (b) object-embedded deployment across water bottle, bedside table, bathroom wall, and chair, and (c) routine timeline dashboard"
+                            class="img-fluid w-100" style="position: static; transform: none;">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-11 mx-auto text-center">
+                    <span class="subheading d-inline-block mb-2 text-white-50" data-aos="fade-up">UIST '26 Adjunct · Understanding Everyday Routines Through Objects</span>
+                    <h1 class="heading-21 text-white mb-3" data-aos="fade-up">
+                        PSeeds: A Configurable Object-Centered Sensing Toolkit with Inspectable Routine Hypotheses
+                    </h1>
+                    <p class="text-white lead mb-0">
+                        Jie Yu, Tianjian Liu, Rongqi Bei, Yuying Wan, Kaishun Wu, Xin Tong*
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="mb-4">Overview</h2>
+                    <p class="mb-4">
+                        Our everyday routines are deeply intertwined with the objects around us. A water bottle, a chair, or a bedside table can reveal subtle traces of our daily behaviors.
+                    </p>
+                    <p class="mb-0">
+                        PSeeds explores a new approach to everyday routine sensing, using ordinary objects as meaningful anchors for understanding human activities. By combining reconfigurable sensing with semantic interpretation, PSeeds transforms physical interactions into meaningful insights about everyday life.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Ideas -->
+    <div class="section">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="mb-2">Key Ideas</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="pseeds-card">
+                        <div class="unit-4 d-flex flex-column">
+                            <div class="unit-4-icon mb-3"><span class="feather-box"></span></div>
+                            <h3 class="h5 mb-3">Object-Centered Sensing</h3>
+                            <p class="text-muted mb-0">
+                                Everyday objects provide meaningful context for interpreting human behavior. The same physical interaction can represent different activities depending on the object involved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pseeds-card">
+                        <div class="unit-4 d-flex flex-column">
+                            <div class="unit-4-icon mb-3"><span class="feather-sliders"></span></div>
+                            <h3 class="h5 mb-3">Reconfigurable Sensing</h3>
+                            <p class="text-muted mb-0">
+                                A compact sensing toolkit can be adapted to different objects, environments, and personal routines, without requiring dedicated smart devices for every application.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pseeds-card">
+                        <div class="unit-4 d-flex flex-column">
+                            <div class="unit-4-icon mb-3"><span class="feather-message-square"></span></div>
+                            <h3 class="h5 mb-3">Semantic Understanding</h3>
+                            <p class="text-muted mb-0">
+                                Beyond detecting isolated movements, PSeeds connects sensor observations with object context to infer higher-level routines and make them understandable through AI-powered explanations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="mb-2">How It Works</h2>
+                </div>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="pseeds-card">
+                        <span class="pseeds-step-num">01 — Sense</span>
+                        <h3 class="h5 mb-3">Sense</h3>
+                        <p class="text-muted mb-0">
+                            Capture interactions and environmental changes around everyday objects.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pseeds-card">
+                        <span class="pseeds-step-num">02 — Interpret</span>
+                        <h3 class="h5 mb-3">Interpret</h3>
+                        <p class="text-muted mb-0">
+                            Connect sensing evidence with object identity and contextual information to infer daily routines.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pseeds-card">
+                        <span class="pseeds-step-num">03 — Reflect</span>
+                        <h3 class="h5 mb-3">Reflect</h3>
+                        <p class="text-muted mb-0">
+                            Explore routine patterns through an interactive interface, with AI-generated explanations grounded in sensing evidence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-lg-12">
+                    <div class="bg-white p-3 p-md-4 rounded shadow-sm border">
+                        <img loading="lazy" decoding="async"
+                            src="../projects_collection/projects_img/PSeeds/pipeline.webp"
+                            alt="PSeeds multi-level inference pipeline mapping attached objects and sensors through edge classification (L1) and tag unification (L2) to routine inference (L3)"
+                            class="img-fluid w-100">
+                        <p class="text-muted text-center small mt-3 mb-0">
+                            Object-conditioned inference pipeline: mapping attached objects and multimodal sensors (IMU, temperature/humidity, light) through edge classification (L1) and tag unification (L2) to discrete and continuous routine hypotheses (L3).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exploring Everyday Routines -->
+    <div class="section">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="mb-3">Exploring Everyday Routines</h2>
+                    <p class="text-muted mb-0">
+                        PSeeds supports the exploration of diverse everyday activities, including:
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                    <div class="pseeds-routine-card">
+                        <div class="unit-4-icon mb-2"><span class="feather-droplet"></span></div>
+                        <h3 class="h5 mb-2">Drinking Water</h3>
+                        <p class="text-muted small mb-0">Tracked via IMU pick-and-place motion sequences on a water bottle.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="75">
+                    <div class="pseeds-routine-card">
+                        <div class="unit-4-icon mb-2"><span class="feather-clock"></span></div>
+                        <h3 class="h5 mb-2">Prolonged Sitting</h3>
+                        <p class="text-muted small mb-0">Inferred from sustained stability and micro-motion on a chair or sofa.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                    <div class="pseeds-routine-card">
+                        <div class="unit-4-icon mb-2"><span class="feather-moon"></span></div>
+                        <h3 class="h5 mb-2">Night-time Phone Use</h3>
+                        <p class="text-muted small mb-0">Captured by ambient light fluctuations near a bedside table at night.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="225">
+                    <div class="pseeds-routine-card">
+                        <div class="unit-4-icon mb-2"><span class="feather-cloud-rain"></span></div>
+                        <h3 class="h5 mb-2">Bathing</h3>
+                        <p class="text-muted small mb-0">Recognized through temperature and humidity rises on bathroom walls or sinks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Evaluation -->
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="mb-3">Evaluation</h2>
+                    <p class="mb-0">
+                        We evaluated PSeeds in a controlled study with 10 participants, demonstrating promising routine detection performance and the potential of AI-assisted routine interpretation.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4 mt-1">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="pseeds-metric-card">
+                        <div class="pseeds-metric-value">0.97</div>
+                        <p class="text-muted mb-0">Micro-averaged F1 for discrete-event detection</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pseeds-metric-card">
+                        <div class="pseeds-metric-value">78.8</div>
+                        <p class="text-muted mb-0">System Usability Scale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vision & Project Resources -->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h2 class="mb-4">Vision</h2>
+                    <p class="mb-4">
+                        We envision a future where everyday objects become meaningful windows into our daily lives.
+                    </p>
+                    <p class="mb-4">
+                        Rather than simply tracking isolated actions, PSeeds explores how sensing the objects around us can help uncover the routines, patterns, and behaviors that shape everyday life.
+                    </p>
+                    <blockquote class="pseeds-quote mb-5">
+                        Everyday objects are more than things we interact with. They are windows into how we live.
+                    </blockquote>
+
+                    <h3 class="h4 mb-3">Project Resources</h3>
+                    <p class="text-muted mb-0">
+                        Paper &middot; Adjunct Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology (UIST '26 Adjunct) &mdash; <span class="fst-italic">publication link forthcoming</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Team -->
+    <div class="section bg-light pseeds-team">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-8 col-lg-6" data-aos="fade-up">
+                    <h2>The Team</h2>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/yujie.JPG" alt="Jie Yu" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Jie Yu</h2>
+                                <p>Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/tianjian.jpg" alt="Tianjian Liu" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Tianjian Liu</h2>
+                                <p>Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/null.jpg" alt="Rongqi Bei" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Rongqi Bei</h2>
+                                <p>Collaborator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/Yuying.webp" alt="Yuying Wan" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Yuying Wan</h2>
+                                <p>Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/null.jpg" alt="Kaishun Wu" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Kaishun Wu</h2>
+                                <p>Collaborator, HKUST(GZ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/xin.jpg" alt="Dr. Xin Tong" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Dr. Xin Tong</h2>
+                                <p>Principal Investigator (PI)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Contact</h3>
+                        <address>No.1 Du Xue Rd, Nansha District, Guangzhou</address>
+                        <ul class="list-unstyled links">
+                            <li><a href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Sources</h3>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a></li>
+                            <li><a href="../projects.html">Info Hub</a></li>
+                            <li><a href="https://cma.hkust-gz.edu.cn/">CMA Thrust</a></li>
+                        </ul>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="../people.html">People</a></li>
+                            <li><a href="../perspective_stu.html">Perspective Students</a></li>
+                            <li><a href="../contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Follow Us</h3>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="https://space.bilibili.com/479380804"><img loading="lazy" decoding="async"
+                                        src="../images/bilibili.jpeg" alt="Bilibili QR code" class="wechat-qr"></a></li>
+                        </ul>
+                        <ul class="list-unstyled float-start links">
+                            <li><img loading="lazy" decoding="async" src="../images/Wechat.jpeg" alt="Wechat QR code"
+                                    class="wechat-qr"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="mb-0">
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+                        <a href="#" target="_blank" rel="nofollow noopener">ARK Lab</a> &bullet;
+                        <a href="#" target="_blank" rel="nofollow noopener">License</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tiny-slider.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+    <script src="../js/rellax.min.js"></script>
+    <script src="../js/custom.js"></script>
+</body>
+
+</html>

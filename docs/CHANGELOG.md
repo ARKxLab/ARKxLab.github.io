@@ -9,6 +9,15 @@
 
 ---
 
+## 2026-11-18
+- 新增：项目页 `projects_collection/MemoryLib.html`（MemoryLib: A Human-AI Collaborative Approach to Support Personalized Memory Meaning-Making Process，ACM IMWUT '26，`https://doi.org/10.1145/3810195`），涵盖 Abstract、Formative Co-Design Study & Information Taxonomy、Design Guidelines & System Architecture、Controlled Evaluation & 4-Month Follow-Up Study、Key Results 与 The Team。
+- 新增：项目页 `projects_collection/CoStage.html`（CoStage: An Embodied AI Co-Creation System for Children's Performative Storytelling with Robots，ACM DIS '26，`https://doi.org/10.1145/3800645.3813101`），涵盖 Abstract、Research Process & Formative Study、System Architecture & Director Workflow、Physical Stage Setup & Pilot Iteration、Controlled User Study (N = 24)、Results 与 The Team。
+- 新增：`projects.html` 补充 CoStage（标签 DIS，筛选类 `comp AI Robots`）与 MemoryLib（标签 IMWUT，筛选类 `comp AI`）项目卡片及 DOI 链接。
+- 资源：新增 `projects_collection/projects_img/MemoryLib/`（12 张 WebP 配图，单图 20–199 KB）与 `projects_collection/projects_img/CoStage/`（8 张 WebP 配图，单图 34–277 KB），全部长边 ≤ 1920 px 并经视觉核验。
+- 新增：项目页 `projects_collection/PSeeds.html`（PSeeds: A Configurable Object-Centered Sensing Toolkit with Inspectable Routine Hypotheses，UIST '26 Adjunct），包含 Overview、Key Ideas、How It Works（含三层推理架构图）、Exploring Everyday Routines、Evaluation（0.97 Micro-averaged F1、78.8 SUS）、Vision、Project Resources 与 The Team。
+- 新增：`projects.html` 顶部新增 PSeeds 项目卡片（标签 UIST，筛选类 `comp AI Health`）。
+- 资源：新增 `projects_collection/projects_img/PSeeds/` 下 3 张 WebP 配图（`teaser.webp`、`pipeline.webp`、`card.webp`，单图均小于 60 KB）。
+
 ## 2026-11-12
 - 新增：MPhil 学生 Kaixuan Lin（2026 Fall Cohort，`profile/kaixuan.html`、`images/kaixuan.webp`），并加入 `people.html` 对应分组及 `docs/PEOPLE_LINKS.md`。
 - 修改：补齐 PhD 学生 Junrong “Vicki” Song（2024 Fall Cohort，`images/junrong.webp`、`profile/junrong.html`）与 Qiuju Chen（2025 Fall Cohort，`images/qiuju.webp`、`profile/qiuju.html`，含联系邮箱 `qchen289@connect.hkust-gz.edu.cn`）的个人资料与头像，同步更新 `people.html` 卡片、`docs/PEOPLE_LINKS.md` 并修复旧占位页模板页脚相对路径与多余 `</div>` 闭合标签。
