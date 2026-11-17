@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="ARK lab">
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <meta name="description"
+        content="MemoryLib: A Human-AI Collaborative Approach to Support Personalized Memory Meaning-Making Process" />
+    <meta name="keywords"
+        content="Human-AI Collaboration, Memory Meaning-making, Memory Data Organization, Memory Recall, Lifelogging, Mixed-initiative" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../fonts/feather/style.css">
+
+    <link rel="stylesheet" href="../css/tiny-slider.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/glightbox.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>MemoryLib - ARK Lab</title>
+</head>
+
+<body>
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="../projects.html" class="logo m-0"><img src="../images/logo1.png">ARK Lab</a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                    <li><a href="../homepage.html">About</a></li>
+                    <li class="active"><a href="../projects.html">Projects</a></li>
+                    <li><a href="../publications.html">Publications</a></li>
+                    <li><a href="../people.html">People</a></li>
+                    <li><a href="../perspective_stu.html">Perspective Students</a></li>
+                </ul>
+
+                <a href="#"
+                    class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light"
+                    data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Fig.1 比例较宽（约 2.3:1）：采用流内原比例整幅展示，标题排在图下方，避免 cover 裁切模糊 -->
+    <div class="hero" style="height: auto; min-height: 0;">
+        <div class="container" style="padding-top: 8rem; padding-bottom: 3.5rem;">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <img src="../projects_collection/projects_img/MemoryLib/teaser.webp"
+                        alt="Overview of the MemoryLib system pipeline integrating multimodal data to segment, interpret, and reorganize personal experiences into reusable knowledge structures"
+                        class="img-fluid mx-auto d-block mb-4 rounded" style="position: static; transform: none; background: #fff;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-xxl-9 mx-auto text-center">
+                    <h3 class="heading-21 text-white mb-3" data-aos="fade-up">
+                        MemoryLib: A Human-AI Collaborative Approach to Support Personalized Memory Meaning-Making
+                        Process
+                    </h3>
+                    <p data-aos="fade-up" data-aos-delay="200" class="text-white lead mb-0">
+                        Xiangrong (Daniel) Zhu, Jingwei Sun, Yuan Xu, Huanyi Wan, Jiawen Zhang, Yancheng Cao, Liuxin
+                        Zhang, Yu Zhang, Qianying Wang, Xin Tong*
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Abstract</h2>
+                    <p class="mb-4">
+                        Human memory is inherently prone to fragmentation, especially when dealing with multimodal
+                        digital traces such as first-person video, ambient audio, photos, and sporadic notes. While
+                        existing AI systems struggle to infer personal significance in meaning-making, manual
+                        organization often imposes substantial cognitive burden on users. Investigating how human–AI
+                        collaborative systems can support personal memory meaning-making and enhance downstream memory
+                        tasks, we conducted three co-design workshops (N = 10) to identify critical barriers and derive
+                        actionable design guidelines. We then developed MemoryLib, a mixed-initiative interactive
+                        system that dynamically structures and interprets multimodal memories into event-centric concept
+                        maps and a semantic event graph through lightweight human–AI refinement. Controlled and
+                        four-month follow-up evaluations (N = 25; follow-up N = 12) demonstrated that MemoryLib
+                        significantly reduces factual errors and recall uncertainty while preserving subjective richness,
+                        user agency, and long-term reusability.
+                    </p>
+                    <div class="publication-links mb-5">
+                        <a href="https://doi.org/10.1145/3810195" target="_blank" rel="noopener"
+                            class="btn btn-black btn-block">Publication (IMWUT '26)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Formative Co-Design Study &amp; Information Taxonomy</h2>
+                    <p class="mb-4">
+                        To ground the design space empirically, we conducted three co-design workshops with 10
+                        interdisciplinary participants (P1–P10; 4 females, 6 males; age M = 24.2, SD = 1.62) using
+                        custom ideation cards across Information Modalities, Interaction Channels, User Motivations, and
+                        Agent Roles. Thematic analysis surfaced four persistent barriers in everyday memory work:
+                        disruptive in-situ capture that breaks immersion, high post-hoc annotation burden, fragmented
+                        cross-modal organization, and inefficient retrieval lacking structural semantics.
+                    </p>
+                    <p class="mb-5">
+                        The workshops established a four-layer taxonomy of in-situ data underpinning meaning-making and
+                        an end-to-end human–AI collaborative workflow spanning <em>Collection</em>,
+                        <em>Annotation</em>, <em>Organization</em>, and <em>Reuse &amp; Revisit</em>:
+                    </p>
+                    <ul class="mb-5">
+                        <li class="mb-2"><strong>Content Information:</strong> raw multimodal traces carrying factual
+                            and contextual meaning on their own (first-person video, photos, speech transcripts, notes).
+                        </li>
+                        <li class="mb-2"><strong>Capsule Information:</strong> explicit behavioral cues (photo capture,
+                            notes, conversational cues) and implicit physiological or attentional signals marking
+                            personally meaningful moments.</li>
+                        <li class="mb-2"><strong>Indexing Information:</strong> temporal, spatial, and semantic
+                            attributes linking discrete memory traces for traversal and retrieval.</li>
+                        <li class="mb-2"><strong>Constructive (Reconstruction) Information:</strong> subjective
+                            feelings, intentions, and inspirations added in-situ or post-hoc to anchor personal
+                            narrative meaning.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-12 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MemoryLib/workflow-taxonomy.webp"
+                        alt="Human-AI collaborative workflow across in-situ and post-hoc stages alongside the four-layer information taxonomy"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MemoryLib/workshop-cards-modalities.webp"
+                        alt="Co-design workshop Information Modalities ideation cards" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MemoryLib/workshop-cards-channels.webp"
+                        alt="Co-design workshop Interaction Channels ideation cards" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Design Guidelines &amp; System Architecture</h2>
+                    <p class="mb-4">
+                        Synthesizing workshop insights with a motivating scenario, we formulated five design guidelines
+                        (DG1–DG5): minimize in-situ cognitive load via automated multimodal capture, bind raw traces into
+                        minimal manageable memory units, provide accurate semantic interpretations with user-driven
+                        manipulation, organize units in a structured and retrievable graph, and ensure semantic accuracy
+                        through low-effort human–AI confirmation loops.
+                    </p>
+                    <p class="mb-4">
+                        Informed by episodic and semantic memory models and Event Segmentation Theory,
+                        <strong>MemoryLib</strong> organizes experience into discrete <em>events</em>—each acting as an
+                        event concept map—and links them in a JSON-backed semantic event graph across three system
+                        layers:
+                    </p>
+                    <ul class="mb-5">
+                        <li class="mb-3"><strong>Layer 1 — AI-Powered Event Formation:</strong> processes mandatory
+                            first-person video (FPV) and audio alongside optional notes and photos, using scene
+                            transitions, speech boundaries, and CLIP-based segmentation to chunk continuous streams into
+                            events, while a Context Understanding Agent and High-level Concept Abstraction Agent
+                            (GPT-4o) synthesize descriptions and 2–6 evidence-linked keywords.</li>
+                        <li class="mb-3"><strong>Layer 2 — Event Editing and Re-assessment:</strong> rather than
+                            manipulating raw video or transcripts, users inspect an event concept map, edit descriptions
+                            or keywords, lock verified fields, and append personal feelings or inspirations. A User
+                            Revision Intent Prediction Agent infers the user's underlying editing intent and
+                            regenerates aligned interpretations and evidence mappings.</li>
+                        <li class="mb-3"><strong>Layer 3 — Event Relation Organization and Linking:</strong> presents
+                            all events in a central-node focus graph where proximity reflects semantic correlation.
+                            Users can manually add, edit, or delete links, run semantic similarity search, or trigger
+                            automatic re-connection after event revisions.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-12 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MemoryLib/interface-layer2.webp"
+                        alt="MemoryLib Layer 2 event editing and re-assessment interface showing locked controls, feelings and inspirations supplements, keywords, and evidence links"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MemoryLib/interface-layer3.webp"
+                        alt="MemoryLib Layer 3 event organization interface displaying the central-node focus graph and semantic re-connection controls"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Controlled Evaluation &amp; 4-Month Follow-Up Study</h2>
+                    <p class="mb-4">
+                        We conducted a within-subjects evaluation with 25 university students (P11–P35; ages 19–32, M =
+                        23.6, SD = 4.2) at a university visitor center spanning eight thematic zones. In
+                        <strong>Session 1</strong>, participants wore a head-mounted camera during a 45-minute guided
+                        tour across six interest-selected exhibits (from a pool of ten) while freely capturing photos
+                        and notes. Three to five days later in <strong>Session 2</strong>, three exhibits were randomly
+                        assigned to a <em>Baseline</em> condition (organizing raw multimodal materials with familiar tools
+                        such as Notion, Google Docs, or ChatGPT) and three to <em>MemoryLib</em> (15 minutes per
+                        condition), followed by delayed oral recall, SUS, UEQ, NASA-TLX, an 18-item comparative
+                        questionnaire, and semi-structured interviews.
+                    </p>
+                    <p class="mb-5">
+                        To isolate the long-term impact of human–AI co-construction from pure AI summarization, we ran a
+                        <strong>Session 3 follow-up study</strong> approximately four months later with 12 returning
+                        participants across three counterbalanced conditions: <em>Human Baseline</em> (raw personal
+                        materials only), <em>AI Baseline</em> (keyframe photos and descriptions generated by Gemini 3.0
+                        Vision / Gemini 3.0 without graph structure or user edits), and <em>MemoryLib</em>.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-12 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MemoryLib/study-procedure.webp"
+                        alt="Three-session experimental workflow and balanced condition allocation across Session 1, Session 2, and the 4-month Session 3 follow-up"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MemoryLib/visitor-center.webp"
+                        alt="Floor plan of the university visitor center showing the eight thematic exhibition zones"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Key Results</h2>
+                    <p class="mb-4">
+                        <strong>Short-Term Recall &amp; Cognitive Workload (Session 2, N = 25):</strong> Blind-coded
+                        delayed recall transcripts showed that MemoryLib produced significantly fewer <em>factual
+                            errors</em> (&Delta;M = &minus;0.43, p = 0.0019) and more <em>subjective expressions</em>
+                        (&Delta;M = +0.70, p = 0.0122) than the Baseline, with a downward trend in vague expressions
+                        (&Delta;M = &minus;0.52, p = 0.0898). Participants rated MemoryLib significantly higher on
+                        <em>Clarity of Structure</em> (5.04 vs. 6.04, p = 0.0011), <em>Event Relations</em> (5.16 vs.
+                        6.00, p = 0.0064), <em>Completeness of Recall</em> (4.16 vs. 5.64, p = 0.0005),
+                        <em>Reusability</em> (5.08 vs. 6.12, p = 0.0001), and <em>Memory Recall Fluency</em> (4.04 vs.
+                        5.60, p = 0.0019). Overall NASA-TLX workload remained moderate (M = 48.7, SD = 11.8), with 20
+                        participants describing the system as lightweight and 19 willing to maintain this interaction
+                        effort in daily use.
+                    </p>
+                    <p class="mb-4">
+                        <strong>Long-Term Retention &amp; Agency (Session 3 Follow-Up, N = 12):</strong> Four months
+                        later, the fully automated <em>AI Baseline</em> produced the highest factual errors (M = 2.67
+                        &plusmn; 1.44)—significantly more than both MemoryLib (M = 0.67 &plusmn; 0.78, p &lt; 0.001) and
+                        Human Baseline (M = 1.17 &plusmn; 0.94, p &lt; 0.01)—and suffered from significantly lower
+                        subjective expression (M = 1.83 &plusmn; 0.94) than both MemoryLib (M = 3.33 &plusmn; 1.30, p
+                        &lt; 0.001) and Human Baseline (M = 3.25 &plusmn; 1.14, p &lt; 0.001). MemoryLib achieved the
+                        lowest recall uncertainty (M = 1.58 &plusmn; 0.79 vs. Human 4.08 &plusmn; 0.90, p &lt; 0.001;
+                        AI 2.42 &plusmn; 0.90, p = 0.027) while outperforming AI Baseline on <em>Trust</em> (p =
+                        0.0059), <em>Emotional Recall</em> (p = 0.0117; vs. Human p = 0.0059), <em>Reusability</em> (p =
+                        0.0469; vs. Human p = 0.0029), and <em>Sense of Control</em> (p = 0.0029; vs. Human p = 0.0103).
+                    </p>
+                    <p class="mb-5">
+                        <strong>Systematic LLM Misalignment Patterns:</strong> Qualitative error analysis surfaced
+                        three recurrent failure modes in unverified AI memory outputs—misinterpretation of intent and
+                        social context, factual object and temporal errors, and semantic/affective hallucinations—which
+                        led 9 of 12 follow-up participants to doubt or misremember events under the AI Baseline.
+                        Concept-level human–AI co-construction in MemoryLib mitigated these hallucinations while
+                        preserving autobiographical trust.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-6 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MemoryLib/results-recall-s2.webp"
+                        alt="Session 2 comparison of Baseline and MemoryLib on vague expressions, factual errors, and subjective expressions"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-md-12 col-lg-6 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MemoryLib/results-recall-s3.webp"
+                        alt="Session 3 four-month follow-up comparison across Baseline, MemoryLib, and AI Baseline on factual error, subjectivity, and uncertainty"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-md-12 col-lg-6 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MemoryLib/results-ratings-s2.webp"
+                        alt="Session 2 paired comparisons of nine self-rated memory organization dimensions between Baseline and MemoryLib"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-md-12 col-lg-6 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/MemoryLib/results-ratings-s3.webp"
+                        alt="Session 3 follow-up paired comparisons across Human Baseline, MemoryLib, and AI Baseline on nine evaluated dimensions"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-lg-6" data-aos="fade-up">
+                    <h2>The Team</h2>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/xin.jpg" alt="Portrait of Dr. Xin Tong"
+                                    class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Dr. Xin Tong</h2>
+                                <p>Principal Investigator (PI), HKUST(GZ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/Daniel.jpg"
+                                    alt="Portrait of Xiangrong (Daniel) Zhu" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Xiangrong (Daniel) Zhu</h2>
+                                <p>Researcher, HKUST(GZ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/null.jpg"
+                                    alt="Portrait placeholder for Jingwei Sun" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Jingwei Sun</h2>
+                                <p>Collaborator, Lenovo Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/xuyuan.webp"
+                                    alt="Portrait of Yuan Xu" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Yuan Xu</h2>
+                                <p>Researcher, HKUST(GZ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/Huanyi.webp"
+                                    alt="Portrait of Huanyi Wan" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Huanyi Wan</h2>
+                                <p>Researcher, HKUST(GZ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/jiawen.webp"
+                                    alt="Portrait of Jiawen Zhang" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Jiawen Zhang</h2>
+                                <p>Researcher, HKUST(GZ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/yancheng.webp"
+                                    alt="Portrait of Yancheng Cao" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Yancheng Cao</h2>
+                                <p>Researcher, HKUST(GZ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/null.jpg"
+                                    alt="Portrait placeholder for Liuxin Zhang" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Liuxin Zhang</h2>
+                                <p>Collaborator, Lenovo Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/null.jpg"
+                                    alt="Portrait placeholder for Yu Zhang" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Yu Zhang</h2>
+                                <p>Collaborator, Lenovo Group &amp; Southeast University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/null.jpg"
+                                    alt="Portrait placeholder for Qianying Wang" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Qianying Wang</h2>
+                                <p>Collaborator, Lenovo Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Contact</h3>
+                        <address>No.1 Du Xue Rd, Nansha District, Guangzhou</address>
+                        <ul class="list-unstyled links">
+                            <li><a href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a></li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                </div> <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Sources</h3>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a></li>
+                            <li><a href="../projects.html">Info Hub</a></li>
+                            <li><a href="https://cma.hkust-gz.edu.cn/">CMA Thrust</a></li>
+                        </ul>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="../people.html">People</a></li>
+                            <li><a href="../perspective_stu.html">Perspective Students</a></li>
+                            <li><a href="../contact.html">Contact us</a></li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                </div> <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Follow Us</h3>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="https://space.bilibili.com/479380804"><img loading="lazy" decoding="async"
+                                        src="../images/bilibili.jpeg" alt="Bilibili QR code" class="wechat-qr"> </li></a>
+                        </ul>
+                        <ul class="list-unstyled float-start links">
+                            <li><img loading="lazy" decoding="async" src="../images/Wechat.jpeg" alt="Wechat QR code"
+                                    class="wechat-qr"> </li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                </div> <!-- /.col-lg-4 -->
+            </div> <!-- /.row -->
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="mb-0">
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+                        <a href="../homepage.html" target="_blank" rel="nofollow noopener">ARK Lab</a> &bullet;
+                        <a href="#" target="_blank" rel="nofollow noopener">License</a>
+                    </p>
+                </div>
+            </div>
+        </div> <!-- /.container -->
+    </div> <!-- /.site-footer -->
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tiny-slider.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+    <script src="../js/rellax.min.js"></script>
+    <script src="../js/custom.js"></script>
+</body>
+
+</html>

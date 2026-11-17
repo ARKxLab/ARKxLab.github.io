@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="ARK lab">
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <meta name="description"
+        content="CoStage: An Embodied AI Co-Creation System for Children's Performative Storytelling with Robots" />
+    <meta name="keywords"
+        content="Child-Computer Interaction, Embodied AI Co-Creation, Performative Storytelling, Spatial Sensemaking, Tangible Interaction, Robotics" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../fonts/feather/style.css">
+
+    <link rel="stylesheet" href="../css/tiny-slider.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/glightbox.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>CoStage - ARK Lab</title>
+</head>
+
+<body>
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="../projects.html" class="logo m-0"><img src="../images/logo1.png">ARK Lab</a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                    <li><a href="../homepage.html">About</a></li>
+                    <li class="active"><a href="../projects.html">Projects</a></li>
+                    <li><a href="../publications.html">Publications</a></li>
+                    <li><a href="../people.html">People</a></li>
+                    <li><a href="../perspective_stu.html">Perspective Students</a></li>
+                </ul>
+
+                <a href="#"
+                    class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light"
+                    data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Fig.1 比例较宽（约 3.26:1）：采用流内原比例整幅展示，标题排在图下方，避免 cover 裁切损失场景细节 -->
+    <div class="hero" style="height: auto; min-height: 0;">
+        <div class="container" style="padding-top: 8rem; padding-bottom: 3.5rem;">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <img src="../projects_collection/projects_img/CoStage/teaser.webp"
+                        alt="Child-created CoStage performances from the in-situ user study combining AI-generated scenery with tangible robot actors"
+                        class="img-fluid mx-auto d-block mb-4 rounded" style="position: static; transform: none;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-xxl-9 mx-auto text-center">
+                    <h3 class="heading-21 text-white mb-3" data-aos="fade-up">
+                        CoStage: An Embodied AI Co-Creation System for Children&rsquo;s Performative Storytelling with
+                        Robots
+                    </h3>
+                    <p data-aos="fade-up" data-aos-delay="200" class="text-white lead mb-0">
+                        Junrong Song*, Huanyi Wan*, Lei Han, Yinghao Gao, David Yip&dagger;, Xin Tong&dagger;
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Abstract</h2>
+                    <p class="mb-4">
+                        We present CoStage, an AI-supported embodied co-creation platform that combines LLM-based story
+                        generation with multi-robot stage performance to support children&rsquo;s narrative
+                        construction and spatial imagination. Unlike prior AI storytelling tools that are largely
+                        screen-based, CoStage allows children to direct robot actors on a 360&deg; tangible stage,
+                        transforming written stories into spatially enacted performances. Informed by formative work
+                        with domain experts, we evaluated CoStage in a within-subjects study (N = 24) comparing a robot
+                        enactment condition with a screen-based animation condition. Our findings indicate that
+                        robot-stage performance can heighten immersion, strengthen children&rsquo;s sense of directorial
+                        agency, support spatial sensemaking, and foster a planning–enactment coordination loop during
+                        storytelling. This work advances child–computer interaction by offering design implications and
+                        demonstrating how embodied AI co-creation can support children&rsquo;s spatial cognition and
+                        narrative engagement.
+                    </p>
+                    <div class="publication-links mb-5">
+                        <a href="https://doi.org/10.1145/3800645.3813101" target="_blank" rel="noopener"
+                            class="btn btn-black btn-block">Publication (DIS '26)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Research Process &amp; Formative Study</h2>
+                    <p class="mb-4">
+                        CoStage was developed through a five-stage iterative research and design process: a formative
+                        study with domain experts (N = 4), system architecture and prototype design, a pilot study with
+                        children and drama educators (N = 12; 7 children and 5 experts), a controlled within-subjects
+                        user study (N = 24, ages 8–12), and expert artifact evaluation (N = 3).
+                    </p>
+                    <p class="mb-5">
+                        Interviews with four specialists in child drama education and elementary instruction (E1–E4)
+                        surfaced four design goals: (G1) support exaggerated visual cues and simplified, age-appropriate
+                        interaction for elementary school children (ages 7–12); (G2) enable expressive and customizable
+                        robot actors to foster character ownership; (G3) scaffold the full drama creation workflow from
+                        ideation to rehearsal and revision; and (G4) support spatialized narrative sensemaking by
+                        treating character placement, movement, and stage layout as active storytelling resources.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-12">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/CoStage/design-process.webp"
+                        alt="Five-stage iterative research and design process of CoStage from formative expert interviews to user study and expert evaluation"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">System Architecture &amp; Director Workflow</h2>
+                    <p class="mb-4">
+                        CoStage connects children&rsquo;s story authoring with physical robot enactment across three
+                        synchronized layers: a Vue.js <strong>Web Editor Interface</strong>, a Node.js <strong>API
+                            Bridge</strong> orchestrating AI services and WebSocket sync, and a Unity-based
+                        <strong>Physical Controller</strong> driving up to four Sony toio Core Cube robots via
+                        Bluetooth.
+                    </p>
+                    <ul class="mb-5">
+                        <li class="mb-3"><strong>Step-by-Step Generative Scaffolding:</strong> a multi-turn
+                            &ldquo;Drama Teacher&rdquo; pedagogical agent (Claude Sonnet 4) helps children structure
+                            three-act scripts, while Gemini 2.5 Flash generates distinct vertical <em>Background</em>
+                            backdrops and horizontal <em>Ground</em> floor projections alongside DashScope Qwen3-TTS
+                            character voices.</li>
+                        <li class="mb-3"><strong>Embodied Intermediate Representation (EIR):</strong> translates
+                            scripts into performance-ready JSON specifying multi-act dialogue, character-to-robot
+                            mappings, per-line coordinates, orientations, expressive micro-actions, voice personas, and
+                            scene assets—keeping every detail inspectable and editable by the child.</li>
+                        <li class="mb-3"><strong>Two-Phase Execution &amp; Repair Pipeline:</strong> executes each line
+                            in two phases (positioning on a 1:1 stage map followed by synchronized action primitives and
+                            TTS speech) backed by pre-execution boundary/overlap checks, BFS waypoint repair, and
+                            hierarchical collision recovery.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-12 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/CoStage/system-architecture.webp"
+                        alt="CoStage three-layer system architecture synchronizing Web Editor, API Bridge, and Robot Controller with a four-step user creative loop"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/CoStage/web-interface.webp"
+                        alt="CoStage five-step web director UI covering Story Creation, Stage Decoration, Character Design, Performance Design, and Official Performance"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Physical Stage Setup &amp; Pilot Iteration</h2>
+                    <p class="mb-4">
+                        On the physical tabletop stage (a 45 &times; 45 cm toio mat), a ceiling-mounted projector casts
+                        AI-generated floor textures downward while a vertical display behind the stage presents
+                        atmospheric backdrops. Modular LEGO minifigures mounted on the toio robots allow children to
+                        assemble, customize, and physically reposition characters by hand during rehearsal.
+                    </p>
+                    <p class="mb-5">
+                        Following a pilot study with 7 children and 5 experts (N = 12), we bridged four key gaps prior
+                        to the main evaluation: replacing one-shot prompting with multi-turn narrative scaffolding
+                        (<em>Ideation</em>), expanding the library to ten emotion-oriented micro-actions such as joy,
+                        fear, and agreement (<em>Expressiveness</em>), adding LEGO mounting plates (<em>Identity</em>),
+                        and strengthening 360&deg; proximity avoidance and stage-blocking cues (<em>Robustness</em>).
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-10 col-lg-9 mx-auto">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/CoStage/stage-setup.webp"
+                        alt="Photograph of CoStage in use with four robotic characters performing on a projected tabletop stage in front of an AI-generated backdrop"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Controlled User Study (N = 24)</h2>
+                    <p class="mb-5">
+                        We conducted a counterbalanced within-subjects study with 24 elementary school children (10
+                        boys, 14 girls; Grades 3–6; age M = 9.62, SD = 1.21) across 90-minute sessions. Using the exact
+                        same web-based director workflow, each child created and rehearsed stories under two enactment
+                        conditions: a <strong>2D screen-based animation condition</strong> (top-down canvas preview) and
+                        the <strong>3D CoStage robot enactment condition</strong> (live physical stage performance),
+                        yielding 48 recorded performance artifacts evaluated alongside interaction logs, self-reported
+                        experience scales, comparative preferences, and post-study interviews.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-12">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/CoStage/study-conditions.webp"
+                        alt="In-situ photos showing the two counterbalanced study conditions: 2D screen-based animation on the left and 3D CoStage robot enactment on the right"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pe-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4">Results</h2>
+                    <p class="mb-4">
+                        <strong>Strong Preference &amp; Heightened Immersion:</strong> Overall, 21 of 24 children
+                        (87.5%) preferred 3D CoStage over 2D screen animation (binomial test p &lt; .001), reporting
+                        significantly higher <em>Immersion</em> in 3D (M = 4.46, SD = 0.57 vs. 2D M = 4.10, SD = 0.79;
+                        t(23) = 2.21, p = .038, d = 0.44) while sustaining high ratings in <em>Agency and Control</em>
+                        (M = 4.65 vs. 4.54), <em>Spatial Imagination</em> (M = 4.40 vs. 4.19), and
+                        <em>Usability</em> (M = 4.46 vs. 4.35). Comparative preference intensity ratings also strongly
+                        favored CoStage across <em>Agency</em> (M = 4.46, p &lt; .001), <em>Spatial Reasoning</em> (M =
+                        4.46, p &lt; .001), <em>Creativity</em> (M = 4.33, p &lt; .001), <em>Expression</em> (M = 4.08,
+                        p &lt; .001), and <em>Ease of Use</em> (M = 3.79, p = .001).
+                    </p>
+                    <p class="mb-4">
+                        <strong>Spatial Sensemaking Without Extra Interaction Cost:</strong> Three drama education
+                        experts rated 3D artifacts higher on spatially grounded dimensions—<em>Character Blocking
+                            Coherence</em> (M = 2.85 vs. 2.53) and <em>Spatial Composition &amp; Stage Integration</em>
+                        (M = 3.19 vs. 2.78)—compared to 2D. Crucially, system logs showed no significant overhead from
+                        physical staging in total spatial actions (118.8 vs. 124.3), active duration (14.5 vs. 14.8
+                        min), or action density (8.7 vs. 9.0 acts/min; all p &gt; .70).
+                    </p>
+                    <p class="mb-5">
+                        <strong>Planning–Enactment Coordination Loop:</strong> Rather than editing linearly, children
+                        treated 2D planning and 3D enactment as complementary tools—rapidly sketching paths in the
+                        overhead 2D view, observing distance, facing direction, and occlusion from multiple angles
+                        around the physical stage, and physically repositioning robot actors as an embodied
+                        &ldquo;spatial debugger&rdquo; to refine narrative pacing and intent.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 col-lg-6 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/CoStage/expert-ratings.webp"
+                        alt="Bar chart of averaged expert ratings across five storytelling evaluation dimensions comparing 2D and 3D CoStage conditions"
+                        class="img-fluid rounded">
+                </div>
+                <div class="col-md-12 col-lg-6 mb-4">
+                    <img loading="lazy" decoding="async"
+                        src="../projects_collection/projects_img/CoStage/experience-measures.webp"
+                        alt="Comparison of four child experience constructs (Immersion, Agency and Control, Spatial Imagination, Understanding and Usability) between CoStage and 2D screen conditions"
+                        class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-lg-6" data-aos="fade-up">
+                    <h2>The Team</h2>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/xin.jpg" alt="Portrait of Dr. Xin Tong"
+                                    class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Dr. Xin Tong</h2>
+                                <p>Principal Investigator (PI), HKUST(GZ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/junrong.webp"
+                                    alt="Portrait of Junrong Song" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Junrong Song</h2>
+                                <p>Researcher, HKUST(GZ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/Huanyi.webp"
+                                    alt="Portrait of Huanyi Wan" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Huanyi Wan</h2>
+                                <p>Researcher, HKUST(GZ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/null.jpg"
+                                    alt="Portrait placeholder for Lei Han" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Lei Han</h2>
+                                <p>Researcher, HKUST(GZ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/yinghao.jpg"
+                                    alt="Portrait of Yinghao Gao" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Yinghao Gao</h2>
+                                <p>Researcher, HKUST(GZ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="testmonial mb-4">
+                        <div class="d-flex author align-items-center">
+                            <div class="pic">
+                                <img loading="lazy" decoding="async" src="../images/null.jpg"
+                                    alt="Portrait placeholder for Prof. David Yip" class="img-fluid">
+                            </div>
+                            <div class="author-name">
+                                <h2>Prof. David Yip</h2>
+                                <p>Collaborator, HKUST(GZ) &amp; HKUST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Contact</h3>
+                        <address>No.1 Du Xue Rd, Nansha District, Guangzhou</address>
+                        <ul class="list-unstyled links">
+                            <li><a href="mailto:xint@hkust-gz.edu.cn">xint@hkust-gz.edu.cn</a></li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                </div> <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Sources</h3>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a></li>
+                            <li><a href="../projects.html">Info Hub</a></li>
+                            <li><a href="https://cma.hkust-gz.edu.cn/">CMA Thrust</a></li>
+                        </ul>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="../people.html">People</a></li>
+                            <li><a href="../perspective_stu.html">Perspective Students</a></li>
+                            <li><a href="../contact.html">Contact us</a></li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                </div> <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Follow Us</h3>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="https://space.bilibili.com/479380804"><img loading="lazy" decoding="async"
+                                        src="../images/bilibili.jpeg" alt="Bilibili QR code" class="wechat-qr"> </li></a>
+                        </ul>
+                        <ul class="list-unstyled float-start links">
+                            <li><img loading="lazy" decoding="async" src="../images/Wechat.jpeg" alt="Wechat QR code"
+                                    class="wechat-qr"> </li>
+                        </ul>
+                    </div> <!-- /.widget -->
+                </div> <!-- /.col-lg-4 -->
+            </div> <!-- /.row -->
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="mb-0">
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+                        <a href="../homepage.html" target="_blank" rel="nofollow noopener">ARK Lab</a> &bullet;
+                        <a href="#" target="_blank" rel="nofollow noopener">License</a>
+                    </p>
+                </div>
+            </div>
+        </div> <!-- /.container -->
+    </div> <!-- /.site-footer -->
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tiny-slider.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/glightbox.min.js"></script>
+    <script src="../js/rellax.min.js"></script>
+    <script src="../js/custom.js"></script>
+</body>
+
+</html>
