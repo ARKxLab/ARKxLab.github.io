@@ -369,13 +369,14 @@ margin-right: auto;
   object-position: top center;
 }
 
-/* 个人主页头像统一裁切比例 */
+/* 个人主页头像统一裁切比例（未迁移至 .profile-hero 的页面兼容兜底） */
 .profile-avatar-wrapper {
     position: relative;
     width: 100%;
-    max-width: 320px;
+    max-width: 260px;
     margin: 0 auto;
     overflow: hidden;
+    border-radius: 12px;
 }
 
 .profile-avatar-wrapper::before {
@@ -10515,5 +10516,269 @@ a {
 
     .publication-links a {
         font-size: 0.9rem; /* 调整链接按钮字体大小 */
+    }
+}
+
+/* ==========================================================================
+   Profile Page Hero — 统一个人主页排版与响应式规范（2026-11-22）
+   ========================================================================== */
+.section.profile-hero {
+    background: linear-gradient(180deg, #1a1e24 0%, #212529 100%) !important;
+    padding-top: 7.25rem;
+    padding-bottom: 4.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.profile-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.56);
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.profile-back-link:hover {
+    color: #ffffff;
+    transform: translateX(-2px);
+}
+
+.profile-hero-grid {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 3rem;
+    align-items: center;
+}
+
+.profile-hero-avatar {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.profile-hero-avatar .profile-hero-img,
+.profile-hero-avatar .profile-avatar {
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
+/* 非正方形人像的裁切焦点微调 */
+.profile-avatar-pos-top {
+    object-position: center 22% !important;
+}
+
+.profile-avatar-pos-upper {
+    object-position: center 32% !important;
+}
+
+.profile-avatar-pos-lower {
+    object-position: center 62% !important;
+}
+
+.profile-hero-content {
+    min-width: 0;
+    color: #ffffff;
+}
+
+.profile-role-meta {
+    display: inline-block;
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.68);
+    margin-bottom: 0.65rem;
+}
+
+.profile-name {
+    color: #ffffff;
+    font-size: 2.35rem;
+    line-height: 1.18;
+    margin-bottom: 1rem;
+}
+
+.profile-bio {
+    max-width: 66ch;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 0.98rem;
+    line-height: 1.72;
+}
+
+.profile-bio p {
+    margin-bottom: 0.85rem;
+    color: inherit;
+}
+
+.profile-bio p:last-child {
+    margin-bottom: 0;
+}
+
+.profile-interests {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+.profile-interests-label {
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.54);
+    margin-right: 0.25rem;
+}
+
+.profile-tag {
+    display: inline-block;
+    padding: 0.26rem 0.76rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.82rem;
+    line-height: 1.35;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+}
+
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem;
+    margin-top: 1.35rem;
+}
+
+.profile-link-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.44rem 0.92rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.86rem;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.92);
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    word-break: break-word;
+}
+
+.profile-link-chip:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.42);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.profile-link-chip .profile-link-icon {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.72);
+    flex-shrink: 0;
+}
+
+.profile-link-chip .profile-link-label {
+    font-size: 0.74rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.56);
+    margin-right: 0.1rem;
+}
+
+/* 兼容未迁移的旧个人页（如 Lab Director / Alumni），避免窄屏或中屏头像紧贴文字 */
+.section.bg-dark:not(.profile-hero) .d-flex:has(.profile-avatar-wrapper) {
+    gap: 2.25rem;
+    align-items: center;
+}
+
+.section.bg-dark:not(.profile-hero) .d-flex:has(.profile-avatar-wrapper) > .col-4 {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.section.bg-dark:not(.profile-hero) .d-flex:has(.profile-avatar-wrapper) > .col-4 .profile-avatar-wrapper {
+    width: 240px;
+    max-width: 240px;
+}
+
+.section.bg-dark:not(.profile-hero) .d-flex:has(.profile-avatar-wrapper) > .col-8 {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+}
+
+@media (max-width: 991.98px) {
+    .profile-hero-grid {
+        grid-template-columns: 200px minmax(0, 1fr);
+        gap: 2rem;
+    }
+
+    .profile-hero-avatar {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-name {
+        font-size: 2rem;
+    }
+
+    .section.bg-dark:not(.profile-hero) .d-flex:has(.profile-avatar-wrapper) > .col-4 .profile-avatar-wrapper {
+        width: 200px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section.profile-hero {
+        padding-top: 5.75rem;
+        padding-bottom: 3.25rem;
+    }
+
+    .profile-back-link {
+        margin-bottom: 1.5rem;
+    }
+
+    .profile-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .profile-hero-avatar {
+        width: 176px;
+        height: 176px;
+    }
+
+    .profile-name {
+        font-size: 1.85rem;
+    }
+
+    .section.bg-dark:not(.profile-hero) .d-flex:has(.profile-avatar-wrapper) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .section.bg-dark:not(.profile-hero) .d-flex:has(.profile-avatar-wrapper) > .col-4 .profile-avatar-wrapper {
+        width: 176px;
+        max-width: 176px;
     }
 }

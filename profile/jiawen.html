@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="../css/tiny-slider.css">
 	<link rel="stylesheet" href="../css/aos.css">
 	<link rel="stylesheet" href="../css/glightbox.min.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style.css?v=20261122">
 
 	<style>
 		.recent-paper-card .unit-4 {
@@ -62,30 +62,22 @@
 	<div id="header-placeholder"></div>
 
 	<!-- 顶部个人信息区：深色背景聚焦头像与简介 -->
-	<div class="section bg-dark">
+	<div class="section bg-dark profile-hero">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12 mb-4 mb-lg-5 mt-5" data-aos="fade-up">
-					<div class="d-flex">
-						<div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-							<div class="profile-avatar-wrapper rounded">
-								<img src="../images/jiawen.webp" alt="Portrait of Jiawen Zhang" class="profile-avatar">
-							</div>
-						</div>
-						<div class="col-8 col-lg-8 text-white">
-							<h1 class="text-white">Jiawen Zhang</h1>
-							<!-- 个人简介：概述教育背景与研究主题 -->
-							<p>
-								Jiawen Zhang is a PhD student at ARK Lab, HKUST (Guangzhou). She holds an MA in Service Design from the Royal College of Art and previously interned at Tsinghua University's Future Lab.
-							</p>
-							<p>
-								Her prior research applied generative AI to support autism education, and she has participated in multiple digital media art exhibitions, including interdisciplinary projects integrating AI with traditional embroidery and autism art. Her current research focuses on how digital technologies can empower the preservation, inheritance, and innovative dissemination of intangible cultural heritage.
-							</p>
-							<ul class="list-unstyled text-white">
-								<!-- 联系方式列表 -->
-								<li>Email: <a href="mailto:jzhang731@connect.hkust-gz.edu.cn" class="text-white">jzhang731@connect.hkust-gz.edu.cn</a></li>
-							</ul>
-						</div>
+			<a href="../people.html" class="profile-back-link"><span aria-hidden="true">&larr;</span> People</a>
+			<div class="profile-hero-grid" data-aos="fade-up">
+				<div class="profile-hero-avatar">
+					<img decoding="async" src="../images/jiawen.webp" alt="Portrait of Jiawen Zhang" class="profile-hero-img">
+				</div>
+				<div class="profile-hero-content">
+					<span class="profile-role-meta">PhD Student · 2025 Spring Cohort · Co-mentored with Prof. Kang Zhang</span>
+					<h1 class="profile-name">Jiawen Zhang</h1>
+					<div class="profile-bio">
+						<p>Jiawen Zhang is a PhD student at ARK Lab, HKUST (Guangzhou). She holds an MA in Service Design from the Royal College of Art and previously interned at Tsinghua University's Future Lab.</p>
+						<p>Her prior research applied generative AI to support autism education, and she has participated in multiple digital media art exhibitions, including interdisciplinary projects integrating AI with traditional embroidery and autism art. Her current research focuses on how digital technologies can empower the preservation, inheritance, and innovative dissemination of intangible cultural heritage.</p>
+					</div>
+					<div class="profile-links">
+						<a href="mailto:jzhang731@connect.hkust-gz.edu.cn" class="profile-link-chip"><span class="feather-mail profile-link-icon" aria-hidden="true"></span><span>jzhang731@connect.hkust-gz.edu.cn</span></a>
 					</div>
 				</div>
 			</div>
@@ -224,7 +216,7 @@
 	<script src="../js/navbar.js"></script>
 	<script src="../js/glightbox.min.js"></script>
 	<script src="../js/rellax.min.js"></script>
-	<script src="../js/custom.js"></script>
+	<script src="../js/custom.js?v=20261122"></script>
 	<script>
 		fetch('../includes/header-default.html')
 			.then(res => res.text())

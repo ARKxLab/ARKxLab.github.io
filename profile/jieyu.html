@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="../css/tiny-slider.css">
 	<link rel="stylesheet" href="../css/aos.css">
 	<link rel="stylesheet" href="../css/glightbox.min.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style.css?v=20261122">
 
 	<title>Jie Yu - People</title>
 </head>
@@ -32,30 +32,22 @@
 	<!-- Header 通过异步方式插入，保持与主站一致 -->
 	<div id="header-placeholder"></div>
 
-	<div class="section bg-dark">
+	<div class="section bg-dark profile-hero">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12 mb-4 mb-lg-5 mt-5" data-aos="fade-up">
-					<div class="d-flex">
-					<div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-						<div class="profile-avatar-wrapper rounded">
-							<img src="../images/yujie.JPG" alt="Portrait of Jie Yu" class="profile-avatar">
-						</div>
-						</div>
-						<div class="col-8 col-lg-8 text-white">
-							<h1 class="text-white">Jie Yu</h1>
-							<!-- 个人简介：概述教育与研究主题 -->
-							<p>
-								Jie Yu is a research assistant at ARK Lab with a background in robotics and mechanical design. He prototypes embodied AI systems that support more natural human-robot collaboration in everyday environments.
-							</p>
-							<p>
-								His recent projects explore how social robots can provide physical assistance and emotional companionship, combining mechatronics, intelligent sensing, and interaction design.
-							</p>
-							<ul class="list-unstyled text-white">
-								<!-- 联系方式列表 -->
-								<li>Email: <a href="mailto:Jie_yu03@hotmail.com" class="text-white">Jie_yu03@hotmail.com</a></li>
-							</ul>
-						</div>
+			<a href="../people.html" class="profile-back-link"><span aria-hidden="true">&larr;</span> People</a>
+			<div class="profile-hero-grid" data-aos="fade-up">
+				<div class="profile-hero-avatar">
+					<img decoding="async" src="../images/yujie.JPG" alt="Portrait of Jie Yu" class="profile-hero-img">
+				</div>
+				<div class="profile-hero-content">
+					<span class="profile-role-meta">PhD Student · 2026 Spring Cohort</span>
+					<h1 class="profile-name">Jie Yu</h1>
+					<div class="profile-bio">
+						<p>Jie Yu is a research assistant at ARK Lab with a background in robotics and mechanical design. He prototypes embodied AI systems that support more natural human-robot collaboration in everyday environments.</p>
+						<p>His recent projects explore how social robots can provide physical assistance and emotional companionship, combining mechatronics, intelligent sensing, and interaction design.</p>
+					</div>
+					<div class="profile-links">
+						<a href="mailto:Jie_yu03@hotmail.com" class="profile-link-chip"><span class="feather-mail profile-link-icon" aria-hidden="true"></span><span>Jie_yu03@hotmail.com</span></a>
 					</div>
 				</div>
 			</div>
@@ -169,7 +161,7 @@
 	<script src="../js/navbar.js"></script>
 	<script src="../js/glightbox.min.js"></script>
 	<script src="../js/rellax.min.js"></script>
-	<script src="../js/custom.js"></script>
+	<script src="../js/custom.js?v=20261122"></script>
 	<script>
 		fetch('../includes/header-default.html')
 			.then(res => res.text())

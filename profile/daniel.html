@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="../css/tiny-slider.css">
 	<link rel="stylesheet" href="../css/aos.css">
 	<link rel="stylesheet" href="../css/glightbox.min.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style.css?v=20261122">
 
 	<title>Xiangrong (Daniel) Zhu - People</title>
 </head>
@@ -32,20 +32,18 @@
 
 	<div id="header-placeholder"></div>
 
-	<div class="section bg-dark">
+	<div class="section bg-dark profile-hero">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12 mb-4 mb-lg-5 mt-5" data-aos="fade-up">
-					<div class="d-flex">
-						<div class="col-4 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
-							<img src="../images/Daniel.jpg" alt="Xiangrong Daniel Zhu" class="img-fluid rounded">
-						</div>
-						<div class="col-8 col-lg-8 text-white">
-							<h1 class="text-white">Xiangrong (Daniel) Zhu</h1>
-							<p>
-								Xiangrong “Daniel” Zhu is a Data Science student interested in XR (AR/VR) technologies and natural language manipulation, passionate about AI-generation design and VTubers.
-							</p>
-						</div>
+			<a href="../people.html" class="profile-back-link"><span aria-hidden="true">&larr;</span> People</a>
+			<div class="profile-hero-grid" data-aos="fade-up">
+				<div class="profile-hero-avatar">
+					<img decoding="async" src="../images/Daniel.jpg" alt="Portrait of Xiangrong (Daniel) Zhu" class="profile-hero-img">
+				</div>
+				<div class="profile-hero-content">
+					<span class="profile-role-meta">PhD Student · 2025 Spring Cohort</span>
+					<h1 class="profile-name">Xiangrong (Daniel) Zhu</h1>
+					<div class="profile-bio">
+						<p>Xiangrong “Daniel” Zhu is a Data Science student interested in XR (AR/VR) technologies and natural language manipulation, passionate about AI-generation design and VTubers.</p>
 					</div>
 				</div>
 			</div>
@@ -83,10 +81,10 @@
 					<div class="widget">
 						<h3>Follow Us</h3>
 						<ul class="list-unstyled float-start links">
-							<li><a href="https://space.bilibili.com/479380804"><img loading="lazy" decoding="async" src="../images/bilibili.jpeg" alt="Wechat QR codee" class="wechat-qr"> </li></a>
+							<li><a href="https://space.bilibili.com/479380804" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="../images/bilibili.jpeg" alt="Bilibili QR code" class="wechat-qr"></a></li>
 						</ul>
 						<ul class="list-unstyled float-start links">
-							<li><img loading="lazy" decoding="async" src="../images/Wechat.jpeg" alt="Wechat QR codee" class="wechat-qr"> </li>
+							<li><img loading="lazy" decoding="async" src="../images/Wechat.jpeg" alt="WeChat QR code" class="wechat-qr"> </li>
 						</ul>
 					</div>
 				</div>
@@ -109,7 +107,7 @@
 	<script src="../js/navbar.js"></script>
 	<script src="../js/glightbox.min.js"></script>
 	<script src="../js/rellax.min.js"></script>
-	<script src="../js/custom.js"></script>
+	<script src="../js/custom.js?v=20261122"></script>
 	<script>
 		fetch('../includes/header-default.html')
 			.then(res => res.text())

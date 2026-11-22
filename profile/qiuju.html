@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="../css/tiny-slider.css">
 	<link rel="stylesheet" href="../css/aos.css">
 	<link rel="stylesheet" href="../css/glightbox.min.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style.css?v=20261122">
 
 	<title>Qiuju Chen - People</title>
 </head>
@@ -61,29 +61,27 @@
 	
 	<div id="header-placeholder"></div>
 	
-	<div class="section bg-dark">
+	<div class="section bg-dark profile-hero">
 		<div class="container">
-			<div class="row">
-                <div class="col-md-12 col-lg-12 mb-4 mb-lg-5 mt-5" data-aos="fade-up">
-					<div class="d-flex">
-					<div class="col-4 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
-						<div class="profile-avatar-wrapper rounded">
-							<img loading="lazy" decoding="async" src="../images/qiuju.webp" alt="Portrait of Qiuju Chen" class="profile-avatar">
-						</div>
-						</div>
-						<div class="col-8 col-lg-8 text-white">
-							<h1 class="text-white">Qiuju Chen</h1>
-							<p class="text-white-50 mb-3">
-								PhD Student (2025 Fall Cohort) at ARK Lab, HKUST (Guangzhou) · Co-supervised
-							</p>
-							<p>
-								Qiuju Chen is a PhD student at HKUST(GZ), exploring HCI, embodied AI, and human–animal interaction.
-							</p>
-							<ul class="list-unstyled text-white-50 mb-0">
-								<li class="mb-2"><strong class="text-white">Research Interests:</strong> Human-Computer Interaction (HCI); Embodied AI; Human–Animal Interaction</li>
-								<li><strong class="text-white">Email:</strong> <a href="mailto:qchen289@connect.hkust-gz.edu.cn" class="text-white">qchen289@connect.hkust-gz.edu.cn</a></li>
-							</ul>
-						</div>
+			<a href="../people.html" class="profile-back-link"><span aria-hidden="true">&larr;</span> People</a>
+			<div class="profile-hero-grid" data-aos="fade-up">
+				<div class="profile-hero-avatar">
+					<img decoding="async" src="../images/qiuju.webp" alt="Portrait of Qiuju Chen" class="profile-hero-img">
+				</div>
+				<div class="profile-hero-content">
+					<span class="profile-role-meta">PhD Student · 2025 Fall Cohort · Co-supervised</span>
+					<h1 class="profile-name">Qiuju Chen</h1>
+					<div class="profile-bio">
+						<p>Qiuju Chen is a PhD student at HKUST(GZ), exploring HCI, embodied AI, and human–animal interaction.</p>
+					</div>
+					<div class="profile-interests">
+						<span class="profile-interests-label">Research Interests</span>
+						<span class="profile-tag">Human-Computer Interaction (HCI)</span>
+						<span class="profile-tag">Embodied AI</span>
+						<span class="profile-tag">Human–Animal Interaction</span>
+					</div>
+					<div class="profile-links">
+						<a href="mailto:qchen289@connect.hkust-gz.edu.cn" class="profile-link-chip"><span class="feather-mail profile-link-icon" aria-hidden="true"></span><span>qchen289@connect.hkust-gz.edu.cn</span></a>
 					</div>
 				</div>
 			</div>
@@ -125,10 +123,10 @@
 						<div class="widget">
 							<h3>Follow Us</h3>
 							<ul class="list-unstyled float-start links">
-	 								<li><a href="https://space.bilibili.com/479380804"><img loading="lazy" decoding="async" src="../images/bilibili.jpeg" alt="Wechat QR codee" class="wechat-qr"> </li></a>
+	 								<li><a href="https://space.bilibili.com/479380804" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="../images/bilibili.jpeg" alt="Bilibili QR code" class="wechat-qr"></a></li>
 							</ul>
 							<ul class="list-unstyled float-start links">
-	 								<li><img loading="lazy" decoding="async" src="../images/Wechat.jpeg" alt="Wechat QR codee" class="wechat-qr"> </li>
+	 								<li><img loading="lazy" decoding="async" src="../images/Wechat.jpeg" alt="WeChat QR code" class="wechat-qr"> </li>
 							</ul>
 
 				<!--	 	<ul class="list-unstyled social">
@@ -170,7 +168,7 @@
 	<script src="../js/navbar.js"></script>
 	<script src="../js/glightbox.min.js"></script>
 	<script src="../js/rellax.min.js"></script>
-	<script src="../js/custom.js"></script>
+	<script src="../js/custom.js?v=20261122"></script>
 	<script>
   	fetch('../includes/header-default.html')
     	.then(res => res.text())

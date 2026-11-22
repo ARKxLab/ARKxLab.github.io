@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="../css/tiny-slider.css">
 	<link rel="stylesheet" href="../css/aos.css">
 	<link rel="stylesheet" href="../css/glightbox.min.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style.css?v=20261122">
 
 	<title>Kaixuan Lin - People</title>
 </head>
@@ -34,27 +34,24 @@
 	<div id="header-placeholder"></div>
 
 	<!-- 顶部个人信息区：深色背景聚焦头像与简介 -->
-	<div class="section bg-dark">
+	<div class="section bg-dark profile-hero">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12 mb-4 mb-lg-5 mt-5" data-aos="fade-up">
-					<div class="d-flex">
-						<div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-							<div class="profile-avatar-wrapper rounded">
-								<img loading="lazy" decoding="async" src="../images/kaixuan.webp" alt="Portrait of Kaixuan Lin" class="profile-avatar">
-							</div>
-						</div>
-						<div class="col-8 col-lg-8 text-white">
-							<h1 class="text-white">Kaixuan Lin</h1>
-							<p class="text-white-50 mb-3">MPhil Student (2026 Fall Cohort) at ARK Lab, HKUST (Guangzhou)</p>
-							<!-- 个人简介：忠实呈现用户提供的英文简介原文 -->
-							<p>
-								Kaixuan Lin is an MPhil student at HKUST(GZ). His research interests centre on human-computer interaction and human-centered interdisciplinary design, exploring design interventions for health-related scenarios.
-							</p>
-							<ul class="list-unstyled text-white-50 mb-0">
-								<li><strong class="text-white">Research Interests:</strong> Human-Computer Interaction (HCI); Human-Centered Interdisciplinary Design; Health Design Interventions</li>
-							</ul>
-						</div>
+			<a href="../people.html" class="profile-back-link"><span aria-hidden="true">&larr;</span> People</a>
+			<div class="profile-hero-grid" data-aos="fade-up">
+				<div class="profile-hero-avatar">
+					<img decoding="async" src="../images/kaixuan.webp" alt="Portrait of Kaixuan Lin" class="profile-hero-img">
+				</div>
+				<div class="profile-hero-content">
+					<span class="profile-role-meta">MPhil Student · 2026 Fall Cohort</span>
+					<h1 class="profile-name">Kaixuan Lin</h1>
+					<div class="profile-bio">
+						<p>Kaixuan Lin is an MPhil student at HKUST(GZ). His research interests centre on human-computer interaction and human-centered interdisciplinary design, exploring design interventions for health-related scenarios.</p>
+					</div>
+					<div class="profile-interests">
+						<span class="profile-interests-label">Research Interests</span>
+						<span class="profile-tag">Human-Computer Interaction (HCI)</span>
+						<span class="profile-tag">Human-Centered Interdisciplinary Design</span>
+						<span class="profile-tag">Health Design Interventions</span>
 					</div>
 				</div>
 			</div>
@@ -167,7 +164,7 @@
 	<script src="../js/navbar.js"></script>
 	<script src="../js/glightbox.min.js"></script>
 	<script src="../js/rellax.min.js"></script>
-	<script src="../js/custom.js"></script>
+	<script src="../js/custom.js?v=20261122"></script>
 	<script>
 		fetch('../includes/header-default.html')
 			.then(res => res.text())

@@ -18,6 +18,7 @@
 		var overlay = document.getElementById('overlayer');
 
 		function fadeOut(el) {
+			if (!el) return;
 			el.style.opacity = 1;
 			(function fade() {
 				if ((el.style.opacity -= .1) < 0) {

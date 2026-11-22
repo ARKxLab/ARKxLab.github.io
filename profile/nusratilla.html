@@ -21,38 +21,34 @@
     <link rel="stylesheet" href="../css/tiny-slider.css">
     <link rel="stylesheet" href="../css/aos.css">
     <link rel="stylesheet" href="../css/glightbox.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css?v=20261122">
     <title>Nusratilla Abdullaev - People</title>
 </head>
 
 <body>
     <div id="header-placeholder"></div>
-    <div class="section bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-12 mb-4 mb-lg-5 mt-5" data-aos="fade-up">
-                    <div class="d-flex">
-                        <div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                            <div class="profile-avatar-wrapper rounded">
-                                <img src="../images/nusratilla.jpg" alt="Nusratilla Abdullaev" class="profile-avatar">
-                            </div>
-                        </div>
-                        <div class="col-8 col-lg-8 text-white">
-                            <h1 class="text-white">Nusratilla Abdullaev</h1>
-                            <p>Nusratilla is an MPhil student focusing on intelligent systems, human–computer
-                                interaction, and applied artificial intelligence. His research interests include
-                                embodied AI, interactive learning systems, and data-driven decision support, with an
-                                emphasis on developing practical, human-centered technologies that bridge academic
-                                research and real-world applications.</p>
-                            <p><strong>Email:</strong> <a href="mailto:na800@connect.hkust-gz.edu.cn"
-                                    class="text-white">na800@connect.hkust-gz.edu.cn</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="site-footer">
+    <div class="section bg-dark profile-hero">
+		<div class="container">
+			<a href="../people.html" class="profile-back-link"><span aria-hidden="true">&larr;</span> People</a>
+			<div class="profile-hero-grid" data-aos="fade-up">
+				<div class="profile-hero-avatar">
+					<img decoding="async" src="../images/nusratilla.jpg" alt="Portrait of Nusratilla Abdullaev" class="profile-hero-img profile-avatar-pos-top">
+				</div>
+				<div class="profile-hero-content">
+					<span class="profile-role-meta">MPhil Student · 2025 Fall Cohort</span>
+					<h1 class="profile-name">Nusratilla Abdullaev</h1>
+					<div class="profile-bio">
+						<p>Nusratilla is an MPhil student focusing on intelligent systems, human–computer interaction, and applied artificial intelligence. His research interests include embodied AI, interactive learning systems, and data-driven decision support, with an emphasis on developing practical, human-centered technologies that bridge academic research and real-world applications.</p>
+					</div>
+					<div class="profile-links">
+						<a href="mailto:na800@connect.hkust-gz.edu.cn" class="profile-link-chip"><span class="feather-mail profile-link-icon" aria-hidden="true"></span><span>na800@connect.hkust-gz.edu.cn</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -83,8 +79,8 @@
                     <div class="widget">
                         <h3>Follow Us</h3>
                         <ul class="list-unstyled float-start links">
-                            <li><a href="https://space.bilibili.com/479380804"><img loading="lazy" decoding="async" src="../images/bilibili.jpeg"
-                                        alt="Bilibili" class="wechat-qr"> </li></a>
+                            <li><a href="https://space.bilibili.com/479380804" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="../images/bilibili.jpeg"
+                                        alt="Bilibili" class="wechat-qr"></a></li>
                         </ul>
                         <ul class="list-unstyled float-start links">
                             <li><img loading="lazy" decoding="async" src="../images/Wechat.jpeg" alt="Wechat QR code" class="wechat-qr"> </li>
@@ -109,7 +105,7 @@
     <script src="../js/navbar.js"></script>
     <script src="../js/glightbox.min.js"></script>
     <script src="../js/rellax.min.js"></script>
-    <script src="../js/custom.js"></script>
+    <script src="../js/custom.js?v=20261122"></script>
     <script>
         fetch('../includes/header-default.html')
             .then(res => res.text())

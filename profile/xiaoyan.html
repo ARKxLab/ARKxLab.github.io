@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="../css/tiny-slider.css">
 	<link rel="stylesheet" href="../css/aos.css">
 	<link rel="stylesheet" href="../css/glightbox.min.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style.css?v=20261122">
 
 	<title>Xiaoyan Hu - People</title>
 </head>
@@ -34,24 +34,18 @@
 	<div id="header-placeholder"></div>
 
 	<!-- 顶部个人信息区：深色背景聚焦头像与简介 -->
-	<div class="section bg-dark">
+	<div class="section bg-dark profile-hero">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12 mb-4 mb-lg-5 mt-5" data-aos="fade-up">
-					<div class="d-flex">
-						<div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-							<div class="profile-avatar-wrapper rounded">
-								<img loading="lazy" decoding="async" src="../images/xiaoyan.webp" alt="Portrait of Xiaoyan Hu" class="profile-avatar">
-							</div>
-						</div>
-						<div class="col-8 col-lg-8 text-white">
-							<h1 class="text-white">Xiaoyan Hu</h1>
-							<p class="text-white-50 mb-3">MPhil Student</p>
-							<!-- 个人简介：忠实呈现用户提供的英文简介原文 -->
-							<p>
-								Xiaoyan Hu is currently pursuing her MPhil degree at HKUST(GZ). Her research lies in HCI and human-robot interaction, with a focus on pioneering interdisciplinary innovations that integrate XR technology with interactive experiences.
-							</p>
-						</div>
+			<a href="../people.html" class="profile-back-link"><span aria-hidden="true">&larr;</span> People</a>
+			<div class="profile-hero-grid" data-aos="fade-up">
+				<div class="profile-hero-avatar">
+					<img decoding="async" src="../images/xiaoyan.webp" alt="Portrait of Xiaoyan Hu" class="profile-hero-img">
+				</div>
+				<div class="profile-hero-content">
+					<span class="profile-role-meta">MPhil Student · 2026 Fall Cohort</span>
+					<h1 class="profile-name">Xiaoyan Hu</h1>
+					<div class="profile-bio">
+						<p>Xiaoyan Hu is currently pursuing her MPhil degree at HKUST(GZ). Her research lies in HCI and human-robot interaction, with a focus on pioneering interdisciplinary innovations that integrate XR technology with interactive experiences.</p>
 					</div>
 				</div>
 			</div>
@@ -173,7 +167,7 @@
 	<script src="../js/navbar.js"></script>
 	<script src="../js/glightbox.min.js"></script>
 	<script src="../js/rellax.min.js"></script>
-	<script src="../js/custom.js"></script>
+	<script src="../js/custom.js?v=20261122"></script>
 	<script>
 		fetch('../includes/header-default.html')
 			.then(res => res.text())

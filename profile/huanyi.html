@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="../css/tiny-slider.css">
 	<link rel="stylesheet" href="../css/aos.css">
 	<link rel="stylesheet" href="../css/glightbox.min.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style.css?v=20261122">
 
 	<title>Huanyi Wan - People</title>
 </head>
@@ -34,34 +34,22 @@
 	<div id="header-placeholder"></div>
 
 	<!-- 顶部个人信息区：深色背景聚焦头像与简介 -->
-	<div class="section bg-dark">
+	<div class="section bg-dark profile-hero">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12 mb-4 mb-lg-5 mt-5" data-aos="fade-up">
-					<div class="d-flex">
-						<div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-							<div class="profile-avatar-wrapper rounded">
-								<!-- 修复头像无法加载问题：
-								     原路径为 ../images/huanyi.jpg，但实际文件名是 Huanyi.jpg（首字母大写）。
-								     在 GitHub Pages 等 Linux 服务器上，文件名大小写敏感，会导致 404，从而显示为断图。
-								     因此这里将文件名修改为 Huanyi.jpg，与 images 目录下的实际文件名完全一致。 -->
-								<img src="../images/Huanyi.webp" alt="Portrait of Huanyi Wan" class="profile-avatar">
-							</div>
-						</div>
-						<div class="col-8 col-lg-8 text-white">
-							<h1 class="text-white">Huanyi Wan</h1>
-							<!-- 个人简介：概述教育背景与研究主题 -->
-							<p>
-								Huanyi Wan is an MPhil student (2026 Fall cohort) at ARK Lab, HKUST (Guangzhou). He holds a Bachelor of Arts degree in Art and Technology (Digital Entertainment) from Communication University of China, bringing an interdisciplinary background spanning game design, HCI research, and AI development.
-							</p>
-							<p>
-								His research focuses on human-AI collaboration, AR/VR systems, and assistive technologies for health and wellbeing. He has contributed to multiple cutting-edge HCI projects, spanning from designing interactive systems that integrate AI agents into AR and web applications to conducting qualitative user studies and developing novel human-AI interaction paradigms.
-							</p>
-							<ul class="list-unstyled text-white">
-								<!-- 联系方式列表 -->
-								<li>Email: <a href="mailto:huanyiwan@hkust-gz.edu.cn" class="text-white">huanyiwan@hkust-gz.edu.cn</a></li>
-							</ul>
-						</div>
+			<a href="../people.html" class="profile-back-link"><span aria-hidden="true">&larr;</span> People</a>
+			<div class="profile-hero-grid" data-aos="fade-up">
+				<div class="profile-hero-avatar">
+					<img decoding="async" src="../images/Huanyi.webp" alt="Portrait of Huanyi Wan" class="profile-hero-img">
+				</div>
+				<div class="profile-hero-content">
+					<span class="profile-role-meta">MPhil Student · 2026 Fall Cohort</span>
+					<h1 class="profile-name">Huanyi Wan</h1>
+					<div class="profile-bio">
+						<p>Huanyi Wan is an MPhil student (2026 Fall cohort) at ARK Lab, HKUST (Guangzhou). He holds a Bachelor of Arts degree in Art and Technology (Digital Entertainment) from Communication University of China, bringing an interdisciplinary background spanning game design, HCI research, and AI development.</p>
+						<p>His research focuses on human-AI collaboration, AR/VR systems, and assistive technologies for health and wellbeing. He has contributed to multiple cutting-edge HCI projects, spanning from designing interactive systems that integrate AI agents into AR and web applications to conducting qualitative user studies and developing novel human-AI interaction paradigms.</p>
+					</div>
+					<div class="profile-links">
+						<a href="mailto:huanyiwan@hkust-gz.edu.cn" class="profile-link-chip"><span class="feather-mail profile-link-icon" aria-hidden="true"></span><span>huanyiwan@hkust-gz.edu.cn</span></a>
 					</div>
 				</div>
 			</div>
@@ -174,7 +162,7 @@
 	<script src="../js/navbar.js"></script>
 	<script src="../js/glightbox.min.js"></script>
 	<script src="../js/rellax.min.js"></script>
-	<script src="../js/custom.js"></script>
+	<script src="../js/custom.js?v=20261122"></script>
 	<script>
 		fetch('../includes/header-default.html')
 			.then(res => res.text())
