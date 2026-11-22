@@ -10,6 +10,7 @@
 ---
 
 ## 2026-11-22
+- 修复：将 `profile/jieyu.html` 正文身份从 research assistant 同步更新为 PhD student；修正 `profile/tianjian.html` 邮箱域名拼写（`connect.hkust.gz.edu.cn` → `connect.hkust-gz.edu.cn`）。
 - 优化：统一重构全站全部 27 位活跃同学（12 名 PhD、12 名 MPhil、3 名 RA）的个人主页 Hero 排版系统（`css/style.css` 新增 `.profile-hero*` 规则并添加 `?v=20261122` 缓存版本号）：头像统一规范为 `240×240px` 圆角容器（平板 `200px`、窄屏自动上下堆叠 `176px` 左对齐）、图文间距扩展为 `48px` 并垂直居中、补齐全员角色与届别标签及顶部 `← People` 返回入口、研究方向改为胶囊标签、邮箱与学术外链改为带图标描边按钮；同步为 `profile/xintong.html` 与未迁移旧页增加 CSS 兜底间距。
 - 修复：升级 `profile/hongni.html` 头像为站内高清 `images/hy.webp`（原 `hy.jpg` 仅 `260×260`），修复 `hongni.html` 双斜杠链接与 `360°` 字符；为 `daniel.html`、`tianjian.html`、`zhaowen.html` 补齐统一头像容器；为 `mengqi.html`、`jiayi.html`、`nusratilla.html` 竖图头像微调裁切焦点；在 `js/custom.js` 的 `fadeOut()` 补充空值判断消除 8 页缺 preloader DOM 导致的 TypeError；修复 6 页页脚 `contact.html` 相对路径、多页多余 `</div>` 与 Bilibili 二维码错位标签嵌套。
 - 修改：补齐 MPhil 学生 Yiying Pan（2025 Fall Cohort，`images/yiying.webp`、`profile/yiying.html`）与 Yi Hu（2025 Fall Cohort，`images/yihu.webp`、`profile/yihu.html`，含联系邮箱 `yhu909@connect.hkust-gz.edu.cn`）的个人资料与头像，同步更新 `people.html` 卡片、`docs/PEOPLE_LINKS.md` 并修复旧占位页模板页脚相对路径与多余 `</div>` 闭合标签。
