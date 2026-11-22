@@ -9,6 +9,9 @@
 
 ---
 
+## 2026-11-22
+- 修改：补齐 MPhil 学生 Yiying Pan（2025 Fall Cohort，`images/yiying.webp`、`profile/yiying.html`）与 Yi Hu（2025 Fall Cohort，`images/yihu.webp`、`profile/yihu.html`，含联系邮箱 `yhu909@connect.hkust-gz.edu.cn`）的个人资料与头像，同步更新 `people.html` 卡片、`docs/PEOPLE_LINKS.md` 并修复旧占位页模板页脚相对路径与多余 `</div>` 闭合标签。
+
 ## 2026-11-18
 - 新增：项目页 `projects_collection/MemoryLib.html`（MemoryLib: A Human-AI Collaborative Approach to Support Personalized Memory Meaning-Making Process，ACM IMWUT '26，`https://doi.org/10.1145/3810195`），涵盖 Abstract、Formative Co-Design Study & Information Taxonomy、Design Guidelines & System Architecture、Controlled Evaluation & 4-Month Follow-Up Study、Key Results 与 The Team。
 - 新增：项目页 `projects_collection/CoStage.html`（CoStage: An Embodied AI Co-Creation System for Children's Performative Storytelling with Robots，ACM DIS '26，`https://doi.org/10.1145/3800645.3813101`），涵盖 Abstract、Research Process & Formative Study、System Architecture & Director Workflow、Physical Stage Setup & Pilot Iteration、Controlled User Study (N = 24)、Results 与 The Team。

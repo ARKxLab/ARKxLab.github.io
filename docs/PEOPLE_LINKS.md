@@ -41,8 +41,8 @@
 - Jiayi Huang — 链接: profile/jiayi.html
 - Nusratilla Abdullaev — 链接: profile/nusratilla.html
 - Anastasia Nikolova — 链接: profile/anastasia.html（占位页）
-- Yi Hu — 链接: profile/yihu.html（占位页）
-- Yiying Pan — 链接: profile/yiying.html（占位页）
+- Yi Hu — 链接: profile/yihu.html
+- Yiying Pan — 链接: profile/yiying.html
 
 **MPhil Students · 2026 Fall Cohort**
 - Huanyi Wan — 链接: profile/huanyi.html
