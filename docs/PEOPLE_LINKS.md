@@ -40,7 +40,7 @@
 - Mengqi "Maggy" Wu — 链接: profile/mengqi.html
 - Jiayi Huang — 链接: profile/jiayi.html
 - Nusratilla Abdullaev — 链接: profile/nusratilla.html
-- Anastasia Nikolova — 链接: profile/anastasia.html（占位页）
+- Anastasia "Ana" Nikolova — 链接: profile/anastasia.html
 - Yi Hu — 链接: profile/yihu.html
 - Yiying Pan — 链接: profile/yiying.html
 
