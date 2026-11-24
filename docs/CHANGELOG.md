@@ -10,6 +10,7 @@
 ---
 
 ## 2026-11-24
+- 优化：统一学生个人页头像框样式（`css/style.css` `.profile-hero-avatar`），将圆角从 `14px` 调整为与 PI 个人页一致的 `0.25rem`（`4px`）并移除细描边与投影，同步将 28 个 `profile/*.html` 的样式引用版本号更新为 `?v=20261124`。
 - 修改：补齐 MPhil 学生 Anastasia "Ana" Nikolova（2025 Fall Cohort，`images/anastasia.webp`、`profile/anastasia.html`）的个人简介、研究方向标签与头像，同步更新 `people.html` 卡片、HRI 综述项目页团队头像与 `docs/PEOPLE_LINKS.md`。
 
 ## 2026-11-22

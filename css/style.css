@@ -10558,10 +10558,8 @@ a {
     position: relative;
     width: 240px;
     height: 240px;
-    border-radius: 14px;
+    border-radius: 0.25rem;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
     background-color: rgba(255, 255, 255, 0.04);
 }
 
